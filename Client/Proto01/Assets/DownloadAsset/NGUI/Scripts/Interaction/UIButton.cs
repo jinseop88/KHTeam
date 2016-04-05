@@ -259,12 +259,12 @@ public class UIButton : UIButtonColor
         base.OnPress(isPressed);
 
         //버튼 클릭음
-        if (isPressed)
-        {
-            // 임시로 게임내 스킬관련 버튼들은 빼달라고해서 아래처럼 처리했다 추후 수정해야 한다.
-            if (!gameObject.name.Contains("Btn_") )
-                SoundManager.Instance.PlaySFXSound("Action", "sound_UIClick");        
-        }
+        //if (isPressed)
+        //{
+        //    // 임시로 게임내 스킬관련 버튼들은 빼달라고해서 아래처럼 처리했다 추후 수정해야 한다.
+        //    if (!gameObject.name.Contains("Btn_") )
+        //        SoundManager.Instance.PlaySFXSound("Action", "sound_UIClick");        
+        //}
 
         if (current == null && isEnabled)
         {
