@@ -9,5 +9,6 @@ public class Saddle : PartsBase
         base.Initialize();
 
         m_ePartsType = ePartsType.Saddle;
+
     }
 }
