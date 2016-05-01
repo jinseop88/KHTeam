@@ -43,12 +43,17 @@ public class Actor : MonoBehaviour
     /// <summary>
     /// 2D전용 애니메이션
     /// </summary>
-    public Animation2D animation { get; set; }
+    public Animation2D animation2D { get; set; }
 
     /// <summary>
     /// 2D전용 무브먼트
     /// </summary>
-    public Movement2D movement { get; set; }
+    public Movement2D movement2D { get; set; }
+
+    /// <summary>
+    /// 캐릭터 전용 배틀
+    /// </summary>
+    public CharacterBattle battleMy { get; set; }
 
 
     public virtual void Initialize()

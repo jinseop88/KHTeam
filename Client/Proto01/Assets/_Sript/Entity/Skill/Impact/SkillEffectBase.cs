@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class Movement2D : MonoBehaviour 
+public class SkillEffectBase : MonoBehaviour 
 {
     #region transform objcect
     protected GameObject m_cachedObject;
@@ -27,28 +27,8 @@ public class Movement2D : MonoBehaviour
     }
     #endregion
 
-    protected Actor m_owner;
-
-    public void Initialize()
-    {
-        m_owner = thisObject.GetComponent<Character>();
-    }
-    public void MoveToForward()
-    {
-
-    }
-    protected void Translate()
-    {
-
-    }
-    protected void Rotate()
-    {
-
-    }
-
-    public void Update()
-    {
-        Translate();
-        Rotate();
-    }
+    public virtual void Initialize() { }
+    public virtual void Casting(){}
+    public virtual void Cancel(){}
+    public virtual void Reset(){}
 }

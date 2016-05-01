@@ -3,22 +3,41 @@ using System.Collections;
 
 public class Animation2D : MonoBehaviour
 {
-    //protected Actor m_owner;
+    #region transform objcect
+    protected GameObject m_cachedObject;
+    public GameObject thisObject
+    {
+        get
+        {
+            if (m_cachedObject == null)
+                m_cachedObject = gameObject;
+            return m_cachedObject;
+        }
+    }
+
+    protected Transform m_cachedTransform;
+    public Transform thisTransform
+    {
+        get
+        {
+            if (m_cachedTransform == null)
+                m_cachedTransform = transform;
+            return m_cachedTransform;
+        }
+    }
+    #endregion
+
+    protected Actor m_owner;
 
     public Animator m_animator;
 
-
-    public void OnMove(bool bMove)
+    public void Initialize()
     {
-
+        m_owner = thisObject.GetComponent<Character>();
     }
-    public void OnStop()
+    public void PlayAnimation(GameType.AnimationState state)
     {
-
-    }
-
-    public void OnAttack(bool bAttack)
-    {
-
+        if (state == GameType.AnimationState.Skill1)
+            m_animator.SetTrigger("Skill01");
     }
 }

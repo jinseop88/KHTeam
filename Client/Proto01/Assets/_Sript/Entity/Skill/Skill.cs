@@ -27,19 +27,33 @@ public class Skill : MonoBehaviour
     }
     #endregion
 
+    public GameType.AnimationState m_animationState;
+    /// <summary>
+    /// 스킬의 시간
+    /// </summary>
     public float m_fTotalTime;
 
+    /// <summary>
+    /// 스킬의 시작시간
+    /// </summary>
     protected float m_fStartTime;
-    protected float m_fNomalizedTime;
-    protected float m_fTimeInvert;
 
-    public float normalizedTime { get { return m_fNomalizedTime; } }
+    /// <summary>
+    /// 스킬종료시간
+    /// </summary>
+    protected float m_fEndTime;
 
+    /// <summary>
+    /// 스킬 타격 이펙트들
+    /// </summary>
     protected SkillImpactInfo[] m_impactInfos;
 
+    /// <summary>
+    /// 지금 실행중인가?
+    /// </summary>
     protected bool m_bCasting;
 
-    public void Initialize()
+    public void Initialize(Battle.HitCallBack hitCallBack)
     {
         ///SKill 오브젝트 아래있는 임펙트들을 가져온다.
         m_impactInfos = thisObject.GetComponentsInChildren<SkillImpactInfo>();
@@ -48,7 +62,11 @@ public class Skill : MonoBehaviour
         for(int i = 0 ; i < m_impactInfos.Length ; i++)
         {
             m_impactInfos[i].Initialize();
+            m_impactInfos[i].onHit = hitCallBack;
         }
+
+        ///초기화하고 일단 꺼준다
+        thisObject.SetActive(false);
     }
     public void Reset()
     {
@@ -64,6 +82,20 @@ public class Skill : MonoBehaviour
         if (m_bCasting)
         {
             m_bCasting = false;
+
+            //모든 임펙트들 끔
+            for (int i = 0; i < m_impactInfos.Length; i++)
+            {
+                m_impactInfos[i].Cancel();
+            }
+        }
+    }
+    public void EndSkill()
+    {
+        //모든 임펙트들 초기화
+        for (int i = 0; i < m_impactInfos.Length; i++)
+        {
+            m_impactInfos[i].Reset();
         }
     }
     public void Catsting()
@@ -71,10 +103,16 @@ public class Skill : MonoBehaviour
         //케스팅아닐때 시작
         if(!m_bCasting)
         {
+            thisObject.SetActive(true);
             m_bCasting = true;
-            //// 모든 임펙트들 캐스팅
-            //for (int i = 0; i < m_impactInfos.Length; i++)
-            //    m_impactInfos[i].Casting();
+            
+            //시작시간과 끝시간을 계산해놓는다
+            m_fStartTime = Time.time;
+            m_fEndTime = m_fStartTime + m_fTotalTime;
+
+            // 모든 임펙트들 캐스팅
+            for (int i = 0; i < m_impactInfos.Length; i++)
+                m_impactInfos[i].Casting();
         }
     }
 
@@ -82,12 +120,14 @@ public class Skill : MonoBehaviour
     {
         if(m_bCasting)
         {
-            //임펙트가 실행되어야되는 시간이면 켜주는...
+            //계산해놓은 끝시간이 지났다면 스킬종료
+            if(m_fEndTime < Time.time)
+            {
+                EndSkill();
+                m_bCasting = false;
+                thisObject.SetActive(false);
+            }
 
         }
     }
-
-
-
-    
 }
