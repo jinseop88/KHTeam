@@ -3,22 +3,17 @@ using System.Collections;
 
 public class AnimTest : MonoBehaviour 
 {
-    private Animator m_animator;
-    void Start()
-    {
-        m_animator = gameObject.GetComponent<Animator>();
-    }
+    public Character temp;
     void OnGUI()
     {
-        if(GUI.Button(new Rect(100,100,100,100),"Attack"))
+        if(GUI.Button(new Rect(100,100,100,100),"Skill01"))
         {
-            m_animator.SetTrigger("Attack");
-            m_animator.SetBool("Move", false);
+            temp.Attack(GameType.AnimationState.Skill1);
         }
 
-        if (GUI.Button(new Rect(200, 100, 100, 100), "Move"))
-        {
-            m_animator.SetBool("Move", true);
-        }
+        //if (GUI.Button(new Rect(200, 100, 100, 100), "Move"))
+        //{
+        //    m_animator.SetBool("Move", true);
+        //}
     }
 }
