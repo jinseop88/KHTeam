@@ -40,6 +40,16 @@ public class Actor : MonoBehaviour
     }
     #endregion
 
+    /// <summary>
+    /// 2D전용 애니메이션
+    /// </summary>
+    public Animation2D animation { get; set; }
+
+    /// <summary>
+    /// 2D전용 무브먼트
+    /// </summary>
+    public Movement2D movement { get; set; }
+
 
     public virtual void Initialize()
     {
