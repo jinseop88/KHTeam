@@ -20,6 +20,7 @@ public class SkillImpactInfo : SkillEffectBase
     /// <summary>
     /// 공격할 레이어
     /// </summary>
+    [HideInInspector]
     public int m_targetLayer;
 
     /// <summary>
@@ -42,10 +43,19 @@ public class SkillImpactInfo : SkillEffectBase
     {
         m_Collider = thisObject.GetComponent<SphereCollider>();
     }
-    public override void Casting() { }
-    public override void Cancel() { }
-    public override void Reset() { }
-
+    public override void Reset() 
+    {
+        m_bStart = false;
+        thisObject.SetActive(false);
+    }
+    protected override void StartEffect()
+    {
+        thisObject.SetActive(true);
+    }
+    protected override void EndEffect()
+    {
+        thisObject.SetActive(false);
+    }
 
     /// <summary>
     /// 구형의 데미지 판정 

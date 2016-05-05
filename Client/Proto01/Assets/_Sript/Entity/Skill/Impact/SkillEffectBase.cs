@@ -27,8 +27,46 @@ public class SkillEffectBase : MonoBehaviour
     }
     #endregion
 
-    public virtual void Initialize() { }
-    public virtual void Casting(){}
-    public virtual void Cancel(){}
+
+    /// <summary>
+    /// 이펙트가 시작될 시간
+    /// </summary>
+    public float m_startTime;
+
+    /// <summary>
+    /// 이펙트가 지속될 시간
+    /// </summary>
+    public float m_totalTime;
+
+    /// <summary>
+    /// 현재 시작되었나?
+    /// </summary>
+    protected bool m_bStart;
+
+    public virtual void Initialize() 
+    { 
+
+    }
     public virtual void Reset(){}
+
+    protected virtual void StartEffect(){}
+    protected virtual void EndEffect(){}
+    public void UpdateEffect(float fTime)
+    {
+        if (fTime < m_startTime)
+        {
+            //아직 시작 아님
+        }
+        else if (fTime > m_startTime && !m_bStart)
+        {
+            //시작
+            m_bStart = true;
+            StartEffect();
+        }
+        else if (fTime > m_startTime + m_totalTime && m_bStart)
+        {
+            //끝
+            EndEffect();
+        }
+    }
 }

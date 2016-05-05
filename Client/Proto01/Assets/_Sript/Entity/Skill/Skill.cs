@@ -46,7 +46,7 @@ public class Skill : MonoBehaviour
     /// <summary>
     /// 스킬 타격 이펙트들
     /// </summary>
-    protected SkillImpactInfo[] m_impactInfos;
+    protected SkillEffectBase[] m_impactInfos;
 
     /// <summary>
     /// 지금 실행중인가?
@@ -56,13 +56,14 @@ public class Skill : MonoBehaviour
     public void Initialize(Battle.HitCallBack hitCallBack)
     {
         ///SKill 오브젝트 아래있는 임펙트들을 가져온다.
-        m_impactInfos = thisObject.GetComponentsInChildren<SkillImpactInfo>();
+        m_impactInfos = transform.GetComponentsInChildren<SkillEffectBase>(false);
        
         //모든 임펙트들 초기화
         for(int i = 0 ; i < m_impactInfos.Length ; i++)
         {
             m_impactInfos[i].Initialize();
-            m_impactInfos[i].onHit = hitCallBack;
+            if(m_impactInfos[i] is SkillImpactInfo)
+                ((SkillImpactInfo)m_impactInfos[i]).onHit = hitCallBack;
         }
 
         ///초기화하고 일단 꺼준다
@@ -81,13 +82,14 @@ public class Skill : MonoBehaviour
         //케스팅중일때 취소
         if (m_bCasting)
         {
-            m_bCasting = false;
-
             //모든 임펙트들 끔
             for (int i = 0; i < m_impactInfos.Length; i++)
             {
-                m_impactInfos[i].Cancel();
+                m_impactInfos[i].Reset();
             }
+
+            m_bCasting = false;
+            thisObject.SetActive(false);
         }
     }
     public void EndSkill()
@@ -111,8 +113,8 @@ public class Skill : MonoBehaviour
             m_fEndTime = m_fStartTime + m_fTotalTime;
 
             // 모든 임펙트들 캐스팅
-            for (int i = 0; i < m_impactInfos.Length; i++)
-                m_impactInfos[i].Casting();
+            //for (int i = 0; i < m_impactInfos.Length; i++)
+            //    m_impactInfos[i].Reset();
         }
     }
 
@@ -121,13 +123,16 @@ public class Skill : MonoBehaviour
         if(m_bCasting)
         {
             //계산해놓은 끝시간이 지났다면 스킬종료
-            if(m_fEndTime < Time.time)
+            if (m_fEndTime < Time.time)
             {
                 EndSkill();
                 m_bCasting = false;
                 thisObject.SetActive(false);
+                return;
             }
 
+            for (int i = 0; i < m_impactInfos.Length; i++)
+                m_impactInfos[i].UpdateEffect(Time.time - m_fStartTime);
         }
     }
 }

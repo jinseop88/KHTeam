@@ -8,18 +8,20 @@ public class SkillEffectShow : SkillEffectBase
 {
     public override void Initialize()
     {
+        m_bStart = false;
+        thisObject.SetActive(false);
     }
 
-    public override void Casting() 
+    public override void Reset() 
+    {
+    }
+    protected override void StartEffect() 
     {
         thisObject.SetActive(true);
     }
-    public override void Cancel() 
+    protected override void EndEffect() 
     {
         thisObject.SetActive(false);
     }
-    public override void Reset() 
-    {
-        thisObject.SetActive(false);
-    }
+
 }

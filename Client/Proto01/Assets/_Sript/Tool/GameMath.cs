@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public static class CycleMath 
+public static class GameMath 
 {
     public const float PI = 3.141592f;
 
@@ -21,4 +21,7 @@ public static class CycleMath
     {
         return intputKilo * meterPerOneKilo;
     }
+
+
+    public static float gravity = -9.8f;
 }
