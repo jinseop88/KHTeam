@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
+using System.Collections.Generic;
 
 public class Animation2D : MonoBehaviour
 {
@@ -31,13 +32,42 @@ public class Animation2D : MonoBehaviour
 
     public Animator m_animator;
 
+
     public void Initialize()
     {
         m_owner = thisObject.GetComponent<Character>();
+
     }
-    public void PlayAnimation(GameType.AnimationState state)
+    //public void PlayAnimation(GameType.AnimationState state)
+    //{
+    //    m_animator.Play()
+    //}
+
+
+    #region 애니메이션 실행함수
+
+    public void OnMove(bool bMove)
     {
-        if (state == GameType.AnimationState.Skill1)
-            m_animator.SetTrigger("Skill01");
+        m_animator.SetBool(GameType.AnimationState.Move.ToString(), bMove);
     }
+    /// <summary>
+    /// 공격
+    /// </summary>
+    /// <param name="state"></param>
+    public void OnAttack(GameType.AnimationState state)
+    {
+        m_animator.SetTrigger(state.ToString());
+    }
+
+    /// <summary>
+    /// 점프
+    /// </summary>
+    public void OnJump()
+    {
+        m_animator.SetTrigger(GameType.AnimationState.Jump.ToString());
+    }
+    #endregion
+    #region 애니메이션 확인함수
+
+    #endregion
 }

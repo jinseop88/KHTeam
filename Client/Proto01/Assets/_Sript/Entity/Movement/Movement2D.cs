@@ -45,8 +45,14 @@ public class Movement2D : MonoBehaviour
     public float m_speed;
 
     /// <summary>
+    /// 점프력
+    /// </summary>
+    public float m_jump;
+
+    /// <summary>
     /// 땅에잇나??
     /// </summary>
+    [HideInInspector]
     public bool m_bIsGrounded;
 
     /// <summary>
@@ -84,15 +90,16 @@ public class Movement2D : MonoBehaviour
     {
         m_owner = thisObject.GetComponent<Character>();
     }
-    protected void SetRotation(eDirection dir)
-    {
-        thisTransform.rotation = dir == eDirection.Left ? RotationLeft : RotationRight;
-    }
+    
     public void FixedUpdate()
     {
         Calculate();
         Translate();
     }
+
+    /// <summary>
+    /// 이동시키는 함수
+    /// </summary>
     protected void Translate()
     {
         Vector3 delta = m_velocity * Time.fixedDeltaTime;
@@ -108,6 +115,10 @@ public class Movement2D : MonoBehaviour
         //전위치 저장
         m_lastPosition = thisTransform.position;
     }
+
+    /// <summary>
+    /// 이동시킬값 계산하는 함수
+    /// </summary>
     protected void Calculate()
     {
         //여기에 이동연산이 들어가면 좋겠는데..
@@ -131,6 +142,9 @@ public class Movement2D : MonoBehaviour
             m_velocity += m_acceleration;
     }
     
+    /// <summary>
+    /// 중력 적용
+    /// </summary>
     protected void ApplyGravity()
     {
         if(m_bIsGrounded)
@@ -144,38 +158,35 @@ public class Movement2D : MonoBehaviour
             m_velocity += (Vector3.up * GameMath.gravity * Time.fixedDeltaTime);
         }
     }
-    
-    void OnGUI()
+
+
+    /// <summary>
+    /// 이동
+    /// </summary>
+    /// <param name="vInput"></param>
+    public void Move(Vector3 vInput)
     {
-        if (GUI.Button(new Rect(100, 150, 100, 100), "Left"))
-        {
-            SetRotation(eDirection.Left);
-        }
-        if (GUI.Button(new Rect(200, 150, 100, 100), "Right"))
-        {
-            SetRotation(eDirection.Right);
-        }
-        if (GUI.Button(new Rect(100, 250, 100, 100), "Move"))
-        {
-            m_veloctyInput = Vector3.one;
-        }
-        if (GUI.Button(new Rect(200, 250, 100, 100), "Stop"))
-        {
-            m_veloctyInput = Vector3.zero;
-        }
-        if (GUI.Button(new Rect(300, 250, 100, 100), "Jump"))
-        {
-            m_veloctyForce = Vector3.up * 7f;
-            m_bIsGrounded = false;
-        }
-        if (GUI.Button(new Rect(100, 350, 100, 100), "Ground True"))
-        {
-            m_bIsGrounded = true;
-        }
-        if (GUI.Button(new Rect(200, 350, 100, 100), "Ground flase"))
-        {
-            m_bIsGrounded = false;
-        }
+        m_veloctyInput = vInput;
     }
+
+    /// <summary>
+    /// 방향 턴
+    /// </summary>
+    /// <param name="dir"></param>
+    public void SetRotation(eDirection dir)
+    {
+        thisTransform.rotation = dir == eDirection.Left ? RotationLeft : RotationRight;
+    } 
+
+
+    /// <summary>
+    /// 점프
+    /// </summary>
+    public void OnJump()
+    {
+        m_veloctyForce = Vector3.up * m_jump;
+        m_bIsGrounded = false;
+    }
+    
     
 }
