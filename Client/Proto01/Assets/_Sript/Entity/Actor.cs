@@ -51,6 +51,11 @@ public class Actor : MonoBehaviour
     public Movement2D movement2D { get; set; }
 
     /// <summary>
+    /// 입력을 받는 클래스
+    /// </summary>
+    public InputBase input { get; set; }
+
+    /// <summary>
     /// 캐릭터 전용 배틀
     /// </summary>
     public CharacterBattle battleMy { get; set; }
@@ -59,6 +64,17 @@ public class Actor : MonoBehaviour
     public virtual void Initialize()
     {
 
+    }
+
+    protected void CheckGround()
+    {
+        Ray ray = new Ray(thisTransform.position, -thisTransform.up);
+        movement2D.m_bIsGrounded = Physics.Raycast(ray, 3.0f, 1 << LayerMask.NameToLayer("Ground"));
+    }
+
+    protected void Update()
+    {
+        CheckGround();
     }
     
 }

@@ -22,6 +22,6 @@ public static class GameMath
         return intputKilo * meterPerOneKilo;
     }
 
-
-    public static float gravity = -9.8f;
+    //질량은 없고 일단 중력은 2배처리..
+    public static float gravity = -9.8f * 2f;
 }
