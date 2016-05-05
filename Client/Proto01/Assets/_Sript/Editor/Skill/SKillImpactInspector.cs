@@ -18,5 +18,6 @@ public class SKillImpactInspector : Editor
         info.m_targetLayer = EditorGUILayout.MaskField(new GUIContent("Layers", "충돌체크할 레이어들"), info.m_targetLayer, names.ToArray());
 
         serializedObject.ApplyModifiedProperties();
+        base.OnInspectorGUI();
     }
 }
