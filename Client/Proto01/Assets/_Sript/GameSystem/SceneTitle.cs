@@ -17,6 +17,16 @@ public class SceneTitle : SceneBase
 
     public override void Enter()
     {
+        StartCourotine(Loading());
+    }
+
+    IEnumerator Loading()
+    {
+        AsyncOperation cLoadLevelAsync = UnityEngine.SceneManagement.SceneManager.LoadSceneAsync("1.Title");
+        yield return cLoadLevelAsync;
+
+        UIManager.Instance.Initialize();
+        UIManager.Instance.OpenUI(eUIType.Title);
     }
 
     public override void Exit()
