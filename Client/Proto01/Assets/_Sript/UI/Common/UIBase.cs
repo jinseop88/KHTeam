@@ -31,4 +31,9 @@ public class UIBase : MonoBehaviour {
     {
 
     }
+
+    public void SetActive(bool bActive)
+    {
+        thisObject.SetActive(bActive);
+    }
 }

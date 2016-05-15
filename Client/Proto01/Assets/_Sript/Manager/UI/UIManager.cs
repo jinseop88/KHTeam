@@ -5,9 +5,9 @@ using System.Collections.Generic;
 public enum eUIType
 {
     Title,
-    GameLobby,
-    Ingame,
-    StageSelector,
+    //GameLobby,
+    //Ingame,
+    //StageSelector,
     Max,
 }
 
@@ -50,6 +50,10 @@ public class UIManager : SingleTon<UIManager>
         }
     }
 
+    public T GetUI<T>(eUIType eType) where T: UIBase
+    {
+        return (T)(m_UIDic[eType].objUI.GetComponent<UIBase>());
+    }
     /// <summary>
     /// UI 여는 함수
     /// </summary>

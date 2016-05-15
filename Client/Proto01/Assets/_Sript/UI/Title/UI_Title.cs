@@ -1,17 +1,23 @@
 ﻿using UnityEngine;
 using System.Collections;
-using UnityEngine.SceneManagement;
 
 public class UI_Title : UIBase
 {
+    public GameObject m_objButtonGroup;
+    public Page_Create m_pageCreate;
+
+
     public override void Initialize()
     {
         base.Initialize();
+
+        m_objButtonGroup.SetActive(true);
+        m_pageCreate.SetActive(false);
     }
 
-    public void ClickTitle()
+    public void ClickStartButton()
     {
-        Debug.Log("눌렸습니다~~");
-        UnityEngine.SceneManagement.SceneManager.LoadScene("2.GameLobby");
+        Debug.Log("ClciClickStartButtonk");
     }
+
 }
