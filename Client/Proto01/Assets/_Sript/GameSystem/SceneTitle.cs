@@ -27,6 +27,9 @@ public class SceneTitle : SceneBase
 
         UIManager.Instance.Initialize();
         UIManager.Instance.OpenUI(eUIType.Title);
+
+        UI_Title temp = UIManager.Instance.GetUI<UI_Title>(eUIType.Title);
+        temp.Initialize();
     }
 
     public override void Exit()

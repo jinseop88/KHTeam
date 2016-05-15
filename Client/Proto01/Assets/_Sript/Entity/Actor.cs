@@ -69,7 +69,7 @@ public class Actor : MonoBehaviour
     protected void CheckGround()
     {
         Ray ray = new Ray(thisTransform.position, -thisTransform.up);
-        movement2D.m_bIsGrounded = Physics.Raycast(ray, 3.0f, 1 << LayerMask.NameToLayer("Ground"));
+        movement2D.m_bIsGrounded = Physics.Raycast(ray, 1.0f, 1 << LayerMask.NameToLayer("Ground"));
     }
 
     protected void Update()
