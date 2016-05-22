@@ -6,6 +6,7 @@ public enum SceneType
     None = -1,
     Title,
     Lobby,
+    Game,
 
     Max,
 
@@ -46,7 +47,9 @@ public class SceneManager : SingleTon<SceneManager>
             case SceneType.Lobby:
                 scene = new SceneLobby();
                 break;
-                
+            case SceneType.Game:
+                scene = new SceneGame();
+                break;
         }
         return scene;
     }
