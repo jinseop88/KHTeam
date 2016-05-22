@@ -22,9 +22,9 @@ public class SceneGame : SceneBase
 
     IEnumerator Loading()
     {
-        yield return null;
-        //AsyncOperation cLoadLevelAsync = UnityEngine.SceneManagement.SceneManager.LoadSceneAsync("1.Title");
-        //yield return cLoadLevelAsync;
+        //yield return null;
+        AsyncOperation cLoadLevelAsync = UnityEngine.SceneManagement.SceneManager.LoadSceneAsync("Stage1-1");
+        yield return cLoadLevelAsync;
 
         //UIManager.Instance.Initialize();
         //UIManager.Instance.OpenUI(eUIType.Title);
