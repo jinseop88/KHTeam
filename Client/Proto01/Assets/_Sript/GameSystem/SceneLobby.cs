@@ -35,6 +35,8 @@ public class SceneLobby : SceneBase
     public override void Exit()
     {
         base.Exit();
+
+        UIManager.Instance.CloseUI(eUIType.GameLobby);
     }
 
 
