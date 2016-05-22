@@ -50,6 +50,7 @@ public class SkillEffectBase : MonoBehaviour
     public virtual void Reset(){}
 
     protected virtual void StartEffect(){}
+    protected virtual void UpdateEffect() { }
     protected virtual void EndEffect(){}
     public void UpdateEffect(float fTime)
     {
@@ -57,16 +58,22 @@ public class SkillEffectBase : MonoBehaviour
         {
             //아직 시작 아님
         }
-        else if (fTime > m_startTime && !m_bStart)
+        else if (fTime > m_startTime)
         {
-            //시작
-            m_bStart = true;
-            StartEffect();
+            if (m_bStart)
+                UpdateEffect();
+            else
+            {
+                //시작
+                m_bStart = true;
+                StartEffect();
+            }
         }
         else if (fTime > m_startTime + m_totalTime && m_bStart)
         {
             //끝
             EndEffect();
         }
+        
     }
 }

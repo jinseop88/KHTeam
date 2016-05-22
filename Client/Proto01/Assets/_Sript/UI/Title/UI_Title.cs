@@ -17,7 +17,6 @@ public class UI_Title : UIBase
 
     public void ClickStartButton()
     {
-        Debug.Log("ClciClickStartButtonk");
+        SceneManager.Instance.ChangeScene(SceneType.Lobby);
     }
-
 }

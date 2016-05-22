@@ -40,6 +40,10 @@ public class Actor : MonoBehaviour
     }
     #endregion
 
+    public float currentHP = 200f;
+
+    public float maxHP = 200f;
+
     /// <summary>
     /// 2D전용 애니메이션
     /// </summary>
@@ -60,6 +64,10 @@ public class Actor : MonoBehaviour
     /// </summary>
     public CharacterBattle battleMy { get; set; }
 
+    /// <summary>
+    /// 맞았을대 오는 클래스
+    /// </summary>
+    public Battle.DamageCallBack onDamage { get; protected set; }
 
     public virtual void Initialize()
     {
@@ -68,8 +76,10 @@ public class Actor : MonoBehaviour
 
     protected void CheckGround()
     {
-        Ray ray = new Ray(thisTransform.position, -thisTransform.up);
-        movement2D.m_bIsGrounded = Physics.Raycast(ray, 1.0f, 1 << LayerMask.NameToLayer("Ground"));
+        Vector3 startRay = thisTransform.position;
+        startRay.y += 1f;
+        Ray ray = new Ray(startRay, -thisTransform.up);
+        movement2D.m_bIsGrounded = Physics.Raycast(ray, 1f, 1 << LayerMask.NameToLayer("Ground"));
     }
 
     protected void Update()

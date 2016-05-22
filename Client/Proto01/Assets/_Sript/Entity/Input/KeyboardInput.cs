@@ -21,7 +21,8 @@ public class KeyboardInput : InputBase
             character.SetDirection(eDirection.Right);
             character.Move();
         }
-        if (Input.GetKeyUp(KeyCode.D) || Input.GetKeyUp(KeyCode.A))
+        if ((Input.GetKeyUp(KeyCode.D) && !Input.GetKeyDown(KeyCode.A)) ||
+            (Input.GetKeyUp(KeyCode.A) && !Input.GetKeyDown(KeyCode.D)))
         {
             character.MoveStop();
         }

@@ -1,13 +1,14 @@
 ﻿using UnityEngine;
+using System;
 using System.Collections;
 using System.Collections.Generic;
 
 public enum eUIType
 {
     Title,
-    //GameLobby,
-    //Ingame,
-    //StageSelector,
+    GameLobby,
+    Ingame,
+    ChapterSelector,
     Max,
 }
 
@@ -25,7 +26,7 @@ public class UIManager : SingleTon<UIManager>
     public void Initialize()
     {
         GameObject uiroot = GameObject.Find("UI Root");
-
+        DontDestroyOnLoad(uiroot);
         //UIManager만들어준다
         GameObject objmanager = uiroot.transform.FindChild("UIManager").gameObject;
         if (objmanager == null)
@@ -41,7 +42,23 @@ public class UIManager : SingleTon<UIManager>
         {
             UIData findUI = new UIData();
 
-            findUI.objUI = objmanager.transform.FindChild(((eUIType)i).ToString()).gameObject;
+            ///없으면 로드 있으면 셋팅
+            Transform target = objmanager.transform.FindChild(((eUIType)i).ToString());
+            if(target == null)
+            {
+                GameObject resourceUI = Resources.Load("Prefabs/UI/UIGame/" + ((eUIType)i).ToString(), typeof(GameObject)) as GameObject;
+                findUI.objUI = GameObject.Instantiate(resourceUI) as GameObject;
+
+                findUI.objUI.name = findUI.objUI.name.Replace("(Clone)", "");
+                findUI.objUI.transform.parent = objmanager.transform;
+                findUI.objUI.transform.localPosition = Vector3.zero;
+                findUI.objUI.transform.localScale = Vector3.one;
+                findUI.objUI.transform.localRotation = Quaternion.identity;
+
+            }
+            else
+                findUI.objUI = target.gameObject;
+
             findUI.bPopup = false;
             findUI.objUI.SetActive(false);
 
@@ -54,6 +71,7 @@ public class UIManager : SingleTon<UIManager>
     {
         return (T)(m_UIDic[eType].objUI.GetComponent<UIBase>());
     }
+
     /// <summary>
     /// UI 여는 함수
     /// </summary>

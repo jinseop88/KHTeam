@@ -50,6 +50,7 @@ public class SkillImpactInfo : SkillEffectBase
     }
     protected override void StartEffect()
     {
+        m_collidedList.Clear();
         thisObject.SetActive(true);
     }
     protected override void EndEffect()
@@ -57,14 +58,20 @@ public class SkillImpactInfo : SkillEffectBase
         thisObject.SetActive(false);
     }
 
+    protected override void UpdateEffect()
+    {
+        base.UpdateEffect();
+
+        TestImpactSphere();
+    }
     /// <summary>
     /// 구형의 데미지 판정 
     /// </summary>
-    bool TestImpactSphere(Vector3 position)
+    bool TestImpactSphere()
     {
         bool hited = false;
 
-        Collider[] colliders = Physics.OverlapSphere(m_Collider.transform.position, m_Collider.radius, m_targetLayer);
+        Collider[] colliders = Physics.OverlapSphere(m_Collider.transform.position + m_Collider.center, m_Collider.radius, m_targetLayer);
         for (int i = 0; i < colliders.Length; i++)
         {
             Actor target = colliders[i].GetComponent<Actor>();
