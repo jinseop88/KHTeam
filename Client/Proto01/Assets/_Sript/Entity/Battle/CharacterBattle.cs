@@ -40,6 +40,7 @@ public class CharacterBattle : Battle
     /// <param name="impactInfo"></param>
     public void OnHit(Actor target, SkillImpactInfo impactInfo)
     {
-
+        if (target.onDamage != null)
+            target.onDamage(m_owner, impactInfo);
     }
 }

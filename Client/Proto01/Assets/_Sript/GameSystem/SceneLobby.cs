@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class SceneTitle : SceneBase
+public class SceneLobby : SceneBase
 {
     public override void Update()
     { 
@@ -22,20 +22,19 @@ public class SceneTitle : SceneBase
 
     IEnumerator Loading()
     {
-        AsyncOperation cLoadLevelAsync = UnityEngine.SceneManagement.SceneManager.LoadSceneAsync("1.Title");
+        AsyncOperation cLoadLevelAsync = UnityEngine.SceneManagement.SceneManager.LoadSceneAsync("2.GameLobby");
         yield return cLoadLevelAsync;
 
-        UIManager.Instance.Initialize();
-        UIManager.Instance.OpenUI(eUIType.Title);
-
-        UI_Title temp = UIManager.Instance.GetUI<UI_Title>(eUIType.Title);
-        temp.Initialize();
+        UIManager.Instance.OpenUI(eUIType.GameLobby);
+        //UIManager.Instance.OpenUI(eUIType.ChapterSelector);
+           
+        //UI_Title temp = UIManager.Instance.GetUI<UI_Title>(eUIType.GameLobby);
+        //temp.Initialize();
     }
 
     public override void Exit()
     {
         base.Exit();
-        UIManager.Instance.CloseUI(eUIType.Title);
     }
 
 

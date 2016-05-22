@@ -19,8 +19,14 @@ public class Character : Actor
         battleMy.Initialize();
 
         input = thisObject.AddComponent<KeyboardInput>();
+
+        onDamage = OnDamage;
     }
 
+    public void OnDamage(Actor attacker, SkillImpactInfo skillImpact)
+    {
+
+    }
     /// <summary>
     /// 방향턴
     /// </summary>

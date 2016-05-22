@@ -66,6 +66,14 @@ public class Animation2D : MonoBehaviour
     {
         m_animator.SetTrigger(GameType.AnimationState.Jump.ToString());
     }
+
+    /// <summary>
+    /// 죽었을때 
+    /// </summary>
+    public void OnDead()
+    {
+        m_animator.SetBool(GameType.AnimationState.Dead.ToString(), true);
+    }
     #endregion
     #region 애니메이션 확인함수
 

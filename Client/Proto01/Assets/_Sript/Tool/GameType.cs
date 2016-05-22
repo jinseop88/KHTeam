@@ -10,7 +10,7 @@ public static class GameType
         Idle,
         Move,
         Jump,
-
+        Dead,
 
         Max,
     }

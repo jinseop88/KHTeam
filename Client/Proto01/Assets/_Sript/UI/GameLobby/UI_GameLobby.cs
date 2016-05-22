@@ -1,15 +1,14 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class UI_GameLobby : MonoBehaviour {
+public class UI_GameLobby : UIBase
+{
+    public UIPage_Chapter m_uiChapter;
+    public UIPage_Buttons m_uiButtons;
 
-	// Use this for initialization
-	void Start () {
-	
-	}
-	
-	// Update is called once per frame
-	void Update () {
-	
-	}
+    public override void Initialize()
+    {
+        base.Initialize();
+    }
+
 }
