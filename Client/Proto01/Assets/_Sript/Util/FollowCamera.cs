@@ -8,16 +8,19 @@ public class FollowCamera : MonoBehaviour
     private Vector3 m_Offset;
 
 
-    void Start()
-    {
-        m_Offset = transform.position;
-    }
+    //void Start()
+    //{
+    //    m_Offset = transform.position;
+    //}
     void Update()
     {
         if(m_target != null)
         {
-            transform.position = m_Offset + m_target.position;
-            transform.LookAt(m_target);
+            Vector3 newPos = transform.position;
+            newPos.x = m_target.position.x;
+
+            transform.position = newPos;
+            //transform.LookAt(m_target);
         }
     }
 }
