@@ -22,5 +22,12 @@ public class Monster : Actor
     public void OnDamage(Actor attacker, SkillImpactInfo skillImpact)
     {
         animation2D.OnDead();
+
+        //죽으면 지워버려
+        Invoke("Delete", 2f);
+    }
+    public void Delete()
+    {
+        Destroy(thisObject);
     }
 }
