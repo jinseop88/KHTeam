@@ -44,6 +44,8 @@ public class Movement2D : MonoBehaviour
     /// </summary>
     public float m_speed;
 
+    public eDirection m_Dir;
+
     /// <summary>
     /// 점프력
     /// </summary>
@@ -176,6 +178,7 @@ public class Movement2D : MonoBehaviour
     public void SetRotation(eDirection dir)
     {
         thisTransform.rotation = dir == eDirection.Left ? RotationLeft : RotationRight;
+        m_Dir = dir;
     } 
 
 
