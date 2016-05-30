@@ -27,6 +27,7 @@ public class SkillEffectBase : MonoBehaviour
     }
     #endregion
 
+    public Actor owner { get; set; }
 
     /// <summary>
     /// 이펙트가 시작될 시간

@@ -67,7 +67,7 @@ public class SkillImpactInfo : SkillEffectBase
     /// <summary>
     /// 구형의 데미지 판정 
     /// </summary>
-    bool TestImpactSphere()
+    public bool TestImpactSphere()
     {
         bool hited = false;
 

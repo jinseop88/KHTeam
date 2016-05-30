@@ -61,7 +61,7 @@ public class Character : Actor
     public void Attack(GameType.AnimationState state)
     {
         battleMy.Casting(state);
-        animation2D.OnAttack(state);
+        animation2D.OnAttack();
     }
 
     /// <summary>

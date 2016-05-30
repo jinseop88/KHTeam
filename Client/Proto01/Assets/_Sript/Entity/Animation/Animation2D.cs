@@ -54,9 +54,9 @@ public class Animation2D : MonoBehaviour
     /// 공격
     /// </summary>
     /// <param name="state"></param>
-    public void OnAttack(GameType.AnimationState state)
+    public void OnAttack()
     {
-        m_animator.SetTrigger(state.ToString());
+        m_animator.SetTrigger("Attack");
     }
 
     /// <summary>

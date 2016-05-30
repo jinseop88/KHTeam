@@ -19,18 +19,30 @@ public class CharacterBattle : Battle
             m_skillList[i].Initialize(OnHit);
     }
 
-
     public override void Casting(GameType.AnimationState state)
     {
         //해당 스킬을 찾아서
         Skill target = m_skillList.Find(arg => arg.m_animationState == state);
+        
+        //원거리
+        if (state == GameType.AnimationState.Projectile)
+        {
+            Projectile temp = target.thisObject.GetComponentInChildren<Projectile>();
+            GameObject clone = Instantiate(temp.gameObject) as GameObject;
 
-        //실행 시킴
-        //if (currentSkill ==  null)
-        //{
+            clone.GetComponent<Projectile>().Fire(character, 
+                character.thisTransform.position + (Vector3.up * 1.2f), 
+                character.thisTransform.right * 1.2f, 
+                character.thisTransform.rotation, 
+                8f, 
+                OnHit);
+        }
+        else
+        {
             currentSkill = target;
             target.Catsting();
-        //}
+        }
+
     }
 
     /// <summary>
