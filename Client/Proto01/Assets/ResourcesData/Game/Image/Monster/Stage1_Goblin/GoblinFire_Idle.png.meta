@@ -1,0 +1,153 @@
+fileFormatVersion: 2
+guid: f769eca0c92df184f9d738cfee93f20e
+timeCreated: 1464620005
+licenseType: Pro
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: GoblinFire_Idle_0
+    21300002: GoblinFire_Idle_1
+    21300004: GoblinFire_Idle_2
+    21300006: GoblinFire_Idle_3
+    21300008: GoblinFire_Idle_4
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 7
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -3
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: -1
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: GoblinFire_Idle_0
+      rect:
+        serializedVersion: 2
+        x: 134
+        y: 151
+        width: 91
+        height: 235
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -45.5, y: 235}
+        - {x: -45.5, y: 24}
+        - {x: -40.5, y: 0}
+        - {x: 45.5, y: 0}
+        - {x: 45.5, y: 233}
+        - {x: 44.5, y: 235}
+    - name: GoblinFire_Idle_1
+      rect:
+        serializedVersion: 2
+        x: 275
+        y: 150
+        width: 94
+        height: 205
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -47, y: 205}
+        - {x: -47, y: 0}
+        - {x: 35, y: 0}
+        - {x: 47, y: 6}
+        - {x: 47, y: 181}
+        - {x: 13, y: 205}
+    - name: GoblinFire_Idle_2
+      rect:
+        serializedVersion: 2
+        x: 417
+        y: 151
+        width: 85
+        height: 187
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 4.5, y: 187}
+        - {x: -13.5, y: 187}
+        - {x: -42.5, y: 170}
+        - {x: -42.5, y: 0}
+        - {x: 42.5, y: 0}
+        - {x: 42.5, y: 159}
+        - {x: 28.5, y: 173}
+    - name: GoblinFire_Idle_3
+      rect:
+        serializedVersion: 2
+        x: 556
+        y: 151
+        width: 95
+        height: 204
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -15.5, y: 204}
+        - {x: -47.5, y: 181}
+        - {x: -47.5, y: 14}
+        - {x: -30.5, y: 0}
+        - {x: 28.5, y: 0}
+        - {x: 40.5, y: 2}
+        - {x: 47.5, y: 18}
+        - {x: 47.5, y: 175}
+        - {x: 23.5, y: 204}
+    - name: GoblinFire_Idle_4
+      rect:
+        serializedVersion: 2
+        x: 692
+        y: 151
+        width: 93
+        height: 234
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -17.5, y: 234}
+        - {x: -46.5, y: 218}
+        - {x: -46.5, y: 33}
+        - {x: -41.5, y: 0}
+        - {x: 44.5, y: 0}
+        - {x: 46.5, y: 12}
+        - {x: 46.5, y: 214}
+        - {x: 22.5, y: 234}
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
