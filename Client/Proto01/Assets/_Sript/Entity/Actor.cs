@@ -74,17 +74,10 @@ public class Actor : MonoBehaviour
 
     }
 
-    protected void CheckGround()
-    {
-        Vector3 startRay = thisTransform.position;
-        startRay.y += 1f;
-        Ray ray = new Ray(startRay, -thisTransform.up);
-        movement2D.m_bIsGrounded = Physics.Raycast(ray, 1f, 1 << LayerMask.NameToLayer("Ground"));
-    }
-
-    protected void Update()
-    {
-        CheckGround();
-    }
+    
+    //protected void Update()
+    //{
+    //    CheckGround();
+    //}
     
 }

@@ -112,7 +112,8 @@ public class Movement2D : MonoBehaviour
         //순간가속도
         instantAccel = thisTransform.position - m_lastPosition;
         
-        ApplyGravity();
+        CheckGround();
+        CheckCollision();
 
         //전위치 저장
         m_lastPosition = thisTransform.position;
@@ -160,7 +161,29 @@ public class Movement2D : MonoBehaviour
             m_velocity += (Vector3.up * GameMath.gravity * Time.fixedDeltaTime);
         }
     }
+     /// <summary>
+    /// 바닥인지?
+    /// </summary>
+    protected void CheckGround()
+    {
+        Vector3 startRay = thisTransform.position;
+        startRay.y += 1f;
+        Ray ray = new Ray(startRay, -thisTransform.up);
+        m_bIsGrounded = Physics.Raycast(ray, 1f, 1 << LayerMask.NameToLayer("Ground"));
 
+        ApplyGravity();
+    }
+
+    /// <summary>
+    /// 앞에 벽인지?
+    /// </summary>
+    protected void CheckCollision()
+    {
+        Vector3 startRay = thisTransform.position;
+        Ray ray = new Ray(startRay, thisTransform.right);
+        if (Physics.Raycast(ray, 1f, 1 << LayerMask.NameToLayer("Wall")))
+            thisTransform.position = m_lastPosition;
+    }
 
     /// <summary>
     /// 이동

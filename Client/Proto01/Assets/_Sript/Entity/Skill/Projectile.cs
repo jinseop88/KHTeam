@@ -3,7 +3,6 @@ using System.Collections;
 
 public class Projectile : MonoBehaviour
 {
-    [Tooltip("발사체가 날아갈 거리(미터). 이 거리 이상 날아가면 사라 집니다")]
     public float m_flyingDistance;
 
     private SkillImpactInfo m_impact;

@@ -12,12 +12,12 @@ public class SetRenderQueue : MonoBehaviour
     public int queue = 1;
 
     protected void Start() {
-        if (!renderer || !renderer.sharedMaterial)
+        if (!GetComponent<Renderer>() || !GetComponent<Renderer>().sharedMaterial)
             return;
 
         /// 유니티에서 Transparent 의 queue값이 3000번 이기 때문에 3000을 더한다
-        for (int i = 0; i < renderer.sharedMaterials.Length; i++)
-            renderer.sharedMaterials[i].renderQueue = 3000 + queue;
+        for (int i = 0; i < GetComponent<Renderer>().sharedMaterials.Length; i++)
+            GetComponent<Renderer>().sharedMaterials[i].renderQueue = 3000 + queue;
     }
 
 }
