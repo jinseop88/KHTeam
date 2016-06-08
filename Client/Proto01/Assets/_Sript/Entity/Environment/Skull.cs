@@ -101,7 +101,7 @@ public class Skull : MonoBehaviour
 
     protected void CheckCollision()
     {
-        if (Physics2D.Raycast((Vector2)thisTransform.position, (Vector2)thisTransform.right, 0.1f, 1 << LayerMask.NameToLayer("Wall")))
+        if (Physics2D.Raycast((Vector2)thisTransform.position, (Vector2)thisTransform.right, 0.5f, 1 << LayerMask.NameToLayer("Wall")))
             thisTransform.position = m_lastPosition;
     }
 

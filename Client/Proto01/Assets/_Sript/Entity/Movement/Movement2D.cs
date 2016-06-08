@@ -183,7 +183,7 @@ public class Movement2D : MonoBehaviour
     {
         //Vector3 startRay = thisTransform.position;
         //Ray ray = new Ray(startRay, thisTransform.right);
-        if (Physics2D.Raycast((Vector2)thisTransform.position, (Vector2)thisTransform.right, 0.11f, 1 << LayerMask.NameToLayer("Wall")))
+        if (Physics2D.Raycast((Vector2)thisTransform.position, (Vector2)thisTransform.right, 1f, 1 << LayerMask.NameToLayer("Wall")))
             thisTransform.position = m_lastPosition;
     }
 
