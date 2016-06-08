@@ -37,8 +37,6 @@ public class Movement2D : MonoBehaviour
     public static Quaternion RotationLeft = Quaternion.Euler(new Vector3(0f, 180f, 0f));
     public static Quaternion RotationRight = Quaternion.identity;
 
-    protected Actor m_owner;
-
     /// <summary>
     /// 최고속도
     /// </summary>
@@ -90,7 +88,6 @@ public class Movement2D : MonoBehaviour
 
     public void Initialize()
     {
-        m_owner = thisObject.GetComponent<Character>();
     }
     
     public void FixedUpdate()
@@ -161,16 +158,21 @@ public class Movement2D : MonoBehaviour
             m_velocity += (Vector3.up * GameMath.gravity * Time.fixedDeltaTime);
         }
     }
-     /// <summary>
+     
+    /// <summary>
     /// 바닥인지?
     /// </summary>
     protected void CheckGround()
     {
-        Vector3 startRay = thisTransform.position;
-        startRay.y += 1f;
-        Ray ray = new Ray(startRay, -thisTransform.up);
-        m_bIsGrounded = Physics.Raycast(ray, 1f, 1 << LayerMask.NameToLayer("Ground"));
+        //Vector3 startRay = thisTransform.position;
+        //startRay.y += 1f;
+        //Ray ray = new Ray(startRay, -thisTransform.up);
+        //m_bIsGrounded = Physics.Raycast(ray, 1f, 1 << LayerMask.NameToLayer("Ground"));
 
+        Vector2 startRay = (Vector2)thisTransform.position;
+        startRay.y += 0.3f;
+
+        m_bIsGrounded = Physics2D.Raycast(startRay, (Vector2)(-thisTransform.up), 0.1f, 1 << LayerMask.NameToLayer("Ground"));
         ApplyGravity();
     }
 
@@ -179,9 +181,9 @@ public class Movement2D : MonoBehaviour
     /// </summary>
     protected void CheckCollision()
     {
-        Vector3 startRay = thisTransform.position;
-        Ray ray = new Ray(startRay, thisTransform.right);
-        if (Physics.Raycast(ray, 1f, 1 << LayerMask.NameToLayer("Wall")))
+        //Vector3 startRay = thisTransform.position;
+        //Ray ray = new Ray(startRay, thisTransform.right);
+        if (Physics2D.Raycast((Vector2)thisTransform.position, (Vector2)thisTransform.right, 0.11f, 1 << LayerMask.NameToLayer("Wall")))
             thisTransform.position = m_lastPosition;
     }
 

@@ -82,10 +82,10 @@ public class Skull : MonoBehaviour
 
     protected void CheckGround()
     {
-        Vector3 startRay = thisTransform.position;
-        startRay.y += 1f;
-        Ray ray = new Ray(startRay, -thisTransform.up);
-        m_bIsGrounded = Physics.Raycast(ray, 1f, 1 << LayerMask.NameToLayer("Ground"));
+        Vector2 startRay = (Vector2)thisTransform.position;
+        startRay.y += 0.3f;
+
+        m_bIsGrounded = Physics2D.Raycast(startRay, (Vector2)(-thisTransform.up), 0.1f, 1 << LayerMask.NameToLayer("Ground"));
 
         if (m_bIsGrounded)
         {
@@ -101,9 +101,7 @@ public class Skull : MonoBehaviour
 
     protected void CheckCollision()
     {
-        Vector3 startRay = thisTransform.position;
-        Ray ray = new Ray(startRay, thisTransform.right);
-        if (Physics.Raycast(ray, 1f, 1 << LayerMask.NameToLayer("Wall")))
+        if (Physics2D.Raycast((Vector2)thisTransform.position, (Vector2)thisTransform.right, 0.11f, 1 << LayerMask.NameToLayer("Wall")))
             thisTransform.position = m_lastPosition;
     }
 
