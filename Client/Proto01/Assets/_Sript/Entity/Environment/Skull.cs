@@ -61,7 +61,7 @@ public class Skull : MonoBehaviour
         m_vForce -= delta;
 
         m_thisTansform.position += delta;
-        m_trTurnTarget.Rotate(new Vector3(0f, 0f, delta.sqrMagnitude * 360f));
+        m_trTurnTarget.Rotate(new Vector3(0f, 0f, -delta.x * 90f));
 
         CheckGround();
         CheckCollision();
@@ -83,7 +83,7 @@ public class Skull : MonoBehaviour
     protected void CheckGround()
     {
         Vector2 startRay = (Vector2)thisTransform.position;
-        startRay.y += 0.3f;
+        //startRay.y += 0.3f;
 
         m_bIsGrounded = Physics2D.Raycast(startRay, (Vector2)(-thisTransform.up), 0.1f, 1 << LayerMask.NameToLayer("Ground"));
 
@@ -101,7 +101,7 @@ public class Skull : MonoBehaviour
 
     protected void CheckCollision()
     {
-        if (Physics2D.Raycast((Vector2)thisTransform.position, (Vector2)thisTransform.right, 0.11f, 1 << LayerMask.NameToLayer("Wall")))
+        if (Physics2D.Raycast((Vector2)thisTransform.position, (Vector2)thisTransform.right, 0.1f, 1 << LayerMask.NameToLayer("Wall")))
             thisTransform.position = m_lastPosition;
     }
 
