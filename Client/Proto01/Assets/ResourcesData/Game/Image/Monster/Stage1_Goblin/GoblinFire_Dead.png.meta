@@ -1,9 +1,18 @@
 fileFormatVersion: 2
 guid: 62cf9960cd557b149b441eeb438fcf6e
-timeCreated: 1464577411
+timeCreated: 1465613104
 licenseType: Pro
 TextureImporter:
-  fileIDToRecycleName: {}
+  fileIDToRecycleName:
+    21300000: GoblinFire_Dead_1
+    21300002: GoblinFire_Dead_2
+    21300004: GoblinFire_Dead_3
+    21300006: GoblinFire_Dead_4
+    21300008: GoblinFire_Dead_5
+    21300010: GoblinFire_Dead_6
+    21300012: GoblinFire_Dead_7
+    21300014: GoblinFire_Dead_0
+    21300016: GoblinFire_Dead_8
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -49,7 +58,283 @@ TextureImporter:
   textureType: 8
   buildTargetSettings: []
   spriteSheet:
-    sprites: []
+    sprites:
+    - name: GoblinFire_Dead_1
+      rect:
+        serializedVersion: 2
+        x: 139
+        y: 138
+        width: 80
+        height: 150
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -25, y: 150}
+        - {x: -35, y: 121}
+        - {x: -35, y: 17}
+        - {x: -25, y: 8}
+        - {x: 27, y: 8}
+        - {x: 40, y: 25}
+        - {x: 40, y: 125}
+        - {x: 15, y: 150}
+    - name: GoblinFire_Dead_2
+      rect:
+        serializedVersion: 2
+        x: 239
+        y: 138
+        width: 80
+        height: 150
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -6, y: 146}
+        - {x: -36, y: 146}
+        - {x: -36, y: 16}
+        - {x: -30, y: 8}
+        - {x: 30, y: 8}
+        - {x: 37, y: 24}
+        - {x: 37, y: 84}
+        - {x: 31, y: 124}
+    - name: GoblinFire_Dead_3
+      rect:
+        serializedVersion: 2
+        x: 329
+        y: 138
+        width: 80
+        height: 150
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 16, y: 109}
+        - {x: 10, y: 108}
+        - {x: 5, y: 105}
+        - {x: 6, y: 105}
+        - {x: 10, y: 116}
+        - {x: 1, y: 131}
+        - {x: -8, y: 131}
+        - {x: -39, y: 100}
+        - {x: -39, y: 18}
+        - {x: -31, y: 9}
+        - {x: -27, y: 8}
+        - {x: 26, y: 8}
+        - {x: 34, y: 18}
+        - {x: 34, y: 68}
+        - {x: 24, y: 107}
+      - - {x: -24, y: 142}
+        - {x: -26, y: 139}
+        - {x: -26, y: 127}
+        - {x: -24, y: 124}
+        - {x: -14, y: 124}
+        - {x: -12, y: 129}
+        - {x: -12, y: 141}
+        - {x: -15, y: 142}
+    - name: GoblinFire_Dead_4
+      rect:
+        serializedVersion: 2
+        x: 420
+        y: 138
+        width: 80
+        height: 150
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -30, y: 107}
+        - {x: -39, y: 79}
+        - {x: -39, y: 24}
+        - {x: -35, y: 9}
+        - {x: 35, y: 9}
+        - {x: 35, y: 88}
+        - {x: -3, y: 107}
+      - - {x: -11, y: 122}
+        - {x: -11, y: 106}
+        - {x: -9, y: 98}
+        - {x: -1, y: 94}
+        - {x: 17, y: 94}
+        - {x: 21, y: 96}
+        - {x: 21, y: 109}
+        - {x: 6, y: 122}
+    - name: GoblinFire_Dead_5
+      rect:
+        serializedVersion: 2
+        x: 514
+        y: 138
+        width: 80
+        height: 150
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 28, y: 67}
+        - {x: 23, y: 67}
+        - {x: 25, y: 67}
+        - {x: 29, y: 70}
+        - {x: 30, y: 82}
+        - {x: 28, y: 89}
+        - {x: 26, y: 92}
+        - {x: 10, y: 92}
+        - {x: -37, y: 41}
+        - {x: -40, y: 35}
+        - {x: -40, y: 27}
+        - {x: -28, y: 13}
+        - {x: -10, y: 9}
+        - {x: 24, y: 9}
+        - {x: 35, y: 26}
+        - {x: 35, y: 58}
+        - {x: 33, y: 64}
+      - - {x: -36, y: 75}
+        - {x: -40, y: 73}
+        - {x: -40, y: 40}
+        - {x: -37, y: 39}
+        - {x: -23, y: 39}
+        - {x: -10, y: 50}
+        - {x: -10, y: 68}
+        - {x: -15, y: 75}
+      - - {x: 4, y: 99}
+        - {x: -6, y: 99}
+        - {x: -11, y: 92}
+        - {x: -12, y: 89}
+        - {x: -12, y: 83}
+        - {x: -8, y: 77}
+        - {x: 4, y: 77}
+        - {x: 9, y: 83}
+        - {x: 9, y: 92}
+      - - {x: -21, y: 112}
+        - {x: -30, y: 107}
+        - {x: -30, y: 94}
+        - {x: -29, y: 90}
+        - {x: -19, y: 90}
+        - {x: -12, y: 93}
+        - {x: -12, y: 108}
+        - {x: -14, y: 112}
+      - - {x: -10, y: 129}
+        - {x: -15, y: 127}
+        - {x: -15, y: 116}
+        - {x: -12, y: 112}
+        - {x: -4, y: 112}
+        - {x: 1, y: 113}
+        - {x: 1, y: 123}
+        - {x: -2, y: 129}
+    - name: GoblinFire_Dead_6
+      rect:
+        serializedVersion: 2
+        x: 594
+        y: 137
+        width: 80
+        height: 150
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 7, y: 82}
+        - {x: -1, y: 80}
+        - {x: 2, y: 59}
+        - {x: 0, y: 52}
+        - {x: 1, y: 53}
+        - {x: -4, y: 56}
+        - {x: -7, y: 57}
+        - {x: -17, y: 49}
+        - {x: -25, y: 39}
+        - {x: -25, y: 15}
+        - {x: -22, y: 10}
+        - {x: 28, y: 10}
+        - {x: 32, y: 19}
+        - {x: 32, y: 75}
+        - {x: 24, y: 82}
+      - - {x: -11, y: 91}
+        - {x: -19, y: 91}
+        - {x: -26, y: 83}
+        - {x: -26, y: 60}
+        - {x: -22, y: 58}
+        - {x: -9, y: 58}
+        - {x: -3, y: 68}
+        - {x: -3, y: 82}
+        - {x: -6, y: 88}
+      - - {x: -4, y: 109}
+        - {x: -9, y: 103}
+        - {x: -9, y: 89}
+        - {x: -4, y: 88}
+        - {x: 6, y: 88}
+        - {x: 7, y: 89}
+        - {x: 7, y: 105}
+        - {x: 5, y: 109}
+    - name: GoblinFire_Dead_7
+      rect:
+        serializedVersion: 2
+        x: 676
+        y: 137
+        width: 68
+        height: 150
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -15, y: 77}
+        - {x: -18, y: 75}
+        - {x: -20, y: 73}
+        - {x: -20, y: 13}
+        - {x: 0, y: 13}
+        - {x: 13, y: 18}
+        - {x: 14, y: 33}
+        - {x: 14, y: 65}
+        - {x: -1, y: 77}
+      - - {x: -10, y: 95}
+        - {x: -14, y: 93}
+        - {x: -14, y: 82}
+        - {x: -13, y: 78}
+        - {x: -2, y: 78}
+        - {x: 2, y: 80}
+        - {x: 2, y: 90}
+        - {x: -2, y: 95}
+    - name: GoblinFire_Dead_0
+      rect:
+        serializedVersion: 2
+        x: 731
+        y: 138
+        width: 68
+        height: 150
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -2, y: 32}
+        - {x: -7, y: 30}
+        - {x: -7, y: 20}
+        - {x: -3, y: 15}
+        - {x: 7, y: 15}
+        - {x: 10, y: 21}
+        - {x: 10, y: 30}
+        - {x: 9, y: 32}
+      - - {x: -9, y: 67}
+        - {x: -16, y: 59}
+        - {x: -16, y: 45}
+        - {x: -5, y: 33}
+        - {x: 11, y: 33}
+        - {x: 14, y: 34}
+        - {x: 14, y: 52}
+        - {x: -2, y: 67}
+    - name: GoblinFire_Dead_8
+      rect:
+        serializedVersion: 2
+        x: 784
+        y: 138
+        width: 68
+        height: 150
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -6, y: 50}
+        - {x: -11, y: 48}
+        - {x: -11, y: 38}
+        - {x: -7, y: 33}
+        - {x: 1, y: 33}
+        - {x: 5, y: 37}
+        - {x: 5, y: 46}
+        - {x: 3, y: 50}
     outline: []
   spritePackingTag: 
   userData: 

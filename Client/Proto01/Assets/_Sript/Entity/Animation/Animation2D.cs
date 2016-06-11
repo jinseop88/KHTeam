@@ -67,6 +67,10 @@ public class Animation2D : MonoBehaviour
         m_animator.SetTrigger(GameType.AnimationState.Jump.ToString());
     }
 
+    public void OnDamage()
+    {
+        m_animator.SetTrigger(GameType.AnimationState.Damage.ToString());
+    }
     /// <summary>
     /// 죽었을때 
     /// </summary>
