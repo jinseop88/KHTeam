@@ -4,14 +4,14 @@ using System.Collections.Generic;
 
 public class CharacterBattle : Battle 
 {
-    public Character character { get { return (Character)m_owner; } }
+    public Actor character { get { return (Actor)m_owner; } }
 
 
     public override void Initialize()
     {
         base.Initialize();
 
-        m_owner = thisObject.GetComponent<Character>();
+        m_owner = thisObject.GetComponent<Actor>();
 
         m_skillList = new List<Skill>(thisObject.GetComponentsInChildren<Skill>(true));
 
@@ -52,7 +52,17 @@ public class CharacterBattle : Battle
     /// <param name="impactInfo"></param>
     public void OnHit(Actor target, SkillImpactInfo impactInfo)
     {
+        AttachHitEffect(target.thisTransform.position);
+
         if (target.onDamage != null)
             target.onDamage(m_owner, impactInfo);
+    }
+
+    public void AttachHitEffect(Vector2 vPos)
+    {
+        GameObject resourceUI = Resources.Load("Prefabs/Common/HitEffect", typeof(GameObject)) as GameObject;
+        GameObject effect = GameObject.Instantiate(resourceUI) as GameObject;
+
+        effect.transform.localPosition = vPos + (Vector2)(effect.transform.up * 1.5f);
     }
 }

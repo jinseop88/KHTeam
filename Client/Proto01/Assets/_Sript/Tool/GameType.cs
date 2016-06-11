@@ -13,6 +13,7 @@ public static class GameType
         Dead,
 
         Projectile,
+        Damage,
 
         Max,
     }
