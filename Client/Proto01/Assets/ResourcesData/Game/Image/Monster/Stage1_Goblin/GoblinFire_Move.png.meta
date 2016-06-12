@@ -1,6 +1,6 @@
 fileFormatVersion: 2
 guid: 4e33d6353eb9bb140befee4e861f25c4
-timeCreated: 1464620013
+timeCreated: 1465617629
 licenseType: Pro
 TextureImporter:
   fileIDToRecycleName:
@@ -57,84 +57,81 @@ TextureImporter:
     - name: GoblinFire_Move_0
       rect:
         serializedVersion: 2
-        x: 140
-        y: 149
-        width: 80
-        height: 204
+        x: 0
+        y: 254
+        width: 128
+        height: 242
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline:
-      - - {x: 23, y: 204}
-        - {x: -7, y: 204}
-        - {x: -36, y: 183}
-        - {x: -38, y: 164}
-        - {x: -40, y: 133}
-        - {x: -40, y: 14}
-        - {x: -25, y: 0}
-        - {x: 29, y: 0}
-        - {x: 40, y: 17}
-        - {x: 40, y: 158}
-        - {x: 39, y: 186}
+      - - {x: -19, y: 207}
+        - {x: -49, y: 176}
+        - {x: -51, y: 154}
+        - {x: -51, y: 17}
+        - {x: -35, y: 0}
+        - {x: 33, y: 0}
+        - {x: 33, y: 189}
+        - {x: -1, y: 207}
     - name: GoblinFire_Move_1
       rect:
         serializedVersion: 2
-        x: 256
-        y: 147
-        width: 100
-        height: 185
+        x: 153
+        y: 254
+        width: 128
+        height: 242
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline:
-      - - {x: 14, y: 185}
-        - {x: -33, y: 185}
-        - {x: -50, y: 176}
-        - {x: -50, y: 0}
-        - {x: 46, y: 0}
-        - {x: 50, y: 8}
-        - {x: 50, y: 145}
-        - {x: 46, y: 164}
+      - - {x: 1, y: 186}
+        - {x: -21, y: 186}
+        - {x: -46, y: 172}
+        - {x: -60, y: 79}
+        - {x: -60, y: 13}
+        - {x: -45, y: 0}
+        - {x: 31, y: 0}
+        - {x: 44, y: 13}
+        - {x: 44, y: 68}
+        - {x: 28, y: 158}
     - name: GoblinFire_Move_2
       rect:
         serializedVersion: 2
-        x: 380
-        y: 149
-        width: 116
-        height: 186
+        x: 322
+        y: 254
+        width: 128
+        height: 242
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline:
-      - - {x: -32, y: 160}
-        - {x: -58, y: 85}
-        - {x: -58, y: 9}
-        - {x: -53, y: 0}
-        - {x: 58, y: 0}
-        - {x: 58, y: 109}
-        - {x: 50, y: 156}
-        - {x: 16, y: 186}
-        - {x: -3, y: 186}
-        - {x: -18, y: 179}
+      - - {x: 17, y: 189}
+        - {x: -34, y: 189}
+        - {x: -63, y: 119}
+        - {x: -63, y: 0}
+        - {x: 56, y: 0}
+        - {x: 56, y: 54}
+        - {x: 30, y: 174}
     - name: GoblinFire_Move_3
       rect:
         serializedVersion: 2
-        x: 529
-        y: 149
-        width: 80
-        height: 228
+        x: 488
+        y: 254
+        width: 128
+        height: 242
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline:
-      - - {x: 18, y: 228}
-        - {x: -32, y: 228}
-        - {x: -40, y: 217}
-        - {x: -40, y: 3}
-        - {x: -39, y: 0}
-        - {x: 27, y: 0}
-        - {x: 40, y: 12}
-        - {x: 40, y: 211}
+      - - {x: -16, y: 231}
+        - {x: -36, y: 185}
+        - {x: -45, y: 102}
+        - {x: -45, y: 5}
+        - {x: -43, y: 0}
+        - {x: 35, y: 0}
+        - {x: 38, y: 5}
+        - {x: 38, y: 111}
+        - {x: 13, y: 231}
     outline: []
   spritePackingTag: 
   userData: 
