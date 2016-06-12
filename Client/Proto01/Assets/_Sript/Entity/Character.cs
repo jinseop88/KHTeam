@@ -16,7 +16,7 @@ public class Character : Actor
         onDamage = OnDamage;
     }
 
-    private void OnDamage(Actor attacker, SkillImpactInfo skillImpact)
+    private void OnDamage(BaseEntity attacker, SkillImpactInfo skillImpact)
     {
 
     }
