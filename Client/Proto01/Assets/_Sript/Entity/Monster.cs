@@ -25,7 +25,6 @@ public class Monster : Actor
             animation2D.OnDead();
             Invoke("Delete", 0.5f);
         }
-
     }
     public void Delete()
     {

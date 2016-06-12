@@ -1,15 +1,12 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class Cone : MonoBehaviour {
+public class Cone : MonoBehaviour 
+{
+    private Actor m_Target;
 
-	// Use this for initialization
-	void Start () {
-	
-	}
-	
-	// Update is called once per frame
-	void Update () {
-	
-	}
+    void Awake()
+    {
+        m_Target = GameObject.FindObjectOfType<Character>();
+    }
 }
