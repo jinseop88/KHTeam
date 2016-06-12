@@ -1,6 +1,6 @@
 fileFormatVersion: 2
 guid: 1dded6a4827b6d147bce6edfbc8eca79
-timeCreated: 1464619881
+timeCreated: 1465695604
 licenseType: Pro
 TextureImporter:
   fileIDToRecycleName:
@@ -55,38 +55,39 @@ TextureImporter:
     - name: GoblinFire_Attack_Effect_0
       rect:
         serializedVersion: 2
-        x: 146
+        x: 147
         y: 149
-        width: 66
-        height: 43
+        width: 51
+        height: 40
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline:
-      - - {x: -33, y: 21.5}
-        - {x: -33, y: -13.5}
-        - {x: -27, y: -21.5}
-        - {x: 19, y: -21.5}
-        - {x: 33, y: -18.5}
-        - {x: 33, y: 11.5}
-        - {x: 21, y: 21.5}
+      - - {x: -21.5, y: 20}
+        - {x: -25.5, y: 17}
+        - {x: -25.5, y: -18}
+        - {x: -23.5, y: -20}
+        - {x: 25.5, y: -20}
+        - {x: 25.5, y: 14}
+        - {x: 16.5, y: 20}
     - name: GoblinFire_Attack_Effect_1
       rect:
         serializedVersion: 2
-        x: 225
-        y: 147
-        width: 56
-        height: 44
+        x: 292
+        y: 152
+        width: 61
+        height: 40
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline:
-      - - {x: -22, y: 22}
-        - {x: -28, y: 14}
-        - {x: -28, y: -15}
-        - {x: -26, y: -22}
-        - {x: 28, y: -22}
-        - {x: 28, y: 22}
+      - - {x: -5.5, y: 20}
+        - {x: -30.5, y: 9}
+        - {x: -30.5, y: -13}
+        - {x: -22.5, y: -20}
+        - {x: 30.5, y: -20}
+        - {x: 30.5, y: 16}
+        - {x: 24.5, y: 20}
     outline: []
   spritePackingTag: 
   userData: 
