@@ -15,7 +15,7 @@ public class Monster : Actor
         onDamage = OnDamage;
     }
 
-    public void OnDamage(Actor attacker, SkillImpactInfo skillImpact)
+    private void OnDamage(Actor attacker, SkillImpactInfo skillImpact)
     {
         animation2D.OnDamage();
         currentHP -= 100f;

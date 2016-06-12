@@ -20,6 +20,7 @@ public class Trap : MonoBehaviour
         if (other.gameObject.layer == LayerMask.NameToLayer("Character"))
         {
             //체력 닳게
+            other.gameObject.GetComponent<Character>().onDamage
         }
     }	
 }
