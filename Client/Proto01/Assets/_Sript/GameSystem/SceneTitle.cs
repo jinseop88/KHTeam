@@ -13,6 +13,7 @@ public class SceneTitle : SceneBase
 
     public override void Terminate()
     {
+        UIManager.Instance.CloseUI(eUIType.Title);
     }
 
     public override void Enter()
@@ -32,11 +33,6 @@ public class SceneTitle : SceneBase
         temp.Initialize();
     }
 
-    public override void Exit()
-    {
-        base.Exit();
-        UIManager.Instance.CloseUI(eUIType.Title);
-    }
 
 
 }

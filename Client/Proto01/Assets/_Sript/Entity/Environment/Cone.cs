@@ -31,14 +31,17 @@ public class Cone : BaseEntity
     }
     void Update()
     {
-        if(!m_bStartAction && Mathf.Abs(m_Target.thisTransform.position.x - m_firstPos.x) < m_fSight)
+        if (m_Target !=  null)
         {
-            m_bStartAction = true;
-            StartCoroutine(ShakeNDrop());
-        }
+            if(!m_bStartAction && Mathf.Abs(m_Target.thisTransform.position.x - m_firstPos.x) < m_fSight)
+            {
+                m_bStartAction = true;
+                StartCoroutine(ShakeNDrop());
+            }
 
-        if (Mathf.Abs(m_Target.thisTransform.position.y) > 100)
-            Destroy(thisObject);
+            if (Mathf.Abs(m_Target.thisTransform.position.y) > 100)
+                Destroy(thisObject);
+        }
     }
     IEnumerator ShakeNDrop()
     {

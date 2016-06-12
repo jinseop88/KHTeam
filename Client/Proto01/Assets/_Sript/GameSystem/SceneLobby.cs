@@ -13,6 +13,7 @@ public class SceneLobby : SceneBase
 
     public override void Terminate()
     {
+        UIManager.Instance.CloseUI(eUIType.GameLobby);
     }
 
     public override void Enter()
@@ -31,13 +32,4 @@ public class SceneLobby : SceneBase
         //UI_Title temp = UIManager.Instance.GetUI<UI_Title>(eUIType.GameLobby);
         //temp.Initialize();
     }
-
-    public override void Exit()
-    {
-        base.Exit();
-
-        UIManager.Instance.CloseUI(eUIType.GameLobby);
-    }
-
-
 }
