@@ -1,0 +1,114 @@
+fileFormatVersion: 2
+guid: d723fa195316c294999a103c142f8930
+timeCreated: 1465570111
+licenseType: Pro
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: Character_Jump_0
+    21300002: Character_Jump_1
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 7
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -3
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 1
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: Character_Jump_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2
+        width: 307
+        height: 252
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 110.5, y: 123}
+        - {x: 65.5, y: 111}
+        - {x: 63.5, y: 113}
+        - {x: 58.5, y: 116}
+        - {x: 69.5, y: 113}
+        - {x: 90.5, y: 149}
+        - {x: 107.5, y: 200}
+        - {x: 53.5, y: 252}
+        - {x: -61.5, y: 252}
+        - {x: -77.5, y: 247}
+        - {x: -147.5, y: 216}
+        - {x: -153.5, y: 162}
+        - {x: -153.5, y: 86}
+        - {x: -145.5, y: 78}
+        - {x: -83.5, y: 0}
+        - {x: 11.5, y: 0}
+        - {x: 48.5, y: 6}
+        - {x: 136.5, y: 78}
+        - {x: 153.5, y: 99}
+        - {x: 153.5, y: 128}
+    - name: Character_Jump_1
+      rect:
+        serializedVersion: 2
+        x: 401
+        y: 2
+        width: 264
+        height: 250
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 102, y: 250}
+        - {x: -39, y: 250}
+        - {x: -113, y: 221}
+        - {x: -132, y: 184}
+        - {x: -132, y: 167}
+        - {x: -122, y: 124}
+        - {x: -32, y: 98}
+        - {x: -30, y: 58}
+        - {x: 23, y: 0}
+        - {x: 65, y: 0}
+        - {x: 102, y: 24}
+        - {x: 132, y: 61}
+        - {x: 132, y: 240}
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
