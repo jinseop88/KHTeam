@@ -20,7 +20,7 @@ public class Monster : Actor
         animation2D.OnDamage();
         currentHP -= 100f;
 
-        if(currentHP < 0f)
+        if(currentHP <= 0f)
         {
             animation2D.OnDead();
             Invoke("Delete", 0.5f);
