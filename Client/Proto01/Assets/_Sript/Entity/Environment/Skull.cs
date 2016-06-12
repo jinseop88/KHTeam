@@ -4,7 +4,7 @@ using System.Collections;
 /// <summary>
 /// 게임상에 존재하면서 발로 차이면 날라가고 화면에서 나갈경우 지워진다.
 /// </summary>
-public class Skull : MonoBehaviour 
+public class Skull : BaseEntity 
 {
     private GameObject m_thisObject;
     private Transform m_thisTansform;

@@ -1,18 +1,20 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class Trap : MonoBehaviour 
+public class Trap : BaseEntity 
 {
-    private GameObject m_thisObject;
-    private Transform m_thisTansform;
+    private SkillImpactInfo m_impactInfo;
 
-    public GameObject thisObject { get { return m_thisObject; } }
-    public Transform thisTransform { get { return m_thisTansform; } }
-
-    void Awake()
+    void Start()
     {
-        m_thisObject = gameObject;
-        m_thisTansform = transform;
+        Initialize();
+    }
+
+    public override void Initialize()
+    {
+        base.Initialize();
+
+        m_impactInfo = thisObject.GetComponent<SkillImpactInfo>();
     }
 
     void OnTriggerEnter(Collider other)
@@ -20,7 +22,7 @@ public class Trap : MonoBehaviour
         if (other.gameObject.layer == LayerMask.NameToLayer("Character"))
         {
             //체력 닳게
-            other.gameObject.GetComponent<Character>().onDamage
+            other.gameObject.GetComponent<Character>().onDamage(this, m_impactInfo);
         }
     }	
 }

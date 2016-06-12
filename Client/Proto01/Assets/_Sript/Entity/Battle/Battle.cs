@@ -31,7 +31,7 @@ public class Battle : MonoBehaviour
     /// <summary>
     /// 콜백들
     /// </summary>
-    public delegate void DamageCallBack(Actor attacker, SkillImpactInfo skillImpact);
+    public delegate void DamageCallBack(BaseEntity attacker, SkillImpactInfo skillImpact);
     public DamageCallBack onDamage;
     public delegate void HitCallBack(Actor target, SkillImpactInfo skillImpact);
     /// <summary>
