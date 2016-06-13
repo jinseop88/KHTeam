@@ -3,6 +3,7 @@ using System.Collections;
 
 public class Monster : Actor 
 {
+    MonsterAI AISystem;
 
     void Start()
     {
@@ -13,12 +14,21 @@ public class Monster : Actor
         base.Initialize();
 
         onDamage = OnDamage;
+
+        AISystem = thisObject.AddComponent<MonsterAI>();
+        AISystem.m_Owner = this;
+        //AISystem.m_Target;
+        AISystem.m_Sight = 5f;
+        AISystem.m_LimitDistance = 3f;
+        AISystem.m_AtkDelay = 2f;
+
+        AISystem.AIOn();
     }
 
     private void OnDamage(BaseEntity attacker, SkillImpactInfo skillImpact)
     {
         animation2D.OnDamage();
-        currentHP -= 100f;
+        currentHP -= 80f;
 
         if(currentHP <= 0f)
         {

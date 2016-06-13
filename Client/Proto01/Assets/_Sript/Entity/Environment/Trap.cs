@@ -21,8 +21,11 @@ public class Trap : BaseEntity
     {
         if (other.gameObject.layer == LayerMask.NameToLayer("Character"))
         {
+            Character tempChar = other.gameObject.GetComponent<Character>();
+
             //체력 닳게
-            other.gameObject.GetComponent<Character>().onDamage(this, m_impactInfo);
+            if (tempChar != null)
+                tempChar.onDamage(this, m_impactInfo);
         }
     }	
 }

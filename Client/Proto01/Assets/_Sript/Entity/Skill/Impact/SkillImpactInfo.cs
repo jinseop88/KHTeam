@@ -76,6 +76,8 @@ public class SkillImpactInfo : SkillEffectBase
         {
             Actor target = colliders[i].GetComponent<Actor>();
 
+            if (target == null) return false;
+
             // 이미 충돌된 객체는 다시 체크 안함
             if (CheckCollided(target.thisObject))
                 continue;

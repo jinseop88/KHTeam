@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class BaseAI : IAIController
+public class BaseAI : MonoBehaviour, IAIController
 {
     private bool m_bIngUpdate;
 
