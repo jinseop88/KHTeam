@@ -1,25 +1,38 @@
 ﻿using UnityEngine;
+using UnityEngine.UI;
 using System.Collections;
 
-public class UI_Soul : Item {
+public class UI_Soul : MonoBehaviour
+{
 
-    //public Text soulCount;
-    public int soulItemCount = 0;
-
-    Item soulItem;
+    //public Text soulCount; 
+    public Text SoulCountText;
+    public int soulItemCount = 0;   
 
     // Use this for initialization
     void Start () {
 	
 	}
-	
-	// Update is called once per frame
-	void Update () {
-        if (soulItem == true)
+    
+
+    // Update is called once per frame
+    void Update () {
+
+        SoulCountText.text = soulItemCount.ToString();
+
+    }
+
+    protected void OnTriggerEnter(Collider other)
+    {
+        if (other.gameObject.CompareTag("Seed1"))              //Seed1
         {
-            soulItemCount++;
-            //soulCount.text = soulItemCount;
+            CollectSeed();
         }
+
+    }
+    public void CollectSeed()
+    {
+        soulItemCount++;
 
     }
 }

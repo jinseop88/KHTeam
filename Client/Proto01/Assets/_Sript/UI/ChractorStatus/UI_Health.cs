@@ -1,13 +1,13 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class Health : Item {
+public class Health : MonoBehaviour {
 
     public int StartHealth = 100;
     public int CurrentHealth;
     public int attackDamage = 10;
 
-    Item hpItem;
+    public Object hp__Item;
    
     bool damaged;
 
@@ -22,10 +22,8 @@ public class Health : Item {
     // Update is called once per frame
     void Update () {
 
-        if(hpItem == true)
-        {
-            TakeDamage(attackDamage);
-        }
+        TakeDamage(attackDamage);
+       
 	
 	}
 
@@ -43,6 +41,15 @@ public class Health : Item {
 		}*/
     }
 
+    protected void OnTriggerEnter(Collider other)
+    {
+        if (other.gameObject.CompareTag("Soul_Item"))              //HPItem TAG
+        {
+           
+        }
 
-      
+    }
+
+
+
 }
