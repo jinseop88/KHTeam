@@ -9,10 +9,5 @@ public class ItemWeapon : ItemBase
         m_eItemType = eItemType.Weapon;
     }
 
-    public override void GetItem()
-    {
-        base.GetItem();
-
-        Debug.Log("나는 웨폰이에요");
-    }
+    
 }

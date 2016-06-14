@@ -7,12 +7,26 @@ public class ItemSoul : ItemBase
     void Awake()
     {
         m_eItemType = eItemType.Soul;
+    }    
+
+    /// <summary>
+    /// 부딫혔을때
+    /// </summary>
+    /// <param name="other"></param>
+    protected void OnTriggerEnter(Collider other)
+    {
+        if (other.gameObject.CompareTag("character"))              
+        {
+            GetItem();
+        }
+
     }
 
-    public override void GetItem()
+    /// <summary>
+    /// 먹은후 처리
+    /// </summary>
+    public void GetItem()
     {
-        base.GetItem();
-
-        Debug.Log("나는 영혼이에요");
+        Destroy(gameObject, 0f);
     }
 }
