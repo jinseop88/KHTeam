@@ -198,6 +198,11 @@ Prefab:
       propertyPath: m_LocalPosition.y
       value: 64
       objectReference: {fileID: 0}
+    - target: {fileID: 11418148, guid: a080d45101b53f549b2030ed6b706b55, type: 2}
+      propertyPath: mAtlas
+      value: 
+      objectReference: {fileID: 11446332, guid: c0be6b4f4b05ebb4ab60b45d44d149a6,
+        type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: a080d45101b53f549b2030ed6b706b55, type: 2}
   m_IsPrefabParent: 0
