@@ -4,8 +4,8 @@
 TagManager:
   serializedVersion: 2
   tags:
-  - hp__Item
-  - character
+  - monster
+  - player
   - Seed1
   layers:
   - Default
