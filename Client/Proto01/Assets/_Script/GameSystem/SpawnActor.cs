@@ -8,8 +8,8 @@ public class SpawnActor : MonoBehaviour
     public int maxActorCount;
     public float timeInterval;
 
-    private List<GameObject> standbyActors = new List<GameObject>();
-    private List<GameObject> actionActors = new List<GameObject>();
+    private List<Actor> standbyActors = new List<Actor>();
+    private List<Actor> actionActors = new List<Actor>();
 
     void OnEnable()
     {
@@ -24,11 +24,6 @@ public class SpawnActor : MonoBehaviour
         StopAllCoroutines();
     }
 
-    private void OnActorDied(GameObject actor)
-    {
-        actionActors.Remove(actor);
-    }
-
     private IEnumerator CreateActor()
     {
         while (true)
@@ -39,9 +34,9 @@ public class SpawnActor : MonoBehaviour
             if (standbyActors.Count + actionActors.Count < maxActorCount)
             {
                 // Create the new performer and initialize.
-                GameObject performer = Instantiate(actor, transform.position, transform.rotation) as GameObject;
-                performer.SetActive(false);
-                performer.transform.parent = transform.parent;
+                Actor performer = ((GameObject)Instantiate(actor, transform.position, transform.rotation)).GetComponent<Actor>();
+                performer.thisObject.SetActive(false);
+                performer.thisTransform.parent = transform.parent;
 
                 // New performer standby.
                 standbyActors.Add(performer);
@@ -63,8 +58,8 @@ public class SpawnActor : MonoBehaviour
             if (standbyActors.Count != 0)
             {
                 // Now showtime for the performer in standby.
-                GameObject performer = standbyActors[0];
-                performer.SetActive(true);
+                Actor performer = standbyActors[0];
+                performer.thisObject.SetActive(true);
 
                 // Remove the performer from the list of standby.
                 standbyActors.Remove(performer);
