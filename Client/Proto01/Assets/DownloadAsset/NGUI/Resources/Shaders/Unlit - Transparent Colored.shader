@@ -15,7 +15,7 @@ Shader "Unlit/Transparent Colored"
 			"IgnoreProjector" = "True"
 			"RenderType" = "Transparent"
 		}
-
+		
 		Pass
 		{
 			Cull Off
@@ -57,7 +57,7 @@ Shader "Unlit/Transparent Colored"
 				return o;
 			}
 				
-			fixed4 frag (v2f IN) : COLOR
+			fixed4 frag (v2f IN) : SV_Target
 			{
 				return tex2D(_MainTex, IN.texcoord) * IN.color;
 			}

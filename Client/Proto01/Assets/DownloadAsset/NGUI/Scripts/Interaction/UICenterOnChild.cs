@@ -1,6 +1,6 @@
-//----------------------------------------------
+﻿//----------------------------------------------
 //            NGUI: Next-Gen UI kit
-// Copyright © 2011-2015 Tasharen Entertainment
+// Copyright © 2011-2016 Tasharen Entertainment
 //----------------------------------------------
 
 using UnityEngine;
@@ -39,14 +39,24 @@ public class UICenterOnChild : MonoBehaviour
 	/// </summary>
 
 	public OnCenterCallback onCenter;
+    public OnCenterCallback onCenterPrev;
 
 	UIScrollView mScrollView;
+
+    //직전 센터 오브젝트
+    GameObject mPrevCenteredObject;
 	GameObject mCenteredObject;
+
+	/// <summary>
+    /// 확대경~!!
+    /// </summary>
+    public Transform m_trMagnifier;
 
 	/// <summary>
 	/// Game object that the draggable panel is currently centered on.
 	/// </summary>
 
+    public GameObject prevCenteredObject { get { return mPrevCenteredObject; } }
 	public GameObject centeredObject { get { return mCenteredObject; } }
 
 	void Start () { Recenter(); }
@@ -100,6 +110,12 @@ public class UICenterOnChild : MonoBehaviour
 		// Calculate the panel's center in world coordinates
 		Vector3[] corners = mScrollView.panel.worldCorners;
 		Vector3 panelCenter = (corners[2] + corners[0]) * 0.5f;
+
+        ///확대경이 달려있을경우는 이거 기준으로 센터를 지정
+        if (m_trMagnifier)
+        {
+            panelCenter = m_trMagnifier.position;
+        }
 
 		// Offset this value by the momentum
 		Vector3 momentum = mScrollView.currentMomentum * mScrollView.momentumAmount;
@@ -235,6 +251,7 @@ public class UICenterOnChild : MonoBehaviour
 		if (target != null && mScrollView != null && mScrollView.panel != null)
 		{
 			Transform panelTrans = mScrollView.panel.cachedTransform;
+            mPrevCenteredObject = mCenteredObject;
 			mCenteredObject = target.gameObject;
 
 			// Figure out the difference between the chosen child and the panel's center in local coordinates
@@ -265,9 +282,14 @@ public class UICenterOnChild : MonoBehaviour
 					panelTrans.localPosition - localOffset, springStrength).onFinished = onFinished;
 			}
 		}
-		else mCenteredObject = null;
+        else
+        {
+            mPrevCenteredObject = mCenteredObject;
+            mCenteredObject = null;
+        }
 
 		// Notify the listener
+        if (onCenterPrev != null) onCenterPrev(mPrevCenteredObject);
 		if (onCenter != null) onCenter(mCenteredObject);
 	}
 
@@ -281,6 +303,13 @@ public class UICenterOnChild : MonoBehaviour
 		{
 			Vector3[] corners = mScrollView.panel.worldCorners;
 			Vector3 panelCenter = (corners[2] + corners[0]) * 0.5f;
+
+            ///확대경이 달려있을경우는 이거 기준으로 센터를 지정
+            if (m_trMagnifier)
+            {
+                panelCenter = m_trMagnifier.position;
+            }
+
 			CenterOn(target, panelCenter);
 		}
 	}

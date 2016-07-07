@@ -1,6 +1,6 @@
 //----------------------------------------------
 //            NGUI: Next-Gen UI kit
-// Copyright © 2011-2015 Tasharen Entertainment
+// Copyright © 2011-2016 Tasharen Entertainment
 //----------------------------------------------
 
 using UnityEngine;
@@ -26,9 +26,6 @@ public class UIAtlasInspector : Editor
 	UIAtlas mAtlas;
 	AtlasType mType = AtlasType.Normal;
 	UIAtlas mReplacement = null;
-
-    Shader shaderTransparentColored = null;
-    Shader shaderTextureBinding = null;
 
 	void OnEnable () { instance = this; }
 	void OnDisable () { instance = null; }
@@ -264,14 +261,8 @@ public class UIAtlasInspector : Editor
 
 					if (GUILayout.Button("Save As..."))
 					{
-#if UNITY_3_5
 						string path = EditorUtility.SaveFilePanel("Save As",
 							NGUISettings.currentPath, sprite.name + ".png", "png");
-#else
-						string path = EditorUtility.SaveFilePanelInProject("Save As",
-							sprite.name + ".png", "png",
-							"Extract sprite into which file?", NGUISettings.currentPath);
-#endif
 
 						if (!string.IsNullOrEmpty(path))
 						{
@@ -329,91 +320,6 @@ public class UIAtlasInspector : Editor
 					}
 					GUI.backgroundColor = Color.white;
 				}
-
-                if (NGUIEditorTools.DrawHeader("Texture Optimization"))
-                {
-                    NGUIEditorTools.BeginContents();
-
-                    GUILayout.Space(3f);
-
-                    EditorGUILayout.BeginHorizontal();
-                    NGUIEditorTools.DrawPadding();
-                    TextureCompressionQuality afterType = (TextureCompressionQuality)EditorGUILayout.EnumPopup("Quality Type", NGUIEditorTools.mTextureType);
-                    NGUIEditorTools.DrawPadding();
-
-                    if (afterType != NGUIEditorTools.mTextureType)
-                        NGUIEditorTools.mTextureType = afterType;
-
-                    EditorGUILayout.EndHorizontal();
-                    EditorGUILayout.BeginHorizontal();
-
-                    NGUIEditorTools.DrawPadding();
-
-                    EditorGUILayout.BeginVertical();
-                    EditorGUI.BeginDisabledGroup(mat.shader.name != "My Shaders/UITextureBinding");
-                    if (GUILayout.Button("원본 사용"))
-                    {
-                        NGUIEditorTools.SetTextureOptimization(mAtlas, false);
-                    }
-                    EditorGUI.EndDisabledGroup();
-                    EditorGUILayout.EndVertical();
-                    EditorGUILayout.BeginVertical();
-                    EditorGUI.BeginDisabledGroup(mat.shader.name != "Unlit/Transparent Colored");
-                    if (GUILayout.Button("최적화 사용"))
-                    {
-                        NGUIEditorTools.SetTextureOptimization(mAtlas, true);
-                    }   
-                    EditorGUI.EndDisabledGroup();
-                    EditorGUILayout.EndVertical();
-                    NGUIEditorTools.DrawPadding();
-                    EditorGUILayout.EndHorizontal();
-
-                    EditorGUILayout.BeginHorizontal();
-                    NGUIEditorTools.DrawPadding();
-                    EditorGUILayout.BeginVertical();
-                    if(GUILayout.Button("전체 원본으로"))
-                    {
-                        string[] aAtlasFiles = Directory.GetFiles("Assets/Resources/Prefabs/UI_Data/UI_Atlas", "*.prefab", SearchOption.AllDirectories);
-
-                        for (int i = 0; i < aAtlasFiles.Length; ++i)
-                        {
-                            EditorUtility.DisplayProgressBar("Texture Optimization", "Combine...", ((i + 1) / (float)aAtlasFiles.Length));
-                            UIAtlas sourceAtlas = (UIAtlas)AssetDatabase.LoadAssetAtPath(aAtlasFiles[i], typeof(UIAtlas)) as UIAtlas;
-
-                            NGUIEditorTools.SetTextureOptimization(sourceAtlas, false);
-                        }
-                        EditorUtility.ClearProgressBar();
-                    }
-                    EditorGUILayout.EndVertical();
-                    EditorGUILayout.BeginVertical();
-
-                    if (GUILayout.Button("전체 최적화"))
-                    {
-                        string[] aAtlasFiles = Directory.GetFiles("Assets/Resources/Prefabs/UI_Data/UI_Atlas", "*.prefab", SearchOption.AllDirectories);
-
-                        for (int i = 0; i < aAtlasFiles.Length; ++i)
-                        {
-                            EditorUtility.DisplayProgressBar("Texture Optimization", string.Format("Devide..."), ((i + 1) / (float)aAtlasFiles.Length));
-
-                            UIAtlas sourceAtlas = (UIAtlas)AssetDatabase.LoadAssetAtPath(aAtlasFiles[i], typeof(UIAtlas)) as UIAtlas;
-                            shaderTextureBinding = shaderTextureBinding == null ? Shader.Find("My Shaders/UITextureBinding") : shaderTextureBinding;
-                            sourceAtlas.spriteMaterial.shader = shaderTextureBinding;
-                            NGUIEditorTools.CopyAndChangeTexture(sourceAtlas, true);
-                            sourceAtlas = (UIAtlas)AssetDatabase.LoadAssetAtPath(aAtlasFiles[i], typeof(UIAtlas)) as UIAtlas;
-                            NGUIEditorTools.CopyAndChangeTexture(sourceAtlas, false);
-                        }
-                        EditorUtility.ClearProgressBar();
-                    }
-                    EditorGUILayout.EndVertical();
-                    NGUIEditorTools.DrawPadding();
-                    EditorGUILayout.EndHorizontal();
-
-                    EditorGUILayout.HelpBox("Quality Type : 텍스쳐의 Compression Quality (Best는 속도가 느리기 때문에 빌드할 때만 한다.)\n" + 
-                    "원본, 최적화 사용 : 해당 아틀라스의 텍스쳐를 원본, 최적화 상태로 변경한다.\n" + 
-                    "전체 원본, 전체 최적화 : UI_Atlas 폴더에 있는 모든 아틀라스를 일괄 원본, 최적화 상태로 변경한다.", MessageType.Info);
-
-                    NGUIEditorTools.EndContents();
-                }
 			}
 		}
 	}

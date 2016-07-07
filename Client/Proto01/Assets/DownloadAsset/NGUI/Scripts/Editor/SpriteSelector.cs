@@ -1,6 +1,6 @@
 //----------------------------------------------
 //            NGUI: Next-Gen UI kit
-// Copyright © 2011-2015 Tasharen Entertainment
+// Copyright © 2011-2016 Tasharen Entertainment
 //----------------------------------------------
 
 using UnityEditor;
@@ -26,9 +26,7 @@ public class SpriteSelector : ScriptableWizard
 	UISprite mSprite;
 	Vector2 mPos = Vector2.zero;
 	Callback mCallback;
-    float mClickTime = 0f;
-    bool bSizeUp = false;
-    float size = 80f;
+	float mClickTime = 0f;
 
 	/// <summary>
 	/// Draw the custom wizard.
@@ -73,14 +71,8 @@ public class SpriteSelector : ScriptableWizard
 			}
 
 			BetterList<string> sprites = atlas.GetListOfSprites(NGUISettings.partialSprite);
-            
-            GUILayout.BeginHorizontal();
-            if (GUILayout.Toggle(bSizeUp, "Size") != bSizeUp)
-            {
-                bSizeUp = !bSizeUp;
-                size = bSizeUp ? 200f : 80f;
-            }
-            GUILayout.EndHorizontal();
+			
+			float size = 80f;
 			float padded = size + 10f;
 			int columns = Mathf.FloorToInt(Screen.width / padded);
 			if (columns < 1) columns = 1;
@@ -222,9 +214,6 @@ public class SpriteSelector : ScriptableWizard
 	void DeleteSprite (object obj)
 	{
 		if (this == null) return;
-
-        NGUIEditorTools.m_Shader = NGUISettings.atlas.spriteMaterial.shader;
-        NGUIEditorTools.SetTextureOptimization(NGUISettings.atlas, false);
 		UISpriteData sd = obj as UISpriteData;
 
 		List<UIAtlasMaker.SpriteEntry> sprites = new List<UIAtlasMaker.SpriteEntry>();
@@ -237,8 +226,7 @@ public class SpriteSelector : ScriptableWizard
 				sprites.RemoveAt(i);
 		}
 		UIAtlasMaker.UpdateAtlas(NGUISettings.atlas, sprites);
-        NGUIEditorTools.RepaintSprites();
-        NGUIEditorTools.SetTextureOptimization(NGUISettings.atlas, true);
+		NGUIEditorTools.RepaintSprites();
 	}
 
 	/// <summary>
