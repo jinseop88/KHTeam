@@ -1,6 +1,6 @@
 //----------------------------------------------
 //            NGUI: Next-Gen UI kit
-// Copyright © 2011-2015 Tasharen Entertainment
+// Copyright © 2011-2016 Tasharen Entertainment
 //----------------------------------------------
 
 using UnityEngine;
@@ -89,6 +89,5 @@ public class UIButtonEditor : UIButtonColorEditor
 
 		UIButton button = target as UIButton;
 		NGUIEditorTools.DrawEvents("On Click", button, button.onClick, false);
-        NGUIEditorTools.DrawEvents("On Press", button, button.onPress, false); // added by soohyoung.lee 2015-06-22
 	}
 }

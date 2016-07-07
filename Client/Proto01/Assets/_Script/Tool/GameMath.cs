@@ -23,5 +23,5 @@ public static class GameMath
     }
 
     //질량은 없고 일단 중력은 2배처리..
-    public static float gravity = -9.8f * 3f;
+    public static float gravity = 0f;
 }

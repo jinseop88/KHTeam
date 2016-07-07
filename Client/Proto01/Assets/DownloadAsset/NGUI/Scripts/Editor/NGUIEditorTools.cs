@@ -1,6 +1,6 @@
 //----------------------------------------------
 //            NGUI: Next-Gen UI kit
-// Copyright © 2011-2015 Tasharen Entertainment
+// Copyright © 2011-2016 Tasharen Entertainment
 //----------------------------------------------
 
 using UnityEditor;
@@ -1143,16 +1143,11 @@ public static class NGUIEditorTools
 
 	static public void RepaintSprites ()
 	{
-        if (UIAtlasInspector.instance != null)
-            UIAtlasInspector.instance.Repaint();
+		if (UIAtlasInspector.instance != null)
+			UIAtlasInspector.instance.Repaint();
 
-        if (UIAtlasMaker.instance != null)
-        {
-            UIAtlasMaker.instance.Repaint();
-
-            if (NGUIEditorTools.m_Shader == Shader.Find("My Shaders/UITextureBinding"))
-                SetTextureOptimization(NGUISettings.atlas, true);
-        }
+		if (UIAtlasMaker.instance != null)
+			UIAtlasMaker.instance.Repaint();
 
 		if (SpriteSelector.instance != null)
 			SpriteSelector.instance.Repaint();
@@ -1420,9 +1415,18 @@ public static class NGUIEditorTools
 	/// Helper function that draws a serialized property.
 	/// </summary>
 
-	static public SerializedProperty DrawProperty (SerializedObject serializedObject, string property, params GUILayoutOption[] options)
+	static public SerializedProperty DrawProperty (this SerializedObject serializedObject, string property, params GUILayoutOption[] options)
 	{
 		return DrawProperty(null, serializedObject, property, false, options);
+	}
+
+	/// <summary>
+	/// Helper function that draws a serialized property.
+	/// </summary>
+
+	static public SerializedProperty DrawProperty (this SerializedObject serializedObject, string property, string label, params GUILayoutOption[] options)
+	{
+		return DrawProperty(label, serializedObject, property, false, options);
 	}
 
 	/// <summary>
@@ -1438,7 +1442,7 @@ public static class NGUIEditorTools
 	/// Helper function that draws a serialized property.
 	/// </summary>
 
-	static public SerializedProperty DrawPaddedProperty (SerializedObject serializedObject, string property, params GUILayoutOption[] options)
+	static public SerializedProperty DrawPaddedProperty (this SerializedObject serializedObject, string property, params GUILayoutOption[] options)
 	{
 		return DrawProperty(null, serializedObject, property, true, options);
 	}
@@ -1465,17 +1469,46 @@ public static class NGUIEditorTools
 			if (NGUISettings.minimalisticLook) padding = false;
 
 			if (padding) EditorGUILayout.BeginHorizontal();
-			
-			if (label != null) EditorGUILayout.PropertyField(sp, new GUIContent(label), options);
+
+			if (sp.isArray && sp.type != "string") DrawArray(serializedObject, property, label ?? property);
+			else if (label != null) EditorGUILayout.PropertyField(sp, new GUIContent(label), options);
 			else EditorGUILayout.PropertyField(sp, options);
 
-			if (padding) 
+			if (padding)
 			{
 				NGUIEditorTools.DrawPadding();
 				EditorGUILayout.EndHorizontal();
 			}
 		}
+		else Debug.LogWarning("Unable to find property " + property);
 		return sp;
+	}
+
+	/// <summary>
+	/// Helper function that draws an array property.
+	/// </summary>
+
+	static public void DrawArray (this SerializedObject obj, string property, string title)
+	{
+		SerializedProperty sp = obj.FindProperty(property + ".Array.size");
+
+		if (sp != null && NGUIEditorTools.DrawHeader(title))
+		{
+			NGUIEditorTools.BeginContents();
+			int size = sp.intValue;
+			int newSize = EditorGUILayout.IntField("Size", size);
+			if (newSize != size) obj.FindProperty(property + ".Array.size").intValue = newSize;
+
+			EditorGUI.indentLevel = 1;
+
+			for (int i = 0; i < newSize; i++)
+			{
+				SerializedProperty p = obj.FindProperty(string.Format("{0}.Array.data[{1}]", property, i));
+				if (p != null) EditorGUILayout.PropertyField(p);
+			}
+			EditorGUI.indentLevel = 0;
+			NGUIEditorTools.EndContents();
+		}
 	}
 
 	/// <summary>
@@ -2186,113 +2219,5 @@ public static class NGUIEditorTools
 	{
 		if (!NGUISettings.minimalisticLook)
 			GUILayout.Space(18f);
-    }
-
-    /// <summary>
-    /// 텍스쳐 추가, 삭제할 때 원래 셰이더로 돌려주기 위해.
-    /// </summary>
-    public static Shader m_Shader = null;
-
-    public static void SetTextureOptimization(UIAtlas atlas, bool bDevide)
-    {
-        if (!bDevide)
-        {
-            string pathNaame = AssetDatabase.GetAssetPath(atlas.spriteMaterial.GetInstanceID());
-            int nParsingIndex = pathNaame.LastIndexOf("/");
-            pathNaame = pathNaame.Substring(0, nParsingIndex + 1);
-            pathNaame += atlas.name + ".png";
-
-            Texture2D LoadTexture = AssetDatabase.LoadAssetAtPath(pathNaame, typeof(Texture2D)) as Texture2D;
-
-            atlas.spriteMaterial.shader = Shader.Find("Unlit/Transparent Colored");
-            atlas.spriteMaterial.SetTexture("_MainTex", LoadTexture);
-        }
-        else
-        {
-            if (m_Shader != null && m_Shader == Shader.Find("Unlit/Transparent Colored"))
-            {
-                m_Shader = null;
-                return;
-            }
-
-            atlas.spriteMaterial.shader = Shader.Find("My Shaders/UITextureBinding");
-            CopyAndChangeTexture(atlas, true);
-            CopyAndChangeTexture(atlas, false);
-        }
-    }
-
-    /// <summary>
-    ///  텍스쳐 복사 후 포맷 바꾸기.
-    /// </summary>
-    /// <param name="mat"></param>
-    /// <param name="atlas"></param>
-    /// <param name="bRGB"></param>
-    public static void CopyAndChangeTexture(UIAtlas atlas, bool bRGB)
-    {
-        string szTextureFullPath = string.Empty;
-        string strMainTexturePathName = AssetDatabase.GetAssetPath(atlas.spriteMaterial.GetInstanceID());
-        int ParsingIndex = strMainTexturePathName.LastIndexOf("/");
-        strMainTexturePathName = strMainTexturePathName.Substring(0, ParsingIndex + 1);
-        szTextureFullPath = strMainTexturePathName;
-        strMainTexturePathName += atlas.name + (bRGB == true ? "_RGB.png" : "_Alpha.png");
-        Texture2D LoadMainTexture = AssetDatabase.LoadAssetAtPath(strMainTexturePathName, typeof(Texture2D)) as Texture2D;
-
-        // 이미 있으면 삭제해주기.
-        if(LoadMainTexture)
-            AssetDatabase.DeleteAsset(strMainTexturePathName);
-
-        string texPathName = szTextureFullPath + atlas.name + ".png";
-
-        // 복사하기.
-        AssetDatabase.CopyAsset(texPathName, strMainTexturePathName);
-
-        // 텍스쳐 포맷 셋팅.
-        TextureImporter ti = AssetImporter.GetAtPath(strMainTexturePathName) as TextureImporter;
-
-        ti.textureType = TextureImporterType.Advanced;
-        ti.alphaIsTransparency = bRGB;
-        ti.anisoLevel = 0;
-        ti.grayscaleToAlpha = false;
-        ti.spriteImportMode = SpriteImportMode.None;
-        ti.linearTexture = bRGB;
-        ti.wrapMode = TextureWrapMode.Clamp;
-        ti.filterMode = FilterMode.Trilinear;
-        ti.mipmapEnabled = false;
-        ti.isReadable = false;
-
-        int nTextureWidth = atlas.texture.width;
-
-        if (bRGB)
-        {
-            if (mTextureType == TextureCompressionQuality.Normal)
-            {
-                ti.SetPlatformTextureSettings("iPhone", nTextureWidth, TextureImporterFormat.PVRTC_RGB4);
-                ti.SetPlatformTextureSettings("Android", nTextureWidth, TextureImporterFormat.ETC_RGB4);
-            }
-            else
-            {
-                ti.SetPlatformTextureSettings("iPhone", nTextureWidth, TextureImporterFormat.PVRTC_RGB4, 100, true);
-                ti.SetPlatformTextureSettings("Android", nTextureWidth, TextureImporterFormat.ETC_RGB4, 100, true);
-            }
-        }
-        else
-        {
-            ti.SetPlatformTextureSettings("iPhone", nTextureWidth / 2, TextureImporterFormat.Alpha8);
-            ti.SetPlatformTextureSettings("Android", nTextureWidth / 2, TextureImporterFormat.Alpha8);
-        }
-
-        AssetDatabase.ImportAsset(strMainTexturePathName, ImportAssetOptions.ForceUpdate | ImportAssetOptions.ForceSynchronousImport);
-        LoadMainTexture = AssetDatabase.LoadAssetAtPath(strMainTexturePathName, typeof(Texture2D)) as Texture2D;
-
-        if (bRGB)
-            atlas.spriteMaterial.SetTexture("_MainTex", LoadMainTexture);
-        else
-            atlas.spriteMaterial.SetTexture("_BlendTex", LoadMainTexture);
-    }
-
-    /// <summary>
-    /// 텍스쳐 퀄리티가 Best 면 속도가 느리기 때문에 선택해서 텍스쳐 분리할 수 있도록 변수로 지정함.
-    /// Atlas Inspector 창에서 고를 수 있음.
-    /// </summary>
-    public static TextureCompressionQuality mTextureType = TextureCompressionQuality.Normal;
+	}
 }

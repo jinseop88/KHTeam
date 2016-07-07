@@ -1,6 +1,6 @@
-﻿//----------------------------------------------
+//----------------------------------------------
 //            NGUI: Next-Gen UI kit
-// Copyright © 2011-2015 Tasharen Entertainment
+// Copyright © 2011-2016 Tasharen Entertainment
 //----------------------------------------------
 
 using UnityEngine;
@@ -71,7 +71,6 @@ public class UIButton : UIButtonColor
 	/// Click event listener.
 	/// </summary>
 
-    public List<EventDelegate> onPress = new List<EventDelegate>();  // added by soohyoung.lee
 	public List<EventDelegate> onClick = new List<EventDelegate>();
 
 	// Cached value
@@ -89,7 +88,7 @@ public class UIButton : UIButtonColor
 		get
 		{
 			if (!enabled) return false;
-#if UNITY_4_3 || UNITY_4_5 || UNITY_4_6
+#if UNITY_4_3 || UNITY_4_5 || UNITY_4_6 || UNITY_4_7
 			Collider col = collider;
 #else
 			Collider col = gameObject.GetComponent<Collider>();
@@ -102,7 +101,7 @@ public class UIButton : UIButtonColor
 		{
 			if (isEnabled != value)
 			{
-#if UNITY_4_3 || UNITY_4_5 || UNITY_4_6
+#if UNITY_4_3 || UNITY_4_5 || UNITY_4_6 || UNITY_4_7
 				Collider col = collider;
 #else
 				Collider col = gameObject.GetComponent<Collider>();
@@ -243,36 +242,13 @@ public class UIButton : UIButtonColor
 
 	protected virtual void OnClick ()
 	{
-		if (current == null && isEnabled)
+		if (current == null && isEnabled && UICamera.currentTouchID != -2 && UICamera.currentTouchID != -3)
 		{
 			current = this;
 			EventDelegate.Execute(onClick);
 			current = null;
 		}
 	}
-    // added by soohyoung.lee
-    //protected virtual void OnPress()
-    protected override void OnPress(bool isPressed)
-    {
-        //Jinseop For When Touch get OverEffect
-        // 터치에서도 오버효과를 받기위해서
-        base.OnPress(isPressed);
-
-        //버튼 클릭음
-        //if (isPressed)
-        //{
-        //    // 임시로 게임내 스킬관련 버튼들은 빼달라고해서 아래처럼 처리했다 추후 수정해야 한다.
-        //    if (!gameObject.name.Contains("Btn_") )
-        //        SoundManager.Instance.PlaySFXSound("Action", "sound_UIClick");        
-        //}
-
-        if (current == null && isEnabled)
-        {
-            current = this;
-            EventDelegate.Execute(onPress);
-            current = null;
-        }
-    }
 
 	/// <summary>
 	/// Change the visual state.

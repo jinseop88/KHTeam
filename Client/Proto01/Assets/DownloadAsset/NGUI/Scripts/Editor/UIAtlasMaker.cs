@@ -1,6 +1,6 @@
 //----------------------------------------------
 //            NGUI: Next-Gen UI kit
-// Copyright © 2011-2015 Tasharen Entertainment
+// Copyright © 2011-2016 Tasharen Entertainment
 //----------------------------------------------
 
 using UnityEngine;
@@ -605,12 +605,7 @@ public class UIAtlasMaker : EditorWindow
 			// Load the texture we just saved as a Texture2D
 			AssetDatabase.SaveAssets();
 			AssetDatabase.Refresh(ImportAssetOptions.ForceSynchronousImport);
-            tex = NGUIEditorTools.ImportTexture(newPath, false, true, !atlas.premultipliedAlpha);
-
-            //string strMainTexturePathName = AssetDatabase.GetAssetPath(tex.GetInstanceID());
-            TextureImporter ti = AssetImporter.GetAtPath(newPath) as TextureImporter;
-            ti.textureType = TextureImporterType.Advanced;
-            ti.mipmapEnabled = false;
+			tex = NGUIEditorTools.ImportTexture(newPath, false, true, !atlas.premultipliedAlpha);
 
 			// Update the atlas texture
 			if (newTexture)
@@ -683,8 +678,6 @@ public class UIAtlasMaker : EditorWindow
 
 	void UpdateAtlas (List<Texture> textures, bool keepSprites)
 	{
-        NGUIEditorTools.m_Shader = NGUISettings.atlas.spriteMaterial.shader;
-        NGUIEditorTools.SetTextureOptimization(NGUISettings.atlas, false);
 		// Create a list of sprites using the collected textures
 		List<SpriteEntry> sprites = CreateSprites(textures);
 
@@ -812,7 +805,7 @@ public class UIAtlasMaker : EditorWindow
 					GUILayout.Label(" N/A");
 				}
 			}
-            GUILayout.EndHorizontal(); 
+			GUILayout.EndHorizontal();
 		}
 
 		GUILayout.BeginHorizontal();
@@ -1045,9 +1038,7 @@ public class UIAtlasMaker : EditorWindow
 
 				// If this sprite was marked for deletion, remove it from the atlas
 				if (delete)
-                {
-                    NGUIEditorTools.m_Shader = NGUISettings.atlas.spriteMaterial.shader;
-                    NGUIEditorTools.SetTextureOptimization(NGUISettings.atlas, false);
+				{
 					List<SpriteEntry> sprites = new List<SpriteEntry>();
 					ExtractSprites(NGUISettings.atlas, sprites);
 
@@ -1070,8 +1061,6 @@ public class UIAtlasMaker : EditorWindow
 				}
 				else if (update || replace)
 				{
-                    NGUIEditorTools.m_Shader = NGUISettings.atlas.spriteMaterial.shader;
-                    NGUIEditorTools.SetTextureOptimization(NGUISettings.atlas, false);
 					NGUIEditorTools.UpgradeTexturesToSprites(NGUISettings.atlas);
 					NGUIEditorTools.RepaintSprites();
 				}
