@@ -4,8 +4,6 @@ using System.Collections;
 public enum SceneType
 {
     None = -1,
-    Title,
-    Lobby,
     Game,
 
     Max,
@@ -41,12 +39,6 @@ public class SceneManager : SingleTon<SceneManager>
         SceneBase scene = null;
         switch (sceneType)
         {
-            case SceneType.Title:
-                scene = new SceneTitle();
-                break;
-            case SceneType.Lobby:
-                scene = new SceneLobby();
-                break;
             case SceneType.Game:
                 scene = new SceneGame();
                 break;

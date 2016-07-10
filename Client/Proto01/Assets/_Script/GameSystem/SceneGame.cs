@@ -27,7 +27,7 @@ public class SceneGame : SceneBase
     IEnumerator Loading()
     {
         //yield return null;
-        AsyncOperation cLoadLevelAsync = UnityEngine.SceneManagement.SceneManager.LoadSceneAsync("Stage1-1");
+        AsyncOperation cLoadLevelAsync = UnityEngine.SceneManagement.SceneManager.LoadSceneAsync("1.GameScene");
         yield return cLoadLevelAsync;
 
         /// 캐릭터 생성

@@ -8,14 +8,4 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/_Scene/0.Intro.unity
   - enabled: 1
-    path: Assets/_Scene/1.Title.unity
-  - enabled: 1
-    path: Assets/_Scene/2.GameLobby.unity
-  - enabled: 1
-    path: Assets/_Scene/3.GameScene.unity
-  - enabled: 1
-    path: Assets/_Scene/4.StageSelect.unity
-  - enabled: 1
-    path: Assets/_Scene/5.ChapterSelect.unity
-  - enabled: 1
-    path: Assets/_Scene/Game/Chapter1/Stage1-1.unity
+    path: Assets/_Scene/1.GameScene.unity

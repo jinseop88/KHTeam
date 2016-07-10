@@ -17,6 +17,5 @@ public class UI_Title : UIBase
 
     public void ClickStartButton()
     {
-        SceneManager.Instance.ChangeScene(SceneType.Lobby);
     }
 }
