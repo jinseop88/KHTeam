@@ -19,25 +19,49 @@ public class SceneGame : SceneBase
     {
         StartCourotine(Loading());
     }
-
+    public override void Exit()
+    {
+        base.Exit();
+        //UIManager.Instance.CloseUI(eUIType.Title);
+    }
     IEnumerator Loading()
     {
         //yield return null;
         AsyncOperation cLoadLevelAsync = UnityEngine.SceneManagement.SceneManager.LoadSceneAsync("Stage1-1");
         yield return cLoadLevelAsync;
 
-        //UIManager.Instance.Initialize();
-        //UIManager.Instance.OpenUI(eUIType.Title);
+        /// 캐릭터 생성
+        CreateCharacter();
 
-        //UI_Title temp = UIManager.Instance.GetUI<UI_Title>(eUIType.Title);
-        //temp.Initialize();
+        ///몬스터 스폰시스템 생성
+        CreateMonsterSpawnSystem();
+
+        ///맵 생성
+        CreateMap();
     }
 
-    public override void Exit()
+    private void CreateCharacter()
     {
-        base.Exit();
-        //UIManager.Instance.CloseUI(eUIType.Title);
+        Character character = CharacterManager.Instance.CreateCharacter();
+
+        character.thisTransform.localPosition = Vector3.zero;
     }
 
+    private void CreateMonsterSpawnSystem()
+    {
+        GameObject objSpawnSystem = new GameObject("MonsterSpawnSystem");
+
+        SpawnActor spawnSystem = objSpawnSystem.AddComponent<SpawnActor>();
+        spawnSystem.actor = MonsterManager.Instance.CreateMonster(MonsterType.GoblinFire).thisObject;
+        spawnSystem.timeInterval = 5;
+        spawnSystem.maxActorCount = 10;
+
+        spawnSystem.SpawnStart();
+    }
+ 
+    private void CreateMap()
+    {
+        MapManager.Instance.ChangeMap(MapType.Mt_ChunTae);
+    }
 
 }

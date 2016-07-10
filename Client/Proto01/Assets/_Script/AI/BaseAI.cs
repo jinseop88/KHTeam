@@ -20,7 +20,7 @@ public class BaseAI : MonoBehaviour, IAIController
             UpdateAI();
     }
 
-    public virtual void UpdateAI()
+    protected virtual void UpdateAI()
     {
 
     }

@@ -11,17 +11,22 @@ public class SpawnActor : MonoBehaviour
     private List<Actor> standbyActors = new List<Actor>();
     private List<Actor> actionActors = new List<Actor>();
 
-    void OnEnable()
+    //void OnEnable()
+    //{
+    //    // Start to create actor and to participate actor.
+    //    StartCoroutine(CreateActor());
+    //    StartCoroutine(ParticipateActor());
+    //}
+    //
+    //void OnDisable()
+    //{
+    //    // Stop to create actor and to participate actor.
+    //    StopAllCoroutines();
+    //}
+    public void SpawnStart()
     {
-        // Start to create actor and to participate actor.
         StartCoroutine(CreateActor());
         StartCoroutine(ParticipateActor());
-    }
-
-    void OnDisable()
-    {
-        // Stop to create actor and to participate actor.
-        StopAllCoroutines();
     }
 
     private IEnumerator CreateActor()
