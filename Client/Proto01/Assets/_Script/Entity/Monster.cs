@@ -3,8 +3,7 @@ using System.Collections;
 
 public class Monster : Actor 
 {
-    MonsterAI AISystem;
-
+    
     void Start()
     {
         Initialize();
@@ -16,13 +15,13 @@ public class Monster : Actor
         onDamage = OnDamage;
 
         AISystem = thisObject.AddComponent<MonsterAI>();
-        AISystem.m_Owner = this;
+        //AISystem.m_Owner = this;
         //AISystem.m_Target;
-        AISystem.m_Sight = 5f;
-        AISystem.m_LimitDistance = 3f;
-        AISystem.m_AtkDelay = 2f;
+        //AISystem.m_Sight = 5f;
+        //AISystem.m_LimitDistance = 3f;
+        //AISystem.m_AtkDelay = 2f;
 
-        AISystem.AIOn();
+        //AISystem.AIOn();
     }
 
     private void OnDamage(BaseEntity attacker, SkillImpactInfo skillImpact)

@@ -33,6 +33,12 @@ public class Actor : BaseEntity
     /// </summary>
     public Battle.DamageCallBack onDamage { get; protected set; }
 
+    /// <summary>
+    /// AI System
+    /// </summary>
+    public BaseAI AISystem { get; set; }
+
+
     public override void Initialize()
     {
         animation2D = thisObject.GetComponent<Animation2D>();

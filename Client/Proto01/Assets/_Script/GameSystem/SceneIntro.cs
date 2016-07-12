@@ -12,7 +12,7 @@ public class SceneIntro : MonoBehaviour {
     {
         yield return new WaitForSeconds(2f);
 
-        SceneManager.Instance.ChangeScene(SceneType.Title);
+        SceneManager.Instance.ChangeScene(SceneType.Game);
     }
 
 	

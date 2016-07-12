@@ -43,7 +43,7 @@ public class MonsterAI : BaseAI
     /// </summary>
     public bool m_bIsDetection;
 
-    public override void UpdateAI()
+    protected override void UpdateAI()
     {
         // 1. 타겟설정(없어졌을경우)
         if (m_Target == null)
