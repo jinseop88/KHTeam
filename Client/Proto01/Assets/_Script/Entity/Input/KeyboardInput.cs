@@ -8,5 +8,5 @@ public class KeyboardInput : InputBase
     public Actor character { get { return (Actor)m_owner; } }
 	void Update () 
     {
-	}
+    }
 }
