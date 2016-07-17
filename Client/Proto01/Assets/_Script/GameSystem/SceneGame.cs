@@ -51,12 +51,10 @@ public class SceneGame : SceneBase
     {
         GameObject objSpawnSystem = new GameObject("MonsterSpawnSystem");
 
-        SpawnActor spawnSystem = objSpawnSystem.AddComponent<SpawnActor>();
-        spawnSystem.actor = MonsterManager.Instance.CreateMonster(MonsterType.GoblinFire).thisObject;
-        spawnSystem.timeInterval = 5;
-        spawnSystem.maxActorCount = 10;
+        MonsterSpawner monsterSpawner = objSpawnSystem.AddComponent<MonsterSpawner>();
 
-        spawnSystem.SpawnStart();
+        MonsterSpawner.Request request = new MonsterSpawner.Request(MonsterManager.Instance.CreateMonster(MonsterType.GoblinFire).thisObject, 10);
+        monsterSpawner.SendRequest(request);
     }
  
     private void CreateMap()
