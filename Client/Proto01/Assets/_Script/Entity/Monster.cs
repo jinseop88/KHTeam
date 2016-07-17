@@ -3,11 +3,11 @@ using System.Collections;
 
 public class Monster : Actor 
 {
-    
     void Start()
     {
         Initialize();
     }
+
     public override void Initialize()
     {
         base.Initialize();
@@ -35,6 +35,7 @@ public class Monster : Actor
             Invoke("Delete", 0.5f);
         }
     }
+
     public void Delete()
     {
         Destroy(thisObject);
