@@ -1,8 +1,0 @@
-Push test
-
-Svn 경로 https://dev.naver.com/svn/seopdev
-
-계정 ID : 본인 ID
-비번 : 따로 설정해야함 - http://dev.naver.com/account/
-
-SVN설치및 사용법 - http://yoshikixdrum.tistory.com/167
