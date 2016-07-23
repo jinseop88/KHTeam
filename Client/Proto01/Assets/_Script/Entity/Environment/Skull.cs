@@ -9,8 +9,8 @@ public class Skull : BaseEntity
     private GameObject m_thisObject;
     private Transform m_thisTansform;
 
-    public GameObject thisObject { get { return m_thisObject; } }
-    public Transform thisTransform { get { return m_thisTansform; } }
+    public new GameObject thisObject { get { return m_thisObject; } }
+    public new Transform thisTransform { get { return m_thisTansform; } }
 
     /// <summary>
     /// 뱅글 돌 녀석
