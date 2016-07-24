@@ -7,11 +7,16 @@ public class Character : Actor
     {
         Initialize();
     }
+
     public override void Initialize()
     {
         base.Initialize();
 
         input = thisObject.AddComponent<KeyboardInput>();
+
+        AISystem = thisObject.AddComponent<CharacterAI>();
+        ((CharacterAI)AISystem).m_LimitDistance = 3f;
+        ((CharacterAI)AISystem).m_AtkDelay = 1f;
 
         onDamage = OnDamage;
     }

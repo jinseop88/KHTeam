@@ -7,6 +7,7 @@ public abstract class SceneBase
     {
         return SceneManager.Instance.StartCoroutine(couroutine);
     }
+
     /// <summary>
     /// 업데이트
     /// </summary>
@@ -26,7 +27,7 @@ public abstract class SceneBase
     /// 씬입장
     /// </summary>
     public abstract void Enter();
-   
+
     public virtual void Exit()
     {
         Terminate();
