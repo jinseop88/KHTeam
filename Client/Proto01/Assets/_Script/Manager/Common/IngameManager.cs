@@ -6,6 +6,6 @@ public class IngameManager : SingleTon<IngameManager>
 {
     public Character m_myCharacter;
 
-    public List<Monster> m_monsterList = new List<Monster>;
+    public List<Monster> m_monsterList = new List<Monster>();
 
 }
