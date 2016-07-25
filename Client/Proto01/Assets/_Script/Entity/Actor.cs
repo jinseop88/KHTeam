@@ -4,7 +4,7 @@ using System.Collections.Generic;
 
 public class Actor : BaseEntity
 {
-    public float currentHP = 200f;
+    public float currentHP = 11200f;
 
     public float maxHP = 200f;
 
