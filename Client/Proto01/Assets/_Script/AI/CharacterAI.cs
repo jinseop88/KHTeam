@@ -53,13 +53,31 @@ public class CharacterAI : BaseAI
 
     private bool UpdateTarget()
     {
+        if(m_Target == null)
+        {
+            int distance = 5000;
+            int index = -1;
+            for (int i = 0; i < IngameManager.Instance.m_monsterList.Count; i++ )
+            {
+                float dis = Vector3.Distance(m_Owner.thisTransform.position, IngameManager.Instance.m_monsterList[i].thisTransform.position);
+                if(distance > dis)
+                {
+                    distance = (int)dis;
+                    index = i;
+                }
+            }
+
+            if (index != -1)
+                m_Target = IngameManager.Instance.m_monsterList[index];
+        }
+        
         return m_Target != null;
     }
     
     private bool ApporachTarget()
     {
         // 다가가기
-        if (isEnableRange)
+        if (!isEnableRange)
         {            
             m_Owner.Move();
             return true;
