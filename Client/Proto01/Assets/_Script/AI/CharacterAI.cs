@@ -4,35 +4,9 @@ using System.Collections;
 public class CharacterAI : BaseAI
 {
     /// <summary>
-    /// AI 돌고 있는 나
-    /// </summary>
-    public Actor m_Owner;
-
-    /// <summary>
-    /// 내가 정한 타겟
-    /// </summary>
-    public Actor m_Target;
-
-    /// <summary>
-    /// Target과의 제한거리
-    /// </summary>
-    public float m_LimitDistance;
-
-    /// <summary>
-    /// 공격 딜레이
-    /// </summary>
-    public float m_AtkDelay;
-
-    /// <summary>
-    /// 마지막 공격시간
-    /// </summary>
-    public float m_LastAtkTime;
-
-    /// <summary>
     /// 터치 됬나?
     /// </summary>
     public bool m_IsTouched;
-
 
     private bool isEnableRange { get { return Vector3.Distance(m_Owner.thisTransform.position, m_Target.thisTransform.position) > m_LimitDistance; } }
     private bool isEnableAttack { get { return m_LastAtkTime + m_AtkDelay < Time.realtimeSinceStartup; } }

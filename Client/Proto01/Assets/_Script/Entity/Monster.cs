@@ -15,10 +15,10 @@ public class Monster : Actor
         onDamage = OnDamage;
 
         AISystem = thisObject.AddComponent<MonsterAI>();
-        ((MonsterAI)AISystem).m_Owner = this;
-        ((MonsterAI)AISystem).m_Sight = 5f;
-        ((MonsterAI)AISystem).m_LimitDistance = 3f;
-        ((MonsterAI)AISystem).m_AtkDelay = 2f;
+        AISystem.m_Owner = this;
+        AISystem.m_Sight = 5f;
+        AISystem.m_LimitDistance = 3f;
+        AISystem.m_AtkDelay = 2f;
 
         AISystem.AIOn();
     }

@@ -15,9 +15,10 @@ public class Character : Actor
         input = thisObject.AddComponent<KeyboardInput>();
 
         AISystem = thisObject.AddComponent<CharacterAI>();
-        ((CharacterAI)AISystem).m_Owner = this;
-        ((CharacterAI)AISystem).m_LimitDistance = 3f;
-        ((CharacterAI)AISystem).m_AtkDelay = 1f;
+        AISystem.m_Owner = this;
+        AISystem.m_Sight = 5f;
+        AISystem.m_LimitDistance = 3f;
+        AISystem.m_AtkDelay = 1f;
 
         onDamage = OnDamage;
     }
