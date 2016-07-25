@@ -8,24 +8,22 @@ public class CharacterAI : BaseAI
     /// </summary>
     public bool m_IsTouched;
 
-    private bool isEnableRange { get { return Vector3.Distance(m_Owner.thisTransform.position, m_Target.thisTransform.position) > m_LimitDistance; } }
+    private bool isEnableRange { get { return Vector3.Distance(m_Owner.thisTransform.position, m_Target.thisTransform.position) < m_LimitDistance; } }
     private bool isEnableAttack { get { return m_LastAtkTime + m_AtkDelay < Time.realtimeSinceStartup; } }
 
     protected override void UpdateAI()
     {
         // 1. 타겟 설정( 못찾으면 리턴)
-        if (!UpdateTarget())
-            return;
+        UpdateTarget();
 
         // 2. 타겟에게 다가가기( 다가가는 중이면 리턴)
-        if (ApporachTarget())
-            return;
+        ApporachTarget();
 
         // 3. 타겟에게 공격(스킬버튼이 눌렸다면 스킬씀)
         ProcessAttack();           
     }
 
-    private bool UpdateTarget()
+    private void UpdateTarget()
     {
         if(m_Target == null)
         {
@@ -44,25 +42,28 @@ public class CharacterAI : BaseAI
             if (index != -1)
                 m_Target = IngameManager.Instance.m_monsterList[index];
         }
-        
-        return m_Target != null;
     }
-    
-    private bool ApporachTarget()
+
+    private void ApporachTarget()
     {
+        if (m_Target == null) return;
+
         // 다가가기
-        if (!isEnableRange)
+        if (m_Target != null && !isEnableRange)
         {            
             m_Owner.Move();
-            return true;
         }
-
-        // 다가가기 끝
-        return false;
+        else
+        {
+            // 다가가기 끝
+            m_Owner.MoveStop();
+        }
     }
 
     private void ProcessAttack()
     {
+        if (m_Target == null) return;
+
         //터치되었으면 공격
         if (m_IsTouched)
         {
