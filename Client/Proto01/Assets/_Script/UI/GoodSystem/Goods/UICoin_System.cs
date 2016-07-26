@@ -53,7 +53,7 @@ public class UICoin_System : UIBase
             //}
             //else
             //{
-                m_lbCoinCount.text = (m_uiCoinCount+"냥").ToString();
+            m_lbCoinCount.text = (m_uiCoinCount+"냥").ToString();
             //}
             PlayerPrefs.SetInt("Coin", m_uiCoinCount);
             //PlayerPrefs.SetInt("Coin", 0);

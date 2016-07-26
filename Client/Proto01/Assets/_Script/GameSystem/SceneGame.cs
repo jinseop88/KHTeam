@@ -3,6 +3,9 @@ using System.Collections;
 
 public class SceneGame : SceneBase
 {
+    private int MonSterKillCount;
+    public int i = 1;
+
     public override void Update()
     { 
     }
@@ -18,6 +21,8 @@ public class SceneGame : SceneBase
     public override void Enter()
     {
         StartCourotine(Loading());
+
+        MonSterKillCount = PlayerPrefs.GetInt("MonsterKillCount");
     }
     public override void Exit()
     {
@@ -58,8 +63,18 @@ public class SceneGame : SceneBase
     }
  
     private void CreateMap()
-    {
-        MapManager.Instance.ChangeMap(MapType.Mt_ChunTae);
-    }
+    {       
+
+        if (MonSterKillCount % 200 == 0)
+        {
+            //i++;      
+            MapManager.Instance.ChangeMap(MapType.Mt_ChunTae, 3);
+            //MonSterKillCount -= 200;
+        }
+        
+        MapManager.Instance.ChangeMap(MapType.Mt_ChunTae, 3);
+
+       
+}
 
 }

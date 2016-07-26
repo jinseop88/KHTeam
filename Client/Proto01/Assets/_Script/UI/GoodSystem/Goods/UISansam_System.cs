@@ -26,7 +26,7 @@ public class UISansam_System : UIBase
 	
 	}
 
-    public int FlowerCount
+    public int SansamCount
     {
         set
         {
