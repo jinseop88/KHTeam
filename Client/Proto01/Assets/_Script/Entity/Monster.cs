@@ -15,13 +15,12 @@ public class Monster : Actor
         onDamage = OnDamage;
 
         AISystem = thisObject.AddComponent<MonsterAI>();
-        //AISystem.m_Owner = this;
-        //AISystem.m_Target;
-        //AISystem.m_Sight = 5f;
-        //AISystem.m_LimitDistance = 3f;
-        //AISystem.m_AtkDelay = 2f;
+        AISystem.m_Owner = this;
+        AISystem.m_Sight = 5f;
+        AISystem.m_LimitDistance = 3f;
+        AISystem.m_AtkDelay = 2f;
 
-        //AISystem.AIOn();
+        AISystem.AIOn();
     }
 
     private void OnDamage(BaseEntity attacker, SkillImpactInfo skillImpact)
@@ -41,4 +40,12 @@ public class Monster : Actor
         Destroy(thisObject);
     }
 
+    void OnEnable()
+    {
+        IngameManager.Instance.m_monsterList.Add(this);
+    }
+    void OnDisable()
+    {
+        IngameManager.Instance.m_monsterList.Remove(this);
+    }
 }

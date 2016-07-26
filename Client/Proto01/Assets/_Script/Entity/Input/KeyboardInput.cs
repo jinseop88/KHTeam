@@ -8,5 +8,9 @@ public class KeyboardInput : InputBase
     public Actor character { get { return (Actor)m_owner; } }
 	void Update () 
     {
-    }
+        if(Input.GetKeyDown(KeyCode.Alpha1))
+        {
+            character.Attack(GameType.AnimationState.Projectile);
+        }
+	}
 }
