@@ -44,6 +44,7 @@ public class Monster : Actor
     {
         IngameManager.Instance.m_monsterList.Add(this);
     }
+
     void OnDisable()
     {
         IngameManager.Instance.m_monsterList.Remove(this);

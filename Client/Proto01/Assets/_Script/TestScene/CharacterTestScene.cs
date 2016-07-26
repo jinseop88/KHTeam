@@ -1,36 +1,64 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class CharacterTestScene : MonoBehaviour 
+public class CharacterTestScene : MonoBehaviour, IGameEventListener
 {
-
-    private Character m_myCharacter;
-    private MonsterSpawner m_spawner;
-
     public CharacterSpawnPoint m_characerSpawnPoint;
     public CharacterSpawnPoint m_monsterSpawnPoint;
 
+    private Character m_myCharacter;
+    private MonsterSpawner m_monsterSpawner;
+
+    private int m_monsterKillCount;
+
+    void Awake()
+    {
+        GameEventManager.Instance.Register(this);
+
+        CreateCharacter();
+        CreateGameSystem();
+    }
+
     void Start()
+    {
+        m_myCharacter.AISystem.AIOn();
+
+        MonsterSpawner.Request request = new MonsterSpawner.Request(MonsterManager.Instance.GetNextMonster(), 3);
+        m_monsterSpawner.SendRequest(request);
+    }
+
+    void CreateCharacter()
     {
         m_myCharacter = CharacterManager.Instance.CreateCharacter();
         m_myCharacter.Initialize();
-        m_myCharacter.thisTransform.position = m_characerSpawnPoint.position;
-
-        GameObject objSpawner = new GameObject("objSpawner");
-        m_spawner = objSpawner.AddComponent<MonsterSpawner>();
-
-        m_myCharacter.AISystem.AIOn();
+        m_myCharacter.thisTransform.position = m_characerSpawnPoint.transform.position;
     }
 
-    void OnGUI()
+    void CreateGameSystem()
     {
-        if(GUI.Button(new Rect(100,100,100,100),"Spawn"))
-        {
-            Monster temp = MonsterManager.Instance.CreateMonster(MonsterType.GoblinFire);
-            temp.thisTransform.position = m_monsterSpawnPoint.position;
+        GameObject gameSystem = new GameObject("GameSystem");
 
-            //MonsterSpawner.Request request = new MonsterSpawner.Request(MonsterManager.Instance.CreateMonster(MonsterType.GoblinFire).thisObject, 1);
-            //m_spawner.SendRequest(request);
+        GameObject monsterSpawner = new GameObject("MonsterSpawner");
+        monsterSpawner.transform.parent = gameSystem.transform;
+        m_monsterSpawner = monsterSpawner.AddComponent<MonsterSpawner>();
+        m_monsterSpawner.transform.position = m_monsterSpawnPoint.transform.position;
+    }
+
+    public void OnGameEvent(GameEventType gameEventType)
+    {
+        switch (gameEventType)
+        {
+            case GameEventType.MonsterDied:
+                ++m_monsterKillCount;
+
+                if (m_monsterSpawner.RequestEmpty)
+                {
+                    MonsterSpawner.Request request = new MonsterSpawner.Request(MonsterManager.Instance.GetNextMonster(), m_monsterKillCount);
+                    m_monsterSpawner.SendRequest(request);
+                }
+                break;
+            default:
+                break;
         }
     }
 

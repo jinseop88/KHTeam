@@ -1,5 +1,5 @@
 ﻿using UnityEngine;
-using System.Collections;
+using System.Collections.Generic;
 
 public enum MonsterType
 {
@@ -8,13 +8,22 @@ public enum MonsterType
 
 public class MonsterManager : SingleTon<MonsterManager>
 {
-    public Monster CreateMonster(MonsterType eMonsterType)
+    Dictionary<MonsterType, Monster> monsters = new Dictionary<MonsterType, Monster>();
+
+    void Awake()
     {
-        GameObject objMonster = Resources.Load("Prefabs/Monster/" + eMonsterType.ToString() + "/" + eMonsterType.ToString()) as GameObject;
+        foreach (MonsterType monsterType in System.Enum.GetValues(typeof(MonsterType)))
+        {
+            GameObject gameObject = Resources.Load("Prefabs/Monster/" + monsterType.ToString() + "/" + monsterType.ToString()) as GameObject;
+            monsters[monsterType] = gameObject.GetComponent<Monster>();
+        }
+    }
 
-        GameObject clone = GameObject.Instantiate(objMonster) as GameObject;
-        Monster monster = clone.GetComponent<Monster>();
+    public Monster GetNextMonster()
+    {
+        System.Array enums = System.Enum.GetValues(typeof(MonsterType));
+        MonsterType monsterType = (MonsterType)enums.GetValue(Random.Range(0, enums.Length));
 
-        return monster;
+        return monsters[monsterType];
     }
 }
