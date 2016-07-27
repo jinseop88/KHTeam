@@ -49,12 +49,6 @@ public class SceneGame : SceneBase
 
     private void CreateMonsterSpawnSystem()
     {
-        GameObject objSpawnSystem = new GameObject("MonsterSpawnSystem");
-
-        MonsterSpawner monsterSpawner = objSpawnSystem.AddComponent<MonsterSpawner>();
-
-        MonsterSpawner.Request request = new MonsterSpawner.Request(MonsterManager.Instance.CreateMonster(MonsterType.GoblinFire).thisObject, 10);
-        monsterSpawner.SendRequest(request);
     }
  
     private void CreateMap()
