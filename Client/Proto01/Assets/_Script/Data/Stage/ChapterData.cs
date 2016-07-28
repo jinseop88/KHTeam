@@ -10,7 +10,7 @@ public class ChapterData
 }
 public class ChapterInfo : SingleTon<ChapterInfo>
 {
-    private List<ChapterData> m_dataList = new List<ChapterData>();
+    // private List<ChapterData> m_dataList = new List<ChapterData>();
 
 
 }

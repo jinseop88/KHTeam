@@ -38,15 +38,10 @@ public class Animation2D : MonoBehaviour
         m_owner = thisObject.GetComponent<Character>();
 
     }
-    //public void PlayAnimation(GameType.AnimationState state)
-    //{
-    //    m_animator.Play()
-    //}
-
 
     #region 애니메이션 실행함수
 
-    public void OnMove(bool bMove)
+    public virtual void OnMove(bool bMove)
     {
         m_animator.SetBool(GameType.AnimationState.Move.ToString(), bMove);
     }
@@ -54,7 +49,7 @@ public class Animation2D : MonoBehaviour
     /// 공격
     /// </summary>
     /// <param name="state"></param>
-    public void OnAttack()
+    public virtual void OnAttack()
     {
         m_animator.SetTrigger("Attack");
     }
@@ -62,19 +57,19 @@ public class Animation2D : MonoBehaviour
     /// <summary>
     /// 점프
     /// </summary>
-    public void OnJump()
+    public virtual void OnJump()
     {
         m_animator.SetTrigger(GameType.AnimationState.Jump.ToString());
     }
 
-    public void OnDamage()
+    public virtual void OnDamage()
     {
         m_animator.SetTrigger(GameType.AnimationState.Damage.ToString());
     }
     /// <summary>
     /// 죽었을때 
     /// </summary>
-    public void OnDead()
+    public virtual void OnDead()
     {
         m_animator.SetBool(GameType.AnimationState.Dead.ToString(), true);
     }

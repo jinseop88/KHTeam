@@ -4,6 +4,11 @@ using System.Collections.Generic;
 public enum MonsterType
 {
     GoblinFire,
+    Dokebi1,
+    Dokebi2,
+    Bird,
+    Boss1,
+    Boss2,
 }
 
 public class MonsterManager : SingleTon<MonsterManager>
