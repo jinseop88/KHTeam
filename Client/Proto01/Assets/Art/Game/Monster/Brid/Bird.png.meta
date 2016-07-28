@@ -1,9 +1,12 @@
 fileFormatVersion: 2
 guid: 9ad717b201cdf4a4c89ace101d456929
-timeCreated: 1468760512
-licenseType: Free
+timeCreated: 1469675326
+licenseType: Pro
 TextureImporter:
-  fileIDToRecycleName: {}
+  fileIDToRecycleName:
+    21300000: Bird_0
+    21300002: Bird_1
+    21300004: Bird_2
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -30,26 +33,140 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     filterMode: -1
-    aniso: -1
+    aniso: 16
     mipBias: -1
-    wrapMode: -1
-  nPOTScale: 1
+    wrapMode: 1
+  nPOTScale: 0
   lightmap: 0
   rGBM: 0
   compressionQuality: 50
   allowsAlphaSplitting: 0
-  spriteMode: 0
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spritePixelsToUnits: 100
-  alphaIsTransparency: 0
-  textureType: -1
+  alphaIsTransparency: 1
+  textureType: 8
   buildTargetSettings: []
   spriteSheet:
-    sprites: []
+    sprites:
+    - name: Bird_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 232
+        height: 235
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 84, y: 151}
+        - {x: 105, y: 142}
+        - {x: 113, y: 143}
+        - {x: 109, y: 187}
+        - {x: 88, y: 211}
+        - {x: 82, y: 210}
+        - {x: 80, y: 207}
+        - {x: 58, y: 209}
+        - {x: 49, y: 198}
+        - {x: 44, y: 163}
+        - {x: 44, y: 152}
+        - {x: 46, y: 147}
+        - {x: 46, y: 142}
+        - {x: 38, y: 168}
+        - {x: 47, y: 198}
+        - {x: 38, y: 202}
+        - {x: 13, y: 188}
+        - {x: 6, y: 171}
+        - {x: 6, y: 167}
+        - {x: 4, y: 169}
+        - {x: 1, y: 168}
+        - {x: 1, y: 162}
+        - {x: 2, y: 157}
+        - {x: 1, y: 148}
+        - {x: 6, y: 137}
+        - {x: 24, y: 116}
+        - {x: 14, y: 112}
+        - {x: 13, y: 108}
+        - {x: 19, y: 101}
+        - {x: 23, y: 78}
+        - {x: -7, y: 163}
+        - {x: -38, y: 195}
+        - {x: -97, y: 235}
+        - {x: -116, y: 235}
+        - {x: -116, y: 202}
+        - {x: -100, y: 135}
+        - {x: 39, y: 0}
+        - {x: 64, y: 0}
+        - {x: 91, y: 2}
+        - {x: 116, y: 72}
+        - {x: 116, y: 126}
+        - {x: 111, y: 134}
+    - name: Bird_1
+      rect:
+        serializedVersion: 2
+        x: 310
+        y: 1
+        width: 231
+        height: 234
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 111.5, y: 132}
+        - {x: 87.5, y: 150}
+        - {x: 103.5, y: 142}
+        - {x: 112.5, y: 142}
+        - {x: 105.5, y: 185}
+        - {x: 96.5, y: 198}
+        - {x: 98.5, y: 219}
+        - {x: 63.5, y: 234}
+        - {x: -115.5, y: 234}
+        - {x: -115.5, y: 182}
+        - {x: 14.5, y: 0}
+        - {x: 96.5, y: 0}
+        - {x: 114.5, y: 69}
+        - {x: 115.5, y: 74}
+        - {x: 115.5, y: 128}
+    - name: Bird_2
+      rect:
+        serializedVersion: 2
+        x: 648
+        y: 1
+        width: 232
+        height: 234
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 92, y: 233}
+        - {x: 57, y: 212}
+        - {x: 51, y: 197}
+        - {x: 44, y: 169}
+        - {x: 43, y: 152}
+        - {x: 47, y: 145}
+        - {x: -54, y: 205}
+        - {x: -111, y: 234}
+        - {x: -116, y: 234}
+        - {x: -116, y: 211}
+        - {x: -76, y: 168}
+        - {x: -63, y: 165}
+        - {x: -59, y: 164}
+        - {x: -61, y: 164}
+        - {x: -62, y: 165}
+        - {x: -74, y: 165}
+        - {x: -79, y: 164}
+        - {x: -83, y: 157}
+        - {x: -34, y: 40}
+        - {x: 18, y: 0}
+        - {x: 97, y: 0}
+        - {x: 108, y: 10}
+        - {x: 116, y: 19}
+        - {x: 116, y: 190}
     outline: []
   spritePackingTag: 
   userData: 
