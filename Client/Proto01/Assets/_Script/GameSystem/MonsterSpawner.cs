@@ -6,13 +6,16 @@ public class MonsterSpawner : MonoBehaviour
 {
     public class Request
     {
-        public Request(GameObject monsterPrefab, int monsterCount)
+        private Monster monsterPrefab;
+        private int monsterCount;
+
+        public Request(Monster monsterPrefab, int monsterCount)
         {
             this.monsterPrefab = monsterPrefab;
             this.monsterCount = monsterCount;
         }
 
-        public GameObject MonsterPrefab
+        public Monster MonsterPrefab
         {
             get
             {
@@ -27,12 +30,16 @@ public class MonsterSpawner : MonoBehaviour
                 return monsterCount;
             }
         }
-
-        private GameObject monsterPrefab;
-        private int monsterCount;
-    }
-
+    } 
     private Queue<Request> requests = new Queue<Request>();
+
+    public bool RequestEmpty
+    {
+        get
+        {
+            return requests.Count == 0;
+        }
+    }
 
     public void SendRequest(Request request)
     {
@@ -65,10 +72,11 @@ public class MonsterSpawner : MonoBehaviour
 
         do
         {
-            Monster monster = ((GameObject)Instantiate(request.MonsterPrefab, transform.position, transform.rotation)).GetComponent<Monster>();
-            monster.thisTransform.parent = transform.parent;
+            GameObject gameObject = Instantiate(request.MonsterPrefab.gameObject, transform.position, transform.rotation) as GameObject;
 
-            yield return new WaitUntil(() => monster == null);
+            yield return new WaitUntil(() => gameObject == null);
+
+            GameEventManager.Instance.Notify(GameEventType.MonsterDied);
         } while (--standbyMonsterCount != 0);
     }
 }

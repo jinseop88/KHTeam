@@ -31,7 +31,9 @@ public class Monster : Actor
         if(currentHP <= 0f)
         {
             animation2D.OnDead();
-            Invoke("Delete", 0.5f);
+
+            // How can I catch when the dead animation is finished?
+            Invoke("Delete", 3.0f);
         }
     }
 
@@ -44,6 +46,7 @@ public class Monster : Actor
     {
         IngameManager.Instance.m_monsterList.Add(this);
     }
+
     void OnDisable()
     {
         IngameManager.Instance.m_monsterList.Remove(this);

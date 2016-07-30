@@ -6,12 +6,6 @@ using System.Collections;
 /// </summary>
 public class Skull : BaseEntity 
 {
-    private GameObject m_thisObject;
-    private Transform m_thisTansform;
-
-    public GameObject thisObject { get { return m_thisObject; } }
-    public Transform thisTransform { get { return m_thisTansform; } }
-
     /// <summary>
     /// 뱅글 돌 녀석
     /// </summary>
@@ -39,8 +33,6 @@ public class Skull : BaseEntity
 
     void Awake()
     {
-        m_thisObject = gameObject;
-        m_thisTansform = transform;
         m_bIsActive = false;
     }
     void Update()
@@ -60,7 +52,7 @@ public class Skull : BaseEntity
         Vector3 delta = m_vForce * Time.fixedDeltaTime;
         m_vForce -= delta;
 
-        m_thisTansform.position += delta;
+        thisTransform.position += delta;
         m_trTurnTarget.Rotate(new Vector3(0f, 0f, -delta.x * 90f));
 
         CheckGround();
@@ -110,7 +102,7 @@ public class Skull : BaseEntity
     /// </summary>
     bool CheckInCamera()
     {
-        Vector3 vScreenPos = Camera.main.WorldToScreenPoint(m_thisTansform.position);
+        Vector3 vScreenPos = Camera.main.WorldToScreenPoint(thisTransform.position);
 
         //왼쪽으로 넘어가거나 오른쪽으로 넘어가면 카메라 밖에 있다는거
         return !m_bIsActive || (vScreenPos.x > 0 && vScreenPos.x < Camera.main.pixelWidth);
