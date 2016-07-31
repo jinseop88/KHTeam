@@ -1,4 +1,4 @@
-using UnityEngine;
+﻿using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
 
@@ -86,18 +86,5 @@ public class Actor : BaseEntity
         battleMy.Casting(state);
         animation2D.OnAttack();
     }
-
-    /// <summary>
-    /// 점프
-    /// </summary>
-    public void Jump()
-    {
-        animation2D.OnJump();
-        movement2D.OnJump();
-    }
-    //protected void Update()
-    //{
-    //    CheckGround();
-    //}
     
 }
