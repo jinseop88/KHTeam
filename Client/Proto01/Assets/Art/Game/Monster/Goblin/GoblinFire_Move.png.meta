@@ -1,6 +1,6 @@
 fileFormatVersion: 2
-guid: db2fad48a2cf31646960a3f4c37437fb
-timeCreated: 1465617629
+guid: df291c5a6919b1f409fd5703a378c5dc
+timeCreated: 1469675374
 licenseType: Pro
 TextureImporter:
   fileIDToRecycleName:
@@ -11,7 +11,7 @@ TextureImporter:
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
-    enableMipMap: 0
+    enableMipMap: 1
     linearTexture: 0
     correctGamma: 0
     fadeOut: 0
@@ -30,11 +30,11 @@ TextureImporter:
   cubemapConvolutionSteps: 7
   cubemapConvolutionExponent: 1.5
   seamlessCubemap: 0
-  textureFormat: -3
+  textureFormat: -1
   maxTextureSize: 2048
   textureSettings:
     filterMode: -1
-    aniso: -1
+    aniso: 16
     mipBias: -1
     wrapMode: 1
   nPOTScale: 0
@@ -58,80 +58,94 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 254
-        width: 128
-        height: 242
+        y: 0
+        width: 110
+        height: 305
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline:
-      - - {x: -19, y: 207}
-        - {x: -49, y: 176}
-        - {x: -51, y: 154}
-        - {x: -51, y: 17}
-        - {x: -35, y: 0}
-        - {x: 33, y: 0}
-        - {x: 33, y: 189}
-        - {x: -1, y: 207}
+      - - {x: 15, y: 305}
+        - {x: -18, y: 305}
+        - {x: -55, y: 252}
+        - {x: -55, y: 246}
+        - {x: -50, y: 218}
+        - {x: -55, y: 171}
+        - {x: -55, y: 5}
+        - {x: -39, y: 0}
+        - {x: 47, y: 0}
+        - {x: 53, y: 14}
+        - {x: 55, y: 30}
+        - {x: 55, y: 244}
     - name: GoblinFire_Move_1
       rect:
         serializedVersion: 2
-        x: 153
-        y: 254
-        width: 128
-        height: 242
+        x: 198
+        y: 2
+        width: 138
+        height: 271
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline:
-      - - {x: 1, y: 186}
-        - {x: -21, y: 186}
-        - {x: -46, y: 172}
-        - {x: -60, y: 79}
-        - {x: -60, y: 13}
-        - {x: -45, y: 0}
-        - {x: 31, y: 0}
-        - {x: 44, y: 13}
-        - {x: 44, y: 68}
-        - {x: 28, y: 158}
+      - - {x: -58, y: 213}
+        - {x: -69, y: 100}
+        - {x: -69, y: 24}
+        - {x: -51, y: 8}
+        - {x: -48, y: 0}
+        - {x: 69, y: 0}
+        - {x: 69, y: 222}
+        - {x: 67, y: 244}
+        - {x: 5, y: 271}
+        - {x: -15, y: 271}
+        - {x: -50, y: 233}
     - name: GoblinFire_Move_2
       rect:
         serializedVersion: 2
-        x: 322
-        y: 254
-        width: 128
-        height: 242
+        x: 427
+        y: 2
+        width: 161
+        height: 278
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline:
-      - - {x: 17, y: 189}
-        - {x: -34, y: 189}
-        - {x: -63, y: 119}
-        - {x: -63, y: 0}
-        - {x: 56, y: 0}
-        - {x: 56, y: 54}
-        - {x: 30, y: 174}
+      - - {x: 59.5, y: 227}
+        - {x: 9.5, y: 278}
+        - {x: -22.5, y: 278}
+        - {x: -53.5, y: 232}
+        - {x: -47.5, y: 192}
+        - {x: -48.5, y: 125}
+        - {x: -80.5, y: 77}
+        - {x: -80.5, y: 11}
+        - {x: -79.5, y: 5}
+        - {x: -58.5, y: 0}
+        - {x: 57.5, y: 0}
+        - {x: 80.5, y: 14}
+        - {x: 80.5, y: 82}
+        - {x: 52.5, y: 145}
     - name: GoblinFire_Move_3
       rect:
         serializedVersion: 2
-        x: 488
-        y: 254
-        width: 128
-        height: 242
+        x: 680
+        y: 2
+        width: 112
+        height: 338
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline:
-      - - {x: -16, y: 231}
-        - {x: -36, y: 185}
-        - {x: -45, y: 102}
-        - {x: -45, y: 5}
-        - {x: -43, y: 0}
-        - {x: 35, y: 0}
-        - {x: 38, y: 5}
-        - {x: 38, y: 111}
-        - {x: 13, y: 231}
+      - - {x: 8, y: 338}
+        - {x: -13, y: 338}
+        - {x: -31, y: 318}
+        - {x: -56, y: 174}
+        - {x: -56, y: 29}
+        - {x: -51, y: 7}
+        - {x: -47, y: 0}
+        - {x: 52, y: 0}
+        - {x: 56, y: 1}
+        - {x: 56, y: 176}
+        - {x: 45, y: 286}
     outline: []
   spritePackingTag: 
   userData: 

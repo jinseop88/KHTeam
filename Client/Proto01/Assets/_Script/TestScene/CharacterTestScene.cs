@@ -23,7 +23,7 @@ public class CharacterTestScene : MonoBehaviour, IGameEventListener
     {
         m_myCharacter.AISystem.AIOn();
 
-        MonsterSpawner.Request request = new MonsterSpawner.Request(MonsterManager.Instance.GetNextMonster(), 3);
+        MonsterSpawner.Request request = new MonsterSpawner.Request(MonsterManager.Instance.GetNextMonster(), 1);
         m_monsterSpawner.SendRequest(request);
     }
 
@@ -53,7 +53,7 @@ public class CharacterTestScene : MonoBehaviour, IGameEventListener
 
                 if (m_monsterSpawner.RequestEmpty)
                 {
-                    MonsterSpawner.Request request = new MonsterSpawner.Request(MonsterManager.Instance.GetNextMonster(), m_monsterKillCount);
+                    MonsterSpawner.Request request = new MonsterSpawner.Request(MonsterManager.Instance.GetNextMonster(), 1);
                     m_monsterSpawner.SendRequest(request);
                 }
                 break;
