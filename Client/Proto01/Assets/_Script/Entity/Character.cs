@@ -1,4 +1,4 @@
-﻿using UnityEngine;
+using UnityEngine;
 using System.Collections;
 
 public class Character : Actor 
@@ -26,7 +26,7 @@ public class Character : Actor
     private void OnDamage(BaseEntity attacker, SkillImpactInfo skillImpact)
     {
         animation2D.OnDamage();
-        currentHP -= 20f;
+        currentHP -= 10f;
 
         if (currentHP < 0f)
         {

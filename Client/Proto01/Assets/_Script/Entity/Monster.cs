@@ -1,4 +1,4 @@
-﻿using UnityEngine;
+using UnityEngine;
 using System.Collections;
 
 public class Monster : Actor 
@@ -37,13 +37,6 @@ public class Monster : Actor
         }
     }
 
-    private IEnumerator DeadCheck()
-    {
-        while(true)
-        {
-            yield return null;
-        }
-    }
     public void Delete()
     {
         Destroy(thisObject);
