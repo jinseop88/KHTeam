@@ -10,7 +10,7 @@ public class KeyboardInput : InputBase
     {
         if(Input.GetKeyDown(KeyCode.Alpha1))
         {
-            character.Attack(GameType.AnimationState.Projectile);
+            character.Attack(GameType.AnimationState.Skill01);
         }
 	}
 }

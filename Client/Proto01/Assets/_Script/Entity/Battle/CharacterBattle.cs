@@ -25,7 +25,7 @@ public class CharacterBattle : Battle
         Skill target = m_skillList.Find(arg => arg.m_animationState == state);
         
         //원거리
-        if (state == GameType.AnimationState.Projectile)
+        if (state == GameType.AnimationState.Skill01)
         {
             Projectile temp = target.thisObject.GetComponentInChildren<Projectile>();
             GameObject clone = Instantiate(temp.gameObject) as GameObject;

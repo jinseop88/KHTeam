@@ -67,13 +67,13 @@ public class CharacterAI : BaseAI
         //터치되었으면 공격
         if (m_IsTouched)
         {
-            m_Owner.Attack(GameType.AnimationState.Projectile);
+            m_Owner.Attack(GameType.AnimationState.Skill01);
             m_IsTouched = false;
         }
 
         if(isEnableAttack)
         {
-            m_Owner.Attack(GameType.AnimationState.Projectile);
+            m_Owner.Attack(GameType.AnimationState.Skill01);
             m_LastAtkTime = Time.realtimeSinceStartup;
         }
     }
