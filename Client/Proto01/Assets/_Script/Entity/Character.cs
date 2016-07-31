@@ -26,7 +26,7 @@ public class Character : Actor
     private void OnDamage(BaseEntity attacker, SkillImpactInfo skillImpact)
     {
         animation2D.OnDamage();
-        currentHP -= 10f;
+        currentHP -= 20f;
 
         if (currentHP < 0f)
         {

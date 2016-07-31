@@ -45,7 +45,7 @@ public class GoodSystem : UIBase
         /// <summary>
         /// Coin을 get했을때 받아올 bool값을 반환하는 오브젝트의 스크립트 선언
         /// </summary>
-        GameObject.Find("해당 컴포넌트").GetComponent("해당 스크립트");
+        GameObject.Find("Character").GetComponent("Character");
 
         
 
@@ -61,33 +61,34 @@ public class GoodSystem : UIBase
         Initialize();
 
         /// <summary>
-        /// Coin컴포넌트에 bool값 가져오기
+        /// bool값 가져오기
         /// </summary>
-        //Coin_collect = 
+        Coin_collect = thisObject.GetComponent<Character>().getCoin;
+        Flower_collect = thisObject.GetComponent<Character>().getFlower;
+        Sansam_collect = thisObject.GetComponent<Character>().getSansam;
     }
 
     IEnumerator GetGoods()
     {
-        ///switch로 바꿔도 될듯
+        
         while (true)
         {
             /// <summary>
-            /// Character로부터 Coin과 충돌했을때 bool값을 true로 받아옴
+            /// Character과 충돌했을때 bool값을 true로 받아옴
             /// </summary>
-            //if (Coin_collect = true){
-            //    m_uiCoinSystem.coinCount = m_uiCoinSystem.coinCount + 1;
-
-            //}
-            //if (Flower_collect = true){
-            //    m_uiFlowerSystem.flowerCount = m_uiFlowerSystem.flowerCount + 1;
-            //}
-            //if (Sansam_collect = true){
-            //    m_uiSansamSystem.sansamCount = m_uiSansamSystem.sansamCount + 1;
-            //}
+            if (Coin_collect == true){
+                m_uiCoinSystem.coinCount = m_uiCoinSystem.coinCount + 1;
+                Coin_collect = false;
+            }
+            if (Flower_collect == true){
+                m_uiFlowerSystem.FlowerCount = m_uiFlowerSystem.FlowerCount + 1;
+                Flower_collect = false;
+            }
+            if (Sansam_collect == true){
+                m_uiSansamSystem.SansamCount = m_uiSansamSystem.SansamCount + 1;
+                Sansam_collect = false;
+            } 
             
-
-            //m_uiCoinSystem.coinCount = m_uiCoinSystem.coinCount + 1;
-            //yield return new WaitForSeconds(0.01f);
 
             return null;
         }
