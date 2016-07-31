@@ -19,6 +19,6 @@ public class Background : MonoBehaviour
     {
         renderer.material.SetTextureOffset("_MainTex", offset);
         offset += accelerator;
-        Debug.Log(offset.ToString());
+       
     }
 }
