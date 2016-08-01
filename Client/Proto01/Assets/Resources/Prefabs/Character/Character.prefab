@@ -225,6 +225,31 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_animator: {fileID: 9563648}
+  m_animStateInfo:
+  - state: 0
+    name: Idle
+    nameHash: 2081823275
+    clip: {fileID: 7400000, guid: e5476979a9943ba43a5f7e7b6a58da30, type: 2}
+  - state: 1
+    name: Move
+    nameHash: 1326225478
+    clip: {fileID: 7400000, guid: e5476979a9943ba43a5f7e7b6a58da30, type: 2}
+  - state: 2
+    name: Damaged
+    nameHash: 326473335
+    clip: {fileID: 0}
+  - state: 3
+    name: Dead
+    nameHash: 1293411866
+    clip: {fileID: 0}
+  - state: 4
+    name: Skill01
+    nameHash: -941258041
+    clip: {fileID: 7400000, guid: 0b7b7da55f464904baec7fd5b9472e50, type: 2}
+  - state: 5
+    name: Skill02
+    nameHash: 1592580989
+    clip: {fileID: 0}
 --- !u!114 &11462254
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -274,7 +299,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0dab82f5d0457754b84e704afbd2837b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_animationState: 5
+  m_animationState: 4
   m_fTotalTime: 0.5
 --- !u!135 &13531374
 SphereCollider:

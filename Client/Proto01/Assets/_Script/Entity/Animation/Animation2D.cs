@@ -28,22 +28,96 @@ public class Animation2D : MonoBehaviour
     }
     #endregion
 
+
+    [SerializeField]
+    protected Animator m_animator;
+    protected AnimatorOverrideController m_controller;
     protected Actor m_owner;
 
-    public Animator m_animator;
-
-
-    public void Initialize()
+    [System.Serializable]
+    public class AnimStateInfo
     {
-        m_owner = thisObject.GetComponent<Character>();
-
+        public GameType.AnimationState state;
+        public string name;
+        public int nameHash;
+        public AnimationClip clip;
     }
+
+    [HideInInspector, SerializeField]
+    public List<AnimStateInfo> m_animStateInfo = new List<AnimStateInfo>();
+
+    public Dictionary<GameType.AnimationState, int> m_animHash;
+
+    public virtual void Initialize()
+    {
+        m_controller = new AnimatorOverrideController();
+        m_controller.runtimeAnimatorController = m_animator.runtimeAnimatorController;
+
+        if (m_animStateInfo != null)
+        {
+            m_animHash = new Dictionary<GameType.AnimationState, int>();
+
+            for (int i = 0; i < m_animStateInfo.Count; i++)
+            {
+                // mechanim state와 IActorAnimation state 를 매칭할 해시코드 생성
+                try
+                {
+                    m_animHash.Add((GameType.AnimationState)System.Enum.Parse(typeof(GameType.AnimationState), m_animStateInfo[i].name), m_animStateInfo[i].nameHash);
+                }
+                catch (System.Exception e)
+                {
+                    Debug.LogError(e.Message);
+                }
+
+                m_controller[m_animStateInfo[i].name] = m_animStateInfo[i].clip;
+            }
+        }
+
+        m_animator.runtimeAnimatorController = m_controller;
+    }
+
+    public void SetBool(string param, bool val)
+    {
+        m_animator.SetBool(param, val);
+    }
+
+    public void SetTrigger(string param)
+    {
+        m_animator.SetTrigger(param);
+    }
+
+    public void SetFloat(string param, float val)
+    {
+        m_animator.SetFloat(param, val);
+    }
+
+    public bool GetBool(string param)
+    {
+        return m_animator.GetBool(param);
+    }
+
+    public bool IsPlaying(params GameType.AnimationState[] states)
+    {
+        for (int i = 0; i < states.Length; i++)
+        {
+            if (!m_animHash.ContainsKey(states[i]))
+                continue;
+
+            for (int j = 0; j < m_animator.layerCount; j++)
+            {
+                if (m_animator.GetCurrentAnimatorStateInfo(j).shortNameHash == m_animHash[states[i]])
+                    return true;
+            }
+        }
+
+        return false;
+    }
+
 
     #region 애니메이션 실행함수
 
     public virtual void OnMove(bool bMove)
     {
-        m_animator.SetBool(GameType.AnimationState.Move.ToString(), bMove);
     }
     /// <summary>
     /// 공격
@@ -54,27 +128,21 @@ public class Animation2D : MonoBehaviour
         m_animator.SetTrigger("Attack");
     }
 
-    /// <summary>
-    /// 점프
-    /// </summary>
-    public virtual void OnJump()
-    {
-        m_animator.SetTrigger(GameType.AnimationState.Jump.ToString());
-    }
-
     public virtual void OnDamage()
     {
-        m_animator.SetTrigger(GameType.AnimationState.Damage.ToString());
+        
     }
+
     /// <summary>
     /// 죽었을때 
     /// </summary>
     public virtual void OnDead()
     {
-        m_animator.SetBool(GameType.AnimationState.Dead.ToString(), true);
     }
     #endregion
+
     #region 애니메이션 확인함수
 
     #endregion
+
 }

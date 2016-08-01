@@ -63,9 +63,9 @@ public class GoodSystem : UIBase
         /// <summary>
         /// bool값 가져오기
         /// </summary>
-        Coin_collect = thisObject.GetComponent<Character>().getCoin;
-        Flower_collect = thisObject.GetComponent<Character>().getFlower;
-        Sansam_collect = thisObject.GetComponent<Character>().getSansam;
+        //Coin_collect = thisObject.GetComponent<Character>().getCoin;
+        //Flower_collect = thisObject.GetComponent<Character>().getFlower;
+        //Sansam_collect = thisObject.GetComponent<Character>().getSansam;
     }
 
     IEnumerator GetGoods()

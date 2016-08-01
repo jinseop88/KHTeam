@@ -9,7 +9,7 @@ public class CharacterTestScene : MonoBehaviour, IGameEventListener
     private Character m_myCharacter;
     private MonsterSpawner m_monsterSpawner;
 
-    private int m_monsterKillCount;
+    private int m_monsterKillCount;   
 
     void Awake()
     {
@@ -17,6 +17,7 @@ public class CharacterTestScene : MonoBehaviour, IGameEventListener
 
         CreateCharacter();
         CreateGameSystem();
+        CreateMap();
     }
 
     void Start()
@@ -25,8 +26,8 @@ public class CharacterTestScene : MonoBehaviour, IGameEventListener
 
         MonsterSpawner.Request request = new MonsterSpawner.Request(MonsterManager.Instance.GetNextMonster(), 1);
         m_monsterSpawner.SendRequest(request);
-    }
-
+        
+    }  
     void CreateCharacter()
     {
         m_myCharacter = CharacterManager.Instance.CreateCharacter();
@@ -42,6 +43,13 @@ public class CharacterTestScene : MonoBehaviour, IGameEventListener
         monsterSpawner.transform.parent = gameSystem.transform;
         m_monsterSpawner = monsterSpawner.AddComponent<MonsterSpawner>();
         m_monsterSpawner.transform.position = m_monsterSpawnPoint.transform.position;
+
+        
+    }
+
+    private void CreateMap()
+    {      
+        MapManager.Instance.ChangeMap(MapType.Mt_ChunTae, 3);
     }
 
     public void OnGameEvent(GameEventType gameEventType)
@@ -50,6 +58,8 @@ public class CharacterTestScene : MonoBehaviour, IGameEventListener
         {
             case GameEventType.MonsterDied:
                 ++m_monsterKillCount;
+                Debug.Log(m_monsterKillCount);
+                                
 
                 if (m_monsterSpawner.RequestEmpty)
                 {
@@ -60,6 +70,8 @@ public class CharacterTestScene : MonoBehaviour, IGameEventListener
             default:
                 break;
         }
+        
     }
 
+    
 }
