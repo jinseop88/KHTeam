@@ -48,7 +48,7 @@ public class Animation2D : MonoBehaviour
 
     public Dictionary<GameType.AnimationState, int> m_animHash;
 
-    public virtual void Initialize()
+    public void Initialize()
     {
         m_controller = new AnimatorOverrideController();
         m_controller.runtimeAnimatorController = m_animator.runtimeAnimatorController;

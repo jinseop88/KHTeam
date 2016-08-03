@@ -29,7 +29,7 @@ GameObject:
   - 136: {fileID: 13631546}
   - 114: {fileID: 11442958}
   - 114: {fileID: 11418040}
-  - 114: {fileID: 11403444}
+  - 114: {fileID: 11440912}
   m_Layer: 10
   m_Name: Bird
   m_TagString: Untagged
@@ -81,18 +81,6 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
---- !u!114 &11403444
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 194808}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b633701b7e2af9546bd92d18efe2f8f9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_animator: {fileID: 9507060}
 --- !u!114 &11418040
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -119,6 +107,43 @@ MonoBehaviour:
   m_Dir: 0
   m_jump: 10
   m_bIsGrounded: 0
+--- !u!114 &11440912
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 194808}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b074f3a69391ea04fa22bdda16895523, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_animator: {fileID: 9507060}
+  m_animStateInfo:
+  - state: 0
+    name: Idle
+    nameHash: 2081823275
+    clip: {fileID: 0}
+  - state: 1
+    name: Move
+    nameHash: 1326225478
+    clip: {fileID: 0}
+  - state: 2
+    name: Damaged
+    nameHash: 326473335
+    clip: {fileID: 0}
+  - state: 3
+    name: Dead
+    nameHash: 1293411866
+    clip: {fileID: 0}
+  - state: 4
+    name: Skill01
+    nameHash: -941258041
+    clip: {fileID: 0}
+  - state: 5
+    name: Skill02
+    nameHash: 1592580989
+    clip: {fileID: 0}
 --- !u!114 &11442958
 MonoBehaviour:
   m_ObjectHideFlags: 1

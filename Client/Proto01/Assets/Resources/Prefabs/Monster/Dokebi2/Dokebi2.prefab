@@ -29,7 +29,7 @@ GameObject:
   - 136: {fileID: 13632924}
   - 114: {fileID: 11480536}
   - 114: {fileID: 11425990}
-  - 114: {fileID: 11480488}
+  - 114: {fileID: 11427046}
   m_Layer: 10
   m_Name: Dokebi2
   m_TagString: Untagged
@@ -92,7 +92,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5325a74a2b60dd440a47a3c9944984c4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &11480488
+--- !u!114 &11427046
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -100,10 +100,35 @@ MonoBehaviour:
   m_GameObject: {fileID: 135830}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b633701b7e2af9546bd92d18efe2f8f9, type: 3}
+  m_Script: {fileID: 11500000, guid: b074f3a69391ea04fa22bdda16895523, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   m_animator: {fileID: 9535890}
+  m_animStateInfo:
+  - state: 0
+    name: Idle
+    nameHash: 2081823275
+    clip: {fileID: 0}
+  - state: 1
+    name: Move
+    nameHash: 1326225478
+    clip: {fileID: 0}
+  - state: 2
+    name: Damaged
+    nameHash: 326473335
+    clip: {fileID: 0}
+  - state: 3
+    name: Dead
+    nameHash: 1293411866
+    clip: {fileID: 0}
+  - state: 4
+    name: Skill01
+    nameHash: -941258041
+    clip: {fileID: 0}
+  - state: 5
+    name: Skill02
+    nameHash: 1592580989
+    clip: {fileID: 0}
 --- !u!114 &11480536
 MonoBehaviour:
   m_ObjectHideFlags: 1
