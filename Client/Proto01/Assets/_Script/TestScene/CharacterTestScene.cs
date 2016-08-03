@@ -24,10 +24,9 @@ public class CharacterTestScene : MonoBehaviour, IGameEventListener
     {
         m_myCharacter.AISystem.AIOn();
 
-        MonsterSpawner.Request request = new MonsterSpawner.Request(MonsterManager.Instance.GetNextMonster(), 1);
-        m_monsterSpawner.SendRequest(request);
-        
-    }  
+        m_monsterSpawner.Spawn(MonsterManager.Instance.GetNextMonster(), 1);
+    }
+
     void CreateCharacter()
     {
         m_myCharacter = CharacterManager.Instance.CreateCharacter();
@@ -43,12 +42,10 @@ public class CharacterTestScene : MonoBehaviour, IGameEventListener
         monsterSpawner.transform.parent = gameSystem.transform;
         m_monsterSpawner = monsterSpawner.AddComponent<MonsterSpawner>();
         m_monsterSpawner.transform.position = m_monsterSpawnPoint.transform.position;
-
-        
     }
 
     private void CreateMap()
-    {      
+    {
         MapManager.Instance.ChangeMap(MapType.Mt_ChunTae, 3);
     }
 
@@ -59,19 +56,11 @@ public class CharacterTestScene : MonoBehaviour, IGameEventListener
             case GameEventType.MonsterDied:
                 ++m_monsterKillCount;
                 Debug.Log(m_monsterKillCount);
-                                
 
-                if (m_monsterSpawner.RequestEmpty)
-                {
-                    MonsterSpawner.Request request = new MonsterSpawner.Request(MonsterManager.Instance.GetNextMonster(), 1);
-                    m_monsterSpawner.SendRequest(request);
-                }
+                m_monsterSpawner.Spawn(MonsterManager.Instance.GetNextMonster(), 1);
                 break;
             default:
                 break;
         }
-        
     }
-
-    
 }

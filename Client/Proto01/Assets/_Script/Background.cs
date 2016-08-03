@@ -3,7 +3,7 @@ using System.Collections;
 
 public class Background : MonoBehaviour
 {
-    private Renderer renderer = null;
+    private new Renderer renderer = null;
     private Vector2 offset = new Vector2(0.0f, 0.0f);
     public Vector2 accelerator = new Vector2(0.01f, 0.0f);
 

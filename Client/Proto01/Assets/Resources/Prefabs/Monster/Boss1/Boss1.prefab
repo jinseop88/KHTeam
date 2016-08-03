@@ -73,7 +73,7 @@ Animator:
   m_GameObject: {fileID: 177826}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 22100000, guid: a1af1c93a1894e54f8f305befb62be0c, type: 2}
+  m_Controller: {fileID: 9100000, guid: 256168a8030d5cd4280b7eaa18a40fd3, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -121,7 +121,7 @@ MonoBehaviour:
   - state: 0
     name: Idle
     nameHash: 2081823275
-    clip: {fileID: 0}
+    clip: {fileID: 7400000, guid: 22c5b35b1ea728f4d85283e1a389f2d3, type: 2}
   - state: 1
     name: Move
     nameHash: 1326225478
@@ -133,7 +133,7 @@ MonoBehaviour:
   - state: 3
     name: Dead
     nameHash: 1293411866
-    clip: {fileID: 0}
+    clip: {fileID: 7400000, guid: 625fc23e691fe8641a80144a34f28c7c, type: 2}
   - state: 4
     name: Skill01
     nameHash: -941258041
@@ -179,17 +179,20 @@ SpriteRenderer:
   m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 0
+  m_ReflectionProbeUsage: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000e000000000000000, type: 0}
+  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
   m_SubsetIndices: 
   m_StaticBatchRoot: {fileID: 0}
-  m_UseLightProbes: 0
-  m_ReflectionProbeUsage: 0
   m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
+  m_SelectedWireframeHidden: 1
   m_MinimumChartSize: 4
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89

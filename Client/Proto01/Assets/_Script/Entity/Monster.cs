@@ -33,7 +33,7 @@ public class Monster : Actor
             animation2D.OnDead();
 
             // How can I catch when the dead animation is finished?
-            Invoke("Delete", 3.0f);
+            Invoke("Delete", 1.0f);
         }
     }
 
@@ -47,6 +47,7 @@ public class Monster : Actor
     public void Delete()
     {
         Destroy(thisObject);
+        GameEventManager.Instance.Notify(GameEventType.MonsterDied);
     }
 
     void OnEnable()
