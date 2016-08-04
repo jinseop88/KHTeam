@@ -12,7 +12,7 @@ GameObject:
   - 136: {fileID: 13672772}
   - 114: {fileID: 11480892}
   - 114: {fileID: 11439956}
-  - 114: {fileID: 11470236}
+  - 114: {fileID: 11402968}
   m_Layer: 10
   m_Name: Dokebi1
   m_TagString: Untagged
@@ -29,7 +29,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 406632}
   - 95: {fileID: 9512340}
-  - 212: {fileID: 21200910}
+  - 212: {fileID: 21271960}
   m_Layer: 10
   m_Name: Dokebi1
   m_TagString: Untagged
@@ -73,7 +73,7 @@ Animator:
   m_GameObject: {fileID: 199156}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 256168a8030d5cd4280b7eaa18a40fd3, type: 2}
+  m_Controller: {fileID: 9100000, guid: f307a3ff1cc0cb7449fe59c27f5eee03, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -81,6 +81,43 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
+--- !u!114 &11402968
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 159580}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b074f3a69391ea04fa22bdda16895523, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_animator: {fileID: 9512340}
+  m_animStateInfo:
+  - state: 0
+    name: Idle
+    nameHash: 2081823275
+    clip: {fileID: 7400000, guid: 679843fa5e19f484195237bb8edcbd02, type: 2}
+  - state: 1
+    name: Move
+    nameHash: 1326225478
+    clip: {fileID: 0}
+  - state: 2
+    name: Damaged
+    nameHash: 326473335
+    clip: {fileID: 0}
+  - state: 3
+    name: Dead
+    nameHash: 1293411866
+    clip: {fileID: 7400000, guid: 625fc23e691fe8641a80144a34f28c7c, type: 2}
+  - state: 4
+    name: Attack
+    nameHash: 1080829965
+    clip: {fileID: 0}
+  - state: 5
+    name: Skill02
+    nameHash: 1592580989
+    clip: {fileID: 0}
 --- !u!114 &11414802
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -107,18 +144,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5325a74a2b60dd440a47a3c9944984c4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &11470236
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 159580}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b633701b7e2af9546bd92d18efe2f8f9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_animator: {fileID: 9512340}
 --- !u!114 &11480892
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -145,7 +170,7 @@ CapsuleCollider:
   m_Height: 1.5
   m_Direction: 1
   m_Center: {x: 0, y: 0.75, z: 0}
---- !u!212 &21200910
+--- !u!212 &21271960
 SpriteRenderer:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -170,7 +195,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
-  m_SortingOrder: 500
+  m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 07c2b7299120ddc4cbb576e661b3c663, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0

@@ -9,7 +9,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 420110}
   - 95: {fileID: 9535890}
-  - 212: {fileID: 21220576}
+  - 212: {fileID: 21263778}
   m_Layer: 10
   m_Name: Dokebi2
   m_TagString: Untagged
@@ -29,7 +29,7 @@ GameObject:
   - 136: {fileID: 13632924}
   - 114: {fileID: 11480536}
   - 114: {fileID: 11425990}
-  - 114: {fileID: 11480488}
+  - 114: {fileID: 11427046}
   m_Layer: 10
   m_Name: Dokebi2
   m_TagString: Untagged
@@ -73,7 +73,7 @@ Animator:
   m_GameObject: {fileID: 128740}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 22100000, guid: 3513840246a23ce4eb3d068bed5ec3da, type: 2}
+  m_Controller: {fileID: 9100000, guid: f307a3ff1cc0cb7449fe59c27f5eee03, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -92,7 +92,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5325a74a2b60dd440a47a3c9944984c4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &11480488
+--- !u!114 &11427046
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -100,10 +100,35 @@ MonoBehaviour:
   m_GameObject: {fileID: 135830}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b633701b7e2af9546bd92d18efe2f8f9, type: 3}
+  m_Script: {fileID: 11500000, guid: b074f3a69391ea04fa22bdda16895523, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   m_animator: {fileID: 9535890}
+  m_animStateInfo:
+  - state: 0
+    name: Idle
+    nameHash: 2081823275
+    clip: {fileID: 0}
+  - state: 1
+    name: Move
+    nameHash: 1326225478
+    clip: {fileID: 7400000, guid: 8ac47de5937c4d04dae5a0a7dc16b4ae, type: 2}
+  - state: 2
+    name: Damaged
+    nameHash: 326473335
+    clip: {fileID: 0}
+  - state: 3
+    name: Dead
+    nameHash: 1293411866
+    clip: {fileID: 7400000, guid: 625fc23e691fe8641a80144a34f28c7c, type: 2}
+  - state: 4
+    name: Attack
+    nameHash: 1080829965
+    clip: {fileID: 0}
+  - state: 5
+    name: Skill02
+    nameHash: 1592580989
+    clip: {fileID: 0}
 --- !u!114 &11480536
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -145,7 +170,7 @@ CapsuleCollider:
   m_Height: 1.5
   m_Direction: 1
   m_Center: {x: 0, y: 0.75, z: 0}
---- !u!212 &21220576
+--- !u!212 &21263778
 SpriteRenderer:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -170,7 +195,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
-  m_SortingOrder: 500
+  m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 8b1fb0a569874439aa3217832f108b97, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0

@@ -3,22 +3,24 @@ using System.Collections;
 
 public class Background : MonoBehaviour
 {
-    private Renderer renderer = null;
-    private Vector2 offset = new Vector2(0.0f, 0.0f);
-    public Vector2 accelerator = new Vector2(0.01f, 0.0f);
+    private new Renderer renderer = null;
+    private float offset = 0f;
+    public float accelerator = 0.01f;
 
     // Use this for initialization
     void Start()
     {
         renderer = GetComponent<Renderer>();
-        //Debug.Log(offset.ToString());
+        renderer.material.shader = Shader.Find("Unlit/TransparentOffset");
     }
 
     // Update is called once per frame
     void Update()
     {
-        renderer.material.SetTextureOffset("_MainTex", offset);
+        renderer.material.SetFloat("_Offset", offset);
         offset += accelerator;
-       
+
+        if (offset >= 1f)
+            offset = -1f;
     }
 }
