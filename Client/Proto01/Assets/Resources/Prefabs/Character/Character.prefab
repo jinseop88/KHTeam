@@ -97,6 +97,7 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children:
   - {fileID: 476928}
   m_Father: {fileID: 486512}
@@ -110,6 +111,7 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children: []
   m_Father: {fileID: 486512}
   m_RootOrder: 0
@@ -122,6 +124,7 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children:
   - {fileID: 499246}
   m_Father: {fileID: 431262}
@@ -135,6 +138,7 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -7.86, y: -2.66, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children:
   - {fileID: 446830}
   - {fileID: 431262}
@@ -149,6 +153,7 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 1.69, y: 1.13, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children: []
   m_Father: {fileID: 476928}
   m_RootOrder: 0
@@ -229,11 +234,11 @@ MonoBehaviour:
   - state: 0
     name: Idle
     nameHash: 2081823275
-    clip: {fileID: 7400000, guid: e5476979a9943ba43a5f7e7b6a58da30, type: 2}
+    clip: {fileID: 7400000, guid: 0b7b7da55f464904baec7fd5b9472e50, type: 2}
   - state: 1
     name: Move
     nameHash: 1326225478
-    clip: {fileID: 7400000, guid: e5476979a9943ba43a5f7e7b6a58da30, type: 2}
+    clip: {fileID: 7400000, guid: 1a678b2c98f8b1f4b94e79de6c5f8548, type: 2}
   - state: 2
     name: Damaged
     nameHash: 326473335
@@ -243,9 +248,9 @@ MonoBehaviour:
     nameHash: 1293411866
     clip: {fileID: 0}
   - state: 4
-    name: Skill01
-    nameHash: -941258041
-    clip: {fileID: 7400000, guid: 0b7b7da55f464904baec7fd5b9472e50, type: 2}
+    name: Attack
+    nameHash: 1080829965
+    clip: {fileID: 7400000, guid: e5476979a9943ba43a5f7e7b6a58da30, type: 2}
   - state: 5
     name: Skill02
     nameHash: 1592580989

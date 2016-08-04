@@ -11,8 +11,7 @@ public static class GameType
         Damaged,
         Dead,
 
-        Skill01,
-        Skill02,
+        Attack,
         Max,
     }
 }
