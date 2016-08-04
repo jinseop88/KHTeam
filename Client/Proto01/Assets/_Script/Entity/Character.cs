@@ -1,13 +1,8 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class Character : Actor 
+public class Character : Actor
 {
-    void Start()
-    {
-        Initialize();
-    }
-
     public override void Initialize()
     {
         base.Initialize();

@@ -62,7 +62,10 @@ public class Animation2D : MonoBehaviour
                 // mechanim state와 IActorAnimation state 를 매칭할 해시코드 생성
                 try
                 {
-                    m_animHash.Add((GameType.AnimationState)System.Enum.Parse(typeof(GameType.AnimationState), m_animStateInfo[i].name), m_animStateInfo[i].nameHash);
+                    if (m_animStateInfo[i].clip != null)
+                    {
+                        m_animHash.Add((GameType.AnimationState)System.Enum.Parse(typeof(GameType.AnimationState), m_animStateInfo[i].name), m_animStateInfo[i].nameHash);
+                    }
                 }
                 catch (System.Exception e)
                 {
