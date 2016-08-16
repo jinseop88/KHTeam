@@ -258,7 +258,7 @@ public class UIWrapContent : MonoBehaviour
 					Vector3 pos = t.localPosition;
 					pos.y += ext2;
 					distance = pos.y - center.y;
-					int realIndex = Mathf.RoundToInt(pos.y / itemSize);
+					int realIndex = Mathf.RoundToInt(-pos.y / itemSize);
 
 					if (minIndex == maxIndex || (minIndex <= realIndex && realIndex <= maxIndex))
 					{
@@ -272,7 +272,7 @@ public class UIWrapContent : MonoBehaviour
 					Vector3 pos = t.localPosition;
 					pos.y -= ext2;
 					distance = pos.y - center.y;
-					int realIndex = Mathf.RoundToInt(pos.y / itemSize);
+					int realIndex = Mathf.RoundToInt(-pos.y / itemSize);
 
 					if (minIndex == maxIndex || (minIndex <= realIndex && realIndex <= maxIndex))
 					{
@@ -316,7 +316,7 @@ public class UIWrapContent : MonoBehaviour
 		if (onInitializeItem != null)
 		{
 			int realIndex = (mScroll.movement == UIScrollView.Movement.Vertical) ?
-				Mathf.RoundToInt(item.localPosition.y / itemSize) :
+				Mathf.RoundToInt(-item.localPosition.y / itemSize) :
 				Mathf.RoundToInt(item.localPosition.x / itemSize);
 			onInitializeItem(item.gameObject, index, realIndex);
 		}
