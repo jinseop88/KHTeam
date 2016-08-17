@@ -13,7 +13,7 @@ public class Character : Actor
         AISystem.m_Owner = this;
         AISystem.m_Sight = 15f;
         AISystem.m_LimitDistance = 8f;
-        AISystem.m_AtkDelay = 0.5f;
+        AISystem.m_AtkDelay = 0.7f;
 
         onDamage = OnDamage;
     }

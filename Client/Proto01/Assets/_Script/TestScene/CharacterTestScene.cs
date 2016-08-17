@@ -6,13 +6,12 @@ public class CharacterTestScene : MonoBehaviour, IGameEventListener
     public SpawnPoint m_characerSpawnPoint;
     public SpawnPoint m_monsterSpawnPoint;
 
-    private Character m_myCharacter;
     private MonsterSpawner m_monsterSpawner;
 
     private FollowCamera m_camera;
 
     private int m_monsterKillCount;
-    private Vector3 m_monsterSpawnDistance = new Vector3(5f, 0f, 0f);
+    private Vector3 m_monsterSpawnDistance = new Vector3(15f, 0f, 0f);
 
     void Awake()
     {
@@ -25,19 +24,19 @@ public class CharacterTestScene : MonoBehaviour, IGameEventListener
         CreateMap();
         CreateMonster();
 
-        m_camera.m_target = m_myCharacter.thisTransform;
+        m_camera.m_target = IngameManager.Instance.m_myCharacter.thisTransform;
     }
 
     void Start()
     {
-        m_myCharacter.AISystem.AIOn();
+        IngameManager.Instance.m_myCharacter.AISystem.AIOn();
     }
 
     void CreateCharacter()
     {
-        m_myCharacter = CharacterManager.Instance.CreateCharacter();
-        m_myCharacter.Initialize();
-        m_myCharacter.thisTransform.position = m_characerSpawnPoint.transform.position;
+        IngameManager.Instance.m_myCharacter = CharacterManager.Instance.CreateCharacter();
+        IngameManager.Instance.m_myCharacter.Initialize();
+        IngameManager.Instance.m_myCharacter.thisTransform.position = m_characerSpawnPoint.transform.position;
     }
 
     void CreateGameSystem()
@@ -60,7 +59,7 @@ public class CharacterTestScene : MonoBehaviour, IGameEventListener
         m_monsterSpawnPoint.transform.Translate(m_monsterSpawnDistance);
     }
 
-    public void OnGameEvent(GameEventType gameEventType)
+    public void OnGameEvent(GameEventType gameEventType, params Object[] args)
     {
         switch (gameEventType)
         {
