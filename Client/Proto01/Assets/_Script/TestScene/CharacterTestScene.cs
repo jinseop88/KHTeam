@@ -3,8 +3,8 @@ using System.Collections;
 
 public class CharacterTestScene : MonoBehaviour, IGameEventListener
 {
-    public CharacterSpawnPoint m_characerSpawnPoint;
-    public CharacterSpawnPoint m_monsterSpawnPoint;
+    public SpawnPoint m_characerSpawnPoint;
+    public SpawnPoint m_monsterSpawnPoint;
 
     private Character m_myCharacter;
     private MonsterSpawner m_monsterSpawner;
