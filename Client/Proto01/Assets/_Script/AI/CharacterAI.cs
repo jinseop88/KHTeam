@@ -17,7 +17,8 @@ public class CharacterAI : BaseAI
         UpdateTarget();
 
         // 2. 타겟에게 다가가기( 다가가는 중이면 리턴)
-        ApporachTarget();
+        if (!ApporachTarget())
+            return;
 
         // 3. 타겟에게 공격(스킬버튼이 눌렸다면 스킬씀)
         ProcessAttack();           
@@ -44,19 +45,21 @@ public class CharacterAI : BaseAI
         }
     }
 
-    private void ApporachTarget()
+    private bool ApporachTarget()
     {
-        if (m_Target == null) return;
+        if (m_Target == null) return false;
 
         // 다가가기
         if (m_Target != null && !isEnableRange)
         {            
             m_Owner.Move();
+            return false;
         }
         else
         {
             // 다가가기 끝
             m_Owner.MoveStop();
+            return true;
         }
     }
 
