@@ -28,7 +28,6 @@ public class Animation2D : MonoBehaviour
     }
     #endregion
 
-
     [SerializeField]
     protected Animator m_animator;
     protected AnimatorOverrideController m_controller;
@@ -79,25 +78,6 @@ public class Animation2D : MonoBehaviour
         m_animator.runtimeAnimatorController = m_controller;
     }
 
-    public void SetBool(string param, bool val)
-    {
-        m_animator.SetBool(param, val);
-    }
-
-    public void SetTrigger(string param)
-    {
-        m_animator.SetTrigger(param);
-    }
-
-    public void SetFloat(string param, float val)
-    {
-        m_animator.SetFloat(param, val);
-    }
-
-    public bool GetBool(string param)
-    {
-        return m_animator.GetBool(param);
-    }
 
     public bool IsPlaying(params GameType.AnimationState[] states)
     {
@@ -118,22 +98,29 @@ public class Animation2D : MonoBehaviour
 
 
     #region 애니메이션 실행함수
-
+    /// <summary>
+    /// 이동~
+    /// </summary>
+    /// <param name="bMove"></param>
     public virtual void OnMove(bool bMove)
     {
+        m_animator.SetBool("Move", bMove);
     }
+
     /// <summary>
     /// 공격
     /// </summary>
-    /// <param name="state"></param>
     public virtual void OnAttack()
     {
         m_animator.SetTrigger("Attack");
     }
 
+    /// <summary>
+    /// 데미지 입었을때
+    /// </summary>
     public virtual void OnDamage()
     {
-        
+        m_animator.SetTrigger("Damaged");
     }
 
     /// <summary>
@@ -141,11 +128,11 @@ public class Animation2D : MonoBehaviour
     /// </summary>
     public virtual void OnDead()
     {
+        m_animator.SetBool("Dead", true);
     }
     #endregion
 
     #region 애니메이션 확인함수
 
     #endregion
-
 }
