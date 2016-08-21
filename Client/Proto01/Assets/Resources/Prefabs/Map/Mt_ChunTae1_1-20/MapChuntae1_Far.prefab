@@ -133,6 +133,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 464176}
+  - 114: {fileID: 11449738}
   m_Layer: 11
   m_Name: MapChuntae1_Far
   m_TagString: Untagged
@@ -295,6 +296,19 @@ Transform:
   m_Children: []
   m_Father: {fileID: 442172}
   m_RootOrder: 1
+--- !u!114 &11449738
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 191756}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 01d6e5801d11afe4a887d4bead8789e4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  limitDistance: 190
+  testobject: {fileID: 0}
 --- !u!212 &21215358
 SpriteRenderer:
   m_ObjectHideFlags: 1

@@ -58,6 +58,17 @@ public class Actor : BaseEntity
     {
         movement2D.SetRotation(eDir);
     }
+
+    /// <summary>
+    /// 대상바라보기
+    /// </summary>
+    /// <param name="targetPos"></param>
+    public void LookAt(Vector3 targetPos)
+    {
+        eDirection dir = targetPos.x - thisTransform.position.x < 0 ? eDirection.Left : eDirection.Right;
+
+        SetDirection(dir);
+    }
     
     // <summary>
     /// 이동

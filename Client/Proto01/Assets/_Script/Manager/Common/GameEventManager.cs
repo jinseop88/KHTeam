@@ -4,6 +4,8 @@ using System.Collections.Generic;
 public enum GameEventType
 {
     MonsterDied,
+
+    UpdateMoveDistance,
 }
 
 public class GameEventManager : SingleTon<GameEventManager>
@@ -20,11 +22,11 @@ public class GameEventManager : SingleTon<GameEventManager>
         handlers.Remove(gameEventListener);
     }
 
-    public void Notify(GameEventType gameEventType)
+    public void Notify(GameEventType gameEventType, params Object[] args)
     {
         foreach (var handler in handlers)
         {
-            handler.OnGameEvent(gameEventType);
+            handler.OnGameEvent(gameEventType, args);
         }
     }
 }
