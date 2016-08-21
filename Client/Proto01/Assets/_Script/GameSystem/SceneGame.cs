@@ -57,18 +57,9 @@ public class SceneGame : SceneBase
     }
  
     private void CreateMap()
-    {       
+    {
 
-        if (MonSterKillCount % 200 == 0)
-        {
-            //i++;      
-            MapManager.Instance.ChangeMap(MapType.Mt_ChunTae, 3);
-            //MonSterKillCount -= 200;
-        }
-        
-        MapManager.Instance.ChangeMap(MapType.Mt_ChunTae, 3);
-
-       
-}
+    }
+    
 
 }
