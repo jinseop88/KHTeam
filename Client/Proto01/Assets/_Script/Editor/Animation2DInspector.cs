@@ -29,6 +29,7 @@ public class Animation2DInspector : Editor
             stateInfo.clip = EditorGUILayout.ObjectField(stateInfo.name, stateInfo.clip, typeof(AnimationClip), false) as AnimationClip;
 
             EditorUtility.SetDirty(anim);
+            EditorUtility.SetDirty(animator);
             serializedObject.ApplyModifiedProperties();
         }
 
