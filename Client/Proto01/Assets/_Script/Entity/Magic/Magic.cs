@@ -5,7 +5,6 @@ using System.Collections;
 public class Magic : MonoBehaviour
 {
     public GameObject magicPrefabs = null;
-    public Transform magicPosition = null;
 
     private GameObject magic = null;
     private ParticleSystem particleSystem = null;
@@ -14,7 +13,11 @@ public class Magic : MonoBehaviour
     {
         if (magic == null && Input.GetMouseButtonDown(0))
         {
-            magic = Instantiate(magicPrefabs, magicPosition.position, magicPosition.rotation) as GameObject;
+            magic = Instantiate(magicPrefabs, Vector3.zero, magicPrefabs.transform.rotation) as GameObject;
+            magic.transform.parent = Camera.main.transform;
+
+            magic.transform.position = Camera.main.transform.position + new Vector3(0.0f, 2.5f, 15.0f);
+
             particleSystem = magic.GetComponentInChildren<ParticleSystem>();
 
             foreach(GameObject monster in GameObject.FindGameObjectsWithTag("monster"))
