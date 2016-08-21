@@ -22,7 +22,7 @@ public class GameEventManager : SingleTon<GameEventManager>
         handlers.Remove(gameEventListener);
     }
 
-    public void Notify(GameEventType gameEventType, params Object[] args)
+    public void Notify(GameEventType gameEventType, params object[] args)
     {
         foreach (var handler in handlers)
         {

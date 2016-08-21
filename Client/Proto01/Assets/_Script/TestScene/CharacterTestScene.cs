@@ -59,7 +59,7 @@ public class CharacterTestScene : MonoBehaviour, IGameEventListener
         m_monsterSpawnPoint.transform.Translate(m_monsterSpawnDistance);
     }
 
-    public void OnGameEvent(GameEventType gameEventType, params Object[] args)
+    public void OnGameEvent(GameEventType gameEventType, params object[] args)
     {
         switch (gameEventType)
         {
