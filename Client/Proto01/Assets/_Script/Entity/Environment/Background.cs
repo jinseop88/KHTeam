@@ -8,12 +8,21 @@ public class Background : MonoBehaviour, IGameEventListener
 
     private List<Transform> _backgroundList = new List<Transform>();
 
+<<<<<<< HEAD
     void Awake()
     {
         _backgroundList.Clear();
         for (int i = 0; i < transform.childCount; i++)
             _backgroundList.Add(transform.GetChild(i));
     }
+=======
+    //CHARACTER오브젝트를 받아서 갑니다.
+    //public GameObject testobject;
+    //private void Update()
+    //{
+    //    CalculateDistance(testobject.transform.position.x);
+    //}
+>>>>>>> master
 
     void OnEnable()
     {
