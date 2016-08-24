@@ -8,20 +8,21 @@ public class Background : MonoBehaviour, IGameEventListener
 
     private List<Transform> _backgroundList = new List<Transform>();
 
-    //CHARACTER오브젝트를 받아서 갑니다.
-    //public GameObject testobject;
-    //private void Update()
-    //{
-    //    CalculateDistance(testobject.transform.position.x);
-    //}
-
     void Awake()
     {
-        GameEventManager.Instance.Register(this);
-
         _backgroundList.Clear();
         for (int i = 0; i < transform.childCount; i++)
             _backgroundList.Add(transform.GetChild(i));
+    }
+
+    void OnEnable()
+    {
+        GameEventManager.Instance.Register(this);
+    }
+
+    void OnDisable()
+    {
+        GameEventManager.Instance.Unregister(this);
     }
 
 
@@ -42,11 +43,12 @@ public class Background : MonoBehaviour, IGameEventListener
         }
     }
 
-    public void OnGameEvent(GameEventType gameEventType, params Object[] args)
+    public void OnGameEvent(GameEventType gameEventType, params object[] args)
     {
         switch (gameEventType)
         {
             case GameEventType.UpdateMoveDistance:
+                CalculateDistance((float)args[0]);
                 break;
 
             default:

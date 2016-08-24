@@ -3,5 +3,5 @@ using System.Collections;
 
 public interface IGameEventListener
 {
-    void OnGameEvent(GameEventType gameEventType, params Object[] args);
+    void OnGameEvent(GameEventType gameEventType, params object[] args);
 }

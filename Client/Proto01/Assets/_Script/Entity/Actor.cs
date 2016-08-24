@@ -86,6 +86,8 @@ public class Actor : BaseEntity
     {
         animation2D.OnMove(false);
         movement2D.Move(Vector3.zero);
+
+        GameEventManager.Instance.Notify(GameEventType.UpdateMoveDistance, thisTransform.position.x);
     }
 
     /// <summary>
