@@ -26,7 +26,7 @@ public class SceneGame : SceneBase
     }
 
     IEnumerator Loading()
-    {
+    {        
         AsyncOperation cLoadLevelAsync = UnityEngine.SceneManagement.SceneManager.LoadSceneAsync("1.GameScene");
         yield return cLoadLevelAsync;
 
@@ -78,12 +78,8 @@ public class SceneGame : SceneBase
  
     private void CreateMap()
     {
-        m_monsterKillCount = MyInfo.instance.monsterKillCount;
-        if (m_monsterKillCount <= 100) MapManager.Instance.ChangeMap(m_map);
-        if (m_monsterKillCount > 100 && m_monsterKillCount <= 101) MapManager.Instance.ChangeMap(m_map + 1);
-        if (m_monsterKillCount > 101 && m_monsterKillCount <= 102) MapManager.Instance.ChangeMap(m_map + 2);
-        if (m_monsterKillCount > 140 && m_monsterKillCount <= 200) MapManager.Instance.ChangeMap(m_map + 3);
-        else MapManager.Instance.ChangeMap(m_map);
+        //100마리 기준 맵을 소환
+        MapManager.Instance.ChangeMap((MapType) (MyInfo.instance.monsterKillCount / 100));
     }
 
     private void CreateMonster()
@@ -119,26 +115,17 @@ public class SceneGame : SceneBase
     /// </summary>
     /// <param name="mon_killCount"></param>
     public void DayIncreasedByKillCount(int mon_killCount)
-    {        
-             
+    {                     
         if (mon_killCount != 0)
         {
-            m_day = mon_killCount / 2;            
+            m_day = (int)(mon_killCount * 0.1f);            
             MapChangeByDayCount(m_day);
         }
     }
 
     public void MapChangeByDayCount(int dayCount)
     {
-        Debug.Log(dayCount + "일이 지났습니다.");        
-
-        switch (dayCount)
-        {
-            case 1: break;                                                        //ChunTae1
-            case 11: MapManager.Instance.ChangeMap(m_map); break; //ChunTae1
-            case 61: MapManager.Instance.ChangeMap(m_map + 1); break; //ChunTae2
-            case 69: MapManager.Instance.ChangeMap(m_map + 2); break; //Town_Kiwa
-            case 70: MapManager.Instance.ChangeMap(m_map + 3); break; //Town_RockTower
-        }
+        //5일에 한번씩 맵이 바뀐다
+        MapManager.Instance.ChangeMap((MapType)(dayCount ));
     }    
 }

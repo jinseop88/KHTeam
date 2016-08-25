@@ -4,32 +4,51 @@ using System.Collections;
 
 public enum MapType
 {
-    Mt_ChunTae1 = 0,
-    Mt_ChunTae2 = 1,
-    Town_Kiwa = 2,
-    Town_RockTower = 3
+    Mt_ChunTae1,
+    Mt_ChunTae2,
+    Town_Kiwa,
+    Town_RockTower,
+    Max,
 }
 
 public class MapManager : SingleTon<MapManager>
 {
-    public GameObject m_currnetMap;    
+    private GameObject m_objPreviousMap;
+    private GameObject m_objCurrentMap;
+
+    private MapType m_currentMapType = MapType.Max;
 
     public void ChangeMap(MapType eNextMapType)
     {
+        if (m_currentMapType == eNextMapType) return;
+        
+        m_currentMapType = eNextMapType;
+
+        //Circle..
+        eNextMapType = (MapType)((int)eNextMapType % (int)MapType.Max);
+
         GameEventManager.Notify(GameEventType.MapChanged, eNextMapType);
 
-        if (m_currnetMap == null)
+        if (m_objCurrentMap == null)
         {
-            Debug.Log("Load map");
-            m_currnetMap = InnerLoadMap(eNextMapType);
+            m_objCurrentMap = InnerLoadMap(eNextMapType);
             return;
         }
+        else
+        {
+            GameObject objNextMap = InnerLoadMap(eNextMapType);
 
-        GameObject objNextMap = InnerLoadMap(eNextMapType);
-       
-        Destroy(m_currnetMap);
-        m_currnetMap = objNextMap;
+            if (m_objPreviousMap != null)
+                Destroy(m_objPreviousMap);
 
+            m_objPreviousMap = m_objCurrentMap;
+            m_objCurrentMap = objNextMap;
+
+            Background[] backgrounds = m_objPreviousMap.GetComponentsInChildren<Background>(true);
+            for (int i = 0; i < backgrounds.Length; i++)
+                backgrounds[i].enabled = false;
+            
+        }
     }
 
     private GameObject InnerLoadMap(MapType eNextMapType)

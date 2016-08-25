@@ -110,7 +110,6 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -163,10 +162,6 @@ Prefab:
     - target: {fileID: 465178, guid: 9f622b817c957cd4a9c20b9ac90ebf20, type: 2}
       propertyPath: m_RootOrder
       value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 11430212, guid: 9f622b817c957cd4a9c20b9ac90ebf20, type: 2}
-      propertyPath: insamMaxCount
-      value: 10
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 9f622b817c957cd4a9c20b9ac90ebf20, type: 2}

@@ -28,6 +28,8 @@ public class Background : MonoBehaviour, IGameEventListener
 
     private void CalculateDistance(float currentX)
     {
+        if (currentX > transform.position.x) return;
+
         int realIndex = (int)(currentX / limitDistance);
         int firstIndex = (realIndex - 1) % _backgroundList.Count;
 
