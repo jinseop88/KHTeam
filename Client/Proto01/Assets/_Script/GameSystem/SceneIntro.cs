@@ -8,6 +8,8 @@ public class SceneIntro : MonoBehaviour {
         UIManager.Instance.Initialize();
         UIManager.Instance.OpenUI<UI_Title>(eUIType.Title);
 
+        Time.timeScale = 3f;
+        PlayerPrefs.DeleteAll();
         StartCoroutine(GoNext());
 	}
 
