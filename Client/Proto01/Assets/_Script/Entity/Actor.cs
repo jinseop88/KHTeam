@@ -39,6 +39,12 @@ public class Actor : BaseEntity
     public BaseAI AISystem { get; set; }
 
 
+    /// <summary>
+    /// 중복으로 죽은것 체크 하지 않기 위해
+    /// </summary>
+    public bool m_bAlreadDead = false;
+
+
     public override void Initialize()
     {
         animation2D = thisObject.GetComponent<Animation2D>();
@@ -90,7 +96,7 @@ public class Actor : BaseEntity
         animation2D.OnMove(false);
         movement2D.Move(Vector3.zero);
 
-        GameEventManager.Instance.Notify(GameEventType.UpdateMoveDistance, thisTransform.position.x);
+        GameEventManager.Notify(GameEventType.UpdateMoveDistance, thisTransform.position.x);
     }
 
     /// <summary>

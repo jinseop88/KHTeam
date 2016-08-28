@@ -17,12 +17,12 @@ public class Background : MonoBehaviour, IGameEventListener
 
     void OnEnable()
     {
-        GameEventManager.Instance.Register(this);
+        GameEventManager.Register(this);
     }
 
     void OnDisable()
     {
-        GameEventManager.Instance.Unregister(this);
+        GameEventManager.Unregister(this);
     }
 
 

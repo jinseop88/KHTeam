@@ -108,7 +108,8 @@ public class Movement2D : MonoBehaviour
 
         //순간가속도
         instantAccel = thisTransform.position - m_lastPosition;
-        
+
+        ApplyGravity();
         CheckGround();
         CheckCollision();
 
@@ -164,16 +165,10 @@ public class Movement2D : MonoBehaviour
     /// </summary>
     protected void CheckGround()
     {
-        //Vector3 startRay = thisTransform.position;
-        //startRay.y += 1f;
-        //Ray ray = new Ray(startRay, -thisTransform.up);
-        //m_bIsGrounded = Physics.Raycast(ray, 1f, 1 << LayerMask.NameToLayer("Ground"));
-
-        Vector2 startRay = (Vector2)thisTransform.position;
-        startRay.y += 0.3f;
-
-        m_bIsGrounded = Physics2D.Raycast(startRay, (Vector2)(-thisTransform.up), 0.1f, 1 << LayerMask.NameToLayer("Ground"));
-        ApplyGravity();
+        Vector3 startRay = thisTransform.position;
+        startRay.y += 0.4f;
+        Ray ray = new Ray(startRay, -thisTransform.up);
+        m_bIsGrounded = Physics.Raycast(ray, 0.4f, 1 << LayerMask.NameToLayer("Ground"));
     }
 
     /// <summary>
@@ -206,15 +201,14 @@ public class Movement2D : MonoBehaviour
         m_Dir = dir;
     } 
 
-
     /// <summary>
-    /// 점프
+    /// 힘을 준다
     /// </summary>
-    public void OnJump()
+    /// <param name="force"></param>
+    public void SetForce(Vector3 force)
     {
-        m_veloctyForce = Vector3.up * m_jump;
+        m_veloctyForce = force;
         m_bIsGrounded = false;
     }
-    
-    
+
 }

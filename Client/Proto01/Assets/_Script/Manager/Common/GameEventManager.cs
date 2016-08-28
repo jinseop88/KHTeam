@@ -3,6 +3,8 @@ using System.Collections.Generic;
 
 public enum GameEventType
 {
+    SpawnItem,
+
     MonsterDied,
 
     UpdateMoveDistance,
@@ -10,25 +12,25 @@ public enum GameEventType
     Click_Screen,
 }
 
-public class GameEventManager : SingleTon<GameEventManager>
+public static class GameEventManager
 {
-    private List<IGameEventListener> handlers = new List<IGameEventListener>();
+    private static List<IGameEventListener> handlers = new List<IGameEventListener>();
 
-    public void Register(IGameEventListener gameEventListener)
+    public static void Register(IGameEventListener gameEventListener)
     {
         handlers.Add(gameEventListener);
     }
 
-    public void Unregister(IGameEventListener gameEventListener)
+    public static void Unregister(IGameEventListener gameEventListener)
     {
         handlers.Remove(gameEventListener);
     }
 
-    public void Notify(GameEventType gameEventType, params object[] args)
+    public static void Notify(GameEventType eventType, params object[] args)
     {
         foreach (var handler in handlers)
         {
-            handler.OnGameEvent(gameEventType, args);
+            handler.OnGameEvent(eventType, args);
         }
     }
 }

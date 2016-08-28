@@ -15,7 +15,7 @@ public class CharacterTestScene : MonoBehaviour, IGameEventListener
 
     void Awake()
     {
-        GameEventManager.Instance.Register(this);
+        GameEventManager.Register(this);
 
         m_camera = GameObject.FindObjectOfType<FollowCamera>();
 
@@ -55,7 +55,7 @@ public class CharacterTestScene : MonoBehaviour, IGameEventListener
 
     private void CreateMonster()
     {
-        m_monsterSpawner.Spawn(MonsterManager.Instance.GetNextMonster(), 1, m_monsterSpawnPoint);
+        IngameManager.Instance.SpawnMonster(MonsterManager.Instance.GetNextMonster(), 1, m_monsterSpawnPoint);
         m_monsterSpawnPoint.transform.Translate(m_monsterSpawnDistance);
     }
 

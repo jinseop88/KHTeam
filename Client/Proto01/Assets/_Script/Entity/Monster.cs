@@ -23,31 +23,40 @@ public class Monster : Actor
         AISystem.AIOn();
     }
 
-    private void OnDamage(BaseEntity attacker, SkillImpactInfo skillImpact)
+    private void OnDamage(Actor attacker, SkillImpactInfo skillImpact)
     {
         animation2D.OnDamage();
         currentHP -= 80f;
 
-        if(currentHP <= 0f)
+        if (currentHP <= 0f && !m_bAlreadDead)
         {
-            animation2D.OnDead();
+            m_bAlreadDead = true;
 
-            // How can I catch when the dead animation is finished?
-            Invoke("Delete", 1.0f);
+            //MakeItem
+            GameEventManager.Notify(GameEventType.SpawnItem, Random.Range(0,100), thisTransform.position);
+
+            animation2D.OnDead();
+            StartCoroutine(DeadCheck());
         }
     }
 
     private IEnumerator DeadCheck()
     {
-        while(true)
+        while (true)
         {
+            if (animation2D.IsPlaying(GameType.AnimationState.DeadEnd))
+            {
+                Delete();
+                yield break;
+            }
+
             yield return null;
         }
     }
     public void Delete()
     {
         Destroy(thisObject);
-        GameEventManager.Instance.Notify(GameEventType.MonsterDied);
+        GameEventManager.Notify(GameEventType.MonsterDied);
     }
 
     void OnEnable()

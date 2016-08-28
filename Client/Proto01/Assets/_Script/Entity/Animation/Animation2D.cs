@@ -40,6 +40,11 @@ public class Animation2D : MonoBehaviour
         public string name;
         public int nameHash;
         public AnimationClip clip;
+
+        public void ChangeClip(AnimationClip newClip)
+        {
+            clip = newClip;
+        }
     }
 
     [HideInInspector, SerializeField]

@@ -1,37 +1,42 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public abstract class SceneBase
+public class SceneBase : IGameEventListener
 {
+    protected SceneBase()
+    {
+        GameEventManager.Register(this);
+    }
+
     public Coroutine StartCourotine(IEnumerator couroutine)
     {
         return SceneManager.Instance.StartCoroutine(couroutine);
     }
 
     /// <summary>
-    /// 업데이트
+    /// 씬입장
     /// </summary>
-    public abstract void Update();
+    public virtual void Enter() { }
 
     /// <summary>
-    /// 다시시작
+    /// 씬 업데이트
     /// </summary>
-    public abstract void Restart();
+    public virtual void SceneUpdate() { }
 
     /// <summary>
     /// 씬나갈때
     /// </summary>
-    public abstract void Terminate();
+    public virtual void Exit() { }
 
-    /// <summary>
-    /// 씬입장
-    /// </summary>
-    public abstract void Enter();
 
-    public virtual void Exit()
+    public virtual void HandleEvent(GameEventType gameEventType, params object[] args)
     {
-        Terminate();
+
     }
 
+    public void OnGameEvent(GameEventType eventType, params object[] args)
+    {
+        HandleEvent(eventType, args);
+    }
 
 }

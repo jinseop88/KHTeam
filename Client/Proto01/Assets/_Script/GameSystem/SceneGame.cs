@@ -3,72 +3,90 @@ using System.Collections;
 
 public class SceneGame : SceneBase
 {
-    private int MonSterKillCount;
-    public int i = 1;
+    private SpawnPoint m_characerSpawnPoint;
+    private SpawnPoint m_monsterSpawnPoint;
 
-    public override void Update()
-    { 
-    }
+    private MonsterSpawner m_monsterSpawner;
 
-    public override void Restart()
-    {
-    }
+    private FollowCamera m_camera;
 
-    public override void Terminate()
-    {
-    }
+    private Vector3 m_monsterSpawnDistance = new Vector3(15f, 0f, 0f);
 
     public override void Enter()
     {
         StartCourotine(Loading());
+    }
 
-        MonSterKillCount = PlayerPrefs.GetInt("MonsterKillCount");
-    }
-    public override void Exit()
-    {
-        base.Exit();
-        //UIManager.Instance.CloseUI(eUIType.Title);
-    }
     IEnumerator Loading()
     {
-        //yield return null;
         AsyncOperation cLoadLevelAsync = UnityEngine.SceneManagement.SceneManager.LoadSceneAsync("1.GameScene");
         yield return cLoadLevelAsync;
 
+        ///게임시스템 생성
+        CreateGameSystem();
+        
         /// 캐릭터 생성
         CreateCharacter();
 
-        ///몬스터 스폰시스템 생성
-        CreateMonsterSpawnSystem();
-
         ///맵 생성
         CreateMap();
+
+        ///몬스터 생성
+        CreateMonster();
+
+        m_camera = GameObject.FindObjectOfType<FollowCamera>();
+        m_camera.m_target = IngameManager.Instance.m_myCharacter.thisTransform;
+
+        IngameManager.Instance.m_myCharacter.AISystem.AIOn();
+    }
+
+    private void CreateGameSystem()
+    {
+        SpawnPoint[] spawnPoints = GameObject.FindObjectsOfType<SpawnPoint>();
+        for(int i = 0 ; i < spawnPoints.Length ; i++)
+        {
+            if (spawnPoints[i].m_bIsMonsterSpawnPoint)
+                m_monsterSpawnPoint = spawnPoints[i];
+            else
+                m_characerSpawnPoint = spawnPoints[i];
+        }
+
+        GameObject monsterSpawner = new GameObject("MonsterSpawner");
+        //monsterSpawner.transform.parent = gameSystem.transform;
+        m_monsterSpawner = monsterSpawner.AddComponent<MonsterSpawner>();
     }
 
     private void CreateCharacter()
     {
-        Character character = CharacterManager.Instance.CreateCharacter();
-
-        character.thisTransform.localPosition = Vector3.zero;
+        IngameManager.Instance.m_myCharacter = CharacterManager.Instance.CreateCharacter();
+        IngameManager.Instance.m_myCharacter.Initialize();
+        IngameManager.Instance.m_myCharacter.thisTransform.position = m_characerSpawnPoint.transform.position;
     }
 
-    private void CreateMonsterSpawnSystem()
-    {
-    }
  
     private void CreateMap()
-    {       
-
-        if (MonSterKillCount % 200 == 0)
-        {
-            //i++;      
-            MapManager.Instance.ChangeMap(MapType.Mt_ChunTae1);
-            //MonSterKillCount -= 200;
-        }
-        
+    {
         MapManager.Instance.ChangeMap(MapType.Mt_ChunTae1);
+    }
 
-       
-}
+    private void CreateMonster()
+    {
+        IngameManager.Instance.SpawnMonster(MonsterManager.Instance.GetNextMonster(), 1, m_monsterSpawnPoint);
+        m_monsterSpawnPoint.transform.Translate(m_monsterSpawnDistance);
+    }
 
+    public override void HandleEvent(GameEventType gameEventType, params object[] args)
+    {
+        switch (gameEventType)
+        {
+            case GameEventType.MonsterDied:
+                MyInfo.instance.AddMonsterKill(1);
+                Debug.Log(MyInfo.instance.monsterKillCount);
+
+                CreateMonster();
+                break;
+            default:
+                break;
+        }
+    }
 }
