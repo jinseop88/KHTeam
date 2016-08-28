@@ -25,4 +25,8 @@ public class ItemBase : MonoBehaviour
         }
     }
 
+    public virtual void Get() { }
+    public virtual void Spawn() { }
+
+
 }

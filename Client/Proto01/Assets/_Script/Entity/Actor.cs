@@ -4,9 +4,9 @@ using System.Collections.Generic;
 
 public class Actor : BaseEntity
 {
-    public float currentHP = 11200f;
+    public float maxHP;
+    protected float currentHP;
 
-    public float maxHP = 200f;
 
     /// <summary>
     /// 2D전용 애니메이션
@@ -49,7 +49,10 @@ public class Actor : BaseEntity
 
         battleMy = thisObject.GetComponent<CharacterBattle>();
         battleMy.Initialize();
+
+        currentHP = maxHP;
     }
+
     /// <summary>
     /// 방향턴
     /// </summary>
