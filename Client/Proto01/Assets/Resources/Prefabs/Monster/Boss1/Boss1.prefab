@@ -122,11 +122,11 @@ MonoBehaviour:
   - state: 1
     name: Move
     nameHash: 1326225478
-    clip: {fileID: 0}
+    clip: {fileID: 7400000, guid: 7914f0466e7be24479c153391faf21da, type: 2}
   - state: 2
     name: Damaged
     nameHash: 326473335
-    clip: {fileID: 0}
+    clip: {fileID: 7400000, guid: 795751ef9c2cb844dbcea4ac38b7be21, type: 2}
   - state: 3
     name: Dead
     nameHash: 1293411866
@@ -134,7 +134,7 @@ MonoBehaviour:
   - state: 4
     name: Attack
     nameHash: 1080829965
-    clip: {fileID: 0}
+    clip: {fileID: 7400000, guid: be1aa2b77a4cfc3409043cc7ae658f70, type: 2}
   - state: 5
     name: Skill02
     nameHash: 1592580989
