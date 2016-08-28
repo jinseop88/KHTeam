@@ -16,7 +16,7 @@ GameObject:
   - 114: {fileID: 11403454}
   m_Layer: 9
   m_Name: Character
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -98,6 +98,7 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children:
   - {fileID: 476928}
   m_Father: {fileID: 486512}
@@ -111,6 +112,7 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children: []
   m_Father: {fileID: 486512}
   m_RootOrder: 0
@@ -123,6 +125,7 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children:
   - {fileID: 499246}
   m_Father: {fileID: 431262}
@@ -136,6 +139,7 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children:
   - {fileID: 446830}
   - {fileID: 431262}
@@ -150,6 +154,7 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 1.69, y: 1.13, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children: []
   m_Father: {fileID: 476928}
   m_RootOrder: 0
@@ -224,8 +229,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3989ab53e595a424ab217f69333337ea, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  currentHP: 200
   maxHP: 200
+  m_bAlreadDead: 0
 --- !u!114 &11461040
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -260,8 +265,8 @@ MonoBehaviour:
     nameHash: 1080829965
     clip: {fileID: 7400000, guid: e5476979a9943ba43a5f7e7b6a58da30, type: 2}
   - state: 5
-    name: Skill02
-    nameHash: 1592580989
+    name: DeadEnd
+    nameHash: -1560837609
     clip: {fileID: 0}
 --- !u!114 &11462254
 MonoBehaviour:

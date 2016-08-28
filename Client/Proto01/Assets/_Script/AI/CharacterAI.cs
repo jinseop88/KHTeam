@@ -15,14 +15,14 @@ public class CharacterAI : BaseAI, IGameEventListener
     {
         base.AIOn();
 
-        GameEventManager.Instance.Register(this);
+        GameEventManager.Register(this);
     }
     
     public override void AIOff()
     {
         base.AIOff();
 
-        GameEventManager.Instance.Unregister(this);
+        GameEventManager.Unregister(this);
     }
 
 

@@ -4,6 +4,7 @@ using System.Collections;
 public static class GameMath 
 {
     public const float PI = 3.141592f;
+    public static float gravity = -9.8f * 2f;
 
     public const int secToMin = 60;
     public const int secToHour = 3600;
@@ -22,6 +23,5 @@ public static class GameMath
         return intputKilo * meterPerOneKilo;
     }
 
-    //질량은 없고 일단 중력은 2배처리..
-    public static float gravity = 0f;
+    
 }

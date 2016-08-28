@@ -46,6 +46,7 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children: []
   m_Father: {fileID: 494504}
   m_RootOrder: 0
@@ -58,6 +59,7 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children:
   - {fileID: 416848}
   m_Father: {fileID: 0}
@@ -139,9 +141,9 @@ MonoBehaviour:
     nameHash: 1080829965
     clip: {fileID: 7400000, guid: bb4592bc1a1146c4a985ac7505b6f642, type: 2}
   - state: 5
-    name: Skill02
-    nameHash: 1592580989
-    clip: {fileID: 0}
+    name: DeadEnd
+    nameHash: -1560837609
+    clip: {fileID: 7400000, guid: b51b851a7643e2d4788a6a0dba3b5bd9, type: 2}
 --- !u!114 &11442958
 MonoBehaviour:
   m_ObjectHideFlags: 1
