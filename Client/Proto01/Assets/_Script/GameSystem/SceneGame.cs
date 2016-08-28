@@ -62,11 +62,11 @@ public class SceneGame : SceneBase
         if (MonSterKillCount % 200 == 0)
         {
             //i++;      
-            MapManager.Instance.ChangeMap(MapType.Mt_ChunTae, 3);
+            MapManager.Instance.ChangeMap(MapType.Mt_ChunTae1);
             //MonSterKillCount -= 200;
         }
         
-        MapManager.Instance.ChangeMap(MapType.Mt_ChunTae, 3);
+        MapManager.Instance.ChangeMap(MapType.Mt_ChunTae1);
 
        
 }
