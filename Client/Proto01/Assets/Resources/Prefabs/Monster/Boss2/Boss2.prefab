@@ -46,7 +46,6 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children:
   - {fileID: 499188}
   m_Father: {fileID: 0}
@@ -60,7 +59,6 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children: []
   m_Father: {fileID: 457182}
   m_RootOrder: 0
@@ -136,15 +134,15 @@ MonoBehaviour:
   - state: 0
     name: Idle
     nameHash: 2081823275
-    clip: {fileID: 7400000, guid: c399b057abec60e44adb83a904005dd0, type: 2}
+    clip: {fileID: 7400000, guid: 48a630432d960224fac9bc6c19a625f3, type: 2}
   - state: 1
     name: Move
     nameHash: 1326225478
-    clip: {fileID: 0}
+    clip: {fileID: 7400000, guid: 93703f7cd17afff479c9b4419be173e7, type: 2}
   - state: 2
     name: Damaged
     nameHash: 326473335
-    clip: {fileID: 0}
+    clip: {fileID: 7400000, guid: c399b057abec60e44adb83a904005dd0, type: 2}
   - state: 3
     name: Dead
     nameHash: 1293411866
@@ -152,7 +150,7 @@ MonoBehaviour:
   - state: 4
     name: Attack
     nameHash: 1080829965
-    clip: {fileID: 0}
+    clip: {fileID: 7400000, guid: 34733d5240650a844aee8e306c6e4b18, type: 2}
   - state: 5
     name: Skill02
     nameHash: 1592580989
@@ -179,26 +177,23 @@ SpriteRenderer:
   m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
-  m_MotionVectors: 1
-  m_LightProbeUsage: 0
-  m_ReflectionProbeUsage: 0
   m_Materials:
   - {fileID: 2100000, guid: 4ea94df45e15ca34b851e59772541197, type: 2}
   m_SubsetIndices: 
   m_StaticBatchRoot: {fileID: 0}
+  m_UseLightProbes: 0
+  m_ReflectionProbeUsage: 0
   m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
-  m_SelectedWireframeHidden: 1
   m_MinimumChartSize: 4
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 300
   m_Sprite: {fileID: 21300000, guid: 9c504fe145d1548c2ad5842b5340025e, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0

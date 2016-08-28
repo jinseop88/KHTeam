@@ -38,11 +38,11 @@ public class BaseAI : MonoBehaviour, IAIController
     /// </summary>
     private bool m_bIngUpdate;
 
-    public void AIOn()
+    public virtual void AIOn()
     {
         m_bIngUpdate = true;
     }
-    public void AIOff()
+    public virtual void AIOff()
     {
         m_bIngUpdate = false;
     }

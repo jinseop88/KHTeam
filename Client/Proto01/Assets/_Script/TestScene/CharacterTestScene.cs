@@ -50,7 +50,7 @@ public class CharacterTestScene : MonoBehaviour, IGameEventListener
 
     private void CreateMap()
     {
-        //MapManager.Instance.ChangeMap(MapType.Mt_ChunTae, 3);
+        MapManager.Instance.ChangeMap(MapType.Mt_ChunTae1);
     }
 
     private void CreateMonster()

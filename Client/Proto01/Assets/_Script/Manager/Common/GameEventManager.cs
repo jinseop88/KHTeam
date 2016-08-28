@@ -6,6 +6,8 @@ public enum GameEventType
     MonsterDied,
 
     UpdateMoveDistance,
+
+    Click_Screen,
 }
 
 public class GameEventManager : SingleTon<GameEventManager>

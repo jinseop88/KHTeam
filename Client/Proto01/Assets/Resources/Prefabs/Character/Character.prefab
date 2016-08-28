@@ -246,15 +246,15 @@ MonoBehaviour:
   - state: 1
     name: Move
     nameHash: 1326225478
-    clip: {fileID: 7400000, guid: 55c97b7ec7ceb6f4894ae7b4c0425159, type: 2}
+    clip: {fileID: 7400000, guid: 1a678b2c98f8b1f4b94e79de6c5f8548, type: 2}
   - state: 2
     name: Damaged
     nameHash: 326473335
-    clip: {fileID: 7400000, guid: 55c97b7ec7ceb6f4894ae7b4c0425159, type: 2}
+    clip: {fileID: 7400000, guid: 1a678b2c98f8b1f4b94e79de6c5f8548, type: 2}
   - state: 3
     name: Dead
     nameHash: 1293411866
-    clip: {fileID: 7400000, guid: 55c97b7ec7ceb6f4894ae7b4c0425159, type: 2}
+    clip: {fileID: 7400000, guid: 1a678b2c98f8b1f4b94e79de6c5f8548, type: 2}
   - state: 4
     name: Attack
     nameHash: 1080829965

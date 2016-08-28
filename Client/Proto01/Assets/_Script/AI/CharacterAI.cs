@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class CharacterAI : BaseAI
+public class CharacterAI : BaseAI, IGameEventListener
 {
     /// <summary>
     /// 터치 됬나?
@@ -10,6 +10,21 @@ public class CharacterAI : BaseAI
 
     private bool isEnableRange { get { return Vector3.Distance(m_Owner.thisTransform.position, m_Target.thisTransform.position) < m_LimitDistance; } }
     private bool isEnableAttack { get { return m_LastAtkTime + m_AtkDelay < Time.realtimeSinceStartup; } }
+
+    public override void AIOn()
+    {
+        base.AIOn();
+
+        GameEventManager.Instance.Register(this);
+    }
+    
+    public override void AIOff()
+    {
+        base.AIOff();
+
+        GameEventManager.Instance.Unregister(this);
+    }
+
 
     protected override void UpdateAI()
     {
@@ -72,12 +87,23 @@ public class CharacterAI : BaseAI
         {
             m_Owner.Attack(GameType.AnimationState.Attack);
             m_IsTouched = false;
+            return;
         }
 
         if(isEnableAttack)
         {
             m_Owner.Attack(GameType.AnimationState.Attack);
             m_LastAtkTime = Time.realtimeSinceStartup;
+        }
+    }
+
+    public void OnGameEvent(GameEventType gameEventType, params object[] args)
+    {
+        switch(gameEventType)
+        {
+            case GameEventType.Click_Screen:
+                m_IsTouched = true;
+                break;
         }
     }
 }
