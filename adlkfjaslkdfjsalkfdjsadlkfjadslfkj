@@ -1,0 +1,3070 @@
+[33mcommit 51bb4ac820f61acaab86dc216a61336a3735ea85[m
+Author: jinseop88 <kiming88@naver.com>
+Date:   Sun Sep 4 13:16:50 2016 +0900
+
+    드레스UI추가
+    
+    드레스U추가
+    아이들 애니메이션 FPS3
+
+[33mcommit 7f84ed2e504b0b519a0a54bda050ab1f637e698e[m
+Author: pjyoon316 <pjyoon316@naver.com>
+Date:   Sun Sep 4 13:12:26 2016 +0900
+
+    51_60 Update
+    
+    Change-Id: Ibacf4d385ec8bb536a3d2f1d981506823c0e9615
+
+[33mcommit 73c1ab03baad7c1fb30743ce0b8eadef856c0a14[m
+Merge: adb33e0 c59c360
+Author: Jang daemyung <dm86.jang@gmail.com>
+Date:   Sun Sep 4 00:11:02 2016 -0400
+
+    Merge "Add git quick guide and document"
+
+[33mcommit c59c3601a4a65fb4810c6e455e890704ecd1c74f[m
+Author: daemyung <dm86.jang@gmail.com>
+Date:   Sun Sep 4 12:52:09 2016 +0900
+
+    Add git quick guide and document
+    
+    Change-Id: If08800cd9c3920170b660df44b982fc0f56da6e2
+
+[33mcommit adb33e0088ca33d08b5fc66cc3368824086e1c5b[m
+Author: pjyoon316 <pjyoon316@naver.com>
+Date:   Sun Sep 4 12:31:21 2016 +0900
+
+    인삼 리소스 추가
+    
+    Change-Id: Id18a922dff542e470d3b7e786f46f0119a21f1d6
+
+[33mcommit 11426b4d0495949fb42c3f7ada265ff529baa5d9[m
+Merge: 28032a5 3d6412c
+Author: pjyoon316 <pjyoon316@naver.com>
+Date:   Sun Sep 4 00:26:00 2016 +0900
+
+    Merge pull request #51 from pjyoon316/master
+    
+    QuestTable/PinkDress/아이템배경/UI_Quest이미지
+
+[33mcommit 3d6412c6955b9fb2f3831948d9219fe59436eb36[m
+Author: pjyoon316 <pjyoon316@naver.com>
+Date:   Sun Sep 4 00:23:04 2016 +0900
+
+    QuestTable/PinkDress/아이템배경/UI_Quest이미지
+    
+    QuestTable/PinkDress/아이템배경/UI_Quest이미지
+
+[33mcommit f77c5526630843848fedc365452600f35d4bf90c[m
+Merge: fd594d7 28032a5
+Author: pjyoon316 <pjyoon316@naver.com>
+Date:   Tue Aug 30 00:59:53 2016 +0900
+
+    Merged branch master into master
+
+[33mcommit 28032a58dd4139dd36eed53efedcada5ef1e976e[m
+Merge: 631ae0f fd594d7
+Author: pjyoon316 <pjyoon316@naver.com>
+Date:   Tue Aug 30 00:58:39 2016 +0900
+
+    Merge pull request #50 from pjyoon316/master
+    
+    또 다시올리는 배경 Town_Rock수정/스킨Idle
+
+[33mcommit fd594d79aacf76a2ecbf5935bd5ae8a59a588df7[m
+Author: pjyoon316 <pjyoon316@naver.com>
+Date:   Tue Aug 30 00:58:02 2016 +0900
+
+    또 다시올리는 배경 Town_Rock수정/스킨Idle
+    
+    계속 오류나서 올리는 배경 Town_Kiwa수정
+
+[33mcommit 631ae0fb1741b2018ae992a73ee024ea650eb266[m
+Merge: 1d2ee4a 81bf837
+Author: pjyoon316 <pjyoon316@naver.com>
+Date:   Tue Aug 30 00:41:21 2016 +0900
+
+    Merge pull request #49 from pjyoon316/master
+    
+    계속 오류나서 다시올리는 배경 Town_Kiwa수정/스킨Idle
+
+[33mcommit 81bf837a531fd1bb649385cfc5805a4041c78dc0[m
+Author: pjyoon316 <pjyoon316@naver.com>
+Date:   Tue Aug 30 00:40:46 2016 +0900
+
+    계속 오류나서 다시올리는 배경 Town_Kiwa수정/스킨Idle
+    
+    계속 오류나서 올리는 배경 Town_Kiwa수정
+
+[33mcommit 1d2ee4abdfd3e3f09262cd843d3088e262f66edd[m
+Merge: 89a2363 58786f7
+Author: pjyoon316 <pjyoon316@naver.com>
+Date:   Mon Aug 29 23:23:54 2016 +0900
+
+    Merge pull request #48 from pjyoon316/master
+    
+    GoodDress/RoseDress idle update/배경프리팹 50일까지
+
+[33mcommit 58786f724bb79805f848c8a14928bef241ac52da[m
+Merge: 4965bb2 89a2363
+Author: pjyoon316 <pjyoon316@naver.com>
+Date:   Mon Aug 29 00:32:31 2016 +0900
+
+    Merged branch master into master
+
+[33mcommit 89a236356b557010b14958099167ed19fd722a5b[m
+Author: jinseop88 <kiming88@naver.com>
+Date:   Sun Aug 28 21:58:23 2016 +0900
+
+    캐릭터 테스트 씬 에러나는것 수정
+
+[33mcommit c07fb98250cb6bf3ea4cb05ad92b12b610e24be5[m
+Author: jinseop88 <kiming88@naver.com>
+Date:   Sun Aug 28 21:46:51 2016 +0900
+
+    씬정리작업
+    아이템 떨어지도록 수정
+    게임화면 가로고정
+    Test씬 -> Game씬으로 코드이동
+    캐릭터 스킨 적용되도록 수정
+    몬스터 다죽은거 확인하기위해 DeadEnd 스테이트 추가
+    아이템 떨어지는 효과 위해서 중력 살림 -> 맵에 그라운드 콜리더 추가
+
+[33mcommit 4965bb260f8d4f46bbe800fbe55aaa7a5911f8b3[m
+Merge: 9b5ee4d 511da43
+Author: pjyoon316 <pjyoon316@naver.com>
+Date:   Sun Aug 28 21:42:55 2016 +0900
+
+    Merged branch master into master
+
+[33mcommit 511da4319e4c777c0d5c7a0b38432568e301e2de[m
+Author: jinseop88 <kiming88@naver.com>
+Date:   Sun Aug 28 21:41:19 2016 +0900
+
+    8월 28일 빌드 업로드
+
+[33mcommit 9b5ee4daef5df2bf4974fd5be316530fb9b6452b[m
+Merge: f37a554 834b242
+Author: pjyoon316 <pjyoon316@naver.com>
+Date:   Sun Aug 28 13:36:44 2016 +0900
+
+    Merged branch master into master
+
+[33mcommit f37a5547a8a60cd5b72abd57d4d7f68c6b472b60[m
+Merge: ab45ccd 783fc63
+Author: pjyoon316 <pjyoon316@naver.com>
+Date:   Sun Aug 28 13:34:59 2016 +0900
+
+    Merged branch master into master
+
+[33mcommit ab45ccd92271f0f80e6c3e2fa9d307f9bcff6a46[m
+Author: pjyoon316 <pjyoon316@naver.com>
+Date:   Sun Aug 28 13:33:56 2016 +0900
+
+    충돌
+
+[33mcommit 834b242d520843490ff71edd0db49e1ef1528577[m
+Author: jinseop88 <kiming88@naver.com>
+Date:   Sun Aug 28 13:33:13 2016 +0900
+
+    몬스터 보스1 애니메이션 이상하던 문제 수정
+
+[33mcommit 783fc63974df021bfb71fa6cfe4deb63feb33a2c[m
+Author: jinseop88 <kiming88@naver.com>
+Date:   Sun Aug 28 13:30:55 2016 +0900
+
+    몬스터 HP적용
+
+[33mcommit f6b8f9fc9e2a98f293318177569f7a4a67807676[m
+Author: jinseop88 <kiming88@naver.com>
+Date:   Sun Aug 28 13:28:15 2016 +0900
+
+    Follow카메라 오프셋 적용
+
+[33mcommit f282aa5e54be3178139d1d23887e94b1de156566[m
+Merge: 828396f 0006e3c
+Author: pjyoon316 <pjyoon316@naver.com>
+Date:   Sun Aug 28 13:23:44 2016 +0900
+
+    Merged branch master into master
+
+[33mcommit 0006e3c3caf87e6e8b28e977367c493105a3d3cc[m
+Author: jinseop88 <kiming88@naver.com>
+Date:   Sun Aug 28 13:22:36 2016 +0900
+
+    클릭시 공격, 맵로드되도록, 몬스터 애니메이션 추가
+
+[33mcommit 828396fcddc7c8503751414c8d9c1f059787e0b2[m
+Merge: 3c92ade b6de16b
+Author: pjyoon316 <pjyoon316@naver.com>
+Date:   Thu Aug 25 15:43:20 2016 +0900
+
+    Merged branch master into master
+
+[33mcommit b6de16bfeb067af87b7c336bc0459acc8a713404[m
+Merge: b9819a1 3c92ade
+Author: pjyoon316 <pjyoon316@naver.com>
+Date:   Thu Aug 25 15:35:55 2016 +0900
+
+    Merge pull request #47 from pjyoon316/master
+    
+    UI_DressingRoom Skin/Table Update
+
+[33mcommit 3c92ade7a85332b7be368b96a0d14fb8b857dc54[m
+Author: pjyoon316 <pjyoon316@naver.com>
+Date:   Thu Aug 25 15:34:45 2016 +0900
+
+    Ui_DressingRoom Skin/Table Update
+    
+    Ui_DressingRoom Skin- GoodDress Move/Attack, RoseDress Move/Attack, Table Update
+
+[33mcommit 9aba4bf46bf7d8c4321e5fd3ebf3aba54673fdf9[m
+Merge: 5010b21 b9819a1
+Author: pjyoon316 <pjyoon316@naver.com>
+Date:   Thu Aug 25 00:03:11 2016 +0900
+
+    Merged branch master into master
+
+[33mcommit b9819a18552a7a01abed1fdcdc0d3c1bd1bbce45[m
+Author: jinseop88 <kiming88@naver.com>
+Date:   Mon Aug 22 22:39:44 2016 +0900
+
+    Revert "Merge remote-tracking branch 'refs/remotes/origin/master'"
+    
+    This reverts commit 3da28d482485651197af87fb70b4b97b578ce9fc.
+
+[33mcommit 26b08c7ff3bb0bf6743d95df14669b8d1efc33c5[m
+Author: jinseop88 <kiming88@naver.com>
+Date:   Mon Aug 22 22:41:17 2016 +0900
+
+    backgraound.cs 머지
+
+[33mcommit 3da28d482485651197af87fb70b4b97b578ce9fc[m
+Merge: ac61c45 3b2d734
+Author: jinseop88 <kiming88@naver.com>
+Date:   Mon Aug 22 22:39:44 2016 +0900
+
+    Merge remote-tracking branch 'refs/remotes/origin/master'
+    
+    Conflicts:
+            Client/Proto01/Assets/Resources/Prefabs/Map/Mt_ChunTae1/Mt_ChunTae1.prefab
+            Client/Proto01/Assets/_Scene/11.CharacterTest.unity
+            Client/Proto01/Assets/_Script/Entity/Environment/Background.cs
+
+[33mcommit 3b2d73424ed4177e44508a042cf8e1a62ffc01fe[m
+Merge: 5b2decc 5010b21
+Author: pjyoon316 <pjyoon316@naver.com>
+Date:   Mon Aug 22 20:46:54 2016 +0900
+
+    Merge pull request #46 from pjyoon316/master
+    
+    배경프리팹 31_40 Town_Kiwa까지 업데이트
+
+[33mcommit 5010b21b4ae3aabddbe93e06caf23414bcce9dab[m
+Author: pjyoon316 <pjyoon316@naver.com>
+Date:   Mon Aug 22 20:45:03 2016 +0900
+
+    배경프리팹 31_40 Town_Kiwa까지 업데이트
+    
+    31_40 Town_Kiwa까지 업데이트
+
+[33mcommit 36c68668fab3d6c71948568a644cb7c1fcd4add5[m
+Merge: cc7e5e1 5b2decc
+Author: pjyoon316 <pjyoon316@naver.com>
+Date:   Sun Aug 21 20:01:23 2016 +0900
+
+    Merged branch master into master
+
+[33mcommit 5b2decc863d2efa1fb67db6177f4fdf8c566f253[m
+Author: dheda@hanmail.net <dheda@hanmail.net>
+Date:   Sun Aug 21 14:28:22 2016 +0900
+
+    Background 관련 코드수정
+
+[33mcommit ac61c45510813d8637a47d84392d92fdda97b296[m
+Author: jinseop88 <kiming88@naver.com>
+Date:   Sun Aug 21 13:16:53 2016 +0900
+
+    파람 소문자 오브젝트로 업로드 배경 자동 추가 삭제 되도록 수정
+
+[33mcommit cc7e5e1a582071d27478973f20d232a43a776db0[m
+Merge: a38c473 b9cf154
+Author: pjyoon316 <pjyoon316@naver.com>
+Date:   Sun Aug 21 13:15:17 2016 +0900
+
+    Merge remote-tracking branch 'refs/remotes/upstream/master'
+    
+    Conflicts:
+            Client/Proto01/Assets/Resources/Prefabs/Character/Animation/Basic/Walk.anim
+            Client/Proto01/Assets/Resources/Prefabs/Character/Animation/Basic/Walk.anim.meta
+
+[33mcommit a38c473a75056b1f0dc60ebf675d157b7eeef890[m
+Author: pjyoon316 <pjyoon316@naver.com>
+Date:   Sun Aug 21 13:13:41 2016 +0900
+
+    Update file permission
+
+[33mcommit 0996777df909204220932d12d12433894f1b0bee[m
+Merge: 5462304 b9cf154
+Author: jinseop88 <kiming88@naver.com>
+Date:   Sun Aug 21 13:09:44 2016 +0900
+
+    Merged branch master into master
+
+[33mcommit 5462304917c32c96118b937ecc7accb9f8f6ce5f[m
+Author: jinseop88 <kiming88@naver.com>
+Date:   Sun Aug 21 12:55:36 2016 +0900
+
+    맵천태2 업로드
+
+[33mcommit b9cf1543883fac49f7e9665e276aa4e482a81c64[m
+Merge: d7dd931 c3755fa
+Author: Jang daemyung <dm86.jang@gmail.com>
+Date:   Sun Aug 21 12:53:17 2016 +0900
+
+    Merge pull request #45 from daemyung/master
+    
+    Make to feel good the petal magic effect
+
+[33mcommit c3755fae4a264a3dd77485d30da107b7cff22a2d[m
+Merge: 2fb1e88 d7dd931
+Author: daemyung <dm86.jang@gmail.com>
+Date:   Sun Aug 21 12:51:46 2016 +0900
+
+    Merge branch 'upstream'
+    
+    Change-Id: Iad2b95a79b928c72e02f690cf0c403f196896ab8
+
+[33mcommit 2fb1e889f1af6c5d66054233fb36675f110f98e6[m
+Author: daemyung <dm86.jang@gmail.com>
+Date:   Sun Aug 21 12:43:41 2016 +0900
+
+    Make to feel good the petal magic effect
+    
+    Change-Id: I6303a3ca58bc09af31e4f87adaab3a76f50b7946
+
+[33mcommit d7dd931d3b6d8caf9e2865491e1ff7417e86e063[m
+Author: jinseop88 <kiming88@naver.com>
+Date:   Sun Aug 21 12:42:25 2016 +0900
+
+    천태산 맵프래핍 하나로 합침 (far mid near)
+
+[33mcommit 15b28f1359269eba5ecd3a55b7c729c2b2c4a196[m
+Author: jinseop88 <kiming88@naver.com>
+Date:   Sun Aug 21 12:37:55 2016 +0900
+
+    Walk -> Move로 이름 변경
+
+[33mcommit 6823ed92e456b62f87d8f46321de74744bff6e74[m
+Merge: 51d1782 c595c0b
+Author: pjyoon316 <pjyoon316@naver.com>
+Date:   Sun Aug 21 12:29:48 2016 +0900
+
+    Merged branch master into master
+
+[33mcommit c595c0bfa4a9f46c614d42336db0be902a11f0c5[m
+Author: jinseop88 <kiming88@naver.com>
+Date:   Sun Aug 21 12:28:21 2016 +0900
+
+    캐릭터 스킨 관련 폴더구조 업로드
+
+[33mcommit 575754034f9a42f2b02b5c0fd082adf27e01d164[m
+Merge: efa8f7b 51d1782
+Author: pjyoon316 <pjyoon316@naver.com>
+Date:   Sun Aug 21 12:19:52 2016 +0900
+
+    Merge pull request #43 from pjyoon316/master
+    
+    GoodDress_Walk .png
+
+[33mcommit 51d17827391df0b477feb4690cf4bc1adbaaffc4[m
+Author: pjyoon316 <pjyoon316@naver.com>
+Date:   Sun Aug 21 12:19:20 2016 +0900
+
+    GoodDress_Walk .png
+    
+    GoodDress_Walk .png
+
+[33mcommit a8a3d92a598de8b87268f41623611048ddedbc19[m
+Merge: fe0d351 efa8f7b
+Author: pjyoon316 <pjyoon316@naver.com>
+Date:   Sun Aug 21 11:59:49 2016 +0900
+
+    Merged branch master into master
+
+[33mcommit efa8f7bd1e2b819a84ee6124dad27198a07a1c86[m
+Merge: c87f9ff 430f2b9
+Author: Jang daemyung <dm86.jang@gmail.com>
+Date:   Sun Aug 21 11:54:59 2016 +0900
+
+    Merge pull request #42 from daemyung/master
+    
+    Revert Character prefab
+
+[33mcommit 430f2b93444f29933a127ad40673096ae3f8a0a8[m
+Author: daemyung <dm86.jang@gmail.com>
+Date:   Sun Aug 21 11:50:45 2016 +0900
+
+    Revert Character prefab
+    
+    Change-Id: I623d936d860df299c73a5851748389cb3f5db506
+
+[33mcommit fe0d3517b21a250c7d464a4339442bafa11dc794[m
+Merge: dd25ef0 c87f9ff
+Author: pjyoon316 <pjyoon316@naver.com>
+Date:   Sun Aug 21 11:40:58 2016 +0900
+
+    Merge remote-tracking branch 'refs/remotes/upstream/master'
+    
+    Conflicts:
+            Client/Proto01/Assets/_Script/TestScene/CharacterTestScene.cs
+
+[33mcommit dd25ef0727f39fdc778a2cc5d2173098d468a4db[m
+Author: pjyoon316 <pjyoon316@naver.com>
+Date:   Sun Aug 21 11:37:21 2016 +0900
+
+    Unify EOF to LF
+
+[33mcommit c87f9ff54cbf5d3635943e0bf874e251e1ac14b3[m
+Merge: de0c34b a74226f
+Author: Jang daemyung <dm86.jang@gmail.com>
+Date:   Sun Aug 21 11:35:43 2016 +0900
+
+    Merge pull request #41 from daemyung/master
+    
+    Translate Korean to English
+
+[33mcommit a74226f4617a56b7bdc4bb0dc4050c6f29dafa7b[m
+Author: daemyung <dm86.jang@gmail.com>
+Date:   Sun Aug 21 11:34:21 2016 +0900
+
+    Translate Korean to English
+    
+    Change-Id: If735e047e20952d5164d6049137b72585a52cb22
+
+[33mcommit de0c34bf45d7a4a2c4b355cc1abe0916894ed14e[m
+Merge: 495536d 492a7c0
+Author: Jang daemyung <dm86.jang@gmail.com>
+Date:   Thu Aug 18 02:04:39 2016 +0900
+
+    Merge pull request #40 from daemyung/master
+    
+    Apply the petal magic
+
+[33mcommit 492a7c0324ef4ac028d4271ebd69deba0e0e0349[m
+Author: Jang daemyung <dm86.jang@gmail.com>
+Date:   Thu Aug 18 02:01:28 2016 +0900
+
+    When the touch event is happend, the petal magic is played
+    
+    Change-Id: I722cdd69eb52f80ee09653252410dbe122a730a2
+
+[33mcommit 77c3025e3443c109e9b375f123a26b13807e1f94[m
+Author: Jang daemyung <dm86.jang@gmail.com>
+Date:   Thu Aug 18 00:23:36 2016 +0900
+
+    Update gitattributes for C#
+    
+    Change-Id: Ib31063c2193c0ab15bbe744b7b1c22ba78132977
+
+[33mcommit f5bd1a8768f99e169739a9c915e738fcf60d40c2[m
+Author: Jang daemyung <dm86.jang@gmail.com>
+Date:   Thu Aug 18 00:22:37 2016 +0900
+
+    Repair missing petal magic prefabs
+    
+    Change-Id: Ic4cda16b57d333325f9dcf90bcbb5238de0cbd6c
+
+[33mcommit ea68ae90b8bf9191e882a181f69016877436fea8[m
+Author: Jang daemyung <dm86.jang@gmail.com>
+Date:   Thu Aug 18 00:06:45 2016 +0900
+
+    Unify the end of line from CRLF to LF
+    
+    Change-Id: Ifbd75d89493a16720db309f70c24c64e44b04a60
+
+[33mcommit 495536dbedfc45e540bc4dc3f1f177fa4fd1f2b7[m
+Author: jinseop88 <kiming88@naver.com>
+Date:   Wed Aug 17 23:32:55 2016 +0900
+
+    맵 3개로 풀링해서 사용하도록 수정
+    
+    몬스터 바리 보도록 수정
+    
+    바리 이동속도 증가
+    
+    바리 공격속도 감소
+
+[33mcommit 9ca71533cc11cb554092a7e61fd81510a254ff0a[m
+Merge: ddc4ab4 66f34ed
+Author: pjyoon316 <pjyoon316@naver.com>
+Date:   Wed Aug 17 23:25:08 2016 +0900
+
+    Merged branch master into master
+
+[33mcommit 66f34edd4ad8dd5ca318b52a8b23cd23186d3f20[m
+Author: jinseop88 <kiming88@naver.com>
+Date:   Wed Aug 17 22:24:22 2016 +0900
+
+    CharacterSpawnPoint.cs이름 변경
+    
+    SpawnPoint.cs로
+
+[33mcommit 23c7d7ebe6fbd5eed4b81c2bff352416e9de073a[m
+Author: jinseop88 <kiming88@naver.com>
+Date:   Wed Aug 17 22:22:37 2016 +0900
+
+    캐릭터 테스트씬에서
+    
+    게임이 되도록 수정
+
+[33mcommit ddc4ab4a03cbf3be01f277ea62cd86dbfa3bdca6[m
+Merge: 9b3e2e0 7cbd596
+Author: pjyoon316 <pjyoon316@naver.com>
+Date:   Wed Aug 17 22:19:44 2016 +0900
+
+    Merged branch master into master
+
+[33mcommit 7cbd596c746103a7f045ef2b6a9ea246202f4445[m
+Author: jinseop88 <kiming88@naver.com>
+Date:   Wed Aug 17 22:03:03 2016 +0900
+
+    맵 천태산 수정한것 업로드
+
+[33mcommit ad7ed9eeacdd8161be016625de0eedc9abc6c75a[m
+Author: jinseop88 <kiming88@naver.com>
+Date:   Wed Aug 17 18:32:12 2016 +0900
+
+    에러나는것수정
+
+[33mcommit 80d7f13ed4853d108592a9888d2ff50dc721b039[m
+Merge: 975d1d4 9b3e2e0
+Author: pjyoon316 <pjyoon316@naver.com>
+Date:   Wed Aug 17 14:14:07 2016 +0900
+
+    Merge pull request #39 from pjyoon316/master
+    
+    프리팹 다시저장/ UI 한복이미지
+
+[33mcommit 9b3e2e0d73b3d3ae51674b22f046846f4a8fd113[m
+Author: pjyoon316 <pjyoon316@naver.com>
+Date:   Wed Aug 17 14:13:38 2016 +0900
+
+    프리팹 다시저장/ UI 한복이미지
+    
+    프리팹 다시저장/ UI 한복이미지
+
+[33mcommit 292cf5ce7bc1e1fcc25f3b7aa43212a712f838c1[m
+Merge: 18ed950 975d1d4
+Author: pjyoon316 <pjyoon316@naver.com>
+Date:   Wed Aug 17 02:01:31 2016 +0900
+
+    Merged branch master into master
+
+[33mcommit 975d1d40600b957d36bbec6488b0f32010aa3726[m
+Merge: fcee400 118820c
+Author: Jang daemyung <dm86.jang@gmail.com>
+Date:   Wed Aug 17 00:22:55 2016 +0900
+
+    Merge pull request #38 from daemyung/master
+    
+    Implement the petal magic
+
+[33mcommit 118820c8323a1920788f31f261a9fabd9fb73ead[m
+Author: Jang daemyung <dm86.jang@gmail.com>
+Date:   Wed Aug 17 00:12:20 2016 +0900
+
+    Implement the petal magic
+    
+    Change-Id: I5552641594fb7632164b0ee592e1a59ecba6d378
+
+[33mcommit fcee4000f2ae9c9483081f4cdb94d8f59248b649[m
+Author: jinseop88 <kiming88@naver.com>
+Date:   Tue Aug 16 23:51:22 2016 +0900
+
+    테이블 폴더 추가
+
+[33mcommit 18ed950fb9445cd4bb19302a9df4e38ee846984a[m
+Merge: de4f341 110a343
+Author: pjyoon316 <pjyoon316@naver.com>
+Date:   Tue Aug 16 23:51:09 2016 +0900
+
+    Merged branch master into master
+
+[33mcommit 110a343a96b407bb876859c34a51beb52db576ca[m
+Author: jinseop88 <kiming88@naver.com>
+Date:   Tue Aug 16 23:50:25 2016 +0900
+
+    UI이상한거 업로드
+
+[33mcommit 4d8c7a380ea0eacd1cfe6e0e3182fe997a34bc60[m
+Author: jinseop88 <kiming88@naver.com>
+Date:   Tue Aug 16 23:48:14 2016 +0900
+
+    드레스룸 UI 업로드
+
+[33mcommit de4f341804e106818659833e8c20de378dcf8490[m
+Merge: 84559cc 70876d6
+Author: pjyoon316 <pjyoon316@naver.com>
+Date:   Tue Aug 16 23:25:35 2016 +0900
+
+    Merged branch master into master
+
+[33mcommit 30cff51af04fa789653c728bd724b3864bc5d269[m
+Merge: 70876d6 84559cc
+Author: pjyoon316 <pjyoon316@naver.com>
+Date:   Tue Aug 16 23:25:20 2016 +0900
+
+    Merge pull request #37 from pjyoon316/master
+    
+    UI meta파일 및 UI_DressingRoom 설명
+
+[33mcommit 84559cc8556e474d3a3aa24fd2c0a9c492b7bec3[m
+Author: pjyoon316 <pjyoon316@naver.com>
+Date:   Tue Aug 16 23:24:30 2016 +0900
+
+    UI meta파일 및 UI_DressingRoom 설명
+    
+    UI meta파일 및 UI_DressingRoom 설명
+
+[33mcommit a4ed9ade9497f3b25bafc5951079ed16afb8e51f[m
+Merge: 9b108bc 4029d54
+Author: pjyoon316 <pjyoon316@naver.com>
+Date:   Tue Aug 16 11:25:39 2016 +0900
+
+    Merged branch master into master
+
+[33mcommit 70876d6a9bd47781b138d49f879af89e9ab1916c[m
+Merge: 4029d54 9b108bc
+Author: pjyoon316 <pjyoon316@naver.com>
+Date:   Tue Aug 16 11:25:23 2016 +0900
+
+    Merge pull request #36 from pjyoon316/master
+    
+    UI_DressingRoom 리소스
+
+[33mcommit 9b108bc19b7a3f1d3916c08530ea0553724f1741[m
+Author: pjyoon316 <pjyoon316@naver.com>
+Date:   Tue Aug 16 11:24:50 2016 +0900
+
+    UI_DressingRoom 리소스
+    
+    UI_DressingRoom 리소스
+
+[33mcommit 93e10d26d2daaa1b5942ddb79f2c272928196d48[m
+Merge: 7f382d6 6ef0703
+Author: pjyoon316 <pjyoon316@naver.com>
+Date:   Mon Aug 15 17:07:39 2016 +0900
+
+    Merged branch master into master
+
+[33mcommit 4029d545302bf7adae41666d51a3215455dfd7e4[m
+Merge: 6ef0703 7f382d6
+Author: pjyoon316 <pjyoon316@naver.com>
+Date:   Mon Aug 15 17:07:23 2016 +0900
+
+    Merge pull request #35 from pjyoon316/master
+    
+    41-50 까지 배경프리팹업데이트
+
+[33mcommit 7f382d6caaaa8d9e0d618f86fca941b0f05f1354[m
+Author: pjyoon316 <pjyoon316@naver.com>
+Date:   Mon Aug 15 17:06:59 2016 +0900
+
+    41-50 까지 배경프리팹업데이트
+    
+    41-50 까지 배경프리팹업데이트
+
+[33mcommit 6ef070334237196c90e2266c333b63bb78d45922[m
+Merge: 6c1cafb 3941d29
+Author: pjyoon316 <pjyoon316@naver.com>
+Date:   Thu Aug 11 01:13:11 2016 +0900
+
+    Merge pull request #34 from pjyoon316/master
+    
+    MapChuntae1  프리팹 업데이트
+
+[33mcommit 3941d296b8cebc88a5603186821ad6decd6b611a[m
+Author: pjyoon316 <pjyoon316@naver.com>
+Date:   Thu Aug 11 01:10:34 2016 +0900
+
+    MapChuntae1  프리팹 업데이트
+    
+    Assets-Resources-Prefabs-Map-Mt_ChunTae1
+
+[33mcommit 552e1704f10d80e2096a983a1c659bc3ac6d62b7[m
+Merge: 26e56f7 6c1cafb
+Author: pjyoon316 <pjyoon316@naver.com>
+Date:   Sun Aug 7 13:14:41 2016 +0900
+
+    Merged branch master into master
+
+[33mcommit 6c1cafbc4125ad9a1d602cabdd5bbac487c57460[m
+Author: jinseop88 <kiming88@naver.com>
+Date:   Sun Aug 7 13:13:42 2016 +0900
+
+    맵 관련 프리팹화 준비
+
+[33mcommit 519ace98127a219b61fb871dbbf9c3340a273637[m
+Merge: 0ed39a2 26e56f7
+Author: pjyoon316 <pjyoon316@naver.com>
+Date:   Sun Aug 7 12:47:05 2016 +0900
+
+    Merge pull request #33 from pjyoon316/master
+    
+    맵 프리팹 테스트
+
+[33mcommit 26e56f76ea3fb298b815d64000ee87c21eafd075[m
+Author: pjyoon316 <pjyoon316@naver.com>
+Date:   Sun Aug 7 12:46:10 2016 +0900
+
+    맵 프리팹 테스트
+    
+    맵 프리팹 테스트
+
+[33mcommit 560522c7b2398db46a90dd17cefc06293af9685f[m
+Merge: a2ef013 0ed39a2
+Author: pjyoon316 <pjyoon316@naver.com>
+Date:   Sun Aug 7 11:31:56 2016 +0900
+
+    Merged branch master into master
+
+[33mcommit 0ed39a21194146ecc5207d12d9aa72ece8725b03[m
+Author: jinseop88 <kiming88@naver.com>
+Date:   Sun Aug 7 11:31:17 2016 +0900
+
+    텍스쳐 깨지던거 메테리얼 다추가
+
+[33mcommit a2ef013dfdf901b5c18e45ff426f9a90206bb9b8[m
+Merge: 3d45cef ec70494
+Author: pjyoon316 <pjyoon316@naver.com>
+Date:   Sun Aug 7 11:21:24 2016 +0900
+
+    Merged branch master into master
+
+[33mcommit ec704942884310b32115371ffe110176b0cd9651[m
+Merge: f587dac 5bf4a72
+Author: Jang daemyung <dm86.jang@gmail.com>
+Date:   Fri Aug 5 00:49:25 2016 +0900
+
+    Merge pull request #32 from daemyung/master
+    
+    Fix monster bug and animation 2d errors
+
+[33mcommit 5bf4a72b0f5c7a87d7093c6a6e9e2a755852bf25[m
+Author: Jang daemyung <dm86.jang@gmail.com>
+Date:   Fri Aug 5 00:42:16 2016 +0900
+
+    Remove Character is initialized twice and Set Dokebi2 idle animation correctly
+    
+    Change-Id: I28cfc8f37c098efc3ecde39f92a18a956236cd1b
+
+[33mcommit f587dacea12d25ccc2da1dd2045dae0c83e8a3b2[m
+Merge: b5ee084 a2382cf
+Author: Jang daemyung <dm86.jang@gmail.com>
+Date:   Thu Aug 4 23:36:51 2016 +0900
+
+    Merge pull request #31 from daemyung/master
+    
+    Change the end-of-line from CRLF to LF
+
+[33mcommit a2382cfd1fef39fb04d7b0a684dd17ab8dfef1f6[m
+Author: Jang daemyung <dm86.jang@gmail.com>
+Date:   Thu Aug 4 23:35:40 2016 +0900
+
+    Change the end-of-line from CRLF to LF
+    
+    Change-Id: Iefc865d540a8e0dfac2eaab8fcc91b3c3fe3bd72
+
+[33mcommit b5ee0847714f599369af5d29c2cb2caf5aacbbea[m
+Merge: 7fb9eac 388bb95
+Author: Jang daemyung <dm86.jang@gmail.com>
+Date:   Thu Aug 4 23:34:07 2016 +0900
+
+    Merge pull request #30 from daemyung/master
+    
+    Set the end-of-line policy
+
+[33mcommit 388bb951cf2f253b8b07a95eef8be525b49327f6[m
+Author: Jang daemyung <dm86.jang@gmail.com>
+Date:   Thu Aug 4 23:32:19 2016 +0900
+
+    Set the end-of-line policy
+    
+    Change-Id: Ifbe5568075dae1bb677b1b3e42f1b0d00022fbe2
+
+[33mcommit 7fb9eacf048b8fd39557bce5f8e42a7805c692d0[m
+Merge: eca201a 3d45cef
+Author: pjyoon316 <pjyoon316@naver.com>
+Date:   Thu Aug 4 21:30:46 2016 +0900
+
+    Merge pull request #29 from pjyoon316/master
+    
+    1-20 천태산배경 사이즈조정/삭제
+
+[33mcommit 3d45cefaf07e3926d6e8f9b6c26ea65f535b6472[m
+Author: pjyoon316 <pjyoon316@naver.com>
+Date:   Thu Aug 4 21:29:44 2016 +0900
+
+    1-20 천태산배경 사이즈조정/삭제
+    
+    1-20 천태산배경 사이즈조정/삭제
+
+[33mcommit 4e9ae15f211bc060d5dea3fc9cfdee24ca2e65c9[m
+Merge: 4718ccf eca201a
+Author: pjyoon316 <pjyoon316@naver.com>
+Date:   Thu Aug 4 21:26:15 2016 +0900
+
+    Merged branch master into master
+
+[33mcommit eca201af60c884da9d2b7b4ef68af4155966016a[m
+Author: jinseop88 <kiming88@naver.com>
+Date:   Thu Aug 4 10:45:19 2016 +0900
+
+    맵움직이는 쉐이더 추가
+
+[33mcommit 15655a8245f9acf58920d66f6e7e870389145d20[m
+Author: jinseop88 <kiming88@naver.com>
+Date:   Thu Aug 4 10:18:32 2016 +0900
+
+    애니메이션 오버라이드 수정
+    
+    Skill1,2 State삭제 -> Attack 스테이트로 변경
+    
+    애니메이션 컨트롤러 캐릭터 몬스터 합침 지금 Clip이 논이면 에러로그찍힘( 게임과 무관)
+
+[33mcommit 6274911c3dfce2620c2f51b070be3277bcde72b3[m
+Merge: fb485c2 d2482a4
+Author: Jang daemyung <dm86.jang@gmail.com>
+Date:   Wed Aug 3 16:46:37 2016 +0900
+
+    Merge pull request #28 from daemyung/master
+    
+    Update monsters
+
+[33mcommit d2482a4d28911bcb1e6bbd03b63908d839b83d7d[m
+Author: Jang daemyung <dm86.jang@gmail.com>
+Date:   Wed Aug 3 16:35:05 2016 +0900
+
+    Update monsters
+    
+    1. Monster prefabs use Animation2D
+    2. Monster emits MonsterDied signal
+    3. SpawnSystem just create monsters and SpawnSystem.Request is depreciated
+    
+    Change-Id: I1a3e289037be0faef3548d911ad6f7f705202ed9
+
+[33mcommit fb485c22521eddfe7bb134ef70fb1758fc21683e[m
+Merge: 0a76232 5951443
+Author: Jang daemyung <dm86.jang@gmail.com>
+Date:   Wed Aug 3 15:27:33 2016 +0900
+
+    Merge pull request #27 from daemyung/master
+    
+    File permission update
+
+[33mcommit 5951443974620a9149c8b542e80ffbc10a049183[m
+Author: Jang daemyung <dm86.jang@gmail.com>
+Date:   Wed Aug 3 15:24:49 2016 +0900
+
+    File permission update
+    
+    Change-Id: Ia3fe0d4b91f752fe4c1bd3f25a5e20d2751c21f8
+
+[33mcommit 0a762325bc21cdce9358fdca4f78b08c5b82617c[m
+Author: jinseop88 <kiming88@naver.com>
+Date:   Wed Aug 3 15:00:32 2016 +0900
+
+    몬스터Animation2Dㅇ지워진부분 Animation2D 로변경
+
+[33mcommit 4718ccf73f1b12ee2d58053ee9ac33052afd70a9[m
+Author: pjyoon316 <pjyoon316@naver.com>
+Date:   Mon Aug 1 10:53:18 2016 +0900
+
+    한글이름 영어이름으로 수정
+    
+    한글이름 영어이름으로 수정
+
+[33mcommit 8d60aeec63923513b3e4e1cc29ab217e788b8497[m
+Merge: b22ccc5 1053db3
+Author: pjyoon316 <pjyoon316@naver.com>
+Date:   Mon Aug 1 10:51:12 2016 +0900
+
+    Merged branch master into master
+
+[33mcommit 1053db3d246743b811e871bb3e515cb409833f1e[m
+Merge: 92c6bff 9396ef5
+Author: Jang daemyung <dm86.jang@gmail.com>
+Date:   Sun Jul 31 23:07:16 2016 +0900
+
+    Merge pull request #25 from daemyung/master
+    
+    Translate Korean to English
+
+[33mcommit 9396ef56dc5134d3e674fbda34abc658f3ca4e7a[m
+Author: daemyung jang <dm86.jang@gmail.com>
+Date:   Sun Jul 31 23:06:03 2016 +0900
+
+    Translate Korean to English
+    
+    Change-Id: I793e4efb760ab1e8c985bcdcbfaaf55cbbe9e765
+
+[33mcommit 92c6bffb6b593bfabe982d6f3b71cd6545a07387[m
+Merge: fd6b5f7 dd906f4
+Author: Jang daemyung <dm86.jang@gmail.com>
+Date:   Sun Jul 31 23:00:03 2016 +0900
+
+    Merge pull request #24 from daemyung/master
+    
+    Translate Korean to English
+
+[33mcommit dd906f41eb1eb64e8d6007c55e2d2d0a36f52f01[m
+Author: daemyung jang <dm86.jang@gmail.com>
+Date:   Sun Jul 31 22:58:10 2016 +0900
+
+    Translate Korean to English
+    
+    Change-Id: Ic8c84108e3dc1f8ad623ebf7ace8a13ba9eaaad9
+
+[33mcommit fd6b5f70bde6fdbdc5a03a3d1262ff6e636bd6bb[m
+Merge: d35203a b08c58d
+Author: Jang daemyung <dm86.jang@gmail.com>
+Date:   Sun Jul 31 22:47:32 2016 +0900
+
+    Merge pull request #23 from daemyung/master
+    
+    Rollback to 742b6d56e15522635a3b14d4dcb435427041ed6c
+
+[33mcommit b08c58d48e9421023c1179d00e241e1ad1f1ff42[m
+Author: daemyung jang <dm86.jang@gmail.com>
+Date:   Sun Jul 31 22:45:51 2016 +0900
+
+    Rollback to 742b6d56e15522635a3b14d4dcb435427041ed6c
+    
+    Change-Id: Ifbeec01a77d36da4401a206dfa6647f527dae6e4
+
+[33mcommit d8878feddb3c566793c6f7ec31d97512b83e1ccd[m
+Author: daemyung <dm86.jang@gmail.com>
+Date:   Sun Jul 31 21:35:41 2016 +0900
+
+    Convert remained files CRLF to LF
+    
+    Change-Id: I4e8d4e76e28e961bb6b1f98568ed7d5d98e5acaf
+
+[33mcommit d35203a2d351991a0276291e280851a4f21186cc[m
+Merge: 562dbdd 17e56d2
+Author: daemyung jang <dm86.jang@gmail.com>
+Date:   Sun Jul 31 21:28:44 2016 +0900
+
+    Merge conflicts cause by mac
+
+[33mcommit 17e56d2811a89735f968b9a23d6bc177d2b8a1d8[m
+Merge: 562dbdd 5d5950a
+Author: daemyung jang <dm86.jang@gmail.com>
+Date:   Sun Jul 31 21:25:18 2016 +0900
+
+    Resolve conflicts caused by mac
+
+[33mcommit 5d5950a580621e737b66068adde2864cc09c927d[m
+Author: daemyung <dm86.jang@gmail.com>
+Date:   Sun Jul 31 21:06:54 2016 +0900
+
+    Change the end-of-line of all files from CRLF to LF
+    
+    Change-Id: I0eff98df9b8af6da97d121e96fd4d5db95d6f950
+
+[33mcommit 9756dc4721d8e39b82ea825530d31fe4a291777e[m
+Author: daemyung <dm86.jang@gmail.com>
+Date:   Sun Jul 31 20:32:46 2016 +0900
+
+    Change the end-of-line from CRLF to LF
+    
+    Change-Id: I2895eae9c78795785445747d3d74225136e4a2ce
+
+[33mcommit 562dbddf4c0a3a9e075d11b98fc7f559f3d50cbc[m
+Merge: ca47797 d3a76ae
+Author: Jang daemyung <dm86.jang@gmail.com>
+Date:   Sun Jul 31 20:13:10 2016 +0900
+
+    Merge pull request #20 from daemyung/master
+    
+    Update .gitattributes
+
+[33mcommit d3a76aee2240979c3ec395f135d310b639f38b95[m
+Author: daemyung <dm86.jang@gmail.com>
+Date:   Sun Jul 31 20:09:58 2016 +0900
+
+    Update .gitattributes
+    
+    Change-Id: Ic91982f63e3070a6acd3c9c16100bb5babcc4478
+
+[33mcommit ca47797cd69cd8ea61002528fd47671d3cb2527c[m
+Merge: 595f30c ecd9ee5
+Author: Jang daemyung <dm86.jang@gmail.com>
+Date:   Sun Jul 31 18:42:31 2016 +0900
+
+    Merge pull request #19 from daemyung/master
+    
+    Add end-of-line normalization
+
+[33mcommit ecd9ee5ee096983daaa8aeaab9157eeff286981c[m
+Author: daemyung <dm86.jang@gmail.com>
+Date:   Sun Jul 31 13:01:12 2016 +0900
+
+    Add end-of-line normalization
+    
+    Change-Id: Ifb51da370cf9547a74318cab551f51893da49778
+
+[33mcommit 8a108d859e6a35efe818d4c7cb338e05f382d3a6[m
+Author: daemyung <dm86.jang@gmail.com>
+Date:   Sun Jul 31 12:47:12 2016 +0900
+
+    Update meta data
+    
+    Change-Id: Ica97382ff3ee271e552f0934851fb4c3b003e8bb
+
+[33mcommit 595f30c1d85d47e8ce08eeeff6ddd4098da7ac6d[m
+Merge: 742b6d5 adaac0e
+Author: unknown <unknown@unknown.com>
+Date:   Sun Jul 31 12:23:06 2016 +0900
+
+    Merged branch master into master
+
+[33mcommit 742b6d56e15522635a3b14d4dcb435427041ed6c[m
+Author: unknown <unknown@unknown.com>
+Date:   Sun Jul 31 12:22:51 2016 +0900
+
+    애니메이션 컨트롤러 작업 업로드
+
+[33mcommit b22ccc558109b972d48574f50fd71c759bca100a[m
+Merge: 92987e9 096a1d0
+Author: pjyoon316 <pjyoon316@naver.com>
+Date:   Sun Jul 31 11:22:55 2016 +0900
+
+    Merged branch master into master
+
+[33mcommit adaac0e4c20dbf9fe4a8fb853b8ed45298dd5c37[m
+Author: dheda@hanmail.net <dheda@hanmail.net>
+Date:   Sun Jul 31 11:21:09 2016 +0900
+
+    맵생성 추가
+
+[33mcommit 096a1d0156551688bea1ecc5d3c987a499be9527[m
+Author: dheda@hanmail.net <dheda@hanmail.net>
+Date:   Sun Jul 31 11:19:32 2016 +0900
+
+    character 오류수정
+
+[33mcommit 92987e9759b128a76fa99163faa76a5593dfc51a[m
+Merge: 147e338 7e9c804
+Author: pjyoon316 <pjyoon316@naver.com>
+Date:   Sun Jul 31 11:13:24 2016 +0900
+
+    Merged branch master into master
+
+[33mcommit 7e9c804ca081e15a6772dce349e1e7b878de696b[m
+Merge: 3f1a2d6 2016a97
+Author: pjyoon316 <pjyoon316@naver.com>
+Date:   Sun Jul 31 11:11:34 2016 +0900
+
+    Merged master into upstream/master
+
+[33mcommit 9bcbd1df63e7a8308efe5b6f405ee93306ef62cc[m
+Author: dheda@hanmail.net <dheda@hanmail.net>
+Date:   Sun Jul 31 11:05:58 2016 +0900
+
+    배경 shader
+
+[33mcommit 2016a97b57010dfbd103a6a906674445cfd4d0f4[m
+Merge: 147e338 3f1a2d6
+Author: pjyoon316 <pjyoon316@naver.com>
+Date:   Sun Jul 31 11:03:30 2016 +0900
+
+    Merged branch master into master
+
+[33mcommit 8d2682892e7b594bc4c51a00cdb3f9c94969c687[m
+Merge: a6a3fe3 3f1a2d6
+Author: dheda@hanmail.net <dheda@hanmail.net>
+Date:   Sat Jul 30 20:52:55 2016 +0900
+
+    Merge remote-tracking branch 'refs/remotes/origin/master'
+    
+    Conflicts:
+            Client/Proto01/Assets/Art/Game/BackGround/1_10/Background_Far_Night_Big.png.meta
+            Client/Proto01/ProjectSettings/ProjectVersion.txt
+
+[33mcommit 3f1a2d6ab993707e6b37900f2a9da33a51a08c51[m
+Merge: 6e5b397 6acf402
+Author: Jang daemyung <dm86.jang@gmail.com>
+Date:   Fri Jul 29 01:31:09 2016 +0900
+
+    Merge pull request #18 from daemyung/master
+    
+    Remove unuseful SVN document
+
+[33mcommit 6acf40259763ff5f4acd3426c9c65cc64783c03c[m
+Author: Jang Daemyung <dm86.jang@gmail.com>
+Date:   Fri Jul 29 00:55:38 2016 +0900
+
+    Remove unuseful SVN document
+    
+    Change-Id: Ie1e0c4fc4e279fa7a1e3484dc5007c61c871d986
+
+[33mcommit 6e5b397b15c46c3fce1af56b188265fac4506b52[m
+Merge: e93ef4f 0d364b5
+Author: Jang daemyung <dm86.jang@gmail.com>
+Date:   Thu Jul 28 15:31:28 2016 +0900
+
+    Merge pull request #17 from daemyung/master
+    
+    Monster, Boss prefabs 추가
+
+[33mcommit e93ef4fd40ef941abcde00ae4c3156e956f27b9f[m
+Merge: 4589af8 a396157
+Author: Jang daemyung <dm86.jang@gmail.com>
+Date:   Thu Jul 28 15:29:22 2016 +0900
+
+    Merge pull request #16 from daemyung/master
+    
+    Monster, Boss prefabs 추가
+
+[33mcommit 0d364b576e6513d6dde765106370cc3f4effb91a[m
+Author: Jang Daemyung <dm86.jang@gmail.com>
+Date:   Thu Jul 28 14:13:49 2016 +0900
+
+    Monster, Boss prefabs 추가
+    
+    1. Monster Prefabs 추가
+    2. Boss prefabs 추가
+    3. MonsterManager의 list 업데이트
+    4. TestCharacter scene에서 monster random하게 소환
+
+[33mcommit a3961572e2bd6b7ecb2657ee40367665472350f2[m
+Merge: a0433e4 4589af8
+Author: Jang Daemyung <dm86.jang@gmail.com>
+Date:   Thu Jul 28 11:30:53 2016 +0900
+
+    Merged branch master into master
+
+[33mcommit 147e338f58b51d9b80d2e3ad42275c0ae1828376[m
+Merge: 25b888c d0cfa32
+Author: pjyoon316 <pjyoon316@naver.com>
+Date:   Wed Jul 27 23:47:58 2016 +0900
+
+    Merged branch master into master
+
+[33mcommit 4589af8e871684287d1949480dc7dd12d201091e[m
+Merge: d0cfa32 25b888c
+Author: pjyoon316 <pjyoon316@naver.com>
+Date:   Wed Jul 27 23:47:25 2016 +0900
+
+    Merge pull request #15 from pjyoon316/master
+    
+    리소스데이터 리소스파일 다시 삭제
+
+[33mcommit 25b888cfb8a3267eaa8b5243e2ead917e5af8f03[m
+Author: pjyoon316 <pjyoon316@naver.com>
+Date:   Wed Jul 27 23:46:46 2016 +0900
+
+    리소스데이터 리소스파일 다시 삭제
+    
+    리소스데이타에서 게임파일/캐릭터파일의 리소스 삭제
+
+[33mcommit d0cfa3241b5fc52da78f9069c1d8f42d5907f04b[m
+Merge: 7a73c72 35eaa30
+Author: pjyoon316 <pjyoon316@naver.com>
+Date:   Wed Jul 27 23:21:39 2016 +0900
+
+    Merge pull request #12 from pjyoon316/master
+    
+    UI 설계 스탯_옷장_상점 올립니다
+
+[33mcommit 35eaa30dd284c93b1084f29dac51c709415258f4[m
+Merge: a11c0d7 64a6dd3
+Author: pjyoon316 <pjyoon316@naver.com>
+Date:   Wed Jul 27 23:18:08 2016 +0900
+
+    Merged branch master into master
+
+[33mcommit a11c0d74fb956d87c6fc5ae6b71d8daff219d76b[m
+Merge: 549f68f 7a73c72
+Author: pjyoon316 <pjyoon316@naver.com>
+Date:   Wed Jul 27 23:11:41 2016 +0900
+
+    Merged branch master into master
+
+[33mcommit 64a6dd39b360cb3b168559dd1779fc4eb8ea3ca6[m
+Author: pjyoon316 <pjyoon316@naver.com>
+Date:   Wed Jul 27 23:08:07 2016 +0900
+
+    몬스터 죽는  리소스
+    
+    W:2048 * H:256
+    Slice:W:124* H:256
+    Pivot : Bottom
+
+[33mcommit 095ccd83c82814a3c4bd7a4000b52dfbd5e7fe26[m
+Author: pjyoon316 <pjyoon316@naver.com>
+Date:   Wed Jul 27 23:05:57 2016 +0900
+
+    Monster_Fire_move 크기수정
+    
+    W:1024 * H:512
+    Slice:Automatic
+    Pivot : Bottom
+
+[33mcommit 671500b8c14678af81afd291d799e917aac4ae25[m
+Author: pjyoon316 <pjyoon316@naver.com>
+Date:   Wed Jul 27 23:01:10 2016 +0900
+
+    Bird 크기수정
+    
+    W:1024 * H:256
+    Slice:Automatic
+    Pivot : Bottom
+
+[33mcommit a6d78d4b5fc992af1acf038b9fac9adf9786be3b[m
+Author: pjyoon316 <pjyoon316@naver.com>
+Date:   Wed Jul 27 23:00:26 2016 +0900
+
+    Boss 캐릭터 크기수정
+    
+    W:2048 * H:512
+    Slice:Automatic
+    Pivot : Bottom
+
+[33mcommit d502689fb9a0e55eaa4063ac11a496dd90fdd623[m
+Author: pjyoon316 <pjyoon316@naver.com>
+Date:   Wed Jul 27 22:57:53 2016 +0900
+
+    Dokebi1
+    
+    W:512 * H:256
+    Slice:Automatic
+    Pivot : Bottom
+
+[33mcommit 2f3bbc5cdf133b46f844eb04b47495adbfc43cf6[m
+Author: pjyoon316 <pjyoon316@naver.com>
+Date:   Wed Jul 27 22:57:14 2016 +0900
+
+    Dokebi2
+    
+    W:1024 * H:256
+    Slice:Automatic
+    Pivot : Bottom
+
+[33mcommit cf37954b36a1fc6f452e4b763d070f2564b4a32c[m
+Author: pjyoon316 <pjyoon316@naver.com>
+Date:   Wed Jul 27 22:53:48 2016 +0900
+
+    Meta 파일 바뀐거 올림
+    
+    Meta 파일 바뀐거 올림
+
+[33mcommit 9cd254d01fc535d591504a7f7781e51dbc7601dd[m
+Merge: 549f68f 7a73c72
+Author: pjyoon316 <pjyoon316@naver.com>
+Date:   Wed Jul 27 22:52:49 2016 +0900
+
+    Merged branch master into master
+
+[33mcommit 7a73c72d5e9f8986339d1bb1f49886697a5d2e1e[m
+Merge: 14d00c6 a0433e4
+Author: Jang daemyung <dm86.jang@gmail.com>
+Date:   Wed Jul 27 02:20:49 2016 +0900
+
+    Merge pull request #14 from daemyung/master
+    
+    GameEventManager 구현, MonsterManager 변경
+
+[33mcommit a0433e4921f01fc1d49d083f3d270929ea8f99cd[m
+Author: Jang Daemyung <dm86.jang@gmail.com>
+Date:   Wed Jul 27 02:19:20 2016 +0900
+
+    GameEventManager 구현, MonsterManager 변경
+    
+    1. IGameEventListener를 통해서 GameEvent를 받을 수 있도록 구현
+    2. GameEventManager.Notify를 통해서 GameEvent를 전달할 수 있도록 구현
+    3. MonsterManager의 GetNextMonter를 통해 Random하게 생성할 몬스터를 Return하도록 구현
+
+[33mcommit a6a3fe3a8688e6e6a31abe5f40a6768b11fd04c6[m
+Merge: ad3a0f3 14d00c6
+Author: dheda@hanmail.net <dheda@hanmail.net>
+Date:   Tue Jul 26 10:17:09 2016 +0900
+
+    Merged branch master into master
+
+[33mcommit ad3a0f32a36bea23192668d772060712fa8aa224[m
+Author: dheda@hanmail.net <dheda@hanmail.net>
+Date:   Tue Jul 26 10:16:22 2016 +0900
+
+    BackGround 스크립트 추가
+
+[33mcommit 549f68fbaae8bc67f30fef539fcc793173d224ea[m
+Merge: 62ca03b 14d00c6
+Author: pjyoon316 <pjyoon316@naver.com>
+Date:   Mon Jul 25 23:22:31 2016 +0900
+
+    Merge remote-tracking branch 'refs/remotes/upstream/master'
+    
+    Conflicts:
+            Client/Proto01/Assets/Art/Game/Monster/Dokebi.meta
+            Client/Proto01/Assets/Art/Game/Monster/Dokebi/Dokebi2.png.meta
+
+[33mcommit 14d00c6d763aa260e6d6ed3fed5ccd6f542fac6d[m
+Author: jinseop88 <kiming88@naver.com>
+Date:   Mon Jul 25 22:08:50 2016 +0900
+
+    AI 수정 멀면 앞으로 이동
+    가까우면 공격
+
+[33mcommit 9bdc63370f943d2648be3f1a70748b137308ae77[m
+Author: jinseop88 <kiming88@naver.com>
+Date:   Mon Jul 25 22:00:19 2016 +0900
+
+    몬스터AI 삭제
+
+[33mcommit 5454ba25b7c45ad5a5b975b2a84edf7364d01bd1[m
+Author: jinseop88 <kiming88@naver.com>
+Date:   Mon Jul 25 21:46:33 2016 +0900
+
+[33mcommit a67628d0b356b9a01dc027ccf4b71dea8d2bc85a[m
+Author: jinseop88 <kiming88@naver.com>
+Date:   Sun Jul 24 21:12:23 2016 +0900
+
+    에러나는것 수정
+
+[33mcommit 2ddf5d9ad9428d50e40832f99c537f58807911e4[m
+Author: unknown <unknown@unknown.com>
+Date:   Sun Jul 24 20:55:51 2016 +0900
+
+    PC로 하기위해 업로드
+
+[33mcommit 62ca03bec7974117774b16c35192d223e3ec8039[m
+Merge: 4c58339 107a2ee
+Author: pjyoon316 <pjyoon316@naver.com>
+Date:   Sat Jul 23 00:16:13 2016 +0900
+
+    Merged branch master into master
+
+[33mcommit 107a2ee908686c4366c02b65b11f84a9218aa489[m
+Author: pjyoon316 <pjyoon316@naver.com>
+Date:   Sat Jul 23 00:13:54 2016 +0900
+
+    21-30/31-40 배경리소스추가
+    
+    21-30/31-40 배경리소스추가
+
+[33mcommit 589be195d387a0350feb613229fd9120ef58b819[m
+Author: pjyoon316 <pjyoon316@naver.com>
+Date:   Sat Jul 23 00:01:04 2016 +0900
+
+    UI 설계 스탯_옷장_상점 올립니다
+    
+    UI 설계 스탯_옷장_상점 올립니다
+
+[33mcommit 4c583391e73a5c1be520a5b4b0e7389e4b8d8c50[m
+Merge: 8b07a01 f9fce70
+Author: pjyoon316 <pjyoon316@naver.com>
+Date:   Fri Jul 22 22:23:43 2016 +0900
+
+    Merge pull request #11 from pjyoon316/master
+    
+    리소스데이타에서 리소스들 삭제
+
+[33mcommit f9fce709678b6eb9b144b0a2943193c6fdfc1586[m
+Author: pjyoon316 <pjyoon316@naver.com>
+Date:   Fri Jul 22 22:22:48 2016 +0900
+
+    리소스데이타에서 리소스들 삭제
+    
+    리소스데이타에서 리소스들 삭제
+
+[33mcommit 8b07a01ee16179a919244eab11031fea9d1bfadc[m
+Merge: 9781a01 6ba7b69
+Author: pjyoon316 <pjyoon316@naver.com>
+Date:   Tue Jul 19 18:54:50 2016 +0900
+
+    Merge pull request #10 from pjyoon316/master
+    
+    도깨비 몬스터 추가
+
+[33mcommit 6ba7b698af2e7e71934ea364fa911b0b91e9816c[m
+Author: pjyoon316 <pjyoon316@naver.com>
+Date:   Tue Jul 19 18:53:21 2016 +0900
+
+    도깨비 몬스터 추가
+    
+    도깨비 몬스터 추가
+
+[33mcommit 9781a01803caa5c46f071d60d398be82898e9f3d[m
+Merge: c3b17b6 6afa075
+Author: Jang daemyung <dm86.jang@gmail.com>
+Date:   Mon Jul 18 15:05:41 2016 +0900
+
+    Merge pull request #9 from daemyung/master
+    
+    Unify ending line mismatch to CR LF
+
+[33mcommit 6afa075ee1cf481628abd37705a747512629f7e3[m
+Author: Jang Daemyung <dm86.jang@gmail.com>
+Date:   Mon Jul 18 15:04:12 2016 +0900
+
+    Unify ending line mismatch to CR LF
+    
+    [Problem] Warning messages are shown
+    [Cause] Ending line is mismatched
+    [Solution] Unify ending line mismatch to CR LF
+
+[33mcommit bcc0d7bde29f3eb0373309fc845e05ab114a85f4[m
+Merge: 65e72ae c3b17b6
+Author: Jang Daemyung <dm86.jang@gmail.com>
+Date:   Sun Jul 17 23:34:46 2016 +0900
+
+    Merged branch master into master
+
+[33mcommit c3b17b624884cc2a34e146593318157c1ee801c0[m
+Merge: b600dbc 8bb20e5
+Author: pjyoon316 <pjyoon316@naver.com>
+Date:   Sun Jul 17 22:07:19 2016 +0900
+
+    Merge pull request #8 from pjyoon316/master
+    
+    리소스들을 다 Art파일로 정리
+
+[33mcommit 8bb20e502a34b4e3b0b69c655c946ee72752f76e[m
+Author: pjyoon316 <pjyoon316@naver.com>
+Date:   Sun Jul 17 22:03:31 2016 +0900
+
+    리소스들을 다 Art 파일로 정리
+    
+    리소스들을 다 Art 파일로 정리
+
+[33mcommit a0032bb8bee1078f6ca257bf328d3c96ddf1c382[m
+Merge: d9a1026 b600dbc
+Author: pjyoon316 <pjyoon316@naver.com>
+Date:   Sun Jul 17 12:54:44 2016 +0900
+
+    Merged branch master into master
+
+[33mcommit b600dbc9cd053accb1290e4f6a625fd9bdd93c62[m
+Merge: d0b33ae 65e72ae
+Author: Jang daemyung <dm86.jang@gmail.com>
+Date:   Sun Jul 17 12:53:26 2016 +0900
+
+    Merge pull request #7 from daemyung/master
+    
+    Mac .gitignore 추가
+
+[33mcommit 65e72aedb88cf0e15600bca0ef4e8dc82994ee70[m
+Author: Jang DaeMyung <dm86.jang@gmail.com>
+Date:   Sun Jul 17 12:52:37 2016 +0900
+
+    Mac .gitignore 추가
+    
+    자동으로 생성되는 Mac meta 파일들 git에 반영되지 않도록 변경
+
+[33mcommit d9a10267e1d489e0759e7ddd134e6ea999d4adec[m
+Merge: 19d7551 d0b33ae
+Author: pjyoon316 <pjyoon316@naver.com>
+Date:   Sun Jul 17 12:46:06 2016 +0900
+
+    Merged branch master into master
+
+[33mcommit d0b33ae094383ce7d9831f245448cc5b13b5b4da[m
+Merge: dc968a1 19d7551
+Author: pjyoon316 <pjyoon316@naver.com>
+Date:   Sun Jul 17 12:45:05 2016 +0900
+
+    Merge pull request #6 from pjyoon316/master
+    
+    Bird 몬스터 추가
+
+[33mcommit 19d75518dbbfa47c786b88665eedff149a097d43[m
+Author: pjyoon316 <pjyoon316@naver.com>
+Date:   Sun Jul 17 12:43:07 2016 +0900
+
+    Bird 몬스터 추가
+    
+    Bird 몬스터 추가했습니다
+
+[33mcommit c15b0c5809a48b83562830d4f566b9d415b0bcc3[m
+Merge: 3d800d6 dc968a1
+Author: Jang DaeMyung <dm86.jang@gmail.com>
+Date:   Sun Jul 17 12:35:15 2016 +0900
+
+    Merged branch master into master
+
+[33mcommit 3d800d637ab7ee97ca1ffe1a27f2c8c40c5063d8[m
+Author: Jang DaeMyung <dm86.jang@gmail.com>
+Date:   Sun Jul 17 12:31:20 2016 +0900
+
+    문서 파일 변경 Sync
+
+[33mcommit dc968a18567149ae32c97bfc9ac8358513bef55b[m
+Merge: e793526 c08b4cd
+Author: Jang daemyung <dm86.jang@gmail.com>
+Date:   Sun Jul 17 12:28:35 2016 +0900
+
+    Merge pull request #4 from pjyoon316/master
+    
+    보스이미지 2종 추가
+
+[33mcommit c08b4cdd4fae78cb3faefacb05ab786a1440f6ff[m
+Author: pjyoon316 <pjyoon316@naver.com>
+Date:   Sun Jul 17 12:23:45 2016 +0900
+
+    Boss1_Boss2
+    
+    Boss 몬스터 업데이트
+
+[33mcommit 91edf26e514a057f89f5c57930adf0f6038b9c5c[m
+Merge: f3294fb e793526
+Author: pjyoon316 <pjyoon316@naver.com>
+Date:   Sun Jul 17 11:56:11 2016 +0900
+
+    Merged branch master into master
+
+[33mcommit e793526faadbb5a061df1186b42091a60cbb1122[m
+Merge: f3294fb 1006b28
+Author: Jang daemyung <dm86.jang@gmail.com>
+Date:   Sun Jul 17 11:53:45 2016 +0900
+
+    Merge pull request #3 from daemyung/master
+    
+    MonsterSpawner 구현
+
+[33mcommit 1006b28ae69c363f08a05d6d10d0a13d381483de[m
+Author: Jang Daemyung <dm86.jang@gmail.com>
+Date:   Sat Jul 16 19:00:13 2016 +0900
+
+    MonsterSpawner 구현
+    
+    [문제점] SpawnActor의 대상범위가 광범위 했고 Wave에 대한 고려가 되어있지 않음.
+    [해결책] MonsterSpawner를 통해 Monster 생성 로직을 체계적으로 관리.
+    [방법] 1. Monster를 생성하기 위해선 MonsterSpawner에 Request를 보낸다.
+               2. MonsterSpawner가 Request를 순차적으로 처리하면서 Monster를 생성한다.
+
+[33mcommit 619bf768c4449049f4c14c6e8453ef5608a4ddce[m
+Merge: 81b53db f3294fb
+Author: Jang Daemyung <dm86.jang@gmail.com>
+Date:   Tue Jul 12 23:05:44 2016 +0900
+
+    Merged branch master into master
+
+[33mcommit f3294fbb2f7b1b8413b0f79cf423e2fad25f2b95[m
+Author: dheda@hanmail.net <dheda@hanmail.net>
+Date:   Sun Jul 10 12:40:28 2016 +0900
+
+    Item폴더 삭제
+
+[33mcommit 5cdd6ea504b1c2ca3abde48dbaf21e2117f5d0b9[m
+Author: jinseop88 <kiming88@naver.com>
+Date:   Sun Jul 10 12:35:13 2016 +0900
+
+    이제 로비와 타이틀이 필요없을것 같아 삭제
+
+[33mcommit 06d0a61dd6c23599cd15c0f86db09eb4806ca51e[m
+Author: jinseop88 <kiming88@naver.com>
+Date:   Sun Jul 10 11:57:17 2016 +0900
+
+    게임 시스템 스크립트 추가
+    
+    캐릭터 몬스터 맵 스폰 매니저 생성
+    
+    
+    대명님 SpawnActor 외부에서 actor 설정하고 시작할수 있도록 수정
+
+[33mcommit 7be2cf01108d540730647c6a4f2f1a7c8413463a[m
+Merge: af03332 81b53db
+Author: Jang daemyung <dm86.jang@gmail.com>
+Date:   Thu Jul 7 23:24:57 2016 +0900
+
+    Merge pull request #2 from daemyung/master
+    
+    Implement Monster Spawn System
+
+[33mcommit 81b53db5964d9e2efdd49d42cf865075fda92e2d[m
+Author: Jang Daemyung <dm86.jang@gmail.com>
+Date:   Thu Jul 7 13:24:37 2016 +0900
+
+    SpawnActor에서 GameObject대신 Actor를 관리하도록 변경
+    
+    Monster의 모든 Behavior가 Actor에 구현되었기 때문에 GameObject보다 Actor를 관리하는게 더 효율적이다.
+
+[33mcommit 025741840298d7cb7f062a541c8b0407a850d289[m
+Merge: 4cfd714 af03332
+Author: Jang Daemyung <dm86.jang@gmail.com>
+Date:   Thu Jul 7 13:15:53 2016 +0900
+
+    Merged branch master into master
+
+[33mcommit af033321e2692fdcec774e9bb7cc045b07e26485[m
+Author: jinseop88 <kiming88@naver.com>
+Date:   Thu Jul 7 12:40:11 2016 +0900
+
+    NGUI 최신버전으로 업데이트
+
+[33mcommit 4cfd714502d19dc133773b5a14f9efa5fb5d4c02[m
+Author: Jang Daemyung <dm86.jang@gmail.com>
+Date:   Thu Jul 7 00:50:50 2016 +0900
+
+    Implement Monster Spawn System
+    
+    Monsters are created from the spawn system.
+    It can be configured that the maximum monster count and the time interval.
+
+[33mcommit 7baf03553553471a1d797cefb20440b95ab457c7[m
+Author: dheda@hanmail.net <dheda@hanmail.net>
+Date:   Wed Jul 6 12:44:59 2016 +0900
+
+    재화 시스템 초기 설정 & UI
+
+[33mcommit c2fffe65be6bee1d75621491660347c9043b7d3b[m
+Author: dheda@hanmail.net <dheda@hanmail.net>
+Date:   Mon Jul 4 21:03:48 2016 +0900
+
+    Atlas_Coin에 hp_levelDesign 추가
+
+[33mcommit 17aa5cafbf545c2cb78d3b7da9436e17fd9bee33[m
+Author: Jang Daemyung <dm86.jang@gmail.com>
+Date:   Sun Jul 3 16:41:31 2016 +0900
+
+    .gitignore 설정
+    
+    Unity, Visual Studio, Mac에서 자동으로 생성되는 파일을 관리하지 않도록 변경.
+
+[33mcommit bfcb906cecd25edfef1ebc6b7f72caa45a3c6cb3[m
+Author: dheda@hanmail.net <dheda@hanmail.net>
+Date:   Sun Jul 3 13:34:53 2016 +0900
+
+    hpCounting 병합
+
+[33mcommit 4a9813e35aecb3b2047c96d509cf8b0d732afa14[m
+Author: dheda@hanmail.net <dheda@hanmail.net>
+Date:   Sun Jul 3 13:03:13 2016 +0900
+
+    hpCounting 구현
+
+[33mcommit 4f609efebdee9737a72af2fc2d6f4089e43345ab[m
+Author: pjyoon316 <pjyoon316@naver.com>
+Date:   Sun Jul 3 11:47:19 2016 +0900
+
+    바리기획수정
+    
+    문서업데이트_PDF
+
+[33mcommit 060e616560daf5d489df53aa52523ffd4e22d5b7[m
+Author: pjyoon316 <pjyoon316@naver.com>
+Date:   Sun Jul 3 11:44:36 2016 +0900
+
+    바리기획수정
+    
+    문서업데이트
+
+[33mcommit d67e9e4974e7363ef8127387bffbad81033cf0a3[m
+Author: Jang DaeMyung <dm86.jang@gmail.com>
+Date:   Sun Jul 3 11:30:27 2016 +0900
+
+    Push Test
+    
+    Push Test
+
+[33mcommit 8b9a4385212174cf87080ec5dbd078e5e3929a04[m
+Author: Jang Daemyung <dm86.jang@gmail.com>
+Date:   Mon Jun 27 00:53:50 2016 +0900
+
+    Set-up Unity for Git & Implement Coin Page
+    
+    Change Version Control Mode to Visible Meta Files.
+    Change Asset Serialization Mode to Force Text .
+    Change _Sripts to _Scripts.
+    Implement Coin Page and Debug mode.
+
+[33mcommit ad9eb23abf469a227578a5873f20cf478621ed08[m
+Author: kiming88 <kiming88@naver.com>
+Date:   Sun Jun 26 04:27:40 2016 +0000
+
+[33mcommit c4220aff982a5f8c7680ecd6660ec96d14570d6f[m
+Author: kiming88 <kiming88@naver.com>
+Date:   Sun Jun 26 04:21:23 2016 +0000
+
+[33mcommit 51726cf3066e3432c1aebec577e2fe6a5ecc0562[m
+Author: kiming88 <kiming88@naver.com>
+Date:   Sun Jun 26 04:20:14 2016 +0000
+
+[33mcommit ff39f7b06d1a65bde58c9913eb1f86da726dfa0b[m
+Author: kiming88 <kiming88@naver.com>
+Date:   Sun Jun 19 03:33:10 2016 +0000
+
+[33mcommit 82038a1d0f49f57cb5beab6d8615e67523877b88[m
+Author: kiming88 <kiming88@naver.com>
+Date:   Sun Jun 19 03:32:30 2016 +0000
+
+[33mcommit b0e264f29d4c882c229196aa981a2892247bbca0[m
+Author: kiming88 <kiming88@naver.com>
+Date:   Sun Jun 19 03:31:49 2016 +0000
+
+[33mcommit e63b3518b6a963fa8a21aef094d1f4c180b21abd[m
+Author: pjyoon316 <pjyoon316@cf78a9de-ae2e-0510-b830-8e0ea8f17c2e>
+Date:   Wed Jun 15 00:01:15 2016 +0000
+
+    Character 애니 추가
+
+[33mcommit 12dd4ec9da1d9116d58a27a9e95b564c0721ec2a[m
+Author: pjyoon316 <pjyoon316@cf78a9de-ae2e-0510-b830-8e0ea8f17c2e>
+Date:   Wed Jun 15 00:00:39 2016 +0000
+
+    캐릭터 애니메이션 추가
+
+[33mcommit 6a2282fd8fa10570682964b89c5c2888221179fe[m
+Author: dhedaa <dhedaa@hanmail.net>
+Date:   Tue Jun 14 14:50:01 2016 +0000
+
+    UI 이동하는거 수정
+
+[33mcommit 358fb54c1704e24c918602c91aa41fa8fd8ea58e[m
+Author: kiming88 <kiming88@naver.com>
+Date:   Tue Jun 14 14:43:23 2016 +0000
+
+    캐릭터 죽는 애니메이셔 ㄴ나오도록 ㅜ정
+
+[33mcommit ad550d65b5b435c9df77c88221ba6bd7a795a883[m
+Author: pjyoon316 <pjyoon316@cf78a9de-ae2e-0510-b830-8e0ea8f17c2e>
+Date:   Tue Jun 14 08:30:49 2016 +0000
+
+    레벨디자인 크기수정
+
+[33mcommit b2bad0fc9ba33320cf9b56cd96286f889e5f724a[m
+Author: pjyoon316 <pjyoon316@cf78a9de-ae2e-0510-b830-8e0ea8f17c2e>
+Date:   Tue Jun 14 08:30:17 2016 +0000
+
+    레벨디자인 크기수정
+
+[33mcommit d2ff746cc1042ba8e00f72538128952aae8e30ee[m
+Author: dhedaa <dhedaa@hanmail.net>
+Date:   Tue Jun 14 06:55:50 2016 +0000
+
+[33mcommit 1c8dfd418a1fb9af834e719af049f8c0c1ab9124[m
+Author: dhedaa <dhedaa@hanmail.net>
+Date:   Tue Jun 14 06:55:31 2016 +0000
+
+[33mcommit 49a33b143093bef771796b547bef425bb43d3f03[m
+Author: pjyoon316 <pjyoon316@cf78a9de-ae2e-0510-b830-8e0ea8f17c2e>
+Date:   Tue Jun 14 04:57:29 2016 +0000
+
+    LevelDesign 수정
+
+[33mcommit aa8b36e760a23f56b0e138fc6361ee8f4c086651[m
+Author: pjyoon316 <pjyoon316@cf78a9de-ae2e-0510-b830-8e0ea8f17c2e>
+Date:   Tue Jun 14 04:56:59 2016 +0000
+
+    유아이수정
+
+[33mcommit bd70289a0da66292eefc038057af5552939fa521[m
+Author: pjyoon316 <pjyoon316@cf78a9de-ae2e-0510-b830-8e0ea8f17c2e>
+Date:   Tue Jun 14 04:56:06 2016 +0000
+
+    옛날거 지움
+
+[33mcommit a29d9ff86d8b4bf3ed249a12fa1a8a8c96d0b168[m
+Author: kiming88 <kiming88@naver.com>
+Date:   Mon Jun 13 13:12:33 2016 +0000
+
+    캐릭터 죽는거 업로드
+
+[33mcommit 1808dbf61539e374b9494b5315717935a3cce99e[m
+Author: kiming88 <kiming88@naver.com>
+Date:   Mon Jun 13 12:56:49 2016 +0000
+
+    기본 AI 추가작업
+
+[33mcommit e0c5893654119e0859173d4e773e0304d28ff68d[m
+Author: pjyoon316 <pjyoon316@cf78a9de-ae2e-0510-b830-8e0ea8f17c2e>
+Date:   Mon Jun 13 10:46:13 2016 +0000
+
+    Stage1-1
+
+[33mcommit b28893c9b75299fa3977d438c7c2bb36e3d95dd8[m
+Author: pjyoon316 <pjyoon316@cf78a9de-ae2e-0510-b830-8e0ea8f17c2e>
+Date:   Mon Jun 13 10:43:04 2016 +0000
+
+    Deleted "Stage1-1.unity".
+
+[33mcommit 7dd3f95a9454d7c7d3df3147ac2c748c5ce72755[m
+Author: pjyoon316 <pjyoon316@cf78a9de-ae2e-0510-b830-8e0ea8f17c2e>
+Date:   Sun Jun 12 05:30:37 2016 +0000
+
+    Stage_Rock.png
+
+[33mcommit bcdc1094633350471f0596f80826d09343a6d5da[m
+Author: kiming88 <kiming88@naver.com>
+Date:   Sun Jun 12 04:12:21 2016 +0000
+
+    스테이지 수정
+
+[33mcommit 39212342459b0474a1bf3f72b7d27e42abcde901[m
+Author: kiming88 <kiming88@naver.com>
+Date:   Sun Jun 12 03:11:02 2016 +0000
+
+    콘 업로드
+
+[33mcommit 1b163b42f64013739a0a693120416014e9327088[m
+Author: kiming88 <kiming88@naver.com>
+Date:   Sun Jun 12 02:42:24 2016 +0000
+
+[33mcommit a83a3cb9faeca44d2b5e6598b38b49a6b2a8920e[m
+Author: kiming88 <kiming88@naver.com>
+Date:   Sun Jun 12 02:08:04 2016 +0000
+
+    트랩 추가
+
+[33mcommit b300b2d39d8b9308610617183d93fc663d23675a[m
+Author: kiming88 <kiming88@naver.com>
+Date:   Sun Jun 12 01:55:07 2016 +0000
+
+[33mcommit 2b97e89a37e7b1057d5c9301cac1244018da2639[m
+Author: kiming88 <kiming88@naver.com>
+Date:   Sun Jun 12 01:46:29 2016 +0000
+
+[33mcommit b051a6e7ed9ca3577d580b920ed2a974cb2db15c[m
+Author: kiming88 <kiming88@naver.com>
+Date:   Sun Jun 12 01:44:52 2016 +0000
+
+[33mcommit 67b727bb80a267e1fd4b698073cd620737142e5a[m
+Author: kiming88 <kiming88@naver.com>
+Date:   Sun Jun 12 01:44:05 2016 +0000
+
+    지금까지 안올라간 파일 다업로드
+
+[33mcommit cc273671f67d23d807220f064a39a008997f2e41[m
+Author: kiming88 <kiming88@naver.com>
+Date:   Sun Jun 12 01:42:37 2016 +0000
+
+    바리 스킬 업로드
+
+[33mcommit a585f248e48cee0a31ad01ca503d83b1ff9f6999[m
+Author: bluesskim <bluesskim@cf78a9de-ae2e-0510-b830-8e0ea8f17c2e>
+Date:   Sun Jun 12 01:41:26 2016 +0000
+
+[33mcommit 58a5cf328040a1e9b3ee3f0cb3cd976f60965018[m
+Author: pjyoon316 <pjyoon316@cf78a9de-ae2e-0510-b830-8e0ea8f17c2e>
+Date:   Sat Jun 11 16:49:35 2016 +0000
+
+    몬스터발사체수정
+
+[33mcommit 9251a4da532306cfd86bc93b5b87dff62c0cc959[m
+Author: pjyoon316 <pjyoon316@cf78a9de-ae2e-0510-b830-8e0ea8f17c2e>
+Date:   Sat Jun 11 16:49:12 2016 +0000
+
+    Deleted "GoblinFire_Attack_Effect.png".
+
+[33mcommit 8c0ada80b64a81935d921c701e00e98ba4bd1670[m
+Author: pjyoon316 <pjyoon316@cf78a9de-ae2e-0510-b830-8e0ea8f17c2e>
+Date:   Sat Jun 11 16:21:29 2016 +0000
+
+    Stage1-2.unity
+
+[33mcommit 8ddad193429236b10b64ed19abc2e13687d9f334[m
+Author: pjyoon316 <pjyoon316@cf78a9de-ae2e-0510-b830-8e0ea8f17c2e>
+Date:   Sat Jun 11 16:20:08 2016 +0000
+
+    Character effect 수정/발사체수정
+
+[33mcommit abe57b3d5106f34368d339eff6aa8a798e0ccdac[m
+Author: pjyoon316 <pjyoon316@cf78a9de-ae2e-0510-b830-8e0ea8f17c2e>
+Date:   Sat Jun 11 16:19:35 2016 +0000
+
+    발사체수정 /이펙트추가
+
+[33mcommit e4a77d0d45ff86d9d52f8335927cf804b78f28c1[m
+Author: kiming88 <kiming88@naver.com>
+Date:   Sat Jun 11 03:57:57 2016 +0000
+
+[33mcommit 1cdae72e14bb9f243917cd826d5878f0c309ef95[m
+Author: kiming88 <kiming88@naver.com>
+Date:   Sat Jun 11 03:57:27 2016 +0000
+
+[33mcommit dae4ae7a6b14d77d8827d5ff38608b31b41eaa9e[m
+Author: pjyoon316 <pjyoon316@cf78a9de-ae2e-0510-b830-8e0ea8f17c2e>
+Date:   Sat Jun 11 03:55:27 2016 +0000
+
+    Stage1_Goblin
+
+[33mcommit d877a83bfaf4a4f74190b0ea0a92b8d679332707[m
+Author: kiming88 <kiming88@naver.com>
+Date:   Sat Jun 11 03:48:52 2016 +0000
+
+    몬스터 체력 피격
+    
+    캐릭터 타격이펙트 피격
+    
+    추가
+
+[33mcommit 506137dd5799fa92ffb99c1d3012701cb719a41b[m
+Author: pjyoon316 <pjyoon316@cf78a9de-ae2e-0510-b830-8e0ea8f17c2e>
+Date:   Sat Jun 11 03:07:05 2016 +0000
+
+    Character_Damage.png
+
+[33mcommit bc898471da410286beeb04f03500ec9f1045a65d[m
+Author: pjyoon316 <pjyoon316@cf78a9de-ae2e-0510-b830-8e0ea8f17c2e>
+Date:   Sat Jun 11 03:06:50 2016 +0000
+
+    CHaracter_Damage수정
+
+[33mcommit 69aa6d3c9c576c63c38b8ee2ca3b7c4bd4f05eeb[m
+Author: pjyoon316 <pjyoon316@cf78a9de-ae2e-0510-b830-8e0ea8f17c2e>
+Date:   Thu Jun 9 13:33:01 2016 +0000
+
+    Brid
+
+[33mcommit 87e97bd8953d2d4dd89bc8a5b2d844072b511675[m
+Author: pjyoon316 <pjyoon316@cf78a9de-ae2e-0510-b830-8e0ea8f17c2e>
+Date:   Thu Jun 9 12:45:40 2016 +0000
+
+    Effect추가
+
+[33mcommit c4ff7a1307c0fa500891073fa79f6ed324b062ae[m
+Author: pjyoon316 <pjyoon316@cf78a9de-ae2e-0510-b830-8e0ea8f17c2e>
+Date:   Thu Jun 9 12:44:01 2016 +0000
+
+    Effect추가
+
+[33mcommit 9840783707a02e2985bed79258722d97e0990022[m
+Author: pjyoon316 <pjyoon316@cf78a9de-ae2e-0510-b830-8e0ea8f17c2e>
+Date:   Thu Jun 9 02:08:01 2016 +0000
+
+    Stage1
+
+[33mcommit c10b4a7b6144fad4b92e2fb99bb04651cb4907e6[m
+Author: pjyoon316 <pjyoon316@cf78a9de-ae2e-0510-b830-8e0ea8f17c2e>
+Date:   Thu Jun 9 02:07:20 2016 +0000
+
+    a
+
+[33mcommit 16bbebd4cf8e4bf95cf228f4ef9018dd7f756d83[m
+Author: kiming88 <kiming88@naver.com>
+Date:   Wed Jun 8 15:18:32 2016 +0000
+
+    앞에 벽체크 거리 0.1 에서 1로 올림
+
+[33mcommit c4b534937d45340373aeaccbb7723d8354b265ae[m
+Author: kiming88 <kiming88@naver.com>
+Date:   Wed Jun 8 15:15:58 2016 +0000
+
+    해골 도는거x로만 돌게 수정
+
+[33mcommit 35618ece5fcca934bf95c81ef2ea764598f443d6[m
+Author: kiming88 <kiming88@naver.com>
+Date:   Wed Jun 8 15:12:32 2016 +0000
+
+    트랩 구현
+
+[33mcommit de7c7b49e22586130ac54122ad7c3f2914d6fd5e[m
+Author: kiming88 <kiming88@naver.com>
+Date:   Wed Jun 8 14:58:59 2016 +0000
+
+    1-1 수정
+
+[33mcommit ef53b654462ce847f2ec7e5b811219da46a5dc8f[m
+Author: pjyoon316 <pjyoon316@cf78a9de-ae2e-0510-b830-8e0ea8f17c2e>
+Date:   Wed Jun 8 14:42:41 2016 +0000
+
+    ProjectSettings
+
+[33mcommit 5206ec0d2841ac3517aa227a5233a88f547f436b[m
+Author: pjyoon316 <pjyoon316@cf78a9de-ae2e-0510-b830-8e0ea8f17c2e>
+Date:   Wed Jun 8 14:42:15 2016 +0000
+
+    projectSetting 수정
+
+[33mcommit ecc5cab9a6a46a193b2210246f4091dc5a037dd9[m
+Author: pjyoon316 <pjyoon316@cf78a9de-ae2e-0510-b830-8e0ea8f17c2e>
+Date:   Wed Jun 8 14:02:27 2016 +0000
+
+    d
+
+[33mcommit 731c00e738d1aebdbb6c2f9a7affd505a39d67d0[m
+Author: pjyoon316 <pjyoon316@cf78a9de-ae2e-0510-b830-8e0ea8f17c2e>
+Date:   Wed Jun 8 14:02:05 2016 +0000
+
+    d
+
+[33mcommit aea25acb2eb30cbb46de0363ace736e46abd69fb[m
+Author: kiming88 <kiming88@naver.com>
+Date:   Tue Jun 7 12:16:37 2016 +0000
+
+    스컬 추가
+
+[33mcommit 1e5f3735dc87d28d2e2384890cffd54c707ee98d[m
+Author: pjyoon316 <pjyoon316@cf78a9de-ae2e-0510-b830-8e0ea8f17c2e>
+Date:   Tue Jun 7 11:23:41 2016 +0000
+
+    Chapter1
+
+[33mcommit f92fe84200f9c8a955879dbddef88f013e5932c0[m
+Author: pjyoon316 <pjyoon316@cf78a9de-ae2e-0510-b830-8e0ea8f17c2e>
+Date:   Tue Jun 7 11:23:13 2016 +0000
+
+    Stage1수정
+
+[33mcommit 70a68d432e49169d875c7426216f1dd85bfbd0db[m
+Author: pjyoon316 <pjyoon316@cf78a9de-ae2e-0510-b830-8e0ea8f17c2e>
+Date:   Sun Jun 5 08:29:02 2016 +0000
+
+    LevelDesign
+
+[33mcommit 518be134462b0104f1d22844b0f2cf4b1c0069a5[m
+Author: pjyoon316 <pjyoon316@cf78a9de-ae2e-0510-b830-8e0ea8f17c2e>
+Date:   Sun Jun 5 08:28:06 2016 +0000
+
+    ㅇ
+
+[33mcommit 637bf11e527a8b95fcdbde0203e4835ab9e322f2[m
+Author: pjyoon316 <pjyoon316@cf78a9de-ae2e-0510-b830-8e0ea8f17c2e>
+Date:   Sun Jun 5 08:26:47 2016 +0000
+
+    Item:LevelDesign
+
+[33mcommit 28ec3efd8cebbcf9b73d15c8cf32b4af3f27d797[m
+Author: pjyoon316 <pjyoon316@cf78a9de-ae2e-0510-b830-8e0ea8f17c2e>
+Date:   Sun Jun 5 08:23:21 2016 +0000
+
+    LevelDesign수정
+
+[33mcommit e68a5ecba54bf645e46960b499c34436e51baddd[m
+Author: pjyoon316 <pjyoon316@cf78a9de-ae2e-0510-b830-8e0ea8f17c2e>
+Date:   Thu Jun 2 10:35:56 2016 +0000
+
+    Chapter1
+
+[33mcommit b8b6f779912d0448e2208f52c57fd3a718d14c72[m
+Author: pjyoon316 <pjyoon316@cf78a9de-ae2e-0510-b830-8e0ea8f17c2e>
+Date:   Thu Jun 2 10:35:32 2016 +0000
+
+    nn
+
+[33mcommit acb9c328f9d1f14cbe9e14184a357ffc25da7e21[m
+Author: pjyoon316 <pjyoon316@cf78a9de-ae2e-0510-b830-8e0ea8f17c2e>
+Date:   Wed Jun 1 00:57:06 2016 +0000
+
+    Stage1-1
+
+[33mcommit 94a45c3a9a0e0c925b00ffa0f542bc17b1b449fa[m
+Author: pjyoon316 <pjyoon316@cf78a9de-ae2e-0510-b830-8e0ea8f17c2e>
+Date:   Wed Jun 1 00:56:31 2016 +0000
+
+    Stage1-1수정
+
+[33mcommit ff29e7978b21efceaedb02349544e9fdacf74e70[m
+Author: kiming88 <kiming88@naver.com>
+Date:   Tue May 31 14:01:16 2016 +0000
+
+    랜더큐 추가
+
+[33mcommit 6d82e69a2992b637fc7848592d2da5c1c41a2d57[m
+Author: pjyoon316 <pjyoon316@cf78a9de-ae2e-0510-b830-8e0ea8f17c2e>
+Date:   Tue May 31 12:35:14 2016 +0000
+
+    GoblinFire_Damage.png
+
+[33mcommit fc0004f3072463d4a0043b67a3b006804954c22c[m
+Author: pjyoon316 <pjyoon316@cf78a9de-ae2e-0510-b830-8e0ea8f17c2e>
+Date:   Tue May 31 11:08:52 2016 +0000
+
+    Chapter1
+
+[33mcommit bc9aa8c835c47db35e89311013f75ba4d0c00c3a[m
+Author: pjyoon316 <pjyoon316@cf78a9de-ae2e-0510-b830-8e0ea8f17c2e>
+Date:   Tue May 31 11:04:10 2016 +0000
+
+    d
+
+[33mcommit b6a827927d630bcf2aa6300987a325a719d80f25[m
+Author: kiming88 <kiming88@naver.com>
+Date:   Tue May 31 01:16:24 2016 +0000
+
+    아.. 메타..
+
+[33mcommit f0df0c266969dde7eedfbd5aed055cb126324bfa[m
+Author: kiming88 <kiming88@naver.com>
+Date:   Tue May 31 01:10:40 2016 +0000
+
+[33mcommit 12b225d7ddc0d7ec3079ad92376581eeef7cb49b[m
+Author: kiming88 <kiming88@naver.com>
+Date:   Mon May 30 15:04:05 2016 +0000
+
+    이상파일들 지움
+
+[33mcommit 5b0a4685d5ab3802999d3b320f2981b634246628[m
+Author: kiming88 <kiming88@naver.com>
+Date:   Mon May 30 15:01:10 2016 +0000
+
+    몬스터 죽고나서 2초후에 게임오브젝트 그냥 삭제
+
+[33mcommit d9152a16268ee1191beb118fcd168a6848072f4f[m
+Author: kiming88 <kiming88@naver.com>
+Date:   Mon May 30 14:55:16 2016 +0000
+
+    발사체 스킬  추가
+
+[33mcommit 059ca1db866a43cf218b588b4587f349e9dc9a6a[m
+Author: pjyoon316 <pjyoon316@cf78a9de-ae2e-0510-b830-8e0ea8f17c2e>
+Date:   Mon May 30 08:07:55 2016 +0000
+
+[33mcommit ef84a6abf991ac098e8a518f2aa52937d1a45dd8[m
+Author: pjyoon316 <pjyoon316@cf78a9de-ae2e-0510-b830-8e0ea8f17c2e>
+Date:   Mon May 30 08:07:08 2016 +0000
+
+    캐릭터 수정
+
+[33mcommit c80bdbdcd51209d93ae762cb2ad1102d6056b428[m
+Author: pjyoon316 <pjyoon316@cf78a9de-ae2e-0510-b830-8e0ea8f17c2e>
+Date:   Mon May 30 05:39:52 2016 +0000
+
+    Stage1-1.unity
+
+[33mcommit c872574a7ff23fbf22d73e8ba664c688508df68d[m
+Author: pjyoon316 <pjyoon316@cf78a9de-ae2e-0510-b830-8e0ea8f17c2e>
+Date:   Mon May 30 05:39:37 2016 +0000
+
+    ㅌ
+
+[33mcommit 67d9a0457cb7ace59f2e6a3a36e4a5fc681968bd[m
+Author: pjyoon316 <pjyoon316@cf78a9de-ae2e-0510-b830-8e0ea8f17c2e>
+Date:   Mon May 30 05:30:48 2016 +0000
+
+    Stage1-1
+
+[33mcommit f69ef4e6d64a265085eb87be6911d8be1f670efa[m
+Author: pjyoon316 <pjyoon316@cf78a9de-ae2e-0510-b830-8e0ea8f17c2e>
+Date:   Mon May 30 05:30:17 2016 +0000
+
+    스테이지1수정
+
+[33mcommit 408b60e279c325965f4e7a4a4450b14182be7d67[m
+Author: pjyoon316 <pjyoon316@cf78a9de-ae2e-0510-b830-8e0ea8f17c2e>
+Date:   Mon May 30 05:26:47 2016 +0000
+
+    Map
+
+[33mcommit 540df4023709c9710b37831c94090839423d8616[m
+Author: pjyoon316 <pjyoon316@cf78a9de-ae2e-0510-b830-8e0ea8f17c2e>
+Date:   Mon May 30 05:26:03 2016 +0000
+
+    Map수정
+
+[33mcommit 3da330423a4f58613ffdaa384ce52f07e6381497[m
+Author: kiming88 <kiming88@naver.com>
+Date:   Mon May 30 03:22:11 2016 +0000
+
+[33mcommit 73c308da7684c89b21c6105dcab6580ef19fd84b[m
+Author: pjyoon316 <pjyoon316@cf78a9de-ae2e-0510-b830-8e0ea8f17c2e>
+Date:   Sun May 29 16:52:04 2016 +0000
+
+    Cone.png
+
+[33mcommit b3dd5e73fc85088f1718bc98ec1065f9ddfb3efd[m
+Author: pjyoon316 <pjyoon316@cf78a9de-ae2e-0510-b830-8e0ea8f17c2e>
+Date:   Sun May 29 16:51:23 2016 +0000
+
+    BlackTree2.png
+
+[33mcommit 954e135e665c2addd24e24d1151dfcdfbe93e389[m
+Author: pjyoon316 <pjyoon316@cf78a9de-ae2e-0510-b830-8e0ea8f17c2e>
+Date:   Sun May 29 16:50:14 2016 +0000
+
+    BlackTree.png
+
+[33mcommit 35a0409564bb546b535062a18906cc564d78d88d[m
+Author: pjyoon316 <pjyoon316@cf78a9de-ae2e-0510-b830-8e0ea8f17c2e>
+Date:   Fri May 27 08:32:53 2016 +0000
+
+    Monster
+
+[33mcommit 3085528e85d04c4a156b217a35bf6d4afad2a0aa[m
+Author: pjyoon316 <pjyoon316@cf78a9de-ae2e-0510-b830-8e0ea8f17c2e>
+Date:   Fri May 27 08:32:25 2016 +0000
+
+    h
+
+[33mcommit b7d91c854addc875d9b67cd1bcd08e229ff6ed97[m
+Author: pjyoon316 <pjyoon316@cf78a9de-ae2e-0510-b830-8e0ea8f17c2e>
+Date:   Fri May 27 08:27:47 2016 +0000
+
+    Monster
+
+[33mcommit 4accd63be57187348db5a28b69e289886c0a0030[m
+Author: pjyoon316 <pjyoon316@cf78a9de-ae2e-0510-b830-8e0ea8f17c2e>
+Date:   Fri May 27 08:26:50 2016 +0000
+
+    z
+
+[33mcommit 8d81afc1c417b861fbb37fa34e9d38310bc568a6[m
+Author: kiming88 <kiming88@naver.com>
+Date:   Thu May 26 15:29:12 2016 +0000
+
+[33mcommit 5aaf32cbd3b51dc0e40c6e2f18e3886f2770ad60[m
+Author: kiming88 <kiming88@naver.com>
+Date:   Thu May 26 15:27:31 2016 +0000
+
+    스테이지 수정
+
+[33mcommit f2cfaa576e4879a1fbcf9b48c0762018013bc8e2[m
+Author: kiming88 <kiming88@naver.com>
+Date:   Thu May 26 15:15:07 2016 +0000
+
+    캐릭터 몬스터  애니메이션 추가
+
+[33mcommit 0a57034b51e7ac29d1e54c00f9f403fef34d84f1[m
+Author: pjyoon316 <pjyoon316@cf78a9de-ae2e-0510-b830-8e0ea8f17c2e>
+Date:   Thu May 26 13:58:14 2016 +0000
+
+[33mcommit 5aaaf430f361a2bc4155fa6b1fbdbfd0cf65e04e[m
+Author: pjyoon316 <pjyoon316@cf78a9de-ae2e-0510-b830-8e0ea8f17c2e>
+Date:   Thu May 26 13:57:32 2016 +0000
+
+    Stage1-1
+
+[33mcommit 9dfd137ac53710e32a581431630d4219f70111c9[m
+Author: pjyoon316 <pjyoon316@cf78a9de-ae2e-0510-b830-8e0ea8f17c2e>
+Date:   Thu May 26 13:31:29 2016 +0000
+
+    Stage1_Goblin
+
+[33mcommit fefcf6ef32a813c718dd0c159781a8723eda1b14[m
+Author: pjyoon316 <pjyoon316@cf78a9de-ae2e-0510-b830-8e0ea8f17c2e>
+Date:   Thu May 26 13:29:14 2016 +0000
+
+    d
+
+[33mcommit d9e3bb7a4bfdfb7f8ff205444aaab0f1e7152269[m
+Author: pjyoon316 <pjyoon316@cf78a9de-ae2e-0510-b830-8e0ea8f17c2e>
+Date:   Thu May 26 13:21:17 2016 +0000
+
+    Chapter1
+
+[33mcommit 17bb98ab7b1c44f66b57513499c0f1442c93f758[m
+Author: pjyoon316 <pjyoon316@cf78a9de-ae2e-0510-b830-8e0ea8f17c2e>
+Date:   Thu May 26 13:17:15 2016 +0000
+
+    s
+
+[33mcommit 40d77b5790b5c2f608a88afbc135be4f63ed7276[m
+Author: kiming88 <kiming88@naver.com>
+Date:   Sun May 22 05:00:37 2016 +0000
+
+[33mcommit 2d9b8b563ee4ae763f2201751bef62d38c2e5092[m
+Author: kiming88 <kiming88@naver.com>
+Date:   Sun May 22 05:00:14 2016 +0000
+
+    게임까지 들어가는 루틴 추가
+    
+    메타파일 누락된거 업로드
+
+[33mcommit e391f16da222123bf8aeebc19ab34d3b47cee32e[m
+Author: kiming88 <kiming88@naver.com>
+Date:   Sun May 22 04:55:54 2016 +0000
+
+    지움
+
+[33mcommit 0d99be04c9d1a3af07e97f424c71724efe0a91fa[m
+Author: kiming88 <kiming88@naver.com>
+Date:   Sun May 22 04:51:02 2016 +0000
+
+    myinfp 추가
+
+[33mcommit 1b7f2cb512566c867eb7b098bac2bae83370ae34[m
+Author: pjyoon316 <pjyoon316@cf78a9de-ae2e-0510-b830-8e0ea8f17c2e>
+Date:   Sun May 22 04:41:39 2016 +0000
+
+    Stage1-1
+
+[33mcommit 68a343f2b1925a69a2ff2cb77604bfd1691cf4b2[m
+Author: pjyoon316 <pjyoon316@cf78a9de-ae2e-0510-b830-8e0ea8f17c2e>
+Date:   Sun May 22 04:40:32 2016 +0000
+
+    g
+
+[33mcommit 87fdf3f2167277b8cc21413f134a92afb3765650[m
+Author: pjyoon316 <pjyoon316@cf78a9de-ae2e-0510-b830-8e0ea8f17c2e>
+Date:   Sun May 22 04:11:16 2016 +0000
+
+    Title
+
+[33mcommit 891720f4894586372a065051907db0b3df918f58[m
+Author: pjyoon316 <pjyoon316@cf78a9de-ae2e-0510-b830-8e0ea8f17c2e>
+Date:   Sun May 22 04:10:06 2016 +0000
+
+    k
+
+[33mcommit c61332f9218e76b4a80f2cc8deaa4910f6eeb341[m
+Author: kiming88 <kiming88@naver.com>
+Date:   Sun May 22 03:55:13 2016 +0000
+
+    아이템 코드 업로드
+
+[33mcommit d2530ff753cae2fb7e7113305e542acd6493c381[m
+Author: pjyoon316 <pjyoon316@cf78a9de-ae2e-0510-b830-8e0ea8f17c2e>
+Date:   Sun May 22 03:47:29 2016 +0000
+
+    Character
+
+[33mcommit 6b83461d29734a025b146156b630a9b547c34936[m
+Author: pjyoon316 <pjyoon316@cf78a9de-ae2e-0510-b830-8e0ea8f17c2e>
+Date:   Sun May 22 03:46:22 2016 +0000
+
+    h
+
+[33mcommit 5bcaa2896fade2f2ac7fd78b707f51909b928111[m
+Author: kiming88 <kiming88@naver.com>
+Date:   Sun May 22 03:25:28 2016 +0000
+
+    리소스 폴더 업데이트
+
+[33mcommit d27c489eacd699c6e49345a8d3c3d5706ae1a754[m
+Author: kiming88 <kiming88@naver.com>
+Date:   Sun May 22 03:19:01 2016 +0000
+
+    리소스 데이터 폴더 삭제
+
+[33mcommit 0773cd1d664db9cf0f69feb8ad7fe4fb263284e7[m
+Author: kiming88 <kiming88@naver.com>
+Date:   Sun May 22 03:17:54 2016 +0000
+
+    리소스 폴더 ㄱ삭제
+
+[33mcommit 5aac8035c457c24299b63778c438887b03cbd654[m
+Author: pjyoon316 <pjyoon316@cf78a9de-ae2e-0510-b830-8e0ea8f17c2e>
+Date:   Sun May 22 03:10:33 2016 +0000
+
+    Character
+
+[33mcommit 61a3641850cd9c6b4ace1b5474832498d1a8cc7f[m
+Author: pjyoon316 <pjyoon316@cf78a9de-ae2e-0510-b830-8e0ea8f17c2e>
+Date:   Sun May 22 03:09:38 2016 +0000
+
+    g
+
+[33mcommit c16935a84d76503f2d9ea15b6c4d05f71a348009[m
+Author: pjyoon316 <pjyoon316@cf78a9de-ae2e-0510-b830-8e0ea8f17c2e>
+Date:   Sun May 22 02:39:01 2016 +0000
+
+    Stage1-1.unity
+
+[33mcommit 7ff9779ce7ddd079da0bbee5b177fe86ecb73191[m
+Author: kiming88 <kiming88@naver.com>
+Date:   Sun May 22 02:35:31 2016 +0000
+
+    지음
+
+[33mcommit 2d2319ff0fc85ef06eae32b9c585a01c6d470800[m
+Author: dhedaa <dhedaa@hanmail.net>
+Date:   Sun May 22 02:27:47 2016 +0000
+
+[33mcommit a705b135474d36d372ba2658b994c594b7e9bb1a[m
+Author: pjyoon316 <pjyoon316@cf78a9de-ae2e-0510-b830-8e0ea8f17c2e>
+Date:   Sun May 22 02:26:18 2016 +0000
+
+    Chapter1
+
+[33mcommit 90661f48e4e88e37bd6371386621f4e03d05538d[m
+Author: pjyoon316 <pjyoon316@cf78a9de-ae2e-0510-b830-8e0ea8f17c2e>
+Date:   Sun May 22 02:21:14 2016 +0000
+
+    g
+
+[33mcommit 5aa57ab8a436f37f6e7597a83c7f3533a12cb5b6[m
+Author: dhedaa <dhedaa@hanmail.net>
+Date:   Sun May 22 01:49:12 2016 +0000
+
+[33mcommit b8810d84e9e8e4466782fdec401adab288aba42b[m
+Author: pjyoon316 <pjyoon316@cf78a9de-ae2e-0510-b830-8e0ea8f17c2e>
+Date:   Sat May 21 16:53:21 2016 +0000
+
+    Character
+
+[33mcommit 61d2cbcc1a8fb4ca77178d1562397e539f466fc2[m
+Author: pjyoon316 <pjyoon316@cf78a9de-ae2e-0510-b830-8e0ea8f17c2e>
+Date:   Sat May 21 16:52:17 2016 +0000
+
+    m
+
+[33mcommit 9196842d28e82401a67870a06a0ef1dc8df0d1bc[m
+Author: pjyoon316 <pjyoon316@cf78a9de-ae2e-0510-b830-8e0ea8f17c2e>
+Date:   Sat May 21 13:49:55 2016 +0000
+
+    Stage1
+
+[33mcommit e7292e9acee807114ed5f47c07ccf0f4c86979c0[m
+Author: pjyoon316 <pjyoon316@cf78a9de-ae2e-0510-b830-8e0ea8f17c2e>
+Date:   Sat May 21 13:48:50 2016 +0000
+
+    a
+
+[33mcommit 27adcbc66578ebaf9df660a33053da72cf5a861e[m
+Author: pjyoon316 <pjyoon316@cf78a9de-ae2e-0510-b830-8e0ea8f17c2e>
+Date:   Fri May 20 11:59:55 2016 +0000
+
+    Item:LevelDesign
+
+[33mcommit d9a036d4facbd98d1c656eb8c4b7601a22f26303[m
+Author: pjyoon316 <pjyoon316@cf78a9de-ae2e-0510-b830-8e0ea8f17c2e>
+Date:   Fri May 20 11:55:22 2016 +0000
+
+    b
+
+[33mcommit b825c971cf741aede2135680b119df3fd1d1732c[m
+Author: pjyoon316 <pjyoon316@cf78a9de-ae2e-0510-b830-8e0ea8f17c2e>
+Date:   Fri May 20 11:48:36 2016 +0000
+
+    Seed1.png
+
+[33mcommit 091c19c65dbab907505d1eaa90ee6119b315e0cf[m
+Author: pjyoon316 <pjyoon316@cf78a9de-ae2e-0510-b830-8e0ea8f17c2e>
+Date:   Thu May 19 08:01:58 2016 +0000
+
+    Popup
+
+[33mcommit c819d5c1f175ded8646ecee37b12659c003f59ee[m
+Author: pjyoon316 <pjyoon316@cf78a9de-ae2e-0510-b830-8e0ea8f17c2e>
+Date:   Thu May 19 08:01:16 2016 +0000
+
+    z
+
+[33mcommit 77764fdd7e5cb17f4fb9051a3b6fb1a0280f2195[m
+Author: pjyoon316 <pjyoon316@cf78a9de-ae2e-0510-b830-8e0ea8f17c2e>
+Date:   Thu May 19 06:39:46 2016 +0000
+
+    Setting
+
+[33mcommit 855bc83ec0c8669e8fd716f4d5c74c1540b1c700[m
+Author: pjyoon316 <pjyoon316@cf78a9de-ae2e-0510-b830-8e0ea8f17c2e>
+Date:   Thu May 19 06:38:30 2016 +0000
+
+    z
+
+[33mcommit 11fa9e05cffb2cd51817e0d121ec0cb6eb94dc4e[m
+Author: pjyoon316 <pjyoon316@cf78a9de-ae2e-0510-b830-8e0ea8f17c2e>
+Date:   Thu May 19 05:31:20 2016 +0000
+
+    Item:LevelDesign
+
+[33mcommit 36e09ad4f7ac71bc619dbbd49daa16a078ebba69[m
+Author: pjyoon316 <pjyoon316@cf78a9de-ae2e-0510-b830-8e0ea8f17c2e>
+Date:   Thu May 19 04:58:17 2016 +0000
+
+    Monster_Goblin_Fire1.png
+
+[33mcommit 741c723edd683d795ee39c0d671652b5d2124583[m
+Author: pjyoon316 <pjyoon316@cf78a9de-ae2e-0510-b830-8e0ea8f17c2e>
+Date:   Thu May 19 04:57:31 2016 +0000
+
+    z
+
+[33mcommit 0bcf8af0331fcf07e4de9d5c475b331ed2930542[m
+Author: pjyoon316 <pjyoon316@cf78a9de-ae2e-0510-b830-8e0ea8f17c2e>
+Date:   Thu May 19 04:24:05 2016 +0000
+
+    Player_AttackEffect.png
+
+[33mcommit d41e9a539e7407bee40859392a806ff41e9d8e6e[m
+Author: pjyoon316 <pjyoon316@cf78a9de-ae2e-0510-b830-8e0ea8f17c2e>
+Date:   Mon May 16 10:21:43 2016 +0000
+
+    Background_Star
+
+[33mcommit d4eea3b2e588ffba337b72a06a9c0083ef522ef7[m
+Author: pjyoon316 <pjyoon316@cf78a9de-ae2e-0510-b830-8e0ea8f17c2e>
+Date:   Mon May 16 10:20:00 2016 +0000
+
+    l
+
+[33mcommit 607837d056d7305efeedcfbf9f563569bc44282d[m
+Author: pjyoon316 <pjyoon316@cf78a9de-ae2e-0510-b830-8e0ea8f17c2e>
+Date:   Mon May 16 05:31:34 2016 +0000
+
+[33mcommit 48946e9caee4ac7b9c1934da4e42501a9bdac0ee[m
+Author: pjyoon316 <pjyoon316@cf78a9de-ae2e-0510-b830-8e0ea8f17c2e>
+Date:   Mon May 16 05:30:26 2016 +0000
+
+    ㅣ
+
+[33mcommit 3050d6902217d03cb70135b8a25a5cab7ab4d100[m
+Author: pjyoon316 <pjyoon316@cf78a9de-ae2e-0510-b830-8e0ea8f17c2e>
+Date:   Mon May 16 05:29:02 2016 +0000
+
+    ㅐ
+
+[33mcommit 2c3f035ffdebcc3536d4409876dd9a083cb0a6a2[m
+Author: pjyoon316 <pjyoon316@cf78a9de-ae2e-0510-b830-8e0ea8f17c2e>
+Date:   Sun May 15 04:02:57 2016 +0000
+
+    Monster_Goblin_Fire1.png
+
+[33mcommit c5fa58985403f802fffa8719cc9a42389d3cb73d[m
+Author: kiming88 <kiming88@naver.com>
+Date:   Sun May 15 03:35:53 2016 +0000
+
+    타이틀작업
+
+[33mcommit 883b0bb73809331430fccd70439c675fc7cbd05c[m
+Author: pjyoon316 <pjyoon316@cf78a9de-ae2e-0510-b830-8e0ea8f17c2e>
+Date:   Sat May 14 13:15:28 2016 +0000
+
+    Login
+
+[33mcommit 6ebb81333a183b1fd65694e56806836374bf0fc9[m
+Author: pjyoon316 <pjyoon316@cf78a9de-ae2e-0510-b830-8e0ea8f17c2e>
+Date:   Sat May 14 13:13:41 2016 +0000
+
+    z
+
+[33mcommit 291d9a3318a999d8812c00c0ecf945fd3e503c31[m
+Author: pjyoon316 <pjyoon316@cf78a9de-ae2e-0510-b830-8e0ea8f17c2e>
+Date:   Sat May 14 12:59:26 2016 +0000
+
+    Bari_Death.png
+
+[33mcommit 9a56aaea5b6fc16fb089b12c14eeca827d539e75[m
+Author: bluesskim <bluesskim@cf78a9de-ae2e-0510-b830-8e0ea8f17c2e>
+Date:   Sat May 14 08:21:31 2016 +0000
+
+[33mcommit 2238f475109b566259b90b0b5c2b41817fd99725[m
+Author: dhedaa <dhedaa@hanmail.net>
+Date:   Sat May 14 04:21:54 2016 +0000
+
+    2016.05.14 stageScene, chapterScene UI 구축 && CharactorStatus 생성
+
+[33mcommit 9167ddddf00c6be6ba52e4105f27770444f18259[m
+Author: pjyoon316 <pjyoon316@cf78a9de-ae2e-0510-b830-8e0ea8f17c2e>
+Date:   Sat May 14 03:17:02 2016 +0000
+
+    Login
+
+[33mcommit 38831ef7261b514779d18bec949a6415316ce1ea[m
+Author: pjyoon316 <pjyoon316@cf78a9de-ae2e-0510-b830-8e0ea8f17c2e>
+Date:   Sat May 14 03:15:52 2016 +0000
+
+    l
+
+[33mcommit 19cf4e4b6d441d15935077cb33c15c161bc6013b[m
+Author: pjyoon316 <pjyoon316@cf78a9de-ae2e-0510-b830-8e0ea8f17c2e>
+Date:   Fri May 13 11:56:43 2016 +0000
+
+    Login
+
+[33mcommit 37e977f7626fb356f8d2cd9c441d487e7055e278[m
+Author: pjyoon316 <pjyoon316@cf78a9de-ae2e-0510-b830-8e0ea8f17c2e>
+Date:   Fri May 13 11:46:02 2016 +0000
+
+    Stage1
+
+[33mcommit e6c2c31793e51269f016cfc01d31f7c619b3614b[m
+Author: pjyoon316 <pjyoon316@cf78a9de-ae2e-0510-b830-8e0ea8f17c2e>
+Date:   Fri May 13 11:45:15 2016 +0000
+
+    ㄹ
+
+[33mcommit a1deb0b0c54df44ea74acaf7e03c8b942794e089[m
+Author: pjyoon316 <pjyoon316@cf78a9de-ae2e-0510-b830-8e0ea8f17c2e>
+Date:   Fri May 13 07:48:44 2016 +0000
+
+    Character
+
+[33mcommit cf59cbfa465418d02dbccc48c73d218ab3826d58[m
+Author: pjyoon316 <pjyoon316@cf78a9de-ae2e-0510-b830-8e0ea8f17c2e>
+Date:   Fri May 13 07:47:37 2016 +0000
+
+    v
+
+[33mcommit 0078b51cbe5bf49d88121c6c131c41383b9dfe5e[m
+Author: pjyoon316 <pjyoon316@cf78a9de-ae2e-0510-b830-8e0ea8f17c2e>
+Date:   Thu May 12 16:21:46 2016 +0000
+
+    x
+
+[33mcommit 932335a2d3b14fb1e341c3a8f0de15990975dca2[m
+Author: pjyoon316 <pjyoon316@cf78a9de-ae2e-0510-b830-8e0ea8f17c2e>
+Date:   Thu May 12 16:20:22 2016 +0000
+
+    x
+
+[33mcommit 59daa230c87e8f6e0b9a88456b613bd12ef93644[m
+Author: pjyoon316 <pjyoon316@cf78a9de-ae2e-0510-b830-8e0ea8f17c2e>
+Date:   Thu May 12 16:08:59 2016 +0000
+
+    Spirte 수정
+
+[33mcommit a6eb474b8da836aa98c7188e5a4af248f7bff555[m
+Author: pjyoon316 <pjyoon316@cf78a9de-ae2e-0510-b830-8e0ea8f17c2e>
+Date:   Thu May 12 16:07:13 2016 +0000
+
+    Animation
+
+[33mcommit 81d0f6a16a3c52759aab255fd509ff299b3cfffc[m
+Author: pjyoon316 <pjyoon316@cf78a9de-ae2e-0510-b830-8e0ea8f17c2e>
+Date:   Thu May 12 01:49:08 2016 +0000
+
+    Text_Character2.png
+
+[33mcommit d3a84e7b914fbcf2b89ab540427155b24fb1a877[m
+Author: kiming88 <kiming88@naver.com>
+Date:   Wed May 11 14:44:16 2016 +0000
+
+    인트로 추가작업  페이지 스테이지 챕터추가
+
+[33mcommit 9bfc04fa175fdcea0c7bef30c4b7919f7f35eea7[m
+Author: pjyoon316 <pjyoon316@cf78a9de-ae2e-0510-b830-8e0ea8f17c2e>
+Date:   Tue May 10 14:59:31 2016 +0000
+
+    LevelDesign
+
+[33mcommit 1ac9f7087a031a6e943e8e49caca6c9afafd8025[m
+Author: pjyoon316 <pjyoon316@cf78a9de-ae2e-0510-b830-8e0ea8f17c2e>
+Date:   Tue May 10 14:53:42 2016 +0000
+
+    Z
+
+[33mcommit f8fcc552403ebc27ee94ded982f0b5e365a993e4[m
+Author: pjyoon316 <pjyoon316@cf78a9de-ae2e-0510-b830-8e0ea8f17c2e>
+Date:   Tue May 10 14:30:26 2016 +0000
+
+    LevelDesign
+
+[33mcommit 77798b0009b07abbf8b6f9a8e851a70ff5168301[m
+Author: pjyoon316 <pjyoon316@cf78a9de-ae2e-0510-b830-8e0ea8f17c2e>
+Date:   Tue May 10 09:48:00 2016 +0000
+
+    UI_PNG
+
+[33mcommit 61baf46367f2410027117c6ad5af51441fd9d6ae[m
+Author: pjyoon316 <pjyoon316@cf78a9de-ae2e-0510-b830-8e0ea8f17c2e>
+Date:   Tue May 10 09:46:56 2016 +0000
+
+    p
+
+[33mcommit 9e7c34ab2e165aa8e3d70b5f132e11d967554e64[m
+Author: pjyoon316 <pjyoon316@cf78a9de-ae2e-0510-b830-8e0ea8f17c2e>
+Date:   Mon May 9 08:51:20 2016 +0000
+
+    Stage
+
+[33mcommit 25e924dfc8ce61a3f47d5bc5bca65f95a91c8be6[m
+Author: pjyoon316 <pjyoon316@cf78a9de-ae2e-0510-b830-8e0ea8f17c2e>
+Date:   Mon May 9 08:49:25 2016 +0000
+
+    Popup
+
+[33mcommit dd8a768ee029eef4adf93060a16867fcc3b20b29[m
+Author: pjyoon316 <pjyoon316@cf78a9de-ae2e-0510-b830-8e0ea8f17c2e>
+Date:   Sun May 8 03:43:53 2016 +0000
+
+    Stage
+
+[33mcommit 329a95e303b01ea148bd3d21255935320aea0e2a[m
+Author: pjyoon316 <pjyoon316@cf78a9de-ae2e-0510-b830-8e0ea8f17c2e>
+Date:   Sun May 8 03:43:05 2016 +0000
+
+    g
+
+[33mcommit 03d18f1507748060f4f0675a8a4b540a1bfdb2e5[m
+Author: pjyoon316 <pjyoon316@cf78a9de-ae2e-0510-b830-8e0ea8f17c2e>
+Date:   Sun May 8 03:39:49 2016 +0000
+
+    Stage
+
+[33mcommit 3af9154bbfecdf26f55ffeebabd1cfe2a4d50c7d[m
+Author: pjyoon316 <pjyoon316@cf78a9de-ae2e-0510-b830-8e0ea8f17c2e>
+Date:   Sun May 8 03:38:22 2016 +0000
+
+    z
+
+[33mcommit 99805949d047707687216827add81bf7f3cfa768[m
+Author: pjyoon316 <pjyoon316@cf78a9de-ae2e-0510-b830-8e0ea8f17c2e>
+Date:   Sun May 8 03:25:00 2016 +0000
+
+    Stage
+
+[33mcommit 14a72b3d0e94b963211c8c556f2554e28eb5036a[m
+Author: pjyoon316 <pjyoon316@cf78a9de-ae2e-0510-b830-8e0ea8f17c2e>
+Date:   Sun May 8 03:24:23 2016 +0000
+
+    ㅍ
+
+[33mcommit f5457360abf7ab17e95fc2ac7efff6a0e897910d[m
+Author: pjyoon316 <pjyoon316@cf78a9de-ae2e-0510-b830-8e0ea8f17c2e>
+Date:   Sun May 8 03:10:50 2016 +0000
+
+    Background
+
+[33mcommit c9939737a16ba2c1f20de0cbc8cee5c6a8326c75[m
+Author: pjyoon316 <pjyoon316@cf78a9de-ae2e-0510-b830-8e0ea8f17c2e>
+Date:   Sun May 8 02:54:41 2016 +0000
+
+    Stage_4.png
+
+[33mcommit c02c7c4eec395017e2716e951674eaeb436225df[m
+Author: pjyoon316 <pjyoon316@cf78a9de-ae2e-0510-b830-8e0ea8f17c2e>
+Date:   Sun May 8 02:54:09 2016 +0000
+
+    Stage_4.png
+
+[33mcommit fa5dcbe45ed85703b69da04c7eb031e0637a9a5b[m
+Author: pjyoon316 <pjyoon316@cf78a9de-ae2e-0510-b830-8e0ea8f17c2e>
+Date:   Sun May 8 02:53:50 2016 +0000
+
+    Stage_4.png
+
+[33mcommit 07f270746cadc0e1f89a718812ea7fe379bca7e6[m
+Author: pjyoon316 <pjyoon316@cf78a9de-ae2e-0510-b830-8e0ea8f17c2e>
+Date:   Sun May 8 02:53:31 2016 +0000
+
+    Stage_3.png
+
+[33mcommit 6da2b5432ee079fdcecd300133d1394037291add[m
+Author: pjyoon316 <pjyoon316@cf78a9de-ae2e-0510-b830-8e0ea8f17c2e>
+Date:   Sun May 8 02:53:13 2016 +0000
+
+    Stage_2.png
+
+[33mcommit 52c4846c8c31f74d449e53d0b76677e211346e41[m
+Author: pjyoon316 <pjyoon316@cf78a9de-ae2e-0510-b830-8e0ea8f17c2e>
+Date:   Sun May 8 02:52:00 2016 +0000
+
+    Stage_1.png
+
+[33mcommit ce4c5d8b8509342a64063d7aed21cf2ed5a2a9f8[m
+Author: pjyoon316 <pjyoon316@cf78a9de-ae2e-0510-b830-8e0ea8f17c2e>
+Date:   Sun May 8 02:49:37 2016 +0000
+
+    f
+
+[33mcommit c51ac3ce37ff33facef57727edaf280ea315ae43[m
+Author: kiming88 <kiming88@naver.com>
+Date:   Thu May 5 14:11:14 2016 +0000
+
+    애님 테스트씬 삭제
+
+[33mcommit aa707a9a94e78802cb8f34852a683aa41bc5e830[m
+Author: kiming88 <kiming88@naver.com>
+Date:   Thu May 5 14:09:59 2016 +0000
+
+    캐릭터 테스트 씬 추가
+
+[33mcommit 3ff0df5ff3c56f0dae2bf9efc84c4f445641b427[m
+Author: kiming88 <kiming88@naver.com>
+Date:   Thu May 5 12:55:05 2016 +0000
+
+    캐릭터 이동 스킬 업로드
+
+[33mcommit 2eba2edaa04ca129291bba404df70d47a4d971f4[m
+Author: pjyoon316 <pjyoon316@cf78a9de-ae2e-0510-b830-8e0ea8f17c2e>
+Date:   Wed May 4 10:21:44 2016 +0000
+
+    Stage1
+
+[33mcommit 99c59b3897223cecd6413843bd6590d1a32b5ab6[m
+Author: pjyoon316 <pjyoon316@cf78a9de-ae2e-0510-b830-8e0ea8f17c2e>
+Date:   Wed May 4 10:21:09 2016 +0000
+
+    ㅇ
+
+[33mcommit e96926d082529a997ea80e66765b15a154628e43[m
+Author: pjyoon316 <pjyoon316@cf78a9de-ae2e-0510-b830-8e0ea8f17c2e>
+Date:   Wed May 4 10:07:16 2016 +0000
+
+    Monster_fire_1.png
+
+[33mcommit 1e16b8d3a5f991e552fdb896e12316cf758ce81f[m
+Author: pjyoon316 <pjyoon316@cf78a9de-ae2e-0510-b830-8e0ea8f17c2e>
+Date:   Wed May 4 10:06:30 2016 +0000
+
+    zz
+
+[33mcommit 0e568b3b97a0486789e890672ebcb42d0e1de51e[m
+Author: pjyoon316 <pjyoon316@cf78a9de-ae2e-0510-b830-8e0ea8f17c2e>
+Date:   Wed May 4 08:46:44 2016 +0000
+
+    UI_PNG만 따로
+
+[33mcommit 0a0f26cbd6876646585320497f8f9380ea8e8a21[m
+Author: pjyoon316 <pjyoon316@cf78a9de-ae2e-0510-b830-8e0ea8f17c2e>
+Date:   Wed May 4 08:45:45 2016 +0000
+
+    d
+
+[33mcommit dacc762fdc53d9f3a97cb5c7f9382f3352ca5533[m
+Author: pjyoon316 <pjyoon316@cf78a9de-ae2e-0510-b830-8e0ea8f17c2e>
+Date:   Wed May 4 08:37:19 2016 +0000
+
+    UI_PNG만 따로
+
+[33mcommit f540213ad0b1b9222559d31f54a5f69d307488d2[m
+Author: pjyoon316 <pjyoon316@cf78a9de-ae2e-0510-b830-8e0ea8f17c2e>
+Date:   Tue May 3 09:59:10 2016 +0000
+
+    UI 수정
+
+[33mcommit ef45834dbe74579c8bcfbdf982d9e949530c187d[m
+Author: kiming88 <kiming88@naver.com>
+Date:   Sun May 1 15:05:09 2016 +0000
+
+    이그노어 추가
+
+[33mcommit 56c2cecb5d0b61c01c765d439934ec6476d91376[m
+Author: kiming88 <kiming88@naver.com>
+Date:   Sun May 1 15:04:26 2016 +0000
+
+    스킬작업 최초업로드
+
+[33mcommit 4e50a92d63afce8bbc0defe84d8c323fedb556cf[m
+Author: kiming88 <kiming88@naver.com>
+Date:   Sun May 1 13:39:24 2016 +0000
+
+    스킬 관련 코드추가
+
+[33mcommit 0b58ff22df9d6d5f337658bb41228b4a7b41f2a1[m
+Author: kiming88 <kiming88@naver.com>
+Date:   Sun May 1 13:36:37 2016 +0000
+
+    누락메타 추가
+
+[33mcommit e8fcaff68f1b059952ea6194a5623291a51eb642[m
+Author: kiming88 <kiming88@naver.com>
+Date:   Sun May 1 13:34:54 2016 +0000
+
+[33mcommit ec046c4256c6095c7ccdf19b9ddd5a4a97417ba1[m
+Author: pjyoon316 <pjyoon316@cf78a9de-ae2e-0510-b830-8e0ea8f17c2e>
+Date:   Sun May 1 04:22:52 2016 +0000
+
+     Stage1 Image
+
+[33mcommit 1f7955e8d169a98186cb8e224b6997645b70836d[m
+Author: pjyoon316 <pjyoon316@cf78a9de-ae2e-0510-b830-8e0ea8f17c2e>
+Date:   Sun May 1 04:16:08 2016 +0000
+
+     Stage1 Image
+
+[33mcommit 0d8fa553c08dfc089cbb66c0a52316cc40b29109[m
+Author: pjyoon316 <pjyoon316@cf78a9de-ae2e-0510-b830-8e0ea8f17c2e>
+Date:   Sun May 1 04:04:52 2016 +0000
+
+[33mcommit 0a5a82bcd2c001045f76acbc0e14efda6566c284[m
+Author: bluesskim <bluesskim@cf78a9de-ae2e-0510-b830-8e0ea8f17c2e>
+Date:   Wed Apr 27 02:22:27 2016 +0000
+
+    김성수 개인 테스틑 용도
+
+[33mcommit 9db7eb7af281d342542e658f8222e642894c5383[m
+Author: pjyoon316 <pjyoon316@cf78a9de-ae2e-0510-b830-8e0ea8f17c2e>
+Date:   Wed Apr 27 00:49:06 2016 +0000
+
+[33mcommit 6422b1daf72b07ef8053c6e2e50ecb80dface0a0[m
+Author: pjyoon316 <pjyoon316@cf78a9de-ae2e-0510-b830-8e0ea8f17c2e>
+Date:   Wed Apr 27 00:48:37 2016 +0000
+
+[33mcommit ed17c6ad67d89b3cf47e8e0d9de803629a1d4e5f[m
+Author: pjyoon316 <pjyoon316@cf78a9de-ae2e-0510-b830-8e0ea8f17c2e>
+Date:   Wed Apr 27 00:48:02 2016 +0000
+
+[33mcommit 5c02bda186a7ffdbe33fe5c984be40a2b2a914ec[m
+Author: pjyoon316 <pjyoon316@cf78a9de-ae2e-0510-b830-8e0ea8f17c2e>
+Date:   Wed Apr 27 00:44:14 2016 +0000
+
+    ㅇㅇ
+
+[33mcommit e2dd9c0f8eba8c3686aec264380046955091f170[m
+Author: pjyoon316 <pjyoon316@cf78a9de-ae2e-0510-b830-8e0ea8f17c2e>
+Date:   Tue Apr 26 05:25:49 2016 +0000
+
+[33mcommit 7ebc0a65185284fa74d2b2068896d39167ede7d4[m
+Author: pjyoon316 <pjyoon316@cf78a9de-ae2e-0510-b830-8e0ea8f17c2e>
+Date:   Tue Apr 26 05:11:19 2016 +0000
+
+[33mcommit 8777fdc796ab6b9d6ca13dbfa2dfc53d35f7f614[m
+Author: pjyoon316 <pjyoon316@cf78a9de-ae2e-0510-b830-8e0ea8f17c2e>
+Date:   Tue Apr 26 05:10:11 2016 +0000
+
+    참고
+
+[33mcommit 4d189e2a597f87370de9ff73b412692eb4e3e322[m
+Author: pjyoon316 <pjyoon316@cf78a9de-ae2e-0510-b830-8e0ea8f17c2e>
+Date:   Tue Apr 26 02:03:28 2016 +0000
+
+[33mcommit 194042a61ab8ddff1b4010e1ed9621d98045e9d2[m
+Author: pjyoon316 <pjyoon316@cf78a9de-ae2e-0510-b830-8e0ea8f17c2e>
+Date:   Tue Apr 26 02:02:53 2016 +0000
+
+[33mcommit 9cb08f97152a8d37ad68485441a06f9a410ba7ea[m
+Author: pjyoon316 <pjyoon316@cf78a9de-ae2e-0510-b830-8e0ea8f17c2e>
+Date:   Tue Apr 26 02:01:34 2016 +0000
+
+[33mcommit 7e208d37b97b97691796604655a2ef2b87c5acc7[m
+Author: pjyoon316 <pjyoon316@cf78a9de-ae2e-0510-b830-8e0ea8f17c2e>
+Date:   Tue Apr 26 02:00:54 2016 +0000
+
+[33mcommit 2b4d4a287061c24dd3980e2e09d6ba18803969e1[m
+Author: pjyoon316 <pjyoon316@cf78a9de-ae2e-0510-b830-8e0ea8f17c2e>
+Date:   Tue Apr 26 01:51:58 2016 +0000
+
+[33mcommit c8c34b6a909b1540823b95a767230267de4114b1[m
+Author: pjyoon316 <pjyoon316@cf78a9de-ae2e-0510-b830-8e0ea8f17c2e>
+Date:   Tue Apr 26 01:48:48 2016 +0000
+
+    ar
+
+[33mcommit eb72a4f932b2545cefd816a37ff1c199c4fa0ac2[m
+Author: pjyoon316 <pjyoon316@cf78a9de-ae2e-0510-b830-8e0ea8f17c2e>
+Date:   Tue Apr 26 01:48:03 2016 +0000
+
+    Art
+
+[33mcommit 1302ea0844ff4ce0a37a93bfc7e9cd97e0367b45[m
+Author: pjyoon316 <pjyoon316@cf78a9de-ae2e-0510-b830-8e0ea8f17c2e>
+Date:   Tue Apr 26 01:14:15 2016 +0000
+
+[33mcommit ceafa642f2534c488fe63ffdab9e3826c8d99133[m
+Author: pjyoon316 <pjyoon316@cf78a9de-ae2e-0510-b830-8e0ea8f17c2e>
+Date:   Tue Apr 26 01:13:20 2016 +0000
+
+[33mcommit 71e1c9cd53cac2b3f9d0c9b995fbc5e8397fbddb[m
+Author: kiming88 <kiming88@naver.com>
+Date:   Mon Apr 25 13:35:02 2016 +0000
+
+    anim 테스트 씬작업 업데이트
+
+[33mcommit 7ea13c18093717a1a25be0db50aa13d6dcf2d39e[m
+Author: kiming88 <kiming88@naver.com>
+Date:   Mon Apr 25 12:43:40 2016 +0000
+
+[33mcommit 56e7fc007bfd2090fb735f6150ea9c9fd9dddc08[m
+Author: kiming88 <kiming88@naver.com>
+Date:   Mon Apr 25 12:42:53 2016 +0000
+
+     옛날파일 삭제
+
+[33mcommit 81a184de4e3255c8b965f42370b3cc19f401cfcf[m
+Author: pjyoon316 <pjyoon316@cf78a9de-ae2e-0510-b830-8e0ea8f17c2e>
+Date:   Sun Apr 24 05:19:44 2016 +0000
+
+[33mcommit c9e609be71b7e8447aabcb8ee705bbb232699785[m
+Author: pjyoon316 <pjyoon316@cf78a9de-ae2e-0510-b830-8e0ea8f17c2e>
+Date:   Sun Apr 24 04:45:21 2016 +0000
+
+[33mcommit bab5dd6524a6c40f278a6ecf5684971088babdc5[m
+Author: pjyoon316 <pjyoon316@cf78a9de-ae2e-0510-b830-8e0ea8f17c2e>
+Date:   Sun Apr 24 04:43:22 2016 +0000
+
+    ....
+
+[33mcommit 42acee97856cdc0830bffaa62da75409096095dd[m
+Author: kiming88 <kiming88@naver.com>
+Date:   Sun Apr 24 04:16:58 2016 +0000
+
+    fgbdsaz
+
+[33mcommit 43892015a4b81157aa648bbcaf40c35bcb4c675a[m
+Author: kiming88 <kiming88@naver.com>
+Date:   Sun Apr 24 02:35:52 2016 +0000
+
+[33mcommit a19caf31f8225d133b95446626dcb5e775849acb[m
+Author: kiming88 <kiming88@naver.com>
+Date:   Sun Apr 10 04:19:07 2016 +0000
+
+[33mcommit 18296bd7d3bf8cb09868b182d6721544f6969ace[m
+Author: kiming88 <kiming88@naver.com>
+Date:   Sun Apr 10 04:18:05 2016 +0000
+
+    한바퀴도는것 업로드
+
+[33mcommit 0830d09790c4dc5d4596c76d19ee1bcd737c4eb0[m
+Author: kiming88 <kiming88@naver.com>
+Date:   Tue Apr 5 01:21:50 2016 +0000
+
+    메타 ??없어서
+
+[33mcommit a14b189ecd7a9d7d2e57e4dda4c10f1ce48e5346[m
+Author: kiming88 <kiming88@naver.com>
+Date:   Tue Apr 5 01:17:41 2016 +0000
+
+     에러나는것 수정
+
+[33mcommit e21d8ce4f8e8d4b5199b7549644f0be338735134[m
+Author: kiming88 <kiming88@naver.com>
+Date:   Tue Apr 5 01:16:27 2016 +0000
+
+    Bspline 업로드
+
+[33mcommit 59fb438deb960f266bf48f2d341756a70419eb3c[m
+Author: kiming88 <kiming88@naver.com>
+Date:   Tue Apr 5 01:15:55 2016 +0000
+
+    ngui 신버전 업로드
+
+[33mcommit 16258101aa233778a5163624620219ffee4b0111[m
+Author: kiming88 <kiming88@naver.com>
+Date:   Tue Apr 5 01:14:14 2016 +0000
+
+    NGUI 옛날버전 삭제
+
+[33mcommit e274be56fee6bf3d5023b16c299770a72b265715[m
+Author: kiming88 <kiming88@naver.com>
+Date:   Sat Mar 26 02:46:48 2016 +0000
+
+    크랙업로드
+
+[33mcommit a5c2fd5b2b1700e8058136700e9bd4414f9bd9b4[m
+Author: kiming88 <kiming88@naver.com>
+Date:   Sat Mar 26 02:37:50 2016 +0000
+
+    삭제 테스트
+
+[33mcommit f5e767fc6da469dfaa18abc5e4cb1e2e30cfcd83[m
+Author: kiming88 <kiming88@naver.com>
+Date:   Sat Mar 26 02:37:26 2016 +0000
+
+    테스트 테스트
+
+[33mcommit c3e36caf42ad2eab33d05c5661aa0dcc57116b17[m
+Author: kiming88 <kiming88@naver.com>
+Date:   Wed Mar 23 13:24:42 2016 +0000
+
+    메타 업로드
+
+[33mcommit 77270ad0c8a584c734ca86fef8ab9fb58a164178[m
+Author: kiming88 <kiming88@naver.com>
+Date:   Wed Mar 23 13:23:35 2016 +0000
+
+    기본 파츠 구조 업로드
+
+[33mcommit a28f6240c3c93116bd4e00ed6f3b4aa78738bc39[m
+Author: kiming88 <kiming88@naver.com>
+Date:   Wed Mar 23 13:22:37 2016 +0000
+
+    옛코드 삭제
+
+[33mcommit 11c34366c9760208dc7b392248915d2bdb9b3413[m
+Author: kiming88 <kiming88@naver.com>
+Date:   Wed Mar 23 12:46:58 2016 +0000
+
+    프로토 브렌치 업로드
+
+[33mcommit e43add459fcde3bf95e466ea84fd4bd6cc6507d6[m
+Author: kiming88 <kiming88@naver.com>
+Date:   Wed Mar 23 03:52:38 2016 +0000
+
+    SVN관련 폴더 추가
+
+[33mcommit 88946a4b2f55162acd8018251e7768f34a0337e8[m
+Author: kiming88 <kiming88@naver.com>
+Date:   Wed Mar 23 03:36:34 2016 +0000
+
+    브렌치 생성
+
+[33mcommit cce5728d0ca08d0589c340ba1d229c0187dc1ccb[m
+Author: anonsvn <anonsvn@cf78a9de-ae2e-0510-b830-8e0ea8f17c2e>
+Date:   Wed Mar 23 03:15:01 2016 +0000
+
+    initial

@@ -22,6 +22,7 @@ public class SceneGame : SceneBase
         AsyncOperation cLoadLevelAsync = UnityEngine.SceneManagement.SceneManager.LoadSceneAsync("1.GameScene");
         yield return cLoadLevelAsync;
 
+        UIManager.Instance.CloseUI(eUIType.Title);
         UIManager.Instance.OpenUI<UI_DressRoom>(eUIType.DressRoom);
 
         ///게임시스템 생성
@@ -83,7 +84,6 @@ public class SceneGame : SceneBase
         {
             case GameEventType.MonsterDied:
                 MyInfo.instance.AddMonsterKill(1);
-                Debug.Log(MyInfo.instance.monsterKillCount);
 
                 CreateMonster();
                 break;
