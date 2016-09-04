@@ -10,6 +10,14 @@ public class SceneGame : SceneBase
 
     private FollowCamera m_camera;
 
+    private int m_monsterKillCount;
+
+    private int m_dayCount;
+
+    private int m_day;
+
+    public MapType m_map;
+
     private Vector3 m_monsterSpawnDistance = new Vector3(15f, 0f, 0f);
 
     public override void Enter()
@@ -69,7 +77,11 @@ public class SceneGame : SceneBase
  
     private void CreateMap()
     {
-        MapManager.Instance.ChangeMap(MapType.Mt_ChunTae1);
+        m_monsterKillCount = MyInfo.instance.monsterKillCount;
+        if (m_monsterKillCount <= 100) MapManager.Instance.ChangeMap(m_map);
+        if (m_monsterKillCount > 100 && m_monsterKillCount <= 101) MapManager.Instance.ChangeMap(m_map + 1);
+        if (m_monsterKillCount > 101 && m_monsterKillCount <= 102) MapManager.Instance.ChangeMap(m_map + 2);
+        if (m_monsterKillCount > 140 && m_monsterKillCount <= 200) MapManager.Instance.ChangeMap(m_map + 3);
     }
 
     private void CreateMonster()
@@ -84,11 +96,40 @@ public class SceneGame : SceneBase
         {
             case GameEventType.MonsterDied:
                 MyInfo.instance.AddMonsterKill(1);
-
+                Debug.Log(MyInfo.instance.monsterKillCount);
+                DayIncreasedByKillCount(MyInfo.instance.monsterKillCount);
                 CreateMonster();
                 break;
             default:
                 break;
         }
     }
+    /// <summary>
+    /// 날짜 계산
+    /// 죽인몬스터 20마리당 1일 증가
+    /// </summary>
+    /// <param name="mon_killCount"></param>
+    public void DayIncreasedByKillCount(int mon_killCount)
+    {        
+             
+        if (mon_killCount != 0)
+        {
+            m_day = mon_killCount / 2;            
+            MapChangeByDayCount(m_day);
+        }
+    }
+
+    public void MapChangeByDayCount(int dayCount)
+    {
+        Debug.Log(dayCount + "일이 지났습니다.");        
+
+        switch (dayCount)
+        {
+            case 1: break;                                                        //ChunTae1
+            case 11: MapManager.Instance.ChangeMap(m_map); break; //ChunTae1
+            case 61: MapManager.Instance.ChangeMap(m_map + 1); break; //ChunTae2
+            case 69: MapManager.Instance.ChangeMap(m_map + 2); break; //Town_Kiwa
+            case 70: MapManager.Instance.ChangeMap(m_map + 3); break; //Town_RockTower
+        }
+    }    
 }

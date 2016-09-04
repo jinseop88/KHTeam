@@ -11,6 +11,10 @@ public class CharacterTestScene : MonoBehaviour, IGameEventListener
     private FollowCamera m_camera;
 
     private int m_monsterKillCount;
+    private int m_dayCount;
+
+    public MapType my;
+
     private Vector3 m_monsterSpawnDistance = new Vector3(15f, 0f, 0f);
 
     void Awake()
@@ -50,6 +54,7 @@ public class CharacterTestScene : MonoBehaviour, IGameEventListener
 
     private void CreateMap()
     {
+        Debug.Log(my);
         MapManager.Instance.ChangeMap(MapType.Mt_ChunTae1);
     }
 
@@ -64,8 +69,8 @@ public class CharacterTestScene : MonoBehaviour, IGameEventListener
         switch (gameEventType)
         {
             case GameEventType.MonsterDied:
-                ++m_monsterKillCount;
-                Debug.Log(m_monsterKillCount);
+                m_monsterKillCount = m_monsterKillCount + 2;
+                DayIncreasedByKillCount(m_monsterKillCount);
 
                 CreateMonster();
                 break;
@@ -73,4 +78,36 @@ public class CharacterTestScene : MonoBehaviour, IGameEventListener
                 break;
         }
     }
+
+    public void DayIncreasedByKillCount(int mon_killCount)
+    {
+        Debug.Log(mon_killCount + "마리를 죽였습니다.");
+        float day;
+
+        if (mon_killCount != 0)
+        {
+            day = (float)(mon_killCount / 2);
+            MapChangeByDayCount(day);
+        }
+    }
+
+    public void MapChangeByDayCount(float dayCount)
+    {
+
+        Debug.Log(dayCount + "일이 지났습니다.");
+        if(dayCount != 0)
+        {
+            if (1 <= dayCount && dayCount <= 3)
+            {
+                return;
+            }
+            if (4 <= dayCount && dayCount <= 6)
+            {                
+                MapManager.Instance.ChangeMap(++my);
+               
+            }
+        }   
+
+    }
+
 }
