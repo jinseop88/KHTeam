@@ -1,0 +1,27 @@
+1. Log 출력
+git log
+
+2. 현재 변경정보 출력
+git status
+
+3. 반영할 모두 파일 추가
+git add .
+
+4. 반영할 특정 파일 추가
+git add 특정파일경로
+
+5. Commit message 작성하기
+ a. git commit
+ b. i(편집모드)
+ c. 작성
+ d. :wq
+
+6. Gerrit에 올리기
+git push origin HEAD:refs/for/master
+
+7. 변경파일 모두 지우기
+git reset —-hard HEAD
+
+8. 최신에서 뒤로 #단계 가기
+git reset —-hard HEAD~#
+
