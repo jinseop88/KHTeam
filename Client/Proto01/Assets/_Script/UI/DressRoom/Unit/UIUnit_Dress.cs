@@ -22,6 +22,10 @@ public class UIUnit_Dress : UIBase
 
     public void SetData(Data.Dress dressData)
     {
+        m_lbDressName.text = dressData.name;
+        m_lbDressPrice.text = string.Format("{0} 원", dressData.coinPrice);
+        m_lbFlowerPrice.text = string.Format("{0} 개", dressData.flowerPrice);
 
+        m_spDressThumb.spriteName = ((GameType.SkinType)dressData.index).ToString();
     }
 }

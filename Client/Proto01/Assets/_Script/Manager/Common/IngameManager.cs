@@ -33,10 +33,10 @@ public class IngameManager : SingleTon<IngameManager>, IGameEventListener
         {
             m_myCharacter.ApplySkin(GameType.SkinType.RoseDress);
         }
-        //if (GUI.Button(new Rect(0, 400, 100, 100), "Basic"))
-        //{
-
-        //}
+        if (GUI.Button(new Rect(0, 400, 100, 100), "PinkDress"))
+        {
+            m_myCharacter.ApplySkin(GameType.SkinType.PinkDress);
+        }
     }
 
 

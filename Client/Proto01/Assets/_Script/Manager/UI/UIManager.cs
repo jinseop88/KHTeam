@@ -6,9 +6,8 @@ using System.Collections.Generic;
 public enum eUIType
 {
     Title,
-    GameLobby,
     Ingame,
-    ChapterSelector,
+    DressRoom,
     Max,
 }
 
@@ -76,11 +75,16 @@ public class UIManager : SingleTon<UIManager>
     /// UI 여는 함수
     /// </summary>
     /// <param name="eType"></param>
-    public void OpenUI(eUIType eType) 
+    public T OpenUI<T>(eUIType eType) where T : UIBase
     {
         UIData uiData = m_UIDic[eType];
 
         uiData.objUI.SetActive(true);
+        UIBase uicomponent = (T)(uiData.objUI.GetComponent<UIBase>());
+
+        uicomponent.Initialize();
+
+        return (T)uicomponent;
     }
 
     /// <summary>

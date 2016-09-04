@@ -30,6 +30,8 @@ public class SceneGame : SceneBase
         AsyncOperation cLoadLevelAsync = UnityEngine.SceneManagement.SceneManager.LoadSceneAsync("1.GameScene");
         yield return cLoadLevelAsync;
 
+        UIManager.Instance.OpenUI<UI_DressRoom>(eUIType.DressRoom);
+
         ///게임시스템 생성
         CreateGameSystem();
         

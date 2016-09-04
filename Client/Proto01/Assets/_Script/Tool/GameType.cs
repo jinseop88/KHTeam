@@ -5,9 +5,13 @@ public static class GameType
 {
     public enum SkinType
     {
-        Basic,
-        GoodDress,
-        RoseDress,
+        Basic           = 1,  
+        GoodDress       = 2,   
+        PinkDress       = 3,
+        RoseDress       = 4,
+        BlueDress       = 5,
+        FlowerDress     = 6,
+        PurpleDress     = 7,
 
         Max,
     }

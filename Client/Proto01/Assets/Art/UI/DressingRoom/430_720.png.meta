@@ -1,23 +1,13 @@
 fileFormatVersion: 2
-<<<<<<< Updated upstream
 guid: 846069d5cf2ce4e6e9c2f150e65dd2d8
-timeCreated: 1471324252
-licenseType: Free
-=======
-guid: 8e95c8b5967b46f4fb83ca86ac7e1512
-timeCreated: 1471356142
+timeCreated: 1472961074
 licenseType: Pro
->>>>>>> Stashed changes
 TextureImporter:
   fileIDToRecycleName: {}
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
-<<<<<<< Updated upstream
-    enableMipMap: 1
-=======
     enableMipMap: 0
->>>>>>> Stashed changes
     linearTexture: 0
     correctGamma: 0
     fadeOut: 0
@@ -29,30 +19,18 @@ TextureImporter:
     externalNormalMap: 0
     heightScale: 0.25
     normalMapFilter: 0
-<<<<<<< Updated upstream
-  isReadable: 0
-=======
   isReadable: 1
->>>>>>> Stashed changes
   grayScaleToAlpha: 0
   generateCubemap: 0
   cubemapConvolution: 0
   cubemapConvolutionSteps: 7
   cubemapConvolutionExponent: 1.5
   seamlessCubemap: 0
-<<<<<<< Updated upstream
-  textureFormat: -1
-  maxTextureSize: 2048
-  textureSettings:
-    filterMode: -1
-    aniso: 16
-=======
   textureFormat: -3
   maxTextureSize: 2048
   textureSettings:
     filterMode: -1
     aniso: -1
->>>>>>> Stashed changes
     mipBias: -1
     wrapMode: 1
   nPOTScale: 0
@@ -67,11 +45,7 @@ TextureImporter:
   spritePivot: {x: 0.5, y: 0.5}
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spritePixelsToUnits: 100
-<<<<<<< Updated upstream
-  alphaIsTransparency: 1
-=======
   alphaIsTransparency: 0
->>>>>>> Stashed changes
   textureType: 8
   buildTargetSettings: []
   spriteSheet:
