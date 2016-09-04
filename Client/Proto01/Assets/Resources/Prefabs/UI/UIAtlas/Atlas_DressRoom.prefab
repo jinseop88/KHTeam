@@ -42,7 +42,7 @@ MonoBehaviour:
   material: {fileID: 2100000, guid: eeccf45911c3e5d4bb2a3412e4572051, type: 2}
   mSprites:
   - name: 123_26
-    x: 554
+    x: 552
     y: 48
     width: 123
     height: 26
@@ -55,7 +55,7 @@ MonoBehaviour:
     paddingTop: 0
     paddingBottom: 0
   - name: 140_80
-    x: 804
+    x: 802
     y: 96
     width: 140
     height: 80
@@ -68,7 +68,7 @@ MonoBehaviour:
     paddingTop: 0
     paddingBottom: 0
   - name: 150_40
-    x: 402
+    x: 400
     y: 34
     width: 150
     height: 40
@@ -81,7 +81,7 @@ MonoBehaviour:
     paddingTop: 0
     paddingBottom: 0
   - name: 400_100
-    x: 402
+    x: 400
     y: 76
     width: 400
     height: 100
@@ -95,19 +95,19 @@ MonoBehaviour:
     paddingBottom: 0
   - name: 400_250
     x: 0
-    y: 52
-    width: 400
-    height: 250
+    y: 53
+    width: 398
+    height: 249
     borderLeft: 0
     borderRight: 0
     borderTop: 0
     borderBottom: 0
-    paddingLeft: 0
-    paddingRight: 0
-    paddingTop: 0
+    paddingLeft: 1
+    paddingRight: 1
+    paddingTop: 1
     paddingBottom: 0
   - name: 430_130
-    x: 402
+    x: 400
     y: 178
     width: 430
     height: 124
@@ -122,8 +122,21 @@ MonoBehaviour:
   - name: 430_720
     x: 0
     y: 304
-    width: 430
+    width: 557
     height: 720
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 43
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: 80_80
+    x: 914
+    y: 862
+    width: 80
+    height: 80
     borderLeft: 0
     borderRight: 0
     borderTop: 0
@@ -132,8 +145,34 @@ MonoBehaviour:
     paddingRight: 0
     paddingTop: 0
     paddingBottom: 0
-  - name: 80_80
-    x: 886
+  - name: BlueDress
+    x: 832
+    y: 780
+    width: 80
+    height: 80
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: FlowerDress
+    x: 914
+    y: 780
+    width: 80
+    height: 80
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: GoodDress
+    x: 884
     y: 14
     width: 80
     height: 80
@@ -146,8 +185,47 @@ MonoBehaviour:
     paddingTop: 0
     paddingBottom: 0
   - name: Menu_80_80
-    x: 804
+    x: 802
     y: 14
+    width: 80
+    height: 80
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: PinkDress
+    x: 832
+    y: 944
+    width: 80
+    height: 80
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: PurpleDress
+    x: 914
+    y: 944
+    width: 80
+    height: 80
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: RoseDress
+    x: 832
+    y: 862
     width: 80
     height: 80
     borderLeft: 0

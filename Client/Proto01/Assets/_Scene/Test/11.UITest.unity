@@ -85,7 +85,7 @@ NavMeshSettings:
     cellSize: 0.16666667
     manualCellSize: 0
   m_NavMeshData: {fileID: 0}
---- !u!1001 &16940940
+--- !u!1001 &592642575
 Prefab:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -123,34 +123,6 @@ Prefab:
     - target: {fileID: 465178, guid: 9f622b817c957cd4a9c20b9ac90ebf20, type: 2}
       propertyPath: m_RootOrder
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 465178, guid: 9f622b817c957cd4a9c20b9ac90ebf20, type: 2}
-      propertyPath: m_LocalScale.x
-      value: 0.0027777778
-      objectReference: {fileID: 0}
-    - target: {fileID: 465178, guid: 9f622b817c957cd4a9c20b9ac90ebf20, type: 2}
-      propertyPath: m_LocalScale.y
-      value: 0.0027777778
-      objectReference: {fileID: 0}
-    - target: {fileID: 465178, guid: 9f622b817c957cd4a9c20b9ac90ebf20, type: 2}
-      propertyPath: m_LocalScale.z
-      value: 0.0027777778
-      objectReference: {fileID: 0}
-    - target: {fileID: 11437914, guid: 9f622b817c957cd4a9c20b9ac90ebf20, type: 2}
-      propertyPath: minimumHeight
-      value: 720
-      objectReference: {fileID: 0}
-    - target: {fileID: 11437914, guid: 9f622b817c957cd4a9c20b9ac90ebf20, type: 2}
-      propertyPath: maximumHeight
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 11437914, guid: 9f622b817c957cd4a9c20b9ac90ebf20, type: 2}
-      propertyPath: scalingStyle
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 400158, guid: 9f622b817c957cd4a9c20b9ac90ebf20, type: 2}
-      propertyPath: m_RootOrder
-      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 9f622b817c957cd4a9c20b9ac90ebf20, type: 2}
