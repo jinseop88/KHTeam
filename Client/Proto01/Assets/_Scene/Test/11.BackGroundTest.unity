@@ -212,7 +212,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 0
+  m_RootOrder: 3
 --- !u!1 &238293111
 GameObject:
   m_ObjectHideFlags: 0
@@ -253,7 +253,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 5
 --- !u!1001 &320509185
 Prefab:
   m_ObjectHideFlags: 0
@@ -511,7 +511,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 01d6e5801d11afe4a887d4bead8789e4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  accelerator: 0.01
+  limitDistance: 0
 --- !u!212 &516781620
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -853,6 +853,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c03dd490e03c7b64f92aa9b8cc1ae96b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  m_bIsMonsterSpawnPoint: 0
 --- !u!1 &725820443
 GameObject:
   m_ObjectHideFlags: 0
@@ -1026,6 +1027,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c03dd490e03c7b64f92aa9b8cc1ae96b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  m_bIsMonsterSpawnPoint: 0
 --- !u!4 &910406933
 Transform:
   m_ObjectHideFlags: 0
@@ -1390,7 +1392,7 @@ Transform:
   - {fileID: 910406933}
   - {fileID: 660797727}
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 6
 --- !u!1001 &1813902667
 Prefab:
   m_ObjectHideFlags: 0
@@ -1519,7 +1521,7 @@ Transform:
   - {fileID: 613160616}
   - {fileID: 146119610}
   m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_RootOrder: 4
 --- !u!1 &2095950099
 GameObject:
   m_ObjectHideFlags: 0
@@ -1547,4 +1549,4 @@ Transform:
   m_Children:
   - {fileID: 516781618}
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 7
