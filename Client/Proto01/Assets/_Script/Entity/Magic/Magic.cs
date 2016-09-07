@@ -2,30 +2,42 @@
 using System.Collections;
 
 // TODO: Replace to Skill
-public class Magic : MonoBehaviour
+public class Magic : MonoBehaviour, IGameEventListener
 {
     public GameObject magicPrefabs = null;
 
     private GameObject magic = null;
     private ParticleSystem particleSystem = null;
 
-    void Update()
+    void Start()
     {
-        if (magic == null && Input.GetMouseButtonDown(0))
+        GameEventManager.Register(this);
+    }
+
+    public void OnGameEvent(GameEventType gameEventType, params object[] args)
+    {
+        switch (gameEventType)
         {
-            magic = Instantiate(magicPrefabs, Vector3.zero, magicPrefabs.transform.rotation) as GameObject;
-            magic.transform.parent = Camera.main.transform;
+            case GameEventType.CastMagic:
+                if (magic == null)
+                {
+                    magic = Instantiate(magicPrefabs, Vector3.zero, magicPrefabs.transform.rotation) as GameObject;
+                    magic.transform.parent = Camera.main.transform;
 
-            magic.transform.position = Camera.main.transform.position + new Vector3(0.0f, 2.5f, 15.0f);
+                    magic.transform.position = Camera.main.transform.position + new Vector3(0.0f, 2.5f, 15.0f);
 
-            particleSystem = magic.GetComponentInChildren<ParticleSystem>();
+                    particleSystem = magic.GetComponentInChildren<ParticleSystem>();
 
-            foreach(GameObject monster in GameObject.FindGameObjectsWithTag("monster"))
-            {
-                monster.GetComponent<Actor>().onDamage(null, null);
-            }
+                    foreach(GameObject monster in GameObject.FindGameObjectsWithTag("monster"))
+                    {
+                        monster.GetComponent<Actor>().onDamage(null, null);
+                    }
 
-            StartCoroutine(DestroyMagic());
+                    StartCoroutine(DestroyMagic());
+                }
+                break;
+            default:
+                break;
         }
     }
 

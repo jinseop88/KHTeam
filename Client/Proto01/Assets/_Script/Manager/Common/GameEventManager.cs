@@ -9,7 +9,9 @@ public enum GameEventType
 
     UpdateMoveDistance,
 
-    Click_Screen,
+    ClickScreen,
+
+    CastMagic
 }
 
 public static class GameEventManager

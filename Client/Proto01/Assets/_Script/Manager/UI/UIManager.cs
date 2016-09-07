@@ -8,6 +8,7 @@ public enum eUIType
     Title,
     Ingame,
     DressRoom,
+    MyInfo,
     Max,
 }
 
