@@ -11,7 +11,9 @@ public enum GameEventType
 
     ClickScreen,
 
-    CastMagic
+    CastMagic,
+
+    ChangeSkin,
 }
 
 public static class GameEventManager

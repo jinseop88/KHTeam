@@ -101,6 +101,13 @@ public class SceneGame : SceneBase
                 DayIncreasedByKillCount(MyInfo.instance.monsterKillCount);
                 CreateMonster();
                 break;
+
+            case GameEventType.ChangeSkin:
+                GameType.SkinType newSkin = (GameType.SkinType)args[0];
+
+                IngameManager.Instance.m_myCharacter.ApplySkin(newSkin, true);
+                break;
+
             default:
                 break;
         }
