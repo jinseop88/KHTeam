@@ -84,6 +84,7 @@ public class SceneGame : SceneBase
         if (m_monsterKillCount > 100 && m_monsterKillCount <= 101) MapManager.Instance.ChangeMap(m_map + 1);
         if (m_monsterKillCount > 101 && m_monsterKillCount <= 102) MapManager.Instance.ChangeMap(m_map + 2);
         if (m_monsterKillCount > 140 && m_monsterKillCount <= 200) MapManager.Instance.ChangeMap(m_map + 3);
+        else MapManager.Instance.ChangeMap(m_map);
     }
 
     private void CreateMonster()

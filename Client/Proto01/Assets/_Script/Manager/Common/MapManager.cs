@@ -18,6 +18,7 @@ public class MapManager : SingleTon<MapManager>
     {
         if (m_currnetMap == null)
         {
+            Debug.Log("Load map");
             m_currnetMap = InnerLoadMap(eNextMapType);
             return;
         }
