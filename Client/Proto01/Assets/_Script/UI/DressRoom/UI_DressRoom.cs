@@ -15,9 +15,13 @@ public class UI_DressRoom : UIBase
     private Vector3 m_vDestPos;
     private bool m_bSlideAction;
 
+    private GameType.SkinType m_ePreviewSkinType;
+
     public override void Initialize()
     {
         base.Initialize();
+
+        m_ePreviewSkinType = GameType.SkinType.Max;
 
         m_wrapContent.minIndex = DressTable.instance.dressList.Count == 1 ? -1 : 0;
         m_wrapContent.maxIndex = DressTable.instance.dressList.Count - 1;
@@ -54,11 +58,39 @@ public class UI_DressRoom : UIBase
         }
     }
 
-    
+    public void PreviewCharacterApplySkin(GameObject obj)
+    {
+        UIUnit_Dress ui = obj.GetComponent<UIUnit_Dress>();
+
+        if(ui != null)
+        {
+            GameType.SkinType newSkinType = (GameType.SkinType)ui.dress.index;
+                
+            if(m_ePreviewSkinType != newSkinType)
+            {
+                m_ePreviewSkinType = newSkinType;
+                m_previewCharacter.ApplySkin(newSkinType, true);
+            }
+        }
+    }
 
     public void ClickSlide()
     {
-        m_vDestPos = m_vDestPos == m_vInPos ? m_vOutPos : m_vInPos;
+        //나올때
+        if (m_vDestPos == m_vInPos)
+        {
+            m_vDestPos = m_vOutPos;
+        }
+        else
+        {
+            //들어갈때
+            m_vDestPos = m_vInPos;
+
+            //수정이 되었다면
+            if (m_ePreviewSkinType != GameType.SkinType.Max)
+                GameEventManager.Notify(GameEventType.ChangeSkin, (int)m_ePreviewSkinType);
+
+        }
 
         if(!m_bSlideAction)
             m_bSlideAction = true;
@@ -77,5 +109,4 @@ public class UI_DressRoom : UIBase
             }
         }
     }
-
 }
