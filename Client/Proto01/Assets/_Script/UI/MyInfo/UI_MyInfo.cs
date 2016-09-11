@@ -38,9 +38,12 @@ public class UI_MyInfo : UIBase, IGameEventListener
         switch (gameEventType)
         {
             case GameEventType.ClickScreen:
-                magicNotice.SetActive(false);
-                MyInfo.instance.insamCount = 0;
-                GameEventManager.Notify(GameEventType.CastMagic);
+                if (magicNotice.activeSelf)
+                {
+                    magicNotice.SetActive(false);
+                    MyInfo.instance.insamCount = 0;
+                    GameEventManager.Notify(GameEventType.CastMagic);
+                }
                 break;
         }
     }
