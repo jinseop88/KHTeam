@@ -27,7 +27,7 @@ public class UI_MyInfo : UIBase, IGameEventListener
         UISprite uiSprite = insamGauge.GetComponent<UISprite>();
         uiSprite.fillAmount = insamGaugePercent;
 
-        if (insamGaugePercent == 1.0f)
+        if (insamGaugePercent >= 1.0f)
         {
             magicNotice.SetActive(true);
         }
