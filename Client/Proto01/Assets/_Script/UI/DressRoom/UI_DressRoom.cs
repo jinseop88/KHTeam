@@ -86,9 +86,7 @@ public class UI_DressRoom : UIBase
             //들어갈때
             m_vDestPos = m_vInPos;
 
-            //수정이 되었다면
-            if (m_ePreviewSkinType != GameType.SkinType.Max)
-                GameEventManager.Notify(GameEventType.ChangeSkin, (int)m_ePreviewSkinType);
+            GameEventManager.Notify(GameEventType.ChangeSkin, (int)m_ePreviewSkinType);
 
         }
 

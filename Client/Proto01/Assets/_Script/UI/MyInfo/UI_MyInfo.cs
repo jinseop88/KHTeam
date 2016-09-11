@@ -1,21 +1,12 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class UI_MyInfo : UIBase, IGameEventListener
+public class UI_MyInfo : UIBase
 {
     public UILabel coinCount;
     public UILabel flowerCount;
     public UISprite insamGauge;
     public int insamMaxCount = 100;
-    public GameObject magicNotice;
-
-    // Use this for initialization
-    void Start ()
-    {
-        Initialize();
-
-        GameEventManager.Register(this);
-    }
 
     void OnGUI()
     {
@@ -29,22 +20,7 @@ public class UI_MyInfo : UIBase, IGameEventListener
 
         if (insamGaugePercent >= 1.0f)
         {
-            magicNotice.SetActive(true);
-        }
-    }
-
-    public void OnGameEvent(GameEventType gameEventType, params object[] args)
-    {
-        switch (gameEventType)
-        {
-            case GameEventType.ClickScreen:
-                if (magicNotice.activeSelf)
-                {
-                    magicNotice.SetActive(false);
-                    MyInfo.instance.insamCount = 0;
-                    GameEventManager.Notify(GameEventType.CastMagic);
-                }
-                break;
+            GameEventManager.Notify(GameEventType.ReadyMagic);
         }
     }
 }

@@ -18,21 +18,9 @@ public class IngameManager : SingleTon<IngameManager>, IGameEventListener
 
         GUI.Label(new Rect(200, 100, 200, 100), "KillCount -> " + MyInfo.instance.monsterKillCount);
 
-        if(GUI.Button(new Rect(0,100,100,100), "Basic"))
+        if(GUI.Button(new Rect(0,100,100,100), "PlayerPrefs Clear"))
         {
-            m_myCharacter.ApplySkin(GameType.SkinType.Basic);
-        }
-        if (GUI.Button(new Rect(0, 200, 100, 100), "GoodDress"))
-        {
-            m_myCharacter.ApplySkin(GameType.SkinType.GoodDress);
-        }
-        if (GUI.Button(new Rect(0, 300, 100, 100), "RoseDress"))
-        {
-            m_myCharacter.ApplySkin(GameType.SkinType.RoseDress);
-        }
-        if (GUI.Button(new Rect(0, 400, 100, 100), "PinkDress"))
-        {
-            m_myCharacter.ApplySkin(GameType.SkinType.PinkDress);
+            PlayerPrefs.DeleteAll();
         }
     }
 
@@ -57,8 +45,8 @@ public class IngameManager : SingleTon<IngameManager>, IGameEventListener
     private void Update()
     {
         ///Check Click Action
-        if (Input.GetKeyDown(KeyCode.Mouse0))
-            GameEventManager.Notify(GameEventType.ClickScreen);
+        //if (Input.GetKeyDown(KeyCode.Mouse0))
+        //    GameEventManager.Notify(GameEventType.ClickScreen);
     }
 
     public void OnGameEvent(GameEventType gameEventType, params object[] args)

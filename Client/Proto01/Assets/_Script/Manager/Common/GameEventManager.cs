@@ -11,6 +11,7 @@ public enum GameEventType
 
     ClickScreen,
 
+    ReadyMagic,
     CastMagic,
 
     ChangeSkin,
