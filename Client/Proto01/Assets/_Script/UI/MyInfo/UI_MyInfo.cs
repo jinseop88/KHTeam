@@ -24,7 +24,8 @@ public class UI_MyInfo : UIBase, IGameEventListener
 
         float insamGaugePercent = Mathf.Clamp((float)MyInfo.instance.insamCount / (float)insamMaxCount, 0.0f, 1.0f);
 
-        insamGauge.transform.localScale = new Vector3(insamGaugePercent, 1.0f, 1.0f);
+        UISprite uiSprite = insamGauge.GetComponent<UISprite>();
+        uiSprite.fillAmount = insamGaugePercent;
 
         if (insamGaugePercent == 1.0f)
         {
