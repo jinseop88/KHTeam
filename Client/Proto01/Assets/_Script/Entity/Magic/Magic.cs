@@ -5,6 +5,7 @@ using System.Collections;
 public class Magic : MonoBehaviour, IGameEventListener
 {
     public GameObject magicPrefabs = null;
+    public Material[] magicMaterials = null;
 
     private GameObject magic = null;
     private ParticleSystem particleSystem = null;
@@ -34,6 +35,29 @@ public class Magic : MonoBehaviour, IGameEventListener
                     }
 
                     StartCoroutine(DestroyMagic());
+                }
+                break;
+            case GameEventType.MapChanged:
+                {
+                    MapType mapType = (MapType)args[0];
+
+                    ParticleSystem particleSystem = magicPrefabs.GetComponentInChildren<ParticleSystem>();
+                    Renderer renderer = magicPrefabs.GetComponentInChildren<Renderer>();
+
+                    if (mapType == MapType.Mt_ChunTae1 || mapType == MapType.Mt_ChunTae2)
+                    {
+                        renderer.material = magicMaterials[0];
+                    }
+                    else if (mapType == MapType.Town_Kiwa || mapType == MapType.Town_RockTower)
+                    {
+                        renderer.material = magicMaterials[1];
+                        particleSystem.startColor = Color.black;
+                    }
+                    else
+                    {
+                        renderer.material = magicMaterials[1];
+                        particleSystem.startColor = Color.white;
+                    }
                 }
                 break;
             default:

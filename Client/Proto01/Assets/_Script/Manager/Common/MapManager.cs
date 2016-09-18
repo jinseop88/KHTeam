@@ -16,6 +16,8 @@ public class MapManager : SingleTon<MapManager>
 
     public void ChangeMap(MapType eNextMapType)
     {
+        GameEventManager.Notify(GameEventType.MapChanged, eNextMapType);
+
         if (m_currnetMap == null)
         {
             Debug.Log("Load map");
@@ -35,6 +37,7 @@ public class MapManager : SingleTon<MapManager>
         GameObject objMap = Resources.Load("Prefabs/Map/" + eNextMapType.ToString() + "/" + eNextMapType.ToString()) as GameObject;
 
         GameObject clone = GameObject.Instantiate(objMap) as GameObject;
+
         return clone;
     }
 }

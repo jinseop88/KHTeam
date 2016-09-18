@@ -164,6 +164,10 @@ Prefab:
       propertyPath: m_RootOrder
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 11430212, guid: 9f622b817c957cd4a9c20b9ac90ebf20, type: 2}
+      propertyPath: insamMaxCount
+      value: 10
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 9f622b817c957cd4a9c20b9ac90ebf20, type: 2}
   m_IsPrefabParent: 0

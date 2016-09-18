@@ -14,6 +14,8 @@ public enum GameEventType
     CastMagic,
 
     ChangeSkin,
+
+    MapChanged,
 }
 
 public static class GameEventManager

@@ -218,6 +218,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   magicPrefabs: {fileID: 138352, guid: 4d813b77da007e742b87baf32c18f730, type: 2}
+  magicMaterials:
+  - {fileID: 2100000, guid: b410912f7aa2b43e1ba79f07fa32da1e, type: 2}
+  - {fileID: 2100000, guid: 2260b827f07b048f4942a193ecd8cfa9, type: 2}
 --- !u!114 &11437716
 MonoBehaviour:
   m_ObjectHideFlags: 1
