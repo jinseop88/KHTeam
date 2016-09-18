@@ -26,7 +26,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 487676}
   m_Layer: 0
-  m_Name: PetalMagic
+  m_Name: Magic
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -254,7 +254,7 @@ ParticleSystem:
         rgba: 4294967295
       maxColor:
         serializedVersion: 2
-        rgba: 4291149311
+        rgba: 4294967295
       minMaxState: 0
     startSize:
       scalar: 0.4
@@ -1496,9 +1496,9 @@ ParticleSystemRenderer:
   m_GameObject: {fileID: 107966}
   m_Enabled: 1
   m_CastShadows: 1
-  m_ReceiveShadows: 1
+  m_ReceiveShadows: 0
   m_Materials:
-  - {fileID: 2100000, guid: 8fed156dd4e2bb14c80865ea6af9d18d, type: 2}
+  - {fileID: 2100000, guid: 2260b827f07b048f4942a193ecd8cfa9, type: 2}
   m_SubsetIndices: 
   m_StaticBatchRoot: {fileID: 0}
   m_UseLightProbes: 1
