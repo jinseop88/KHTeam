@@ -9,12 +9,19 @@ public enum GameEventType
 
     UpdateMoveDistance,
 
-    Click_Screen,
+    ClickScreen,
+
+    CastMagic,
+
+    ChangeSkin,
+
+    MapChanged,
 }
 
 public static class GameEventManager
 {
     private static List<IGameEventListener> handlers = new List<IGameEventListener>();
+                  
 
     public static void Register(IGameEventListener gameEventListener)
     {
@@ -28,7 +35,11 @@ public static class GameEventManager
 
     public static void Notify(GameEventType eventType, params object[] args)
     {
-        foreach (var handler in handlers)
+        //foreach (var handler in handlers)
+        //{
+        //    handler.OnGameEvent(eventType, args);
+        //}
+        foreach (IGameEventListener handler in new List<IGameEventListener>(handlers))
         {
             handler.OnGameEvent(eventType, args);
         }

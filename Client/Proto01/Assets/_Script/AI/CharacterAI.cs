@@ -101,7 +101,7 @@ public class CharacterAI : BaseAI, IGameEventListener
     {
         switch(gameEventType)
         {
-            case GameEventType.Click_Screen:
+            case GameEventType.ClickScreen:
                 m_IsTouched = true;
                 break;
         }

@@ -9,6 +9,7 @@ public class UIUnit_Dress : UIBase
     public UILabel m_lbFlowerPrice;
     public UILabel m_lbDressPrice;
 
+    public Data.Dress dress { get; set; }
 
     public override void Initialize()
     {
@@ -22,9 +23,11 @@ public class UIUnit_Dress : UIBase
 
     public void SetData(Data.Dress dressData)
     {
+        dress = dressData;
+
         m_lbDressName.text = dressData.name;
-        m_lbDressPrice.text = string.Format("{0} 원", dressData.coinPrice);
-        m_lbFlowerPrice.text = string.Format("{0} 개", dressData.flowerPrice);
+        m_lbDressPrice.text = string.Format("돈 {0} 냥", dressData.coinPrice);
+        m_lbFlowerPrice.text = string.Format("꽃 {0} 개", dressData.flowerPrice);
 
         m_spDressThumb.spriteName = ((GameType.SkinType)dressData.index).ToString();
     }

@@ -16,10 +16,7 @@ public class IngameManager : SingleTon<IngameManager>, IGameEventListener
     {
         GUI.Box(new Rect(150, 85, 900, 50), GUIContent.none);
 
-        GUI.Label(new Rect(200, 100, 200, 100), "CoinCount -> " + MyInfo.instance.coinCount);
-        GUI.Label(new Rect(400, 100, 200, 100), "FlowerCount -> " + MyInfo.instance.flowerCount);
-        GUI.Label(new Rect(600, 100, 200, 100), "InsamCount -> " + MyInfo.instance.insamCount);
-        GUI.Label(new Rect(800, 100, 200, 100), "KillCount -> " + MyInfo.instance.monsterKillCount);
+        GUI.Label(new Rect(200, 100, 200, 100), "KillCount -> " + MyInfo.instance.monsterKillCount);
 
         if(GUI.Button(new Rect(0,100,100,100), "Basic"))
         {
@@ -61,7 +58,7 @@ public class IngameManager : SingleTon<IngameManager>, IGameEventListener
     {
         ///Check Click Action
         if (Input.GetKeyDown(KeyCode.Mouse0))
-            GameEventManager.Notify(GameEventType.Click_Screen);
+            GameEventManager.Notify(GameEventType.ClickScreen);
     }
 
     public void OnGameEvent(GameEventType gameEventType, params object[] args)

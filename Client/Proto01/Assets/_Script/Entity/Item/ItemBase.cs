@@ -62,8 +62,5 @@ public class ItemBase : MonoBehaviour
     /// <summary>
     /// 아이템을 먹었을때 (아이템을 지워주는코드가 항상 있어야한다)
     /// </summary>
-    public virtual void Get() 
-    {
-        Debug.Log("아이템 머금");
-    }
+    public virtual void Get() { }
 }
