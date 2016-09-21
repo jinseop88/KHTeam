@@ -6,13 +6,14 @@ public class SceneIntro : MonoBehaviour {
 	void Start ()
     {
         UIManager.Instance.Initialize();
+        UIManager.Instance.OpenUI<UI_Title>(eUIType.Title);
 
         StartCoroutine(GoNext());
 	}
 
     IEnumerator GoNext()
     {
-        yield return new WaitForSeconds(2f);
+        yield return new WaitForSeconds(0.5f);
         
         SceneManager.Instance.ChangeScene(SceneType.Game);
     }

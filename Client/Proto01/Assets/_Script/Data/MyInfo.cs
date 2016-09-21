@@ -41,7 +41,7 @@ public class MyInfo
     /// <summary>
     /// 인삼갯수
     /// </summary>
-    public int insamCount { get; private set; }
+    public int insamCount { get; set; }
 
     /// <summary>
     /// 꽃갯수
