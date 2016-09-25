@@ -7,8 +7,9 @@ public class Magic : MonoBehaviour, IGameEventListener
     public GameObject magicPrefabs = null;
     public Material[] magicMaterials = null;
 
-    private GameObject magic = null;
-    private ParticleSystem particleSystem = null;
+    private static GameObject magic = null;
+    private ParticleSystem magicParticleSystem = null;
+    private MapType mapType = MapType.Mt_ChunTae1;
 
     void Start()
     {
@@ -27,37 +28,35 @@ public class Magic : MonoBehaviour, IGameEventListener
 
                     magic.transform.position = Camera.main.transform.position + new Vector3(0.0f, 2.5f, 15.0f);
 
-                    particleSystem = magic.GetComponentInChildren<ParticleSystem>();
+                    magicParticleSystem = magic.GetComponentInChildren<ParticleSystem>();
 
-                    foreach(GameObject monster in GameObject.FindGameObjectsWithTag("monster"))
-                    {
-                        monster.GetComponent<Actor>().onDamage(null, null);
-                    }
-
-                    StartCoroutine(DestroyMagic());
-                }
-                break;
-            case GameEventType.MapChanged:
-                {
-                    MapType mapType = (MapType)args[0];
-
-                    ParticleSystem particleSystem = magicPrefabs.GetComponentInChildren<ParticleSystem>();
                     Renderer renderer = magicPrefabs.GetComponentInChildren<Renderer>();
 
                     if (mapType == MapType.Mt_ChunTae1 || mapType == MapType.Mt_ChunTae2)
                     {
                         renderer.material = magicMaterials[0];
+                        magicParticleSystem.startColor = Color.white;
                     }
                     else if (mapType == MapType.Town_Kiwa || mapType == MapType.Town_RockTower)
                     {
                         renderer.material = magicMaterials[1];
-                        particleSystem.startColor = Color.black;
+                        magicParticleSystem.startColor = Color.black;
                     }
                     else
                     {
                         renderer.material = magicMaterials[1];
-                        particleSystem.startColor = Color.white;
+                        magicParticleSystem.startColor = Color.white;
                     }
+
+                    magicParticleSystem.Play();
+
+                    StartCoroutine(AttackMonster());
+                    StartCoroutine(DestroyMagic());
+                }
+                break;
+            case GameEventType.MapChanged:
+                {
+                    mapType = (MapType)args[0];
                 }
                 break;
             default:
@@ -65,12 +64,27 @@ public class Magic : MonoBehaviour, IGameEventListener
         }
     }
 
+    IEnumerator AttackMonster()
+    {
+        while (true)
+        {
+            foreach(GameObject monster in GameObject.FindGameObjectsWithTag("monster"))
+            {
+                // TODO : Give damage to monster
+            }
+
+            yield return new WaitForSeconds(1.0f);
+        }
+    }
+
     IEnumerator DestroyMagic()
     {
-        yield return new WaitUntil(() => !particleSystem.isPlaying);
+        yield return new WaitUntil(() => !magicParticleSystem.isPlaying);
+
+        StopCoroutine("AttackMonster");
 
         Destroy(magic);
         magic = null;
-        particleSystem = null;
+        magicParticleSystem = null;
     }
 }
