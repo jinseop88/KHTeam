@@ -14,6 +14,7 @@ public class IngameManager : SingleTon<IngameManager>, IGameEventListener
 
     void OnGUI()
     {
+        /*
         GUI.Box(new Rect(150, 85, 900, 50), GUIContent.none);
 
         GUI.Label(new Rect(200, 100, 200, 100), "KillCount -> " + MyInfo.instance.monsterKillCount);
@@ -34,6 +35,7 @@ public class IngameManager : SingleTon<IngameManager>, IGameEventListener
         {
             m_myCharacter.ApplySkin(GameType.SkinType.PinkDress);
         }
+        */
     }
 
 

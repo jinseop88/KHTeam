@@ -1024,6 +1024,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   limitDistance: 57.5
+  distanceType: 2
 --- !u!114 &11457406
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1036,6 +1037,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   limitDistance: 190
+  distanceType: 0
 --- !u!114 &11468804
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1048,6 +1050,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   limitDistance: 83.3
+  distanceType: 1
 --- !u!212 &21202200
 SpriteRenderer:
   m_ObjectHideFlags: 1

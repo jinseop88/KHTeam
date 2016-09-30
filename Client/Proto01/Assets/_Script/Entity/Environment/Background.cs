@@ -2,9 +2,17 @@
 using System.Collections;
 using System.Collections.Generic;
 
+public enum MapDistanceType
+{
+    Far,
+    Mid,
+    Near,
+}
+
 public class Background : MonoBehaviour, IGameEventListener
 {
     public float limitDistance;
+    public MapDistanceType distanceType;
 
     private List<Transform> _backgroundList = new List<Transform>();
 
@@ -20,6 +28,15 @@ public class Background : MonoBehaviour, IGameEventListener
         GameEventManager.Register(this);
     }
 
+    public float GetEndX()
+    {
+        float endX = 0f;
+        for (int i = 0; i < _backgroundList.Count; i++)
+            endX = Mathf.Max(_backgroundList[i].transform.position.x + limitDistance, endX);
+
+        return endX;
+    }
+
     void OnDisable()
     {
         GameEventManager.Unregister(this);
@@ -28,7 +45,7 @@ public class Background : MonoBehaviour, IGameEventListener
 
     private void CalculateDistance(float currentX)
     {
-        if (currentX > transform.position.x) return;
+        if (currentX < transform.position.x) return;
 
         int realIndex = (int)(currentX / limitDistance);
         int firstIndex = (realIndex - 1) % _backgroundList.Count;
@@ -39,7 +56,7 @@ public class Background : MonoBehaviour, IGameEventListener
             if (firstIndex == _backgroundList.Count) firstIndex = 0;
 
             Vector3 nextPosition = new Vector3(limitDistance * (realIndex + i), 0, 0);
-            _backgroundList[firstIndex].transform.localPosition = nextPosition;
+            _backgroundList[firstIndex].transform.position = nextPosition;
 
             firstIndex++;
         }
