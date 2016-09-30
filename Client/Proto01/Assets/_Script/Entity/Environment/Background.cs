@@ -55,7 +55,9 @@ public class Background : MonoBehaviour, IGameEventListener
             if (firstIndex == -1) firstIndex = _backgroundList.Count - 1;
             if (firstIndex == _backgroundList.Count) firstIndex = 0;
 
-            Vector3 nextPosition = new Vector3(limitDistance * (realIndex + i), 0, 0);
+			Vector3 nextPosition = new Vector3(limitDistance * (realIndex + i),
+				_backgroundList[firstIndex].transform.position.y,
+				_backgroundList[firstIndex].transform.position.z);
             _backgroundList[firstIndex].transform.position = nextPosition;
 
             firstIndex++;
