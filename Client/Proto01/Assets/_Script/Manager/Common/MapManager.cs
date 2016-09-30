@@ -32,7 +32,8 @@ public class MapManager : SingleTon<MapManager>
 
 		FadeScreen.Instance.StartFadeScreen (0.0f, 1f, 1f, 0, Color.black);
 
-		GameObject objNextMap = InnerLoadMap(eNextMapType, IngameManager.Instance.m_myCharacter.thisTransform.position);
+		Vector3 spawnPos = new Vector3 (IngameManager.Instance.m_myCharacter.thisTransform.position.x, 0, 0);
+		GameObject objNextMap = InnerLoadMap(eNextMapType, spawnPos);
 		Destroy (m_objCurrentMap);
 		m_objCurrentMap = objNextMap;
 		/*
