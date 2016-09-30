@@ -1,13 +1,22 @@
 fileFormatVersion: 2
 guid: 3f155f365007b44cb926de9a8f6438e5
-timeCreated: 1474167291
-licenseType: Free
+timeCreated: 1475240212
+licenseType: Pro
 TextureImporter:
-  fileIDToRecycleName: {}
+  fileIDToRecycleName:
+    21300000: Move_0
+    21300002: Move_1
+    21300004: Move_2
+    21300006: Move_3
+    21300008: Move_4
+    21300010: Move_5
+    21300012: Move_6
+    21300014: Move_7
+    21300016: Move_8
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
-    enableMipMap: 1
+    enableMipMap: 0
     linearTexture: 0
     correctGamma: 0
     fadeOut: 0
@@ -26,30 +35,260 @@ TextureImporter:
   cubemapConvolutionSteps: 7
   cubemapConvolutionExponent: 1.5
   seamlessCubemap: 0
-  textureFormat: -1
+  textureFormat: -3
   maxTextureSize: 2048
   textureSettings:
     filterMode: -1
     aniso: -1
     mipBias: -1
-    wrapMode: -1
-  nPOTScale: 1
+    wrapMode: 1
+  nPOTScale: 0
   lightmap: 0
   rGBM: 0
   compressionQuality: 50
   allowsAlphaSplitting: 0
-  spriteMode: 0
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spritePixelsToUnits: 100
-  alphaIsTransparency: 0
-  textureType: -1
+  alphaIsTransparency: 1
+  textureType: 8
   buildTargetSettings: []
   spriteSheet:
-    sprites: []
+    sprites:
+    - name: Move_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 298
+        width: 243
+        height: 252
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 61.5, y: 251}
+        - {x: 52.5, y: 252}
+        - {x: -26.5, y: 252}
+        - {x: -118.5, y: 218}
+        - {x: -121.5, y: 186}
+        - {x: -121.5, y: 86}
+        - {x: -113.5, y: 79}
+        - {x: -46.5, y: 62}
+        - {x: -48.5, y: 3}
+        - {x: -43.5, y: 0}
+        - {x: 110.5, y: 0}
+        - {x: 121.5, y: 26}
+        - {x: 121.5, y: 209}
+        - {x: 100.5, y: 227}
+    - name: Move_1
+      rect:
+        serializedVersion: 2
+        x: 363
+        y: 299
+        width: 273
+        height: 251
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 136.5, y: 224}
+        - {x: 80.5, y: 251}
+        - {x: -3.5, y: 251}
+        - {x: -63.5, y: 205}
+        - {x: -113.5, y: 225}
+        - {x: -136.5, y: 201}
+        - {x: -136.5, y: 166}
+        - {x: -129.5, y: 148}
+        - {x: -81.5, y: 112}
+        - {x: -26.5, y: 29}
+        - {x: 88.5, y: 0}
+        - {x: 115.5, y: 0}
+        - {x: 122.5, y: 8}
+        - {x: 122.5, y: 17}
+        - {x: 136.5, y: 54}
+    - name: Move_2
+      rect:
+        serializedVersion: 2
+        x: 775
+        y: 299
+        width: 244
+        height: 251
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 79, y: 251}
+        - {x: -30, y: 251}
+        - {x: -76, y: 208}
+        - {x: -122, y: 220}
+        - {x: -122, y: 96}
+        - {x: -113, y: 79}
+        - {x: -109, y: 85}
+        - {x: -20, y: 85}
+        - {x: -31, y: 60}
+        - {x: 26, y: 0}
+        - {x: 69, y: 0}
+        - {x: 109, y: 53}
+        - {x: 122, y: 115}
+        - {x: 122, y: 215}
+    - name: Move_3
+      rect:
+        serializedVersion: 2
+        x: 1102
+        y: 298
+        width: 293
+        height: 252
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 132.5, y: 221}
+        - {x: 86.5, y: 252}
+        - {x: -4.5, y: 252}
+        - {x: -31.5, y: 247}
+        - {x: -113.5, y: 215}
+        - {x: -146.5, y: 197}
+        - {x: -146.5, y: 146}
+        - {x: -78.5, y: 92}
+        - {x: -37.5, y: 77}
+        - {x: -0.5, y: 0}
+        - {x: 67.5, y: 0}
+        - {x: 146.5, y: 52}
+        - {x: 146.5, y: 86}
+        - {x: 129.5, y: 139}
+    - name: Move_4
+      rect:
+        serializedVersion: 2
+        x: 1486
+        y: 300
+        width: 312
+        height: 250
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 81, y: 119}
+        - {x: 115, y: 214}
+        - {x: 68, y: 250}
+        - {x: -55, y: 250}
+        - {x: -155, y: 217}
+        - {x: -156, y: 201}
+        - {x: -156, y: 86}
+        - {x: -148, y: 74}
+        - {x: -59, y: 21}
+        - {x: -56, y: 4}
+        - {x: -51, y: 0}
+        - {x: -26, y: 0}
+        - {x: 40, y: 8}
+        - {x: 156, y: 92}
+        - {x: 156, y: 123}
+        - {x: 147, y: 132}
+    - name: Move_5
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3
+        width: 328
+        height: 252
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 164, y: 157}
+        - {x: 136, y: 157}
+        - {x: 105, y: 221}
+        - {x: 59, y: 252}
+        - {x: -51, y: 252}
+        - {x: -164, y: 205}
+        - {x: -164, y: 151}
+        - {x: -108, y: 104}
+        - {x: -53, y: 111}
+        - {x: -87, y: 1}
+        - {x: -85, y: 0}
+        - {x: 127, y: 0}
+        - {x: 94, y: 21}
+        - {x: 162, y: 103}
+        - {x: 164, y: 111}
+    - name: Move_6
+      rect:
+        serializedVersion: 2
+        x: 414
+        y: 4
+        width: 245
+        height: 257
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 88.5, y: 257}
+        - {x: 13.5, y: 257}
+        - {x: 4.5, y: 255}
+        - {x: -13.5, y: 248}
+        - {x: -27.5, y: 241}
+        - {x: -122.5, y: 226}
+        - {x: -122.5, y: 92}
+        - {x: -113.5, y: 71}
+        - {x: -85.5, y: 118}
+        - {x: -60.5, y: 81}
+        - {x: 5.5, y: 0}
+        - {x: 62.5, y: 0}
+        - {x: 105.5, y: 50}
+        - {x: 122.5, y: 140}
+        - {x: 122.5, y: 241}
+    - name: Move_7
+      rect:
+        serializedVersion: 2
+        x: 743
+        y: 3
+        width: 264
+        height: 252
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 132, y: 117}
+        - {x: 132, y: 219}
+        - {x: 94, y: 252}
+        - {x: -6, y: 252}
+        - {x: -102, y: 218}
+        - {x: -132, y: 192}
+        - {x: -132, y: 151}
+        - {x: -77, y: 104}
+        - {x: -28, y: 61}
+        - {x: 16, y: 0}
+        - {x: 73, y: 0}
+        - {x: 107, y: 22}
+        - {x: 121, y: 51}
+        - {x: 121, y: 60}
+    - name: Move_8
+      rect:
+        serializedVersion: 2
+        x: 1138
+        y: 4
+        width: 244
+        height: 251
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 102, y: 251}
+        - {x: -55, y: 251}
+        - {x: -122, y: 237}
+        - {x: -122, y: 96}
+        - {x: -113, y: 78}
+        - {x: -61, y: 120}
+        - {x: -30, y: 120}
+        - {x: -4, y: 124}
+        - {x: -55, y: 114}
+        - {x: -76, y: 99}
+        - {x: -49, y: 0}
+        - {x: 117, y: 0}
+        - {x: 122, y: 5}
+        - {x: 122, y: 231}
     outline: []
   spritePackingTag: 
   userData: 

@@ -1,13 +1,17 @@
 fileFormatVersion: 2
 guid: 9a673d858155e41afbbd27a70c6a3692
-timeCreated: 1474167292
-licenseType: Free
+timeCreated: 1475240317
+licenseType: Pro
 TextureImporter:
-  fileIDToRecycleName: {}
+  fileIDToRecycleName:
+    21300000: Attack_0
+    21300002: Attack_3
+    21300004: Attack_6
+    21300006: Attack_7
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
-    enableMipMap: 1
+    enableMipMap: 0
     linearTexture: 0
     correctGamma: 0
     fadeOut: 0
@@ -26,30 +30,198 @@ TextureImporter:
   cubemapConvolutionSteps: 7
   cubemapConvolutionExponent: 1.5
   seamlessCubemap: 0
-  textureFormat: -1
+  textureFormat: -3
   maxTextureSize: 2048
   textureSettings:
     filterMode: -1
     aniso: -1
     mipBias: -1
-    wrapMode: -1
-  nPOTScale: 1
+    wrapMode: 1
+  nPOTScale: 0
   lightmap: 0
   rGBM: 0
   compressionQuality: 50
   allowsAlphaSplitting: 0
-  spriteMode: 0
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spritePixelsToUnits: 100
-  alphaIsTransparency: 0
-  textureType: -1
+  alphaIsTransparency: 1
+  textureType: 8
   buildTargetSettings: []
   spriteSheet:
-    sprites: []
+    sprites:
+    - name: Attack_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 144
+        width: 289
+        height: 299
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 66.5, y: 266}
+        - {x: -38.5, y: 299}
+        - {x: -144.5, y: 299}
+        - {x: -144.5, y: 225}
+        - {x: -112.5, y: 171}
+        - {x: -66.5, y: 10}
+        - {x: -54.5, y: 0}
+        - {x: 85.5, y: 0}
+        - {x: 86.5, y: 98}
+        - {x: 93.5, y: 124}
+        - {x: 93.5, y: 247}
+      - - {x: 119.5, y: 256}
+        - {x: 116.5, y: 257}
+        - {x: 106.5, y: 257}
+        - {x: 103.5, y: 254}
+        - {x: 103.5, y: 244}
+        - {x: 105.5, y: 238}
+        - {x: 118.5, y: 238}
+        - {x: 122.5, y: 241}
+        - {x: 122.5, y: 253}
+      - - {x: 73.5, y: 254}
+        - {x: 75.5, y: 249}
+        - {x: 98.5, y: 249}
+        - {x: 98.5, y: 271}
+        - {x: 93.5, y: 284}
+        - {x: 80.5, y: 284}
+        - {x: 73.5, y: 276}
+      - - {x: 56.5, y: 285}
+        - {x: 52.5, y: 281}
+        - {x: 52.5, y: 275}
+        - {x: 54.5, y: 269}
+        - {x: 64.5, y: 269}
+        - {x: 68.5, y: 273}
+        - {x: 68.5, y: 279}
+        - {x: 66.5, y: 285}
+      - - {x: 63.5, y: 299}
+        - {x: 63.5, y: 289}
+        - {x: 68.5, y: 286}
+        - {x: 81.5, y: 286}
+        - {x: 85.5, y: 291}
+        - {x: 85.5, y: 299}
+      - - {x: 101.5, y: 299}
+        - {x: 101.5, y: 296}
+        - {x: 104.5, y: 289}
+        - {x: 107.5, y: 288}
+        - {x: 117.5, y: 288}
+        - {x: 121.5, y: 292}
+        - {x: 121.5, y: 299}
+    - name: Attack_3
+      rect:
+        serializedVersion: 2
+        x: 413
+        y: 143
+        width: 236
+        height: 299
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 86, y: 247}
+        - {x: 86, y: 243}
+        - {x: 83, y: 235}
+        - {x: 83, y: 232}
+        - {x: 84, y: 230}
+        - {x: 82, y: 232}
+        - {x: 83, y: 233}
+        - {x: 83, y: 240}
+        - {x: 81, y: 244}
+        - {x: -55, y: 299}
+        - {x: -118, y: 299}
+        - {x: -118, y: 198}
+        - {x: -46, y: 5}
+        - {x: -25, y: 0}
+        - {x: 112, y: 0}
+        - {x: 118, y: 23}
+        - {x: 118, y: 248}
+        - {x: 98, y: 269}
+      - - {x: 104, y: 285}
+        - {x: 102, y: 283}
+        - {x: 100, y: 271}
+        - {x: 100, y: 256}
+        - {x: 103, y: 252}
+        - {x: 118, y: 252}
+        - {x: 118, y: 282}
+        - {x: 117, y: 285}
+      - - {x: 74, y: 289}
+        - {x: 74, y: 269}
+        - {x: 79, y: 267}
+        - {x: 90, y: 267}
+        - {x: 95, y: 273}
+        - {x: 95, y: 287}
+        - {x: 89, y: 289}
+      - - {x: 91, y: 299}
+        - {x: 91, y: 292}
+        - {x: 95, y: 291}
+        - {x: 105, y: 291}
+        - {x: 107, y: 296}
+        - {x: 107, y: 299}
+    - name: Attack_6
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 143
+        width: 324
+        height: 300
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 47, y: 58}
+        - {x: 146, y: 92}
+        - {x: 162, y: 102}
+        - {x: 162, y: 158}
+        - {x: 152, y: 205}
+        - {x: 10, y: 294}
+        - {x: -78, y: 300}
+        - {x: -110, y: 300}
+        - {x: -122, y: 276}
+        - {x: -117, y: 259}
+        - {x: -114, y: 255}
+        - {x: -150, y: 300}
+        - {x: -162, y: 300}
+        - {x: -162, y: 10}
+        - {x: -122, y: 0}
+        - {x: 51, y: 0}
+        - {x: 54, y: 1}
+        - {x: 46, y: 52}
+        - {x: 30, y: 68}
+        - {x: 38, y: 62}
+    - name: Attack_7
+      rect:
+        serializedVersion: 2
+        x: 1221
+        y: 143
+        width: 337
+        height: 298
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 152.5, y: 222}
+        - {x: 94.5, y: 223}
+        - {x: 76.5, y: 215}
+        - {x: 57.5, y: 95}
+        - {x: 61.5, y: 165}
+        - {x: 46.5, y: 207}
+        - {x: -8.5, y: 258}
+        - {x: -117.5, y: 298}
+        - {x: -168.5, y: 298}
+        - {x: -168.5, y: 225}
+        - {x: -163.5, y: 198}
+        - {x: -103.5, y: 87}
+        - {x: -100.5, y: 9}
+        - {x: -87.5, y: 0}
+        - {x: 144.5, y: 0}
+        - {x: 168.5, y: 65}
+        - {x: 168.5, y: 189}
     outline: []
   spritePackingTag: 
   userData: 
