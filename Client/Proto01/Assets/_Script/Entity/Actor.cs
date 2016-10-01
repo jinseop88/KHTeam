@@ -82,7 +82,7 @@ public class Actor : BaseEntity
     // <summary>
     /// 이동
     /// </summary>
-    public void Move()
+	public virtual void Move()
     {
         animation2D.OnMove(true);
         movement2D.Move(Vector3.one);
@@ -91,12 +91,10 @@ public class Actor : BaseEntity
     /// <summary>
     /// 이동멈춤
     /// </summary>
-    public void MoveStop()
+    public virtual void MoveStop()
     {
         animation2D.OnMove(false);
         movement2D.Move(Vector3.zero);
-
-        GameEventManager.Notify(GameEventType.UpdateMoveDistance, thisTransform.position.x);
     }
 
     /// <summary>
