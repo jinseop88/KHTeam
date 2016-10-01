@@ -383,7 +383,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 463478}
-  - 114: {fileID: 11417080}
+  - 114: {fileID: 11461326}
   m_Layer: 11
   m_Name: Pound_Moon_Far
   m_TagString: Untagged
@@ -936,18 +936,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   limitDistance: 44.7
---- !u!114 &11417080
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 188164}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0fe7b6b65c3367044a7a6640be9221b9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_target: {fileID: 0}
+  distanceType: 0
 --- !u!114 &11455112
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -960,6 +949,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   limitDistance: 68.06
+  distanceType: 0
+--- !u!114 &11461326
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 188164}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f6814703ca3937d45b7db2793244b079, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!212 &21210358
 SpriteRenderer:
   m_ObjectHideFlags: 1

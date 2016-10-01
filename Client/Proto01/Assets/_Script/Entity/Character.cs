@@ -57,4 +57,20 @@ public class Character : Actor
         }
     }
     
+	// <summary>
+	/// 이동
+	/// </summary>
+	public override void Move()
+	{
+		base.Move ();
+
+		GameEventManager.Notify(GameEventType.UpdateMoveDistance, thisTransform.position.x);
+	}
+
+	public override void MoveStop ()
+	{
+		base.MoveStop ();
+
+		GameEventManager.Notify(GameEventType.UpdateMoveDistance, thisTransform.position.x);
+	}
 }

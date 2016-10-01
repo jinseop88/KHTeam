@@ -36,6 +36,8 @@ public class MapManager : SingleTon<MapManager>
 		GameObject objNextMap = InnerLoadMap(eNextMapType, spawnPos);
 		Destroy (m_objCurrentMap);
 		m_objCurrentMap = objNextMap;
+
+
 		/*
         if (m_objCurrentMap == null)
         {

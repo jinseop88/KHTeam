@@ -126,6 +126,6 @@ public class SceneGame : SceneBase
     public void MapChangeByDayCount(int dayCount)
     {
         //5일에 한번씩 맵이 바뀐다
-        MapManager.Instance.ChangeMap((MapType)(dayCount / 5));
+        MapManager.Instance.ChangeMap((MapType)(dayCount));
     }    
 }
