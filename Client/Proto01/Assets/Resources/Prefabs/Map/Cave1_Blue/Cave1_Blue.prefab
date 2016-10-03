@@ -44,7 +44,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!1 &106476
 GameObject:
   m_ObjectHideFlags: 1
@@ -792,6 +792,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   limitDistance: 51
+  distanceType: 0
 --- !u!114 &11450230
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -804,6 +805,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   limitDistance: 115.2
+  distanceType: 0
 --- !u!114 &11476880
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -816,6 +818,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   limitDistance: 51.5
+  distanceType: 0
 --- !u!212 &21200180
 SpriteRenderer:
   m_ObjectHideFlags: 1

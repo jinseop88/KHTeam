@@ -9,8 +9,15 @@ public enum MapType
     Town_Kiwa,
     Town_RockTower,
     Pound_Moon,
-    Cave1_Purple,
-    Cave1_Blue,
+	Cave1_Blue,
+    Cave2_Purple,
+	Cave3_Green,
+	Forest1_Green,
+	Forest2_Blue,
+	Forest3_Purple,
+	Sea_Moon1,
+	Sea_Moon2,
+	Sea_Moon3,
     Max,
 }
 
@@ -23,6 +30,7 @@ public class MapManager : SingleTon<MapManager>
 
 	public void ChangeMap(MapType eNextMapType)
     {
+		eNextMapType = (MapType)((int)eNextMapType % (int)MapType.Max);
 		if (eNextMapType == m_currentMapType)
 			return;
 		

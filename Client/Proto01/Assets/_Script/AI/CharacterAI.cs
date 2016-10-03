@@ -90,7 +90,7 @@ public class CharacterAI : BaseAI, IGameEventListener
             return;
         }
 
-        if(isEnableAttack)
+		if(isEnableAttack && !m_Target.m_bAlreadDead)
         {
             m_Owner.Attack(GameType.AnimationState.Attack);
             m_LastAtkTime = Time.realtimeSinceStartup;

@@ -16,6 +16,9 @@ public class Character : Actor
 		AISystem.m_AtkDelay = 0.7f;
         onDamage = OnDamage;
 
+		Time.timeScale = 3f;
+		AISystem.m_AtkDelay = 0.1f;
+
         //ApplySkin(MyInfo.instance.currentSkin, true);
         ApplySkin(GameType.SkinType.GoodDress, true);
     }

@@ -118,7 +118,7 @@ public class SceneGame : SceneBase
     {                     
         if (mon_killCount != 0)
         {
-            m_day = (int)(mon_killCount * 0.1f);            
+            m_day = (int)(mon_killCount * 0.2f);            
             MapChangeByDayCount(m_day);
         }
     }
