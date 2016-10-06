@@ -30,7 +30,7 @@ public class Magic : MonoBehaviour, IGameEventListener
 
                     magicParticleSystem = magic.GetComponentInChildren<ParticleSystem>();
 
-                    Renderer renderer = magicPrefabs.GetComponentInChildren<Renderer>();
+                    Renderer renderer = magicParticleSystem.GetComponentInChildren<Renderer>();
 
                     if (mapType == MapType.Mt_ChunTae1 || mapType == MapType.Mt_ChunTae2)
                     {
@@ -71,6 +71,7 @@ public class Magic : MonoBehaviour, IGameEventListener
             foreach(GameObject monster in GameObject.FindGameObjectsWithTag("monster"))
             {
                 // TODO : Give damage to monster
+                monster.GetComponent<Actor>().onDamage(null, null);
             }
 
             yield return new WaitForSeconds(1.0f);

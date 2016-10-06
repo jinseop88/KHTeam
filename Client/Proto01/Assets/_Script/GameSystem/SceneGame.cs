@@ -94,7 +94,6 @@ public class SceneGame : SceneBase
         {
             case GameEventType.MonsterDied:
                 MyInfo.instance.AddMonsterKill(1);
-                Debug.Log(MyInfo.instance.monsterKillCount);
                 DayIncreasedByKillCount(MyInfo.instance.monsterKillCount);
                 CreateMonster();
                 break;
