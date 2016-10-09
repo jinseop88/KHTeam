@@ -6,7 +6,6 @@ public class Projectile : MonoBehaviour
     public float m_flyingDistance;
 
     private SkillImpactInfo m_impact;
-    private Renderer m_renderer;
     private Vector3 m_startPos;
     private Vector3 m_dir;
 
@@ -53,6 +52,5 @@ public class Projectile : MonoBehaviour
         thisTransform = transform;
         m_impact = GetComponentInChildren<SkillImpactInfo>();
         m_impact.Initialize();
-        m_renderer = GetComponentInChildren<Renderer>();
     }
 }

@@ -6,8 +6,6 @@ public class SceneGame : SceneBase
     private SpawnPoint m_characerSpawnPoint;
     private SpawnPoint m_monsterSpawnPoint;
 
-    private MonsterSpawner m_monsterSpawner;
-
     private FollowCamera m_camera;
 
     private int m_monsterKillCount;
@@ -62,10 +60,6 @@ public class SceneGame : SceneBase
             else
                 m_characerSpawnPoint = spawnPoints[i];
         }
-
-        GameObject monsterSpawner = new GameObject("MonsterSpawner");
-        //monsterSpawner.transform.parent = gameSystem.transform;
-        m_monsterSpawner = monsterSpawner.AddComponent<MonsterSpawner>();
     }
 
     private void CreateCharacter()

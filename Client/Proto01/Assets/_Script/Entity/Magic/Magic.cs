@@ -32,20 +32,78 @@ public class Magic : MonoBehaviour, IGameEventListener
 
                     Renderer renderer = magicParticleSystem.GetComponentInChildren<Renderer>();
 
-                    if (mapType == MapType.Mt_ChunTae1 || mapType == MapType.Mt_ChunTae2)
+                    switch (mapType)
                     {
-                        renderer.material = magicMaterials[0];
-                        magicParticleSystem.startColor = Color.white;
-                    }
-                    else if (mapType == MapType.Town_Kiwa || mapType == MapType.Town_RockTower)
-                    {
-                        renderer.material = magicMaterials[1];
-                        magicParticleSystem.startColor = Color.black;
-                    }
-                    else
-                    {
-                        renderer.material = magicMaterials[1];
-                        magicParticleSystem.startColor = Color.white;
+                        // Snow
+                        case MapType.Mt_ChunTae1:
+                        case MapType.Mt_ChunTae2:
+                            renderer.material = magicMaterials[0];
+                            magicParticleSystem.startColor = Color.white;
+                            break;
+
+                        // Black petal
+                        case MapType.Town_Kiwa:
+                        case MapType.Town_RockTower:
+                            renderer.material = magicMaterials[1];
+                            break;
+                        
+                        // White petal
+                        case MapType.Pound_Moon:
+                            renderer.material = magicMaterials[2];
+                            magicParticleSystem.startColor = Color.white;
+                            break;
+
+                        // Rock
+                        case MapType.Cave1_Blue:
+                            renderer.material = magicMaterials[3];
+                            magicParticleSystem.startColor = Color.white;
+                            magicParticleSystem.gravityModifier = 0.5f;
+                            break;
+
+                        case MapType.Cave2_Purple:
+                            renderer.material = magicMaterials[4];
+                            magicParticleSystem.startColor = Color.white;
+                            magicParticleSystem.gravityModifier = 0.5f;
+                            break;
+
+                        case MapType.Cave3_Green:
+                            renderer.material = magicMaterials[5];
+                            magicParticleSystem.startColor = Color.white;
+                            magicParticleSystem.gravityModifier = 0.5f;
+                            break;
+
+                        case MapType.Forest1_Green:
+                            renderer.material = magicMaterials[6];
+                            magicParticleSystem.startColor = Color.white;
+                            break;
+
+                        case MapType.Forest2_Blue:
+                            renderer.material = magicMaterials[7];
+                            magicParticleSystem.startColor = Color.white;
+                            break;
+
+                        case MapType.Forest3_Purple:
+                            renderer.material = magicMaterials[8];
+                            magicParticleSystem.startColor = Color.white;
+                            break;
+
+                        case MapType.Sea_Moon1:
+                            renderer.material = magicMaterials[9];
+                            magicParticleSystem.startColor = Color.white;
+                            break;
+
+                        case MapType.Sea_Moon2:
+                            renderer.material = magicMaterials[10];
+                            magicParticleSystem.startColor = Color.white;
+                            break;
+
+                        case MapType.Sea_Moon3:
+                            renderer.material = magicMaterials[11];
+                            magicParticleSystem.startColor = Color.white;
+                            break;
+
+                        default:
+                            break;
                     }
 
                     magicParticleSystem.Play();
@@ -70,8 +128,10 @@ public class Magic : MonoBehaviour, IGameEventListener
         {
             foreach(GameObject monster in GameObject.FindGameObjectsWithTag("monster"))
             {
-                // TODO : Give damage to monster
-                monster.GetComponent<Actor>().onDamage(null, null);
+                if (monster)
+                {
+                    monster.GetComponent<Actor>().onDamage(null, null);
+                }
             }
 
             yield return new WaitForSeconds(1.0f);
