@@ -6,8 +6,6 @@ public class CharacterTestScene : MonoBehaviour, IGameEventListener
     public SpawnPoint m_characerSpawnPoint;
     public SpawnPoint m_monsterSpawnPoint;
 
-    private MonsterSpawner m_monsterSpawner;
-
     private FollowCamera m_camera;
 
     private int m_monsterKillCount;
@@ -49,7 +47,6 @@ public class CharacterTestScene : MonoBehaviour, IGameEventListener
 
         GameObject monsterSpawner = new GameObject("MonsterSpawner");
         monsterSpawner.transform.parent = gameSystem.transform;
-        m_monsterSpawner = monsterSpawner.AddComponent<MonsterSpawner>();
     }
 
     private void CreateMap()
