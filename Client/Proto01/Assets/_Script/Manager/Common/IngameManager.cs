@@ -60,7 +60,10 @@ public class IngameManager : SingleTon<IngameManager>, IGameEventListener
     {
         ///Check Click Action
         if (Input.GetKeyDown(KeyCode.Mouse0))
+        {
             GameEventManager.Notify(GameEventType.ClickScreen);
+            AudioManager.Instance.PlayAudioClip(AudioClipType.TOUCH);
+        }
     }
 
     public void OnGameEvent(GameEventType gameEventType, params object[] args)

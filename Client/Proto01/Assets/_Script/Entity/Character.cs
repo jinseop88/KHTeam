@@ -76,4 +76,11 @@ public class Character : Actor
 
 		GameEventManager.Notify(GameEventType.UpdateMoveDistance, thisTransform.position.x);
 	}
+
+    public override void Attack(GameType.AnimationState state)
+    {
+        base.Attack(state);
+        AudioClipType audioClipType = Random.Range(0, 2) == 0 ? AudioClipType.ATTACK1 : AudioClipType.ATTACK2;
+        AudioManager.Instance.PlayAudioClip(audioClipType);
+    }
 }

@@ -101,10 +101,9 @@ public class Actor : BaseEntity
     /// 공격
     /// </summary>
     /// <param name="state"></param>
-    public void Attack(GameType.AnimationState state)
+    public virtual void Attack(GameType.AnimationState state)
     {
         battleMy.Casting(state);
         animation2D.OnAttack();
     }
-    
 }

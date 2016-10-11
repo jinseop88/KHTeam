@@ -8,6 +8,7 @@ public class UI_MyInfo : UIBase, IGameEventListener
     public UISprite insamGauge;
     public int insamMaxCount = 100;
     public GameObject magicNotice;
+    public AudioClip magicNoticeAudioClip;
 
     // Use this for initialization
     void Start ()
@@ -30,6 +31,7 @@ public class UI_MyInfo : UIBase, IGameEventListener
         if (insamGaugePercent >= 1.0f)
         {
             magicNotice.SetActive(true);
+            AudioManager.Instance.PlayAudioClip(AudioClipType.NOTICE);
         }
     }
 

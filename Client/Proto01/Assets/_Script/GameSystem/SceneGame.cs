@@ -60,6 +60,8 @@ public class SceneGame : SceneBase
             else
                 m_characerSpawnPoint = spawnPoints[i];
         }
+
+        AudioManager.Instance.PlayAudioClip(AudioClipType.BACKGROUND);
     }
 
     private void CreateCharacter()

@@ -36,6 +36,7 @@ public class Monster : Actor
             GameEventManager.Notify(GameEventType.SpawnItem, Random.Range(0,100), thisTransform.position);
 
             animation2D.OnDead();
+            AudioManager.Instance.PlayAudioClip(AudioClipType.DEAD);
             StartCoroutine(DeadCheck());
         }
     }
