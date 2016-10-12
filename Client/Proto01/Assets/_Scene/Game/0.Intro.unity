@@ -125,7 +125,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a3a4916d075e46c47a1203eecf5949e0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!1001 &1977132446
+--- !u!1001 &1877246924
 Prefab:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -164,38 +164,6 @@ Prefab:
       propertyPath: m_RootOrder
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 11401740, guid: 9f622b817c957cd4a9c20b9ac90ebf20, type: 2}
-      propertyPath: aspectRatio
-      value: 2.95
-      objectReference: {fileID: 0}
-    - target: {fileID: 494234, guid: 9f622b817c957cd4a9c20b9ac90ebf20, type: 2}
-      propertyPath: m_LocalPosition.x
-      value: 25
-      objectReference: {fileID: 0}
-    - target: {fileID: 494234, guid: 9f622b817c957cd4a9c20b9ac90ebf20, type: 2}
-      propertyPath: m_LocalPosition.y
-      value: 301
-      objectReference: {fileID: 0}
-    - target: {fileID: 405382, guid: 9f622b817c957cd4a9c20b9ac90ebf20, type: 2}
-      propertyPath: m_LocalPosition.x
-      value: -247
-      objectReference: {fileID: 0}
-    - target: {fileID: 405382, guid: 9f622b817c957cd4a9c20b9ac90ebf20, type: 2}
-      propertyPath: m_LocalPosition.y
-      value: 301
-      objectReference: {fileID: 0}
-    - target: {fileID: 455032, guid: 9f622b817c957cd4a9c20b9ac90ebf20, type: 2}
-      propertyPath: m_LocalPosition.x
-      value: -519
-      objectReference: {fileID: 0}
-    - target: {fileID: 455032, guid: 9f622b817c957cd4a9c20b9ac90ebf20, type: 2}
-      propertyPath: m_LocalPosition.y
-      value: 301
-      objectReference: {fileID: 0}
-    - target: {fileID: 11430212, guid: 9f622b817c957cd4a9c20b9ac90ebf20, type: 2}
-      propertyPath: magicNoticeAudioClip
-      value: 
-      objectReference: {fileID: 8300000, guid: 266e330451c0a4cb7ae1804ee62df880, type: 3}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 9f622b817c957cd4a9c20b9ac90ebf20, type: 2}
   m_IsPrefabParent: 0

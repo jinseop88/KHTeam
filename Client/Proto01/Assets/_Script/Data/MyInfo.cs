@@ -59,6 +59,35 @@ public class MyInfo
     public int monsterKillCount { get; private set; }
 
 
+    public void SetQuestStartTime(int index)
+    {
+        System.DateTime now = System.DateTime.UtcNow;
+        string time = string.Empty;
+        time = now.Year + "-";
+        time += now.Month + "-";
+        time += now.Day + "-";
+        time += now.Hour + "-";
+        time += now.Minute + "-";
+        time += now.Second + "-";
+        time += now.Millisecond;
+
+        PlayerPrefs.SetString("QuestStartTime_" + index, time);
+    }
+
+    public System.DateTime GetQuestStartTime(int index)
+    {
+        string[] times = PlayerPrefs.GetString("QuestStartTime_" + index, "1-1-1-1-1-1-1").Split('-');
+
+        int year = int.Parse(times[0]);
+        int month = int.Parse(times[1]);
+        int day = int.Parse(times[2]);
+        int hour = int.Parse(times[3]);
+        int minute = int.Parse(times[4]);
+        int second = int.Parse(times[5]);
+        int millisecond = int.Parse(times[6]);
+
+        return new System.DateTime(year, month, day, hour, minute, second, millisecond);
+    }
     #region 셋팅 함수
     /// <summary>
     /// 사용시 -값으로 Add한다
@@ -115,3 +144,5 @@ public class MyInfo
     #endregion
 
 }
+
+
