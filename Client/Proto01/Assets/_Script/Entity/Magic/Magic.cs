@@ -116,7 +116,10 @@ public class Magic : MonoBehaviour, IGameEventListener
 
     IEnumerator AttackMonster()
     {
-        while (true)
+        float duration = magicParticleSystem.duration;
+        const float interval = 1.0f;
+
+        while (duration > 0.0f)
         {
             foreach(GameObject monster in GameObject.FindGameObjectsWithTag("monster"))
             {
@@ -126,7 +129,9 @@ public class Magic : MonoBehaviour, IGameEventListener
                 }
             }
 
-            yield return new WaitForSeconds(1.0f);
+            yield return new WaitForSeconds(interval);
+
+            duration -= interval;
         }
     }
 
@@ -134,7 +139,7 @@ public class Magic : MonoBehaviour, IGameEventListener
     {
         yield return new WaitUntil(() => !magicParticleSystem.isPlaying);
 
-        StopCoroutine("AttackMonster");
+        StopAllCoroutines();
 
         Destroy(magic);
         magic = null;
