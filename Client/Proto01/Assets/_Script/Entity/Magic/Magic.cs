@@ -132,9 +132,9 @@ public class Magic : MonoBehaviour, IGameEventListener
 
     IEnumerator DestroyMagic()
     {
-        yield return new WaitUntil(() => !magicParticleSystem.isPlaying);
+        yield return new WaitForSeconds(magicParticleSystem.duration);
 
-        StopCoroutine("AttackMonster");
+        StopAllCoroutines();
 
         Destroy(magic);
         magic = null;
