@@ -25,7 +25,6 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -43,8 +42,8 @@ MonoBehaviour:
   material: {fileID: 2100000, guid: eeccf45911c3e5d4bb2a3412e4572051, type: 2}
   mSprites:
   - name: 123_26
-    x: 1841
-    y: 1488
+    x: 1386
+    y: 1300
     width: 123
     height: 26
     borderLeft: 30
@@ -69,8 +68,8 @@ MonoBehaviour:
     paddingTop: 0
     paddingBottom: 0
   - name: 150_40
-    x: 1841
-    y: 1516
+    x: 1234
+    y: 1286
     width: 150
     height: 40
     borderLeft: 20
@@ -134,8 +133,8 @@ MonoBehaviour:
     paddingTop: 0
     paddingBottom: 0
   - name: 80_80
-    x: 1841
-    y: 1630
+    x: 1923
+    y: 1394
     width: 80
     height: 80
     borderLeft: 0
@@ -160,8 +159,8 @@ MonoBehaviour:
     paddingTop: 0
     paddingBottom: 0
   - name: BlueDress
-    x: 1923
-    y: 1640
+    x: 1841
+    y: 1794
     width: 80
     height: 80
     borderLeft: 0
@@ -187,7 +186,7 @@ MonoBehaviour:
     paddingBottom: 0
   - name: FlowerDress
     x: 1923
-    y: 1804
+    y: 1886
     width: 80
     height: 80
     borderLeft: 0
@@ -213,7 +212,7 @@ MonoBehaviour:
     paddingBottom: 0
   - name: Menu_80_80
     x: 1923
-    y: 1886
+    y: 1558
     width: 80
     height: 80
     borderLeft: 0
@@ -238,8 +237,86 @@ MonoBehaviour:
     paddingTop: 0
     paddingBottom: 0
   - name: PurpleDress
+    x: 1923
+    y: 1640
+    width: 80
+    height: 80
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: Quest_Baby
     x: 1841
-    y: 1794
+    y: 1384
+    width: 80
+    height: 80
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: Quest_DeathAngel
+    x: 1923
+    y: 1804
+    width: 80
+    height: 80
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: Quest_Ghost
+    x: 1923
+    y: 1476
+    width: 80
+    height: 80
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: Quest_Goblin
+    x: 1923
+    y: 1312
+    width: 80
+    height: 80
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: Quest_Gumiho
+    x: 1841
+    y: 1466
+    width: 80
+    height: 80
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: Quest_Soul
+    x: 1841
+    y: 1548
     width: 80
     height: 80
     borderLeft: 0
@@ -251,8 +328,8 @@ MonoBehaviour:
     paddingTop: 0
     paddingBottom: 0
   - name: RoseDress
-    x: 1923
-    y: 1558
+    x: 1841
+    y: 1630
     width: 80
     height: 80
     borderLeft: 0

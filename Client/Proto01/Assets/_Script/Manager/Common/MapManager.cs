@@ -5,9 +5,6 @@ using System.Collections;
 public enum MapType
 {
     Mt_ChunTae1,
-	Sea_Moon1,
-	Sea_Moon2,
-	Sea_Moon3,
     Mt_ChunTae2,
     Town_Kiwa,
     Town_RockTower,
@@ -18,6 +15,9 @@ public enum MapType
 	Forest1_Green,
 	Forest2_Blue,
 	Forest3_Purple,
+	Sea_Moon1,
+	Sea_Moon2,
+	Sea_Moon3,
     Max,
 }
 

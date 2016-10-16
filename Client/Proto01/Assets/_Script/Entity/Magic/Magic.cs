@@ -95,6 +95,8 @@ public class Magic : MonoBehaviour, IGameEventListener
                             break;
 
                         default:
+							renderer.material = magicMaterials[11];
+							magicParticleSystem.startColor = Color.white;
                             break;
                     }
 

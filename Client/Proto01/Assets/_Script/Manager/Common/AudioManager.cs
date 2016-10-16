@@ -1,7 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-using UnityEditor;
 
 public enum AudioClipType
 {
@@ -17,17 +16,17 @@ public enum AudioClipType
 
 public class AudioManager : SingleTon<AudioManager>
 {
-    private static string AUDIO_CLIP_PATH_PREFIX = "Assets/Art/Sound/";
+	private static string AUDIO_CLIP_PATH_PREFIX = "Prefabs/Sound/";
 
     private string[] AUDIO_CLIP_PATHS =
     {
-            AUDIO_CLIP_PATH_PREFIX + "Attack1.wav",
-            AUDIO_CLIP_PATH_PREFIX + "Attack2.wav",
-            AUDIO_CLIP_PATH_PREFIX + "Background1.mp3",
-            AUDIO_CLIP_PATH_PREFIX + "Item_Get.mp3",
-            AUDIO_CLIP_PATH_PREFIX + "Magic_Notice.wav",
-            AUDIO_CLIP_PATH_PREFIX + "Monster_Dead.wav",
-            AUDIO_CLIP_PATH_PREFIX + "TouchSound.mp3"
+            AUDIO_CLIP_PATH_PREFIX + "Attack1",
+            AUDIO_CLIP_PATH_PREFIX + "Attack2",
+            AUDIO_CLIP_PATH_PREFIX + "Background1",
+            AUDIO_CLIP_PATH_PREFIX + "Item_Get",
+            AUDIO_CLIP_PATH_PREFIX + "Magic_Notice",
+            AUDIO_CLIP_PATH_PREFIX + "Monster_Dead",
+            AUDIO_CLIP_PATH_PREFIX + "TouchSound"
     };
 
     private AudioSource[] audioSources = new AudioSource[(int)AudioClipType.SOUND_COUNT];
@@ -40,7 +39,7 @@ public class AudioManager : SingleTon<AudioManager>
         {
             audioSources[index] = gameObject.AddComponent<AudioSource>();
             audioSources[index].playOnAwake = false;
-            audioSources[index].clip = AssetDatabase.LoadAssetAtPath<AudioClip>(AUDIO_CLIP_PATHS[index]);
+			audioSources[index].clip = Resources.Load<AudioClip>(AUDIO_CLIP_PATHS[index]);
 
             if (audioClipType == AudioClipType.BACKGROUND)
             {

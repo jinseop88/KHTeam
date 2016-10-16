@@ -16,6 +16,16 @@ namespace Data
     }
 }
 
+public enum QuestType
+{
+	Soul	 = 1,
+	Baby,
+	Ghost,
+	DeathAngel,
+	Goblin,
+	Gumiho
+}
+
 public class QuestTable
 {
     private static QuestTable m_instance;
