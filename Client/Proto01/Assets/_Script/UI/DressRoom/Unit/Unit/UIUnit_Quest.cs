@@ -31,7 +31,7 @@ public class UIUnit_Quest : UIBase
     {
         quest = questData;
 
-        m_spQuestThumb.spriteName = "";
+		m_spQuestThumb.spriteName = "Quest_" + ((QuestType)questData.index).ToString();
 
         m_lbQuestName.text = quest.name;
         m_lbimmediatePrice.text = "즉시완료\n옆전 : " + quest.immediatePrice.ToString();

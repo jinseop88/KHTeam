@@ -164,6 +164,9 @@ public class UIWrapContent : MonoBehaviour
 
 	protected virtual void ResetChildPositions ()
 	{
+		if (!CacheScrollView())
+			return;
+		
         mScroll.panel.cachedTransform.localPosition = m_initPos;
         mScroll.panel.clipOffset = m_initOffset;
 
@@ -326,5 +329,8 @@ public class UIWrapContent : MonoBehaviour
     {
         SortBasedOnScrollMovement();
         WrapContent();
+
+		if(mScroll != null)
+			mScroll.ResetPosition ();
     }
 }
