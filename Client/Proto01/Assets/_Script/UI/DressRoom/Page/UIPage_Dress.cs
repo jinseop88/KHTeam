@@ -31,6 +31,7 @@ public class UIPage_Dress : UIBase
 		m_previewCharacter.thisTransform.localScale = Vector3.one;
 		m_previewCharacter.thisTransform.localRotation = Quaternion.identity;
 
+		m_previewCharacter.thisObject.GetComponent<Magic> ().enabled = false;
 		m_previewCharacter.movement2D.enabled = false;
 		m_previewCharacter.Move();
 	}

@@ -83,19 +83,19 @@ public class Magic : MonoBehaviour, IGameEventListener
                             break;
 
                         case MapType.Forest3_Purple:
-                        case MapType.Sea_Moon1:
-                        case MapType.Sea_Moon2:
                             renderer.material = magicMaterials[7];
                             magicParticleSystem.startColor = Color.white;
                             break;
 
+						case MapType.Sea_Moon1:
+						case MapType.Sea_Moon2:
                         case MapType.Sea_Moon3:
-                            renderer.material = magicMaterials[11];
+                            renderer.material = magicMaterials[8];
                             magicParticleSystem.startColor = Color.white;
                             break;
 
                         default:
-							renderer.material = magicMaterials[11];
+							renderer.material = magicMaterials[0];
 							magicParticleSystem.startColor = Color.white;
                             break;
                     }
