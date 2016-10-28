@@ -32,6 +32,7 @@ public class SceneGame : SceneBase
         UIManager.Instance.OpenUI<UI_DressRoom>(eUIType.DressRoom);
         UIManager.Instance.OpenUI<UI_MyInfo>(eUIType.MyInfo);
 
+		MapManager.Instance.AllLoadMap();
         ///게임시스템 생성
         CreateGameSystem();
         

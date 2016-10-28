@@ -76,6 +76,10 @@ public class MyInfo
 
     public System.DateTime GetQuestStartTime(int index)
     {
+		string timeStr = PlayerPrefs.GetString ("QuestStartTime_" + index, "0");
+		if (timeStr == "0")
+			return System.DateTime.UtcNow;
+		
         string[] times = PlayerPrefs.GetString("QuestStartTime_" + index, "1-1-1-1-1-1-1").Split('-');
 
         int year = int.Parse(times[0]);
@@ -85,6 +89,8 @@ public class MyInfo
         int minute = int.Parse(times[4]);
         int second = int.Parse(times[5]);
         int millisecond = int.Parse(times[6]);
+
+
 
         return new System.DateTime(year, month, day, hour, minute, second, millisecond);
     }

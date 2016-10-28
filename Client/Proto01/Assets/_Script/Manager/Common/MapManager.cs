@@ -38,49 +38,12 @@ public class MapManager : SingleTon<MapManager>
 
         GameEventManager.Notify(GameEventType.MapChanged, eNextMapType);
 
-		FadeScreen.Instance.StartFadeScreen (0.0f, 1f, 1f, 0, Color.black);
+		FadeScreen.Instance.StartFadeScreen (0.0f, 1f, 1f, 0.001f, Color.black);
 
 		Vector3 spawnPos = new Vector3 (IngameManager.Instance.m_myCharacter.thisTransform.position.x, 0, 0);
 		GameObject objNextMap = InnerLoadMap(eNextMapType, spawnPos);
 		Destroy (m_objCurrentMap);
 		m_objCurrentMap = objNextMap;
-
-
-		/*
-        if (m_objCurrentMap == null)
-        {
-            m_objCurrentMap = InnerLoadMap(eNextMapType);
-            return;
-        }
-        else
-        {
-            GameObject objNextMap = InnerLoadMap(eNextMapType);
-            GameObject temp = m_objPreviousMap; //삭제 될친구
-
-            m_objPreviousMap = m_objCurrentMap;
-            m_objCurrentMap = objNextMap;            
-          
-            Background[] nextBackGround = m_objCurrentMap.GetComponentsInChildren<Background>(true);
-            Background[] backgrounds = m_objPreviousMap.GetComponentsInChildren<Background>(true);
-
-            for (int i = 0; i < nextBackGround.Length; i++)
-            {
-                for (int j = 0; j < backgrounds.Length; j++)
-                {
-                    if(nextBackGround[i].distanceType == backgrounds[j].distanceType)
-                    {
-                        nextBackGround[i].transform.Translate(new Vector3(backgrounds[j].GetEndX(), 0, 0));
-                        break;
-                    }
-                }                
-            }
-
-            for (int i = 0; i < backgrounds.Length; i++)
-                backgrounds[i].enabled = false;
-
-            if (temp != null)
-                Destroy(temp);
-        }*/
     }
 
 	private GameObject InnerLoadMap(MapType eNextMapType, Vector3 spawnPos)
@@ -91,4 +54,10 @@ public class MapManager : SingleTon<MapManager>
 
         return clone;
     }
+
+	public void AllLoadMap()
+	{
+		for (MapType temp = MapType.Mt_ChunTae1; temp < MapType.Max; temp++)
+			Resources.Load ("Prefabs/Map/" + temp.ToString () + "/" + temp.ToString ());
+	}
 }

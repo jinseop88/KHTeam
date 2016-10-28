@@ -38,6 +38,7 @@ public class UIUnit_Quest : UIBase
         m_lbReward.text = "보상\n꽃 : " + quest.reward.ToString();
 
         m_tStartTime = MyInfo.instance.GetQuestStartTime(quest.index);
+
     }
 
     private void CompleteQuest()
@@ -47,7 +48,7 @@ public class UIUnit_Quest : UIBase
 
         MyInfo.instance.SetQuestStartTime(quest.index);
 
-        m_tStartTime = MyInfo.instance.GetQuestStartTime(quest.index);
+		m_tStartTime = System.DateTime.UtcNow;///MyInfo.instance.GetQuestStartTime(quest.index);
     }
 
     private void Update()
